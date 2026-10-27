@@ -1,0 +1,107 @@
+{
+  "phase": "SOURCE_ONLY_BUILD_AND_FILLED_512K_MODEL_PARITY_PASS",
+  "at": 1793138913.063822,
+  "source_only": true,
+  "prebuilt_local_archive_inputs": false,
+  "hardware": "2x AMD EPYC9754 + current2x RTX4090",
+  "nvfp4_weights_unchanged": true,
+  "KV": "int8",
+  "MTP": "original target-verified Q4",
+  "expert_cache_maps_unchanged": true,
+  "source_payload_reload_bytes": 0,
+  "results": [
+    {
+      "actual_fill": 520000,
+      "capacity": 524288,
+      "control": {
+        "TG": 192.2174459857714,
+        "NEWPP": 9243.803540732286,
+        "TTFT": 56.440070770011516
+      },
+      "candidate": {
+        "TG": 192.34020173181315,
+        "NEWPP": 9265.181980646461,
+        "TTFT": 56.307599132996984,
+        "diversity": {
+          "unique_tokens": 318,
+          "most_common": [
+            [
+              198,
+              73
+            ],
+            [
+              11,
+              37
+            ],
+            [
+              25,
+              31
+            ]
+          ]
+        }
+      },
+      "delta_percent": {
+        "TG": 0.06386295760627547,
+        "NEWPP": 0.23127319636306876
+      },
+      "comparison": {
+        "input_exact": true,
+        "geometry_exact": true,
+        "initial_logits_exact": true,
+        "all1024_ids_exact": true
+      }
+    },
+    {
+      "actual_fill": 16384,
+      "capacity": 524288,
+      "control": {
+        "TG": 224.53678324745093,
+        "NEWPP": 3296.44682306547,
+        "TTFT": 4.985805189993698
+      },
+      "candidate": {
+        "TG": 225.05494505494505,
+        "NEWPP": 3297.574720740666,
+        "TTFT": 4.984172294993186,
+        "diversity": {
+          "unique_tokens": 391,
+          "most_common": [
+            [
+              198,
+              62
+            ],
+            [
+              11,
+              32
+            ],
+            [
+              25,
+              26
+            ]
+          ]
+        }
+      },
+      "delta_percent": {
+        "TG": 0.2307692307692344,
+        "NEWPP": 0.03421555801550458
+      },
+      "comparison": {
+        "input_exact": true,
+        "geometry_exact": true,
+        "initial_logits_exact": true,
+        "all1024_ids_exact": true
+      }
+    }
+  ],
+  "positive_native_exit_and_pool_retirement": true,
+  "production_launchers_unchanged": true,
+  "unqualified": [
+    "source-rebuilt1M",
+    "other source providers",
+    "mergedHTTP/API factory"
+  ],
+  "binary_sha256": "42baa9f8d8a107eaed217cd1436cc020eff96337c133df7718e3dad5115cb751",
+  "previous_source_build_binary_sha256": "48237f9e003ddb014cb266bdc7127c9e6f9ac639c307a8e4885d2474c6a4b302",
+  "unified_cmake_profile": "swift2-v454",
+  "common_target": "strata_owned_swift"
+}

@@ -1,0 +1,77 @@
+{
+  "status": "PASS",
+  "checks": 8466,
+  "native_units": 72,
+  "native_archives": 19,
+  "native_source_notice_files": 666,
+  "lifecycle_source_files": 215,
+  "lifecycle_explicit_refusals": [
+    {
+      "kind": "fixed hardware identity source refused",
+      "source": "DeepSeek V4.1/work/deepseek41/Strata/backend/deepseek41/cpu_moe_graph.py"
+    },
+    {
+      "kind": "fixed hardware identity source refused",
+      "source": "DeepSeek V4.1/work/deepseek41/Strata/backend/deepseek41/own_quant_rows.py"
+    },
+    {
+      "kind": "fixed hardware identity source refused",
+      "source": "DeepSeek V4.1/work/deepseek41/Strata/backend/deepseek41/critical_residency.py"
+    },
+    {
+      "kind": "fixed hardware identity source refused",
+      "source": "DeepSeek V4.1/work/deepseek41/Strata/backend/deepseek41/linear_graph.py"
+    },
+    {
+      "kind": "fixed hardware identity source refused",
+      "source": "DeepSeek V4.1/work/deepseek41/Strata/backend/deepseek41/decode_budget.py"
+    },
+    {
+      "kind": "fixed hardware identity source refused",
+      "source": "DeepSeek V4.1/work/deepseek41/Strata/backend/deepseek41/hc_native.py"
+    },
+    {
+      "kind": "fixed hardware identity source refused",
+      "source": "DeepSeek V4.1/work/deepseek41/Strata/backend/deepseek41/head_bf16_gemv.py"
+    },
+    {
+      "kind": "fixed hardware identity source refused",
+      "source": "DeepSeek V4.1/work/deepseek41/Strata/backend/deepseek41/fork_fp8_gemv.py"
+    },
+    {
+      "kind": "fixed hardware identity source refused",
+      "source": "DeepSeek V4.1/work/deepseek41/Strata/backend/deepseek41/expert_gemv.py"
+    },
+    {
+      "kind": "fixed hardware identity source refused",
+      "source": "DeepSeek V4.1/work/deepseek41/Strata/backend/deepseek41/hc_graph.py"
+    },
+    {
+      "kind": "fixed hardware identity source refused",
+      "source": "DeepSeek V4.1/work/deepseek41/Strata/backend/deepseek41/native_factory_cache.py"
+    },
+    {
+      "kind": "fixed hardware identity source refused",
+      "source": "DeepSeek V4.1/work/deepseek41/Strata/backend/deepseek41/row_staging.py"
+    },
+    {
+      "kind": "fixed hardware identity source refused",
+      "source": "DeepSeek V4.1/work/deepseek41/Strata/backend/deepseek41/runtime.py"
+    },
+    {
+      "kind": "fixed hardware identity source refused",
+      "source": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/pair-controller-v1/controller_v1.py"
+    }
+  ],
+  "publication_diagnostic_ports": 3,
+  "byte_inverse_identity_ports": 1,
+  "selected_sources_persistent_UUIDs": false,
+  "current_cuda_numa_ports": 4,
+  "topology_runtime_or_affinity_execution": false,
+  "serving_factory_explicitly_disabled": true,
+  "compiler_executed": false,
+  "cuda_initialized": false,
+  "model_or_weights_read": false,
+  "clean_source_build_pending": true,
+  "numerical_runtime_parity_pending": true
+}

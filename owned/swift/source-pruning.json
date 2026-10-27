@@ -1,0 +1,10 @@
+{
+  "reason": "Only selected translation units and literally included translation units belong to this provider; all headers/licenses retained.",
+  "removed_unselected_translation_units": 891,
+  "preserved_selected_TUs": 171,
+  "preserved_literal_included_TUs": [
+    "source/Shared/work/strata-llama/ggml/src/ggml-cuda/quantize.cu",
+    "source/Swift Flash Next ThreeGPU/work/swift-flash-next-threegpu/build/upstream-pipeline-v45/ggml-tq-overlay/quantize.cu"
+  ],
+  "no_weight_files_involved": true
+}

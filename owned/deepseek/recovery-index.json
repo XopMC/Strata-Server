@@ -1,0 +1,4144 @@
+{
+  "schema": 1,
+  "status": "SOURCE_RECOVERY_IN_PROGRESS",
+  "native_revision": 558,
+  "factory_revision": 563,
+  "cold_factory_revision": 565,
+  "actual_receipt_sha256": "24a670b9b9cddfb6596cc870b1b646d302e287759edc5f3fff3e00b65e004f17",
+  "objects": [
+    {
+      "context": "262144",
+      "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/pass-upload-async-native-v558/pair_scope_v531.o",
+      "member": null,
+      "sha256": "dbe563270adf53821423e952c14100612d5ec6127371f8317375c495d573178b",
+      "bytes": 10944
+    },
+    {
+      "context": "262144",
+      "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/pass-upload-async-native-v558/pair_fp8_v531.o",
+      "member": null,
+      "sha256": "273606154deb20b80275dc63c17f07472b5d0221c3b7c10a8bc7096fd624ee10",
+      "bytes": 83760
+    },
+    {
+      "context": "262144",
+      "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/index-native-admission-v501/native_engine_gu_v501.o",
+      "member": null,
+      "sha256": "76fa471d6c3816fa41a253135859072fd4b179479a175d4e37e157670b2628a5",
+      "bytes": 128672
+    },
+    {
+      "context": "262144",
+      "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/pair32-combined-v151-r3/native_adapter.cpp.o",
+      "member": null,
+      "sha256": "e3aef35a098dd50728ade5fe47d9f07cc7d638439fe709865d7b3ff9e999e34d",
+      "bytes": 68056
+    },
+    {
+      "context": "262144",
+      "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/index-native-admission-v501/pair_indexer_v1.o",
+      "member": null,
+      "sha256": "780d59a4484845ddfaf72a5b1b090cbcf4b3b4525e1289eb739d61986aa28da9",
+      "bytes": 36992
+    },
+    {
+      "context": "262144",
+      "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/pass-upload-async-native-v558/262144/libstrata_ds41_engine.a",
+      "member": "pack.cpp.o",
+      "occurrence": 1,
+      "sha256": "21659887bd7bf65589674874bc0eee77c85329bd426ebb309f5429b5514950b8",
+      "bytes": 145888
+    },
+    {
+      "context": "262144",
+      "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/pass-upload-async-native-v558/262144/libstrata_ds41_engine.a",
+      "member": "ops.cu.o",
+      "occurrence": 1,
+      "sha256": "cf596105d2c0447f7ef4534797b1c1d63bd9495937d07462f01f8d06a5ff4579",
+      "bytes": 331184
+    },
+    {
+      "context": "262144",
+      "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/pass-upload-async-native-v558/262144/libstrata_ds41_engine.a",
+      "member": "native_bf16_many_v33.cu.o",
+      "occurrence": 1,
+      "sha256": "56c16ed057e3fe98981ddadb584b8caac7e1b24a8bd89f61e17d38053981043b",
+      "bytes": 98200
+    },
+    {
+      "context": "262144",
+      "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/pass-upload-async-native-v558/262144/libstrata_ds41_engine.a",
+      "member": "prefill_ops.cu.o",
+      "occurrence": 1,
+      "sha256": "281c5463e1bfdb1a24f19823c23e1f55363b43c122523dac0bf8b3ffb962abc0",
+      "bytes": 131664
+    },
+    {
+      "context": "262144",
+      "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/pass-upload-async-native-v558/262144/libstrata_ds41_engine.a",
+      "member": "native_prefill_fastdecode.cu.o",
+      "occurrence": 1,
+      "sha256": "54bfc952c6b58295c29af56a92fc363b9a3b38bc64f701dcd8f020e680396109",
+      "bytes": 65728
+    },
+    {
+      "context": "262144",
+      "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/pass-upload-async-native-v558/262144/libstrata_ds41_engine.a",
+      "member": "native_act_storage.cu.o",
+      "occurrence": 1,
+      "sha256": "8fd8b928aa5d0bd9b7b443db8ab7bf361002f5aaadb5b9b91c3a6685453a63a7",
+      "bytes": 34952
+    },
+    {
+      "context": "262144",
+      "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/pass-upload-async-native-v558/262144/libstrata_ds41_engine.a",
+      "member": "native_main.cu.o",
+      "occurrence": 1,
+      "sha256": "6dcca5dcf4872b334938d616dc89a3e748216b791c16e05a999d870d3b89653e",
+      "bytes": 23488
+    },
+    {
+      "context": "262144",
+      "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/pass-upload-async-native-v558/262144/libstrata_ds41_engine.a",
+      "member": "native_fp8lt_prototype.cu.o",
+      "occurrence": 1,
+      "sha256": "e3c855a8d3cfa05a8e6fe6f2b0a487451cde4f7ca2b988ef2acb7756addf2b42",
+      "bytes": 972872
+    },
+    {
+      "context": "262144",
+      "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/pass-upload-async-native-v558/262144/libstrata_ds41_engine.a",
+      "member": "native_candidate_pack_v89.cu.o",
+      "occurrence": 1,
+      "sha256": "a15bf7e032b0d5b30f0ceed5039d90f3b75365422508defb6e436ca3dd4cca5f",
+      "bytes": 28376
+    },
+    {
+      "context": "262144",
+      "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/pass-upload-async-native-v558/262144/libstrata_ds41_engine.a",
+      "member": "native_fp8_experts.cu.o",
+      "occurrence": 1,
+      "sha256": "5a12ede9c2a1818deaa2d1cdfcdf60acc7e71b0efa7778841c8d42d8aa3bfec6",
+      "bytes": 35280
+    },
+    {
+      "context": "262144",
+      "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/pass-upload-async-native-v558/262144/libstrata_ds41_engine.a",
+      "member": "native_dense_prefill_fp8.cu.o",
+      "occurrence": 1,
+      "sha256": "f60b92f7e40acc9842a66f8d3bb1ab821e6ce45eeb0a2be74429d3380fd77395",
+      "bytes": 38128
+    },
+    {
+      "context": "262144",
+      "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/pass-upload-async-native-v558/262144/libstrata_ds41_engine.a",
+      "member": "native_gpu_experts.cu.o",
+      "occurrence": 1,
+      "sha256": "25f3fd6e39fb6e126393d177ea27adba277b64deff8e419187c9c2933a8efc58",
+      "bytes": 111448
+    },
+    {
+      "context": "262144",
+      "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/pass-upload-async-native-v558/262144/libstrata_ds41_engine.a",
+      "member": "native_expert_gemv_fastdecode.cu.o",
+      "occurrence": 1,
+      "sha256": "418e02ef9394d8455ccac945ae6edcab0d6552b73bf5ded55c042673cca2c501",
+      "bytes": 72568
+    },
+    {
+      "context": "262144",
+      "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/pass-upload-async-native-v558/262144/libstrata_ds41_engine.a",
+      "member": "doorbell.cu.o",
+      "occurrence": 1,
+      "sha256": "58abced75a24b199e73afed557ccef6f2ba8ddca701fd47b70f2009f2b26c651",
+      "bytes": 44640
+    },
+    {
+      "context": "262144",
+      "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/pass-upload-async-native-v558/262144/libstrata_ds41_engine.a",
+      "member": "expert_staging.cu.o",
+      "occurrence": 1,
+      "sha256": "2f49d386535436b1f026b682cf3b6f49234471452b2116e09c2eb72951e18745",
+      "bytes": 24520
+    },
+    {
+      "context": "262144",
+      "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/pass-upload-async-native-v558/262144/libstrata_ds41_engine.a",
+      "member": "vram_experts.cu.o",
+      "occurrence": 1,
+      "sha256": "9a1d97e9f7c8109f9bf02e2fe0792b967c2817f684b1c15b997737c9d1da9f90",
+      "bytes": 76080
+    },
+    {
+      "context": "262144",
+      "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/pass-upload-async-native-v558/262144/libstrata_ds41_engine.a",
+      "member": "engram_rows.cpp.o",
+      "occurrence": 1,
+      "sha256": "f14b50c8628e00769276dfa968dc8e224f1f14e53b858164d53f846a0876ea76",
+      "bytes": 21688
+    },
+    {
+      "context": "262144",
+      "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/pass-upload-async-native-v558/262144/libstrata_ds41_engine.a",
+      "member": "host_experts.cpp.o",
+      "occurrence": 1,
+      "sha256": "3100957a94b01dfef512790369f4de4524772b0a9af37cb48e700a65384bd716",
+      "bytes": 36296
+    },
+    {
+      "context": "262144",
+      "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/pass-upload-async-native-v558/262144/libstrata_ds41_engine.a",
+      "member": "lookahead.cpp.o",
+      "occurrence": 1,
+      "sha256": "37827b4958c152635540f945af38c16e4e5359fdb552808d55888b45ab657d79",
+      "bytes": 19656
+    },
+    {
+      "context": "262144",
+      "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/pass-upload-async-native-v558/262144/libstrata_ds41_engine.a",
+      "member": "expert_stream.cpp.o",
+      "occurrence": 1,
+      "sha256": "14814c9bb74f557495994a8ae16efbd4acea22f03fe41620ce5df21a32a0fb36",
+      "bytes": 43400
+    },
+    {
+      "context": "262144",
+      "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/pass-upload-async-native-v558/262144/libstrata_ds41_engine.a",
+      "member": "wo_a_fp8.cu.o",
+      "occurrence": 1,
+      "sha256": "07ca2319e9dce5b5be8738bad2775954a7dadf1a10a7dcb48854263a4c2a7b42",
+      "bytes": 94064
+    },
+    {
+      "context": "262144",
+      "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/pass-upload-async-native-v558/262144/libstrata_ds41_engine.a",
+      "member": "direct_file.cpp.o",
+      "occurrence": 1,
+      "sha256": "8227a9ec03703c7cf0260e51c9b3777405494373ade826a76b3408ac883718e8",
+      "bytes": 27968
+    },
+    {
+      "context": "262144",
+      "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/pass-upload-async-native-v558/262144/libstrata_ds41_engine.a",
+      "member": "engine.cu.o",
+      "occurrence": 1,
+      "sha256": "1df47e79939f52d4c3fc95ca01ee3ed4a183592f78ea432ae05727e9a8cd12e8",
+      "bytes": 991096
+    },
+    {
+      "context": "262144",
+      "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/pass-upload-async-native-v558/262144/libstrata_ds41_engine.a",
+      "member": "moe_mul1.cpp.o",
+      "occurrence": 1,
+      "sha256": "b739e1996bd5d64aea3dea369d714497527a1cc1e168be22d7b4873c0d1ce197",
+      "bytes": 3810880
+    },
+    {
+      "context": "262144",
+      "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/pass-upload-async-native-v558/262144/libstrata_ds41_engine.a",
+      "member": "native_fp8_scaled_epilogue_v170.cu.o",
+      "occurrence": 1,
+      "sha256": "21fb5b72c84cd35c12ab878609d3f79c87e6a450e2179fb35902e8f0f29cedd6",
+      "bytes": 96128
+    },
+    {
+      "context": "262144",
+      "input": "DeepSeek V4.1/work/deepseek41/build/native-adapter-sm89/libds41_k2_fp8_gemm.a",
+      "member": "k2_fp8_gemm.cu.o",
+      "occurrence": 1,
+      "sha256": "52c549af0ab9ae9e4b1fd94f9917749a19159bb0b7b5934b3feeb48da3aa96ba",
+      "bytes": 84576
+    },
+    {
+      "context": "262144",
+      "input": "DeepSeek V4.1/work/deepseek41/build/native-adapter-sm89/libds41_k3_sparse_attn.a",
+      "member": "k3_sparse_attn.cu.o",
+      "occurrence": 1,
+      "sha256": "e06b9e8b7a9fe8240257a784cd402c3932b229b7ed232eb1852a227976378fa1",
+      "bytes": 44864
+    },
+    {
+      "context": "262144",
+      "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/index-k5-swizzled-v504/libds41_k5_indexer.a",
+      "member": "candidate.o",
+      "occurrence": 1,
+      "sha256": "22faf18fd016c721a979daea056eab44a2dbbdfc9f60e49a675eb70f139c0055",
+      "bytes": 333728
+    },
+    {
+      "context": "262144",
+      "input": "DeepSeek V4.1/work/deepseek41/research/k7-prefetch-ring-r1/full-build/libds41_k7_hc.a",
+      "member": "k7_hc.o",
+      "occurrence": 1,
+      "sha256": "447b94c77c2d46d700f53948f17e9570d9880e8d608cd6ea9cc090ee5a2c3757",
+      "bytes": 269816
+    },
+    {
+      "context": "262144",
+      "input": "DeepSeek V4.1/work/deepseek41/build/native-adapter-sm89/libds41_k8_router.a",
+      "member": "k8_router.cu.o",
+      "occurrence": 1,
+      "sha256": "26f0dce5151e7709752f8012daa1e015cdf962c8c30b0b2c18adec27cdbcb25e",
+      "bytes": 163536
+    },
+    {
+      "context": "262144",
+      "input": "DeepSeek V4.1/work/deepseek41/build/native-adapter-sm89/libds41_k10_exl3_moe.a",
+      "member": "k10_exl3_moe.cu.o",
+      "occurrence": 1,
+      "sha256": "a30af70792fa9f03e337c7a93caed729392dadb434f39c55b74f261e8106d729",
+      "bytes": 208728
+    },
+    {
+      "context": "262144",
+      "input": "DeepSeek V4.1/work/deepseek41/build/native-adapter-sm89/libds41_k13_sparse_attn_prefill.a",
+      "member": "k13_sparse_attn_prefill.cu.o",
+      "occurrence": 1,
+      "sha256": "a2ea8e1ab9dcc3b8561eb3cabdccfbeed8e289f60e602bf318d859e80071057e",
+      "bytes": 149456
+    },
+    {
+      "context": "262144",
+      "input": "DeepSeek V4.1/work/deepseek41/research/indexer-s8-full-r4/full-build/libds41_k14_indexer_prefill.a",
+      "member": "k14_indexer_prefill.cu.o",
+      "occurrence": 1,
+      "sha256": "8557e4822056b6ecdd7b6b3458e95f845bf85130bd8c6559274e26cce064dfbc",
+      "bytes": 388920
+    },
+    {
+      "context": "262144",
+      "input": "DeepSeek V4.1/work/deepseek41/build/native-adapter-sm89/libds41_k15_hc_prefill.a",
+      "member": "k15_hc_prefill.cu.o",
+      "occurrence": 1,
+      "sha256": "1532a599649e573cde1fce00efa48f93408210ecf62bfa564b69aacf6fddf069",
+      "bytes": 50992
+    },
+    {
+      "context": "262144",
+      "input": "DeepSeek V4.1/work/deepseek41/build/native-adapter-sm89/libds41_k12_exl3_moe_prefill.a",
+      "member": "k12_exl3_moe_prefill.cu.o",
+      "occurrence": 1,
+      "sha256": "c7562cef0250a8c0017daa279569ef459d918d5334ef7e2712ac0e91cc3b19a5",
+      "bytes": 119928
+    },
+    {
+      "context": "262144",
+      "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/pass-upload-async-native-v558/262144/libstrata_ds41_engine.a",
+      "member": "pack.cpp.o",
+      "occurrence": 1,
+      "sha256": "21659887bd7bf65589674874bc0eee77c85329bd426ebb309f5429b5514950b8",
+      "bytes": 145888
+    },
+    {
+      "context": "262144",
+      "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/pass-upload-async-native-v558/262144/libstrata_ds41_engine.a",
+      "member": "ops.cu.o",
+      "occurrence": 1,
+      "sha256": "cf596105d2c0447f7ef4534797b1c1d63bd9495937d07462f01f8d06a5ff4579",
+      "bytes": 331184
+    },
+    {
+      "context": "262144",
+      "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/pass-upload-async-native-v558/262144/libstrata_ds41_engine.a",
+      "member": "native_bf16_many_v33.cu.o",
+      "occurrence": 1,
+      "sha256": "56c16ed057e3fe98981ddadb584b8caac7e1b24a8bd89f61e17d38053981043b",
+      "bytes": 98200
+    },
+    {
+      "context": "262144",
+      "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/pass-upload-async-native-v558/262144/libstrata_ds41_engine.a",
+      "member": "prefill_ops.cu.o",
+      "occurrence": 1,
+      "sha256": "281c5463e1bfdb1a24f19823c23e1f55363b43c122523dac0bf8b3ffb962abc0",
+      "bytes": 131664
+    },
+    {
+      "context": "262144",
+      "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/pass-upload-async-native-v558/262144/libstrata_ds41_engine.a",
+      "member": "native_prefill_fastdecode.cu.o",
+      "occurrence": 1,
+      "sha256": "54bfc952c6b58295c29af56a92fc363b9a3b38bc64f701dcd8f020e680396109",
+      "bytes": 65728
+    },
+    {
+      "context": "262144",
+      "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/pass-upload-async-native-v558/262144/libstrata_ds41_engine.a",
+      "member": "native_act_storage.cu.o",
+      "occurrence": 1,
+      "sha256": "8fd8b928aa5d0bd9b7b443db8ab7bf361002f5aaadb5b9b91c3a6685453a63a7",
+      "bytes": 34952
+    },
+    {
+      "context": "262144",
+      "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/pass-upload-async-native-v558/262144/libstrata_ds41_engine.a",
+      "member": "native_main.cu.o",
+      "occurrence": 1,
+      "sha256": "6dcca5dcf4872b334938d616dc89a3e748216b791c16e05a999d870d3b89653e",
+      "bytes": 23488
+    },
+    {
+      "context": "262144",
+      "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/pass-upload-async-native-v558/262144/libstrata_ds41_engine.a",
+      "member": "native_fp8lt_prototype.cu.o",
+      "occurrence": 1,
+      "sha256": "e3c855a8d3cfa05a8e6fe6f2b0a487451cde4f7ca2b988ef2acb7756addf2b42",
+      "bytes": 972872
+    },
+    {
+      "context": "262144",
+      "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/pass-upload-async-native-v558/262144/libstrata_ds41_engine.a",
+      "member": "native_candidate_pack_v89.cu.o",
+      "occurrence": 1,
+      "sha256": "a15bf7e032b0d5b30f0ceed5039d90f3b75365422508defb6e436ca3dd4cca5f",
+      "bytes": 28376
+    },
+    {
+      "context": "262144",
+      "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/pass-upload-async-native-v558/262144/libstrata_ds41_engine.a",
+      "member": "native_fp8_experts.cu.o",
+      "occurrence": 1,
+      "sha256": "5a12ede9c2a1818deaa2d1cdfcdf60acc7e71b0efa7778841c8d42d8aa3bfec6",
+      "bytes": 35280
+    },
+    {
+      "context": "262144",
+      "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/pass-upload-async-native-v558/262144/libstrata_ds41_engine.a",
+      "member": "native_dense_prefill_fp8.cu.o",
+      "occurrence": 1,
+      "sha256": "f60b92f7e40acc9842a66f8d3bb1ab821e6ce45eeb0a2be74429d3380fd77395",
+      "bytes": 38128
+    },
+    {
+      "context": "262144",
+      "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/pass-upload-async-native-v558/262144/libstrata_ds41_engine.a",
+      "member": "native_gpu_experts.cu.o",
+      "occurrence": 1,
+      "sha256": "25f3fd6e39fb6e126393d177ea27adba277b64deff8e419187c9c2933a8efc58",
+      "bytes": 111448
+    },
+    {
+      "context": "262144",
+      "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/pass-upload-async-native-v558/262144/libstrata_ds41_engine.a",
+      "member": "native_expert_gemv_fastdecode.cu.o",
+      "occurrence": 1,
+      "sha256": "418e02ef9394d8455ccac945ae6edcab0d6552b73bf5ded55c042673cca2c501",
+      "bytes": 72568
+    },
+    {
+      "context": "262144",
+      "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/pass-upload-async-native-v558/262144/libstrata_ds41_engine.a",
+      "member": "doorbell.cu.o",
+      "occurrence": 1,
+      "sha256": "58abced75a24b199e73afed557ccef6f2ba8ddca701fd47b70f2009f2b26c651",
+      "bytes": 44640
+    },
+    {
+      "context": "262144",
+      "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/pass-upload-async-native-v558/262144/libstrata_ds41_engine.a",
+      "member": "expert_staging.cu.o",
+      "occurrence": 1,
+      "sha256": "2f49d386535436b1f026b682cf3b6f49234471452b2116e09c2eb72951e18745",
+      "bytes": 24520
+    },
+    {
+      "context": "262144",
+      "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/pass-upload-async-native-v558/262144/libstrata_ds41_engine.a",
+      "member": "vram_experts.cu.o",
+      "occurrence": 1,
+      "sha256": "9a1d97e9f7c8109f9bf02e2fe0792b967c2817f684b1c15b997737c9d1da9f90",
+      "bytes": 76080
+    },
+    {
+      "context": "262144",
+      "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/pass-upload-async-native-v558/262144/libstrata_ds41_engine.a",
+      "member": "engram_rows.cpp.o",
+      "occurrence": 1,
+      "sha256": "f14b50c8628e00769276dfa968dc8e224f1f14e53b858164d53f846a0876ea76",
+      "bytes": 21688
+    },
+    {
+      "context": "262144",
+      "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/pass-upload-async-native-v558/262144/libstrata_ds41_engine.a",
+      "member": "host_experts.cpp.o",
+      "occurrence": 1,
+      "sha256": "3100957a94b01dfef512790369f4de4524772b0a9af37cb48e700a65384bd716",
+      "bytes": 36296
+    },
+    {
+      "context": "262144",
+      "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/pass-upload-async-native-v558/262144/libstrata_ds41_engine.a",
+      "member": "lookahead.cpp.o",
+      "occurrence": 1,
+      "sha256": "37827b4958c152635540f945af38c16e4e5359fdb552808d55888b45ab657d79",
+      "bytes": 19656
+    },
+    {
+      "context": "262144",
+      "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/pass-upload-async-native-v558/262144/libstrata_ds41_engine.a",
+      "member": "expert_stream.cpp.o",
+      "occurrence": 1,
+      "sha256": "14814c9bb74f557495994a8ae16efbd4acea22f03fe41620ce5df21a32a0fb36",
+      "bytes": 43400
+    },
+    {
+      "context": "262144",
+      "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/pass-upload-async-native-v558/262144/libstrata_ds41_engine.a",
+      "member": "wo_a_fp8.cu.o",
+      "occurrence": 1,
+      "sha256": "07ca2319e9dce5b5be8738bad2775954a7dadf1a10a7dcb48854263a4c2a7b42",
+      "bytes": 94064
+    },
+    {
+      "context": "262144",
+      "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/pass-upload-async-native-v558/262144/libstrata_ds41_engine.a",
+      "member": "direct_file.cpp.o",
+      "occurrence": 1,
+      "sha256": "8227a9ec03703c7cf0260e51c9b3777405494373ade826a76b3408ac883718e8",
+      "bytes": 27968
+    },
+    {
+      "context": "262144",
+      "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/pass-upload-async-native-v558/262144/libstrata_ds41_engine.a",
+      "member": "engine.cu.o",
+      "occurrence": 1,
+      "sha256": "1df47e79939f52d4c3fc95ca01ee3ed4a183592f78ea432ae05727e9a8cd12e8",
+      "bytes": 991096
+    },
+    {
+      "context": "262144",
+      "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/pass-upload-async-native-v558/262144/libstrata_ds41_engine.a",
+      "member": "moe_mul1.cpp.o",
+      "occurrence": 1,
+      "sha256": "b739e1996bd5d64aea3dea369d714497527a1cc1e168be22d7b4873c0d1ce197",
+      "bytes": 3810880
+    },
+    {
+      "context": "262144",
+      "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/pass-upload-async-native-v558/262144/libstrata_ds41_engine.a",
+      "member": "native_fp8_scaled_epilogue_v170.cu.o",
+      "occurrence": 1,
+      "sha256": "21fb5b72c84cd35c12ab878609d3f79c87e6a450e2179fb35902e8f0f29cedd6",
+      "bytes": 96128
+    },
+    {
+      "context": "262144",
+      "input": "DeepSeek V4.1/work/deepseek41/build/native-adapter-sm89/libds41_k2_fp8_gemm.a",
+      "member": "k2_fp8_gemm.cu.o",
+      "occurrence": 1,
+      "sha256": "52c549af0ab9ae9e4b1fd94f9917749a19159bb0b7b5934b3feeb48da3aa96ba",
+      "bytes": 84576
+    },
+    {
+      "context": "262144",
+      "input": "DeepSeek V4.1/work/deepseek41/build/native-adapter-sm89/libds41_k3_sparse_attn.a",
+      "member": "k3_sparse_attn.cu.o",
+      "occurrence": 1,
+      "sha256": "e06b9e8b7a9fe8240257a784cd402c3932b229b7ed232eb1852a227976378fa1",
+      "bytes": 44864
+    },
+    {
+      "context": "262144",
+      "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/index-k5-swizzled-v504/libds41_k5_indexer.a",
+      "member": "candidate.o",
+      "occurrence": 1,
+      "sha256": "22faf18fd016c721a979daea056eab44a2dbbdfc9f60e49a675eb70f139c0055",
+      "bytes": 333728
+    },
+    {
+      "context": "262144",
+      "input": "DeepSeek V4.1/work/deepseek41/research/k7-prefetch-ring-r1/full-build/libds41_k7_hc.a",
+      "member": "k7_hc.o",
+      "occurrence": 1,
+      "sha256": "447b94c77c2d46d700f53948f17e9570d9880e8d608cd6ea9cc090ee5a2c3757",
+      "bytes": 269816
+    },
+    {
+      "context": "262144",
+      "input": "DeepSeek V4.1/work/deepseek41/build/native-adapter-sm89/libds41_k8_router.a",
+      "member": "k8_router.cu.o",
+      "occurrence": 1,
+      "sha256": "26f0dce5151e7709752f8012daa1e015cdf962c8c30b0b2c18adec27cdbcb25e",
+      "bytes": 163536
+    },
+    {
+      "context": "262144",
+      "input": "DeepSeek V4.1/work/deepseek41/build/native-adapter-sm89/libds41_k10_exl3_moe.a",
+      "member": "k10_exl3_moe.cu.o",
+      "occurrence": 1,
+      "sha256": "a30af70792fa9f03e337c7a93caed729392dadb434f39c55b74f261e8106d729",
+      "bytes": 208728
+    },
+    {
+      "context": "262144",
+      "input": "DeepSeek V4.1/work/deepseek41/build/native-adapter-sm89/libds41_k13_sparse_attn_prefill.a",
+      "member": "k13_sparse_attn_prefill.cu.o",
+      "occurrence": 1,
+      "sha256": "a2ea8e1ab9dcc3b8561eb3cabdccfbeed8e289f60e602bf318d859e80071057e",
+      "bytes": 149456
+    },
+    {
+      "context": "262144",
+      "input": "DeepSeek V4.1/work/deepseek41/research/indexer-s8-full-r4/full-build/libds41_k14_indexer_prefill.a",
+      "member": "k14_indexer_prefill.cu.o",
+      "occurrence": 1,
+      "sha256": "8557e4822056b6ecdd7b6b3458e95f845bf85130bd8c6559274e26cce064dfbc",
+      "bytes": 388920
+    },
+    {
+      "context": "262144",
+      "input": "DeepSeek V4.1/work/deepseek41/build/native-adapter-sm89/libds41_k15_hc_prefill.a",
+      "member": "k15_hc_prefill.cu.o",
+      "occurrence": 1,
+      "sha256": "1532a599649e573cde1fce00efa48f93408210ecf62bfa564b69aacf6fddf069",
+      "bytes": 50992
+    },
+    {
+      "context": "262144",
+      "input": "DeepSeek V4.1/work/deepseek41/build/native-adapter-sm89/libds41_k12_exl3_moe_prefill.a",
+      "member": "k12_exl3_moe_prefill.cu.o",
+      "occurrence": 1,
+      "sha256": "c7562cef0250a8c0017daa279569ef459d918d5334ef7e2712ac0e91cc3b19a5",
+      "bytes": 119928
+    },
+    {
+      "context": "262144",
+      "input": "DeepSeek V4.1/work/deepseek41/research/speed-combined-r6/full-build/libstrata_ds41.a",
+      "member": "fp8_gemv.o",
+      "occurrence": 1,
+      "sha256": "0f1c038bb0165ca82e53370c6481973579d3ccd41885970ee76a8cf96c481344",
+      "bytes": 1538704
+    },
+    {
+      "context": "262144",
+      "input": "DeepSeek V4.1/work/deepseek41/build/native-adapter-sm89/libds41_native_host_work.a",
+      "member": "native_host_scatter.cpp.o",
+      "occurrence": 1,
+      "sha256": "689084d04e4f71072fdda95b317e4b36a96b572fdc387abc256c861c72e2cbc2",
+      "bytes": 28360
+    },
+    {
+      "context": "262144",
+      "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/pass-upload-async-native-v558/cohort539/libds41_native_experts.a",
+      "member": "native_experts_cohort_v539.o",
+      "occurrence": 1,
+      "sha256": "de16a16351fbfdd2ce2bb04f9a3bdc853a971edad708b35b2e5d207225032af7",
+      "bytes": 163480
+    },
+    {
+      "context": "262144",
+      "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/pair32-combined-v151-r3/libds41_borrowed_weights.a",
+      "member": "borrowed_weights.cpp.o",
+      "occurrence": 1,
+      "sha256": "31f496bc56ead91fe8b9116e9092fbd008299f2517afbf6d2b423c120ce0d183",
+      "bytes": 57232
+    },
+    {
+      "context": "262144",
+      "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/pair32-combined-v151-r3/libds41_borrowed_weights.a",
+      "member": "borrowed_rows_simd.cpp.o",
+      "occurrence": 1,
+      "sha256": "4cbcfc6c00d896a2278ef91364cc663ded216009441e9bc5098a64c4ed8612e8",
+      "bytes": 43344
+    },
+    {
+      "context": "262144",
+      "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/pair32-combined-v151-r3/libds41_borrowed_weights.a",
+      "member": "native_checkpoint.cpp.o",
+      "occurrence": 1,
+      "sha256": "04b8f45ef6993815caba6dc58f7cc4f80080fc37728057e0921e4e4a1dd2732f",
+      "bytes": 121552
+    },
+    {
+      "context": "262144",
+      "input": "DeepSeek V4.1/work/deepseek41/build/native-adapter-sm89/libds41_native_prefill_layout.a",
+      "member": "native_prefill_layout.cpp.o",
+      "occurrence": 1,
+      "sha256": "6cd5dd4d5c18b3cf44a64cb7f07dde361819c23b44689748cd581a9f14854241",
+      "bytes": 3608
+    },
+    {
+      "context": "262144",
+      "input": "DeepSeek V4.1/work/deepseek41/build/native-adapter-sm89/libds41_native_prefill_layout.a",
+      "member": "native_routes.cpp.o",
+      "occurrence": 1,
+      "sha256": "75aa8f221194bb4398d65611530175640180f1dffc5258fae126e41d4e8dba0e",
+      "bytes": 7360
+    },
+    {
+      "context": "262144",
+      "input": "DeepSeek V4.1/work/deepseek41/build/native-adapter-sm89/libds41_native_prefill_layout.a",
+      "member": "native_act_storage_layout.cpp.o",
+      "occurrence": 1,
+      "sha256": "893d7436a0bc6ab16f67ca55e253d09d78fb6f981e3ad903f2025ffb4cbf5d6b",
+      "bytes": 3152
+    },
+    {
+      "context": "262144",
+      "input": "DeepSeek V4.1/work/deepseek41/build/native-adapter-sm89/libds41_native_prefill_layout.a",
+      "member": "native_host_prefill_layout.cpp.o",
+      "occurrence": 1,
+      "sha256": "04b71d81962465762932c88b03457285cbbe57c45cf1eef09df9e43c2efc4358",
+      "bytes": 3616
+    },
+    {
+      "context": "262144",
+      "input": "DeepSeek V4.1/work/deepseek41/build/native-k3-causal-v309/k3_causal_batch_v309.cu.o",
+      "member": null,
+      "sha256": "08d5a732f2d8fad88bec5ce60eca52264cfd5f3d0cbaf845a4550027b8133f89",
+      "bytes": 45632
+    },
+    {
+      "context": "262144",
+      "input": "DeepSeek V4.1/work/deepseek41/build/native-output16-fp8-v244.so",
+      "member": null,
+      "sha256": "b1236d041ef27ba602f37fe652a2510dc2ac7b3a86fd5a2700a63d3a3c45d58d",
+      "bytes": 1341208
+    },
+    {
+      "context": "262144",
+      "input": "DeepSeek V4.1/work/deepseek41/build/native-recompute-input-r1.so",
+      "member": null,
+      "sha256": "c86d6118f6a0bb7b8d82daed8960e7f79e3ccf1dd6de5769b674eba94204bb15",
+      "bytes": 38256
+    },
+    {
+      "context": "262144",
+      "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/pair32-combined-v151-r3/pair_registry_v145.cpp.o",
+      "member": null,
+      "sha256": "8504097d58e3b3bb717f6bbe142a994daf54c6d6c7e835c7e3a87b831752c8a2",
+      "bytes": 50904
+    },
+    {
+      "context": "262144",
+      "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/pair-packed-inverse-v141-r2/inverse.o",
+      "member": null,
+      "sha256": "e1cc809d82e296b394ae5857b15d396f9659195274bc40ae937cecb755fc5c68",
+      "bytes": 18400
+    },
+    {
+      "context": "262144",
+      "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/index-native-admission-v501/paired_owner_v147.o",
+      "member": null,
+      "sha256": "2b29a7ac69955b9e96c09681df2660cac84ea4b0a3c6b89bce803a2b522635c4",
+      "bytes": 127280
+    },
+    {
+      "context": "262144",
+      "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/gpu-gu-byteperm-v13-root-855b/batch_v5.cu.o",
+      "member": null,
+      "sha256": "d4edf14df08b3692506d225a6b8fb6b44a9bb42465afb8ee84c5b7c29ba7f8cb",
+      "bytes": 51744
+    },
+    {
+      "context": "262144",
+      "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/candidate-cutoff-multicta-v369/candidate.o",
+      "member": null,
+      "sha256": "1d101350b8538e3b80b3ba2d3d2829fad4fcd111a40a697cbee3aaeef83eb284",
+      "bytes": 485704
+    },
+    {
+      "context": "262144",
+      "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/whole-adaptive-engine-v387/native_adaptive_lease_v387.o",
+      "member": null,
+      "sha256": "2e6a3e576e35aab8545f081a02cd47b86a5276cf5203067c1231925b357b3b54",
+      "bytes": 32576
+    },
+    {
+      "context": "262144",
+      "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/index-native-admission-v501/whole_owner_fixed_v469.o",
+      "member": null,
+      "sha256": "c8bbc047a5a2aa0693798f9868ea9371e53c2558de4e6d131600eb3dc95fccfe",
+      "bytes": 59824
+    },
+    {
+      "context": "262144",
+      "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/index-native-admission-v501/resources_v469.o",
+      "member": null,
+      "sha256": "714d5a951110ef975106f8c676f66753f0b2526db198701b56822a7f9962c2ea",
+      "bytes": 159336
+    },
+    {
+      "context": "262144",
+      "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/index-native-admission-v501/libds303_whole_operator_v501.a",
+      "member": "whole_operator_v391.o",
+      "occurrence": 1,
+      "sha256": "71ca58e081b16fcc49c825668d0be12ec6685647997828dc83c7c4c172e331eb",
+      "bytes": 82848
+    },
+    {
+      "context": "262144",
+      "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/index-native-admission-v501/libds303_whole_operator_v501.a",
+      "member": "join_v303.o",
+      "occurrence": 1,
+      "sha256": "87c64bbf620e8657c074f19f7823e9a6caf2b9b9164a68e28aefa43c056fb22e",
+      "bytes": 16528
+    },
+    {
+      "context": "262144",
+      "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/whole-expert-exact-component-v291/literal53.o",
+      "member": null,
+      "sha256": "f6e8ea9d0148c85b85f049c5cf29f4c222c581041accda4a8932ed82a2c9d3c7",
+      "bytes": 32496
+    },
+    {
+      "context": "262144",
+      "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/whole-expert-exact-component-v291/literal276.o",
+      "member": null,
+      "sha256": "f212c20e5e98b82ede08fb191839adbeea8823b0bbf7a9c1e7c1b14f3529027f",
+      "bytes": 22912
+    },
+    {
+      "context": "262144",
+      "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/bf16-gate-libmvec-table-v276/libds276_cpu_table.so",
+      "member": null,
+      "sha256": "9aa1c5a0b947e8b40ff0dba626bcb9a9ecfa29826f5abe26cde8e27b8d3589b6",
+      "bytes": 14984
+    },
+    {
+      "context": "524288",
+      "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/pass-upload-async-native-v558/pair_scope_v531.o",
+      "member": null,
+      "sha256": "dbe563270adf53821423e952c14100612d5ec6127371f8317375c495d573178b",
+      "bytes": 10944
+    },
+    {
+      "context": "524288",
+      "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/pass-upload-async-native-v558/pair_fp8_v531.o",
+      "member": null,
+      "sha256": "273606154deb20b80275dc63c17f07472b5d0221c3b7c10a8bc7096fd624ee10",
+      "bytes": 83760
+    },
+    {
+      "context": "524288",
+      "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/index-native-admission-v501/native_engine_gu_v501.o",
+      "member": null,
+      "sha256": "76fa471d6c3816fa41a253135859072fd4b179479a175d4e37e157670b2628a5",
+      "bytes": 128672
+    },
+    {
+      "context": "524288",
+      "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/pair32-combined-v151-r3/native_adapter.cpp.o",
+      "member": null,
+      "sha256": "e3aef35a098dd50728ade5fe47d9f07cc7d638439fe709865d7b3ff9e999e34d",
+      "bytes": 68056
+    },
+    {
+      "context": "524288",
+      "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/index-native-admission-v501/pair_indexer_v1.o",
+      "member": null,
+      "sha256": "780d59a4484845ddfaf72a5b1b090cbcf4b3b4525e1289eb739d61986aa28da9",
+      "bytes": 36992
+    },
+    {
+      "context": "524288",
+      "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/pass-upload-async-native-v558/524288/libstrata_ds41_engine.a",
+      "member": "pack.cpp.o",
+      "occurrence": 1,
+      "sha256": "21659887bd7bf65589674874bc0eee77c85329bd426ebb309f5429b5514950b8",
+      "bytes": 145888
+    },
+    {
+      "context": "524288",
+      "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/pass-upload-async-native-v558/524288/libstrata_ds41_engine.a",
+      "member": "ops.cu.o",
+      "occurrence": 1,
+      "sha256": "cf596105d2c0447f7ef4534797b1c1d63bd9495937d07462f01f8d06a5ff4579",
+      "bytes": 331184
+    },
+    {
+      "context": "524288",
+      "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/pass-upload-async-native-v558/524288/libstrata_ds41_engine.a",
+      "member": "native_bf16_many_v33.cu.o",
+      "occurrence": 1,
+      "sha256": "56c16ed057e3fe98981ddadb584b8caac7e1b24a8bd89f61e17d38053981043b",
+      "bytes": 98200
+    },
+    {
+      "context": "524288",
+      "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/pass-upload-async-native-v558/524288/libstrata_ds41_engine.a",
+      "member": "prefill_ops.cu.o",
+      "occurrence": 1,
+      "sha256": "281c5463e1bfdb1a24f19823c23e1f55363b43c122523dac0bf8b3ffb962abc0",
+      "bytes": 131664
+    },
+    {
+      "context": "524288",
+      "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/pass-upload-async-native-v558/524288/libstrata_ds41_engine.a",
+      "member": "native_prefill_fastdecode.cu.o",
+      "occurrence": 1,
+      "sha256": "54bfc952c6b58295c29af56a92fc363b9a3b38bc64f701dcd8f020e680396109",
+      "bytes": 65728
+    },
+    {
+      "context": "524288",
+      "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/pass-upload-async-native-v558/524288/libstrata_ds41_engine.a",
+      "member": "native_act_storage.cu.o",
+      "occurrence": 1,
+      "sha256": "8fd8b928aa5d0bd9b7b443db8ab7bf361002f5aaadb5b9b91c3a6685453a63a7",
+      "bytes": 34952
+    },
+    {
+      "context": "524288",
+      "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/pass-upload-async-native-v558/524288/libstrata_ds41_engine.a",
+      "member": "native_main.cu.o",
+      "occurrence": 1,
+      "sha256": "6dcca5dcf4872b334938d616dc89a3e748216b791c16e05a999d870d3b89653e",
+      "bytes": 23488
+    },
+    {
+      "context": "524288",
+      "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/pass-upload-async-native-v558/524288/libstrata_ds41_engine.a",
+      "member": "native_fp8lt_prototype.cu.o",
+      "occurrence": 1,
+      "sha256": "e3c855a8d3cfa05a8e6fe6f2b0a487451cde4f7ca2b988ef2acb7756addf2b42",
+      "bytes": 972872
+    },
+    {
+      "context": "524288",
+      "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/pass-upload-async-native-v558/524288/libstrata_ds41_engine.a",
+      "member": "native_candidate_pack_v89.cu.o",
+      "occurrence": 1,
+      "sha256": "a15bf7e032b0d5b30f0ceed5039d90f3b75365422508defb6e436ca3dd4cca5f",
+      "bytes": 28376
+    },
+    {
+      "context": "524288",
+      "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/pass-upload-async-native-v558/524288/libstrata_ds41_engine.a",
+      "member": "native_fp8_experts.cu.o",
+      "occurrence": 1,
+      "sha256": "5a12ede9c2a1818deaa2d1cdfcdf60acc7e71b0efa7778841c8d42d8aa3bfec6",
+      "bytes": 35280
+    },
+    {
+      "context": "524288",
+      "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/pass-upload-async-native-v558/524288/libstrata_ds41_engine.a",
+      "member": "native_dense_prefill_fp8.cu.o",
+      "occurrence": 1,
+      "sha256": "f60b92f7e40acc9842a66f8d3bb1ab821e6ce45eeb0a2be74429d3380fd77395",
+      "bytes": 38128
+    },
+    {
+      "context": "524288",
+      "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/pass-upload-async-native-v558/524288/libstrata_ds41_engine.a",
+      "member": "native_gpu_experts.cu.o",
+      "occurrence": 1,
+      "sha256": "25f3fd6e39fb6e126393d177ea27adba277b64deff8e419187c9c2933a8efc58",
+      "bytes": 111448
+    },
+    {
+      "context": "524288",
+      "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/pass-upload-async-native-v558/524288/libstrata_ds41_engine.a",
+      "member": "native_expert_gemv_fastdecode.cu.o",
+      "occurrence": 1,
+      "sha256": "418e02ef9394d8455ccac945ae6edcab0d6552b73bf5ded55c042673cca2c501",
+      "bytes": 72568
+    },
+    {
+      "context": "524288",
+      "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/pass-upload-async-native-v558/524288/libstrata_ds41_engine.a",
+      "member": "doorbell.cu.o",
+      "occurrence": 1,
+      "sha256": "58abced75a24b199e73afed557ccef6f2ba8ddca701fd47b70f2009f2b26c651",
+      "bytes": 44640
+    },
+    {
+      "context": "524288",
+      "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/pass-upload-async-native-v558/524288/libstrata_ds41_engine.a",
+      "member": "expert_staging.cu.o",
+      "occurrence": 1,
+      "sha256": "2f49d386535436b1f026b682cf3b6f49234471452b2116e09c2eb72951e18745",
+      "bytes": 24520
+    },
+    {
+      "context": "524288",
+      "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/pass-upload-async-native-v558/524288/libstrata_ds41_engine.a",
+      "member": "vram_experts.cu.o",
+      "occurrence": 1,
+      "sha256": "9a1d97e9f7c8109f9bf02e2fe0792b967c2817f684b1c15b997737c9d1da9f90",
+      "bytes": 76080
+    },
+    {
+      "context": "524288",
+      "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/pass-upload-async-native-v558/524288/libstrata_ds41_engine.a",
+      "member": "engram_rows.cpp.o",
+      "occurrence": 1,
+      "sha256": "f14b50c8628e00769276dfa968dc8e224f1f14e53b858164d53f846a0876ea76",
+      "bytes": 21688
+    },
+    {
+      "context": "524288",
+      "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/pass-upload-async-native-v558/524288/libstrata_ds41_engine.a",
+      "member": "host_experts.cpp.o",
+      "occurrence": 1,
+      "sha256": "3100957a94b01dfef512790369f4de4524772b0a9af37cb48e700a65384bd716",
+      "bytes": 36296
+    },
+    {
+      "context": "524288",
+      "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/pass-upload-async-native-v558/524288/libstrata_ds41_engine.a",
+      "member": "lookahead.cpp.o",
+      "occurrence": 1,
+      "sha256": "37827b4958c152635540f945af38c16e4e5359fdb552808d55888b45ab657d79",
+      "bytes": 19656
+    },
+    {
+      "context": "524288",
+      "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/pass-upload-async-native-v558/524288/libstrata_ds41_engine.a",
+      "member": "expert_stream.cpp.o",
+      "occurrence": 1,
+      "sha256": "14814c9bb74f557495994a8ae16efbd4acea22f03fe41620ce5df21a32a0fb36",
+      "bytes": 43400
+    },
+    {
+      "context": "524288",
+      "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/pass-upload-async-native-v558/524288/libstrata_ds41_engine.a",
+      "member": "wo_a_fp8.cu.o",
+      "occurrence": 1,
+      "sha256": "07ca2319e9dce5b5be8738bad2775954a7dadf1a10a7dcb48854263a4c2a7b42",
+      "bytes": 94064
+    },
+    {
+      "context": "524288",
+      "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/pass-upload-async-native-v558/524288/libstrata_ds41_engine.a",
+      "member": "direct_file.cpp.o",
+      "occurrence": 1,
+      "sha256": "8227a9ec03703c7cf0260e51c9b3777405494373ade826a76b3408ac883718e8",
+      "bytes": 27968
+    },
+    {
+      "context": "524288",
+      "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/pass-upload-async-native-v558/524288/libstrata_ds41_engine.a",
+      "member": "engine.cu.o",
+      "occurrence": 1,
+      "sha256": "cb72f351f67897ce2462c20d57ed8f69f805ac2a63c83c885d44ab5070b099ef",
+      "bytes": 1006904
+    },
+    {
+      "context": "524288",
+      "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/pass-upload-async-native-v558/524288/libstrata_ds41_engine.a",
+      "member": "moe_mul1.cpp.o",
+      "occurrence": 1,
+      "sha256": "b739e1996bd5d64aea3dea369d714497527a1cc1e168be22d7b4873c0d1ce197",
+      "bytes": 3810880
+    },
+    {
+      "context": "524288",
+      "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/pass-upload-async-native-v558/524288/libstrata_ds41_engine.a",
+      "member": "native_fp8_scaled_epilogue_v170.cu.o",
+      "occurrence": 1,
+      "sha256": "21fb5b72c84cd35c12ab878609d3f79c87e6a450e2179fb35902e8f0f29cedd6",
+      "bytes": 96128
+    },
+    {
+      "context": "524288",
+      "input": "DeepSeek V4.1/work/deepseek41/build/native-adapter-sm89/libds41_k2_fp8_gemm.a",
+      "member": "k2_fp8_gemm.cu.o",
+      "occurrence": 1,
+      "sha256": "52c549af0ab9ae9e4b1fd94f9917749a19159bb0b7b5934b3feeb48da3aa96ba",
+      "bytes": 84576
+    },
+    {
+      "context": "524288",
+      "input": "DeepSeek V4.1/work/deepseek41/build/native-adapter-sm89/libds41_k3_sparse_attn.a",
+      "member": "k3_sparse_attn.cu.o",
+      "occurrence": 1,
+      "sha256": "e06b9e8b7a9fe8240257a784cd402c3932b229b7ed232eb1852a227976378fa1",
+      "bytes": 44864
+    },
+    {
+      "context": "524288",
+      "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/index-k5-swizzled-v504/libds41_k5_indexer.a",
+      "member": "candidate.o",
+      "occurrence": 1,
+      "sha256": "22faf18fd016c721a979daea056eab44a2dbbdfc9f60e49a675eb70f139c0055",
+      "bytes": 333728
+    },
+    {
+      "context": "524288",
+      "input": "DeepSeek V4.1/work/deepseek41/research/k7-prefetch-ring-r1/full-build/libds41_k7_hc.a",
+      "member": "k7_hc.o",
+      "occurrence": 1,
+      "sha256": "447b94c77c2d46d700f53948f17e9570d9880e8d608cd6ea9cc090ee5a2c3757",
+      "bytes": 269816
+    },
+    {
+      "context": "524288",
+      "input": "DeepSeek V4.1/work/deepseek41/build/native-adapter-sm89/libds41_k8_router.a",
+      "member": "k8_router.cu.o",
+      "occurrence": 1,
+      "sha256": "26f0dce5151e7709752f8012daa1e015cdf962c8c30b0b2c18adec27cdbcb25e",
+      "bytes": 163536
+    },
+    {
+      "context": "524288",
+      "input": "DeepSeek V4.1/work/deepseek41/build/native-adapter-sm89/libds41_k10_exl3_moe.a",
+      "member": "k10_exl3_moe.cu.o",
+      "occurrence": 1,
+      "sha256": "a30af70792fa9f03e337c7a93caed729392dadb434f39c55b74f261e8106d729",
+      "bytes": 208728
+    },
+    {
+      "context": "524288",
+      "input": "DeepSeek V4.1/work/deepseek41/build/native-adapter-sm89/libds41_k13_sparse_attn_prefill.a",
+      "member": "k13_sparse_attn_prefill.cu.o",
+      "occurrence": 1,
+      "sha256": "a2ea8e1ab9dcc3b8561eb3cabdccfbeed8e289f60e602bf318d859e80071057e",
+      "bytes": 149456
+    },
+    {
+      "context": "524288",
+      "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/k14-packed-register-score-v334-r4/libds41_k14_indexer_prefill.a",
+      "member": "candidate.o",
+      "occurrence": 1,
+      "sha256": "7949715af3731c6caa614d01d84410142553766d770dc2d71f052a84b6ac4181",
+      "bytes": 421088
+    },
+    {
+      "context": "524288",
+      "input": "DeepSeek V4.1/work/deepseek41/build/native-adapter-sm89/libds41_k15_hc_prefill.a",
+      "member": "k15_hc_prefill.cu.o",
+      "occurrence": 1,
+      "sha256": "1532a599649e573cde1fce00efa48f93408210ecf62bfa564b69aacf6fddf069",
+      "bytes": 50992
+    },
+    {
+      "context": "524288",
+      "input": "DeepSeek V4.1/work/deepseek41/build/native-adapter-sm89/libds41_k12_exl3_moe_prefill.a",
+      "member": "k12_exl3_moe_prefill.cu.o",
+      "occurrence": 1,
+      "sha256": "c7562cef0250a8c0017daa279569ef459d918d5334ef7e2712ac0e91cc3b19a5",
+      "bytes": 119928
+    },
+    {
+      "context": "524288",
+      "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/pass-upload-async-native-v558/524288/libstrata_ds41_engine.a",
+      "member": "pack.cpp.o",
+      "occurrence": 1,
+      "sha256": "21659887bd7bf65589674874bc0eee77c85329bd426ebb309f5429b5514950b8",
+      "bytes": 145888
+    },
+    {
+      "context": "524288",
+      "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/pass-upload-async-native-v558/524288/libstrata_ds41_engine.a",
+      "member": "ops.cu.o",
+      "occurrence": 1,
+      "sha256": "cf596105d2c0447f7ef4534797b1c1d63bd9495937d07462f01f8d06a5ff4579",
+      "bytes": 331184
+    },
+    {
+      "context": "524288",
+      "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/pass-upload-async-native-v558/524288/libstrata_ds41_engine.a",
+      "member": "native_bf16_many_v33.cu.o",
+      "occurrence": 1,
+      "sha256": "56c16ed057e3fe98981ddadb584b8caac7e1b24a8bd89f61e17d38053981043b",
+      "bytes": 98200
+    },
+    {
+      "context": "524288",
+      "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/pass-upload-async-native-v558/524288/libstrata_ds41_engine.a",
+      "member": "prefill_ops.cu.o",
+      "occurrence": 1,
+      "sha256": "281c5463e1bfdb1a24f19823c23e1f55363b43c122523dac0bf8b3ffb962abc0",
+      "bytes": 131664
+    },
+    {
+      "context": "524288",
+      "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/pass-upload-async-native-v558/524288/libstrata_ds41_engine.a",
+      "member": "native_prefill_fastdecode.cu.o",
+      "occurrence": 1,
+      "sha256": "54bfc952c6b58295c29af56a92fc363b9a3b38bc64f701dcd8f020e680396109",
+      "bytes": 65728
+    },
+    {
+      "context": "524288",
+      "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/pass-upload-async-native-v558/524288/libstrata_ds41_engine.a",
+      "member": "native_act_storage.cu.o",
+      "occurrence": 1,
+      "sha256": "8fd8b928aa5d0bd9b7b443db8ab7bf361002f5aaadb5b9b91c3a6685453a63a7",
+      "bytes": 34952
+    },
+    {
+      "context": "524288",
+      "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/pass-upload-async-native-v558/524288/libstrata_ds41_engine.a",
+      "member": "native_main.cu.o",
+      "occurrence": 1,
+      "sha256": "6dcca5dcf4872b334938d616dc89a3e748216b791c16e05a999d870d3b89653e",
+      "bytes": 23488
+    },
+    {
+      "context": "524288",
+      "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/pass-upload-async-native-v558/524288/libstrata_ds41_engine.a",
+      "member": "native_fp8lt_prototype.cu.o",
+      "occurrence": 1,
+      "sha256": "e3c855a8d3cfa05a8e6fe6f2b0a487451cde4f7ca2b988ef2acb7756addf2b42",
+      "bytes": 972872
+    },
+    {
+      "context": "524288",
+      "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/pass-upload-async-native-v558/524288/libstrata_ds41_engine.a",
+      "member": "native_candidate_pack_v89.cu.o",
+      "occurrence": 1,
+      "sha256": "a15bf7e032b0d5b30f0ceed5039d90f3b75365422508defb6e436ca3dd4cca5f",
+      "bytes": 28376
+    },
+    {
+      "context": "524288",
+      "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/pass-upload-async-native-v558/524288/libstrata_ds41_engine.a",
+      "member": "native_fp8_experts.cu.o",
+      "occurrence": 1,
+      "sha256": "5a12ede9c2a1818deaa2d1cdfcdf60acc7e71b0efa7778841c8d42d8aa3bfec6",
+      "bytes": 35280
+    },
+    {
+      "context": "524288",
+      "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/pass-upload-async-native-v558/524288/libstrata_ds41_engine.a",
+      "member": "native_dense_prefill_fp8.cu.o",
+      "occurrence": 1,
+      "sha256": "f60b92f7e40acc9842a66f8d3bb1ab821e6ce45eeb0a2be74429d3380fd77395",
+      "bytes": 38128
+    },
+    {
+      "context": "524288",
+      "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/pass-upload-async-native-v558/524288/libstrata_ds41_engine.a",
+      "member": "native_gpu_experts.cu.o",
+      "occurrence": 1,
+      "sha256": "25f3fd6e39fb6e126393d177ea27adba277b64deff8e419187c9c2933a8efc58",
+      "bytes": 111448
+    },
+    {
+      "context": "524288",
+      "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/pass-upload-async-native-v558/524288/libstrata_ds41_engine.a",
+      "member": "native_expert_gemv_fastdecode.cu.o",
+      "occurrence": 1,
+      "sha256": "418e02ef9394d8455ccac945ae6edcab0d6552b73bf5ded55c042673cca2c501",
+      "bytes": 72568
+    },
+    {
+      "context": "524288",
+      "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/pass-upload-async-native-v558/524288/libstrata_ds41_engine.a",
+      "member": "doorbell.cu.o",
+      "occurrence": 1,
+      "sha256": "58abced75a24b199e73afed557ccef6f2ba8ddca701fd47b70f2009f2b26c651",
+      "bytes": 44640
+    },
+    {
+      "context": "524288",
+      "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/pass-upload-async-native-v558/524288/libstrata_ds41_engine.a",
+      "member": "expert_staging.cu.o",
+      "occurrence": 1,
+      "sha256": "2f49d386535436b1f026b682cf3b6f49234471452b2116e09c2eb72951e18745",
+      "bytes": 24520
+    },
+    {
+      "context": "524288",
+      "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/pass-upload-async-native-v558/524288/libstrata_ds41_engine.a",
+      "member": "vram_experts.cu.o",
+      "occurrence": 1,
+      "sha256": "9a1d97e9f7c8109f9bf02e2fe0792b967c2817f684b1c15b997737c9d1da9f90",
+      "bytes": 76080
+    },
+    {
+      "context": "524288",
+      "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/pass-upload-async-native-v558/524288/libstrata_ds41_engine.a",
+      "member": "engram_rows.cpp.o",
+      "occurrence": 1,
+      "sha256": "f14b50c8628e00769276dfa968dc8e224f1f14e53b858164d53f846a0876ea76",
+      "bytes": 21688
+    },
+    {
+      "context": "524288",
+      "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/pass-upload-async-native-v558/524288/libstrata_ds41_engine.a",
+      "member": "host_experts.cpp.o",
+      "occurrence": 1,
+      "sha256": "3100957a94b01dfef512790369f4de4524772b0a9af37cb48e700a65384bd716",
+      "bytes": 36296
+    },
+    {
+      "context": "524288",
+      "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/pass-upload-async-native-v558/524288/libstrata_ds41_engine.a",
+      "member": "lookahead.cpp.o",
+      "occurrence": 1,
+      "sha256": "37827b4958c152635540f945af38c16e4e5359fdb552808d55888b45ab657d79",
+      "bytes": 19656
+    },
+    {
+      "context": "524288",
+      "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/pass-upload-async-native-v558/524288/libstrata_ds41_engine.a",
+      "member": "expert_stream.cpp.o",
+      "occurrence": 1,
+      "sha256": "14814c9bb74f557495994a8ae16efbd4acea22f03fe41620ce5df21a32a0fb36",
+      "bytes": 43400
+    },
+    {
+      "context": "524288",
+      "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/pass-upload-async-native-v558/524288/libstrata_ds41_engine.a",
+      "member": "wo_a_fp8.cu.o",
+      "occurrence": 1,
+      "sha256": "07ca2319e9dce5b5be8738bad2775954a7dadf1a10a7dcb48854263a4c2a7b42",
+      "bytes": 94064
+    },
+    {
+      "context": "524288",
+      "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/pass-upload-async-native-v558/524288/libstrata_ds41_engine.a",
+      "member": "direct_file.cpp.o",
+      "occurrence": 1,
+      "sha256": "8227a9ec03703c7cf0260e51c9b3777405494373ade826a76b3408ac883718e8",
+      "bytes": 27968
+    },
+    {
+      "context": "524288",
+      "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/pass-upload-async-native-v558/524288/libstrata_ds41_engine.a",
+      "member": "engine.cu.o",
+      "occurrence": 1,
+      "sha256": "cb72f351f67897ce2462c20d57ed8f69f805ac2a63c83c885d44ab5070b099ef",
+      "bytes": 1006904
+    },
+    {
+      "context": "524288",
+      "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/pass-upload-async-native-v558/524288/libstrata_ds41_engine.a",
+      "member": "moe_mul1.cpp.o",
+      "occurrence": 1,
+      "sha256": "b739e1996bd5d64aea3dea369d714497527a1cc1e168be22d7b4873c0d1ce197",
+      "bytes": 3810880
+    },
+    {
+      "context": "524288",
+      "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/pass-upload-async-native-v558/524288/libstrata_ds41_engine.a",
+      "member": "native_fp8_scaled_epilogue_v170.cu.o",
+      "occurrence": 1,
+      "sha256": "21fb5b72c84cd35c12ab878609d3f79c87e6a450e2179fb35902e8f0f29cedd6",
+      "bytes": 96128
+    },
+    {
+      "context": "524288",
+      "input": "DeepSeek V4.1/work/deepseek41/build/native-adapter-sm89/libds41_k2_fp8_gemm.a",
+      "member": "k2_fp8_gemm.cu.o",
+      "occurrence": 1,
+      "sha256": "52c549af0ab9ae9e4b1fd94f9917749a19159bb0b7b5934b3feeb48da3aa96ba",
+      "bytes": 84576
+    },
+    {
+      "context": "524288",
+      "input": "DeepSeek V4.1/work/deepseek41/build/native-adapter-sm89/libds41_k3_sparse_attn.a",
+      "member": "k3_sparse_attn.cu.o",
+      "occurrence": 1,
+      "sha256": "e06b9e8b7a9fe8240257a784cd402c3932b229b7ed232eb1852a227976378fa1",
+      "bytes": 44864
+    },
+    {
+      "context": "524288",
+      "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/index-k5-swizzled-v504/libds41_k5_indexer.a",
+      "member": "candidate.o",
+      "occurrence": 1,
+      "sha256": "22faf18fd016c721a979daea056eab44a2dbbdfc9f60e49a675eb70f139c0055",
+      "bytes": 333728
+    },
+    {
+      "context": "524288",
+      "input": "DeepSeek V4.1/work/deepseek41/research/k7-prefetch-ring-r1/full-build/libds41_k7_hc.a",
+      "member": "k7_hc.o",
+      "occurrence": 1,
+      "sha256": "447b94c77c2d46d700f53948f17e9570d9880e8d608cd6ea9cc090ee5a2c3757",
+      "bytes": 269816
+    },
+    {
+      "context": "524288",
+      "input": "DeepSeek V4.1/work/deepseek41/build/native-adapter-sm89/libds41_k8_router.a",
+      "member": "k8_router.cu.o",
+      "occurrence": 1,
+      "sha256": "26f0dce5151e7709752f8012daa1e015cdf962c8c30b0b2c18adec27cdbcb25e",
+      "bytes": 163536
+    },
+    {
+      "context": "524288",
+      "input": "DeepSeek V4.1/work/deepseek41/build/native-adapter-sm89/libds41_k10_exl3_moe.a",
+      "member": "k10_exl3_moe.cu.o",
+      "occurrence": 1,
+      "sha256": "a30af70792fa9f03e337c7a93caed729392dadb434f39c55b74f261e8106d729",
+      "bytes": 208728
+    },
+    {
+      "context": "524288",
+      "input": "DeepSeek V4.1/work/deepseek41/build/native-adapter-sm89/libds41_k13_sparse_attn_prefill.a",
+      "member": "k13_sparse_attn_prefill.cu.o",
+      "occurrence": 1,
+      "sha256": "a2ea8e1ab9dcc3b8561eb3cabdccfbeed8e289f60e602bf318d859e80071057e",
+      "bytes": 149456
+    },
+    {
+      "context": "524288",
+      "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/k14-packed-register-score-v334-r4/libds41_k14_indexer_prefill.a",
+      "member": "candidate.o",
+      "occurrence": 1,
+      "sha256": "7949715af3731c6caa614d01d84410142553766d770dc2d71f052a84b6ac4181",
+      "bytes": 421088
+    },
+    {
+      "context": "524288",
+      "input": "DeepSeek V4.1/work/deepseek41/build/native-adapter-sm89/libds41_k15_hc_prefill.a",
+      "member": "k15_hc_prefill.cu.o",
+      "occurrence": 1,
+      "sha256": "1532a599649e573cde1fce00efa48f93408210ecf62bfa564b69aacf6fddf069",
+      "bytes": 50992
+    },
+    {
+      "context": "524288",
+      "input": "DeepSeek V4.1/work/deepseek41/build/native-adapter-sm89/libds41_k12_exl3_moe_prefill.a",
+      "member": "k12_exl3_moe_prefill.cu.o",
+      "occurrence": 1,
+      "sha256": "c7562cef0250a8c0017daa279569ef459d918d5334ef7e2712ac0e91cc3b19a5",
+      "bytes": 119928
+    },
+    {
+      "context": "524288",
+      "input": "DeepSeek V4.1/work/deepseek41/research/speed-combined-r6/full-build/libstrata_ds41.a",
+      "member": "fp8_gemv.o",
+      "occurrence": 1,
+      "sha256": "0f1c038bb0165ca82e53370c6481973579d3ccd41885970ee76a8cf96c481344",
+      "bytes": 1538704
+    },
+    {
+      "context": "524288",
+      "input": "DeepSeek V4.1/work/deepseek41/build/native-adapter-sm89/libds41_native_host_work.a",
+      "member": "native_host_scatter.cpp.o",
+      "occurrence": 1,
+      "sha256": "689084d04e4f71072fdda95b317e4b36a96b572fdc387abc256c861c72e2cbc2",
+      "bytes": 28360
+    },
+    {
+      "context": "524288",
+      "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/pass-upload-async-native-v558/cohort539/libds41_native_experts.a",
+      "member": "native_experts_cohort_v539.o",
+      "occurrence": 1,
+      "sha256": "de16a16351fbfdd2ce2bb04f9a3bdc853a971edad708b35b2e5d207225032af7",
+      "bytes": 163480
+    },
+    {
+      "context": "524288",
+      "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/pair32-combined-v151-r3/libds41_borrowed_weights.a",
+      "member": "borrowed_weights.cpp.o",
+      "occurrence": 1,
+      "sha256": "31f496bc56ead91fe8b9116e9092fbd008299f2517afbf6d2b423c120ce0d183",
+      "bytes": 57232
+    },
+    {
+      "context": "524288",
+      "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/pair32-combined-v151-r3/libds41_borrowed_weights.a",
+      "member": "borrowed_rows_simd.cpp.o",
+      "occurrence": 1,
+      "sha256": "4cbcfc6c00d896a2278ef91364cc663ded216009441e9bc5098a64c4ed8612e8",
+      "bytes": 43344
+    },
+    {
+      "context": "524288",
+      "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/pair32-combined-v151-r3/libds41_borrowed_weights.a",
+      "member": "native_checkpoint.cpp.o",
+      "occurrence": 1,
+      "sha256": "04b8f45ef6993815caba6dc58f7cc4f80080fc37728057e0921e4e4a1dd2732f",
+      "bytes": 121552
+    },
+    {
+      "context": "524288",
+      "input": "DeepSeek V4.1/work/deepseek41/build/native-adapter-sm89/libds41_native_prefill_layout.a",
+      "member": "native_prefill_layout.cpp.o",
+      "occurrence": 1,
+      "sha256": "6cd5dd4d5c18b3cf44a64cb7f07dde361819c23b44689748cd581a9f14854241",
+      "bytes": 3608
+    },
+    {
+      "context": "524288",
+      "input": "DeepSeek V4.1/work/deepseek41/build/native-adapter-sm89/libds41_native_prefill_layout.a",
+      "member": "native_routes.cpp.o",
+      "occurrence": 1,
+      "sha256": "75aa8f221194bb4398d65611530175640180f1dffc5258fae126e41d4e8dba0e",
+      "bytes": 7360
+    },
+    {
+      "context": "524288",
+      "input": "DeepSeek V4.1/work/deepseek41/build/native-adapter-sm89/libds41_native_prefill_layout.a",
+      "member": "native_act_storage_layout.cpp.o",
+      "occurrence": 1,
+      "sha256": "893d7436a0bc6ab16f67ca55e253d09d78fb6f981e3ad903f2025ffb4cbf5d6b",
+      "bytes": 3152
+    },
+    {
+      "context": "524288",
+      "input": "DeepSeek V4.1/work/deepseek41/build/native-adapter-sm89/libds41_native_prefill_layout.a",
+      "member": "native_host_prefill_layout.cpp.o",
+      "occurrence": 1,
+      "sha256": "04b71d81962465762932c88b03457285cbbe57c45cf1eef09df9e43c2efc4358",
+      "bytes": 3616
+    },
+    {
+      "context": "524288",
+      "input": "DeepSeek V4.1/work/deepseek41/build/native-k3-causal-v309/k3_causal_batch_v309.cu.o",
+      "member": null,
+      "sha256": "08d5a732f2d8fad88bec5ce60eca52264cfd5f3d0cbaf845a4550027b8133f89",
+      "bytes": 45632
+    },
+    {
+      "context": "524288",
+      "input": "DeepSeek V4.1/work/deepseek41/build/native-output16-fp8-v244.so",
+      "member": null,
+      "sha256": "b1236d041ef27ba602f37fe652a2510dc2ac7b3a86fd5a2700a63d3a3c45d58d",
+      "bytes": 1341208
+    },
+    {
+      "context": "524288",
+      "input": "DeepSeek V4.1/work/deepseek41/build/native-recompute-input-r1.so",
+      "member": null,
+      "sha256": "c86d6118f6a0bb7b8d82daed8960e7f79e3ccf1dd6de5769b674eba94204bb15",
+      "bytes": 38256
+    },
+    {
+      "context": "524288",
+      "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/pair32-combined-v151-r3/pair_registry_v145.cpp.o",
+      "member": null,
+      "sha256": "8504097d58e3b3bb717f6bbe142a994daf54c6d6c7e835c7e3a87b831752c8a2",
+      "bytes": 50904
+    },
+    {
+      "context": "524288",
+      "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/pair-packed-inverse-v141-r2/inverse.o",
+      "member": null,
+      "sha256": "e1cc809d82e296b394ae5857b15d396f9659195274bc40ae937cecb755fc5c68",
+      "bytes": 18400
+    },
+    {
+      "context": "524288",
+      "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/index-native-admission-v501/paired_owner_v147.o",
+      "member": null,
+      "sha256": "2b29a7ac69955b9e96c09681df2660cac84ea4b0a3c6b89bce803a2b522635c4",
+      "bytes": 127280
+    },
+    {
+      "context": "524288",
+      "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/gpu-gu-byteperm-v13-root-855b/batch_v5.cu.o",
+      "member": null,
+      "sha256": "d4edf14df08b3692506d225a6b8fb6b44a9bb42465afb8ee84c5b7c29ba7f8cb",
+      "bytes": 51744
+    },
+    {
+      "context": "524288",
+      "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/candidate-cutoff-multicta-v369/candidate.o",
+      "member": null,
+      "sha256": "1d101350b8538e3b80b3ba2d3d2829fad4fcd111a40a697cbee3aaeef83eb284",
+      "bytes": 485704
+    },
+    {
+      "context": "524288",
+      "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/whole-adaptive-engine-v387/native_adaptive_lease_v387.o",
+      "member": null,
+      "sha256": "2e6a3e576e35aab8545f081a02cd47b86a5276cf5203067c1231925b357b3b54",
+      "bytes": 32576
+    },
+    {
+      "context": "524288",
+      "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/index-native-admission-v501/whole_owner_fixed_v469.o",
+      "member": null,
+      "sha256": "c8bbc047a5a2aa0693798f9868ea9371e53c2558de4e6d131600eb3dc95fccfe",
+      "bytes": 59824
+    },
+    {
+      "context": "524288",
+      "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/index-native-admission-v501/resources_v469.o",
+      "member": null,
+      "sha256": "714d5a951110ef975106f8c676f66753f0b2526db198701b56822a7f9962c2ea",
+      "bytes": 159336
+    },
+    {
+      "context": "524288",
+      "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/index-native-admission-v501/libds303_whole_operator_v501.a",
+      "member": "whole_operator_v391.o",
+      "occurrence": 1,
+      "sha256": "71ca58e081b16fcc49c825668d0be12ec6685647997828dc83c7c4c172e331eb",
+      "bytes": 82848
+    },
+    {
+      "context": "524288",
+      "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/index-native-admission-v501/libds303_whole_operator_v501.a",
+      "member": "join_v303.o",
+      "occurrence": 1,
+      "sha256": "87c64bbf620e8657c074f19f7823e9a6caf2b9b9164a68e28aefa43c056fb22e",
+      "bytes": 16528
+    },
+    {
+      "context": "524288",
+      "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/whole-expert-exact-component-v291/literal53.o",
+      "member": null,
+      "sha256": "f6e8ea9d0148c85b85f049c5cf29f4c222c581041accda4a8932ed82a2c9d3c7",
+      "bytes": 32496
+    },
+    {
+      "context": "524288",
+      "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/whole-expert-exact-component-v291/literal276.o",
+      "member": null,
+      "sha256": "f212c20e5e98b82ede08fb191839adbeea8823b0bbf7a9c1e7c1b14f3529027f",
+      "bytes": 22912
+    },
+    {
+      "context": "524288",
+      "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/bf16-gate-libmvec-table-v276/libds276_cpu_table.so",
+      "member": null,
+      "sha256": "9aa1c5a0b947e8b40ff0dba626bcb9a9ecfa29826f5abe26cde8e27b8d3589b6",
+      "bytes": 14984
+    },
+    {
+      "context": "factory",
+      "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/cpu-numa-bulk-task-v418/cpu.so",
+      "member": null,
+      "sha256": "7f5204fbd660804caffefe654ee3ef191a528a929d04731eee66fb932ea38d86",
+      "bytes": 140576
+    },
+    {
+      "context": "factory",
+      "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/whole-generation-compute-off-task-v489/task.so",
+      "member": null,
+      "sha256": "6b21def7528646d3dd2ccb35cdc36c387aaa22b97f12f6fb848fb15945311eff",
+      "bytes": 147880
+    },
+    {
+      "context": "factory",
+      "input": "DeepSeek V4.1/work/deepseek41-1017-nvfp4/research/old-output16-v4-packer-v1/build/libds1017_output16_v4_packer_v1.so",
+      "member": null,
+      "sha256": "4f8b0a241495940544408f27a8cd6f2aa1f4b21e64a7f3c2285991bbe5fd18ab",
+      "bytes": 11320
+    },
+    {
+      "context": "shared",
+      "input": "DeepSeek V4.1/work/deepseek41/research/recompute-input-r1/build/recompute.o",
+      "member": null,
+      "sha256": "55caf605a91c530bb0d936e04df675569411213d51ae4c55da55e790f4313a38",
+      "bytes": 31264
+    }
+  ],
+  "units": [
+    {
+      "object_sha256": "dbe563270adf53821423e952c14100612d5ec6127371f8317375c495d573178b",
+      "original_object": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/pass-upload-async-native-v558/pair_scope_v531.o",
+      "argv": [
+        "/usr/bin/clang++-18",
+        "-O3",
+        "-std=c++20",
+        "-fPIC",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/prefill-direct-fp8-port-v531/source",
+        "-c",
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/prefill-direct-fp8-port-v531/source/pair_scope_v531.cpp",
+        "-o",
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/build/pass-upload-async-native-v558/pair_scope_v531.o"
+      ],
+      "cwd": "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41",
+      "evidence": "DeepSeek V4.1/work/deepseek41-1017-multigpu/state/pass-upload-async-native-root-build-v558.json",
+      "score": 110,
+      "sources": [
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/prefill-direct-fp8-port-v531/source/pair_scope_v531.cpp"
+      ]
+    },
+    {
+      "object_sha256": "273606154deb20b80275dc63c17f07472b5d0221c3b7c10a8bc7096fd624ee10",
+      "original_object": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/pass-upload-async-native-v558/pair_fp8_v531.o",
+      "argv": [
+        "/usr/local/cuda-13.4/bin/nvcc",
+        "-ccbin=/usr/bin/clang++-18",
+        "-O3",
+        "-std=c++20",
+        "--generate-code=arch=compute_89,code=[compute_89,sm_89]",
+        "-Xcompiler=-fPIC",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/prefill-direct-fp8-port-v531/source",
+        "-c",
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/prefill-direct-fp8-port-v531/source/pair_fp8_v531.cu",
+        "-o",
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/build/pass-upload-async-native-v558/pair_fp8_v531.o"
+      ],
+      "cwd": "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41",
+      "evidence": "DeepSeek V4.1/work/deepseek41-1017-multigpu/state/pass-upload-async-native-root-build-v558.json",
+      "score": 110,
+      "sources": [
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/prefill-direct-fp8-port-v531/source/pair_fp8_v531.cu"
+      ]
+    },
+    {
+      "object_sha256": "76fa471d6c3816fa41a253135859072fd4b179479a175d4e37e157670b2628a5",
+      "original_object": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/index-native-admission-v501/native_engine_gu_v501.o",
+      "argv": [
+        "clang++-18",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/whole-adaptive-engine-v387/source/include",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/whole-adaptive-engine-v387/source",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/pair32-combined-v151-r2/source",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/cpu-pair32-static-v143/source",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/pair-gu-engine-v19/include",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-nvfp4/research/old-complete-runtime-1017-adapter-v1/source/include",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/build/native-k3-verify-v310/include",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/native-ds41/include",
+        "-isystem",
+        "/usr/local/cuda/targets/x86_64-linux/include",
+        "-O3",
+        "-DNDEBUG",
+        "-std=c++20",
+        "-fPIC",
+        "-c",
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/index-native-admission-v501/source/native_engine_gu_v387.cpp",
+        "-o",
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/build/index-native-admission-v501/native_engine_gu_v501.o"
+      ],
+      "cwd": "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41",
+      "evidence": "DeepSeek V4.1/work/deepseek41-1017-multigpu/state/index-native-admission-root-build-v501.json",
+      "score": 10,
+      "sources": [
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/index-native-admission-v501/source/native_engine_gu_v387.cpp"
+      ]
+    },
+    {
+      "object_sha256": "e3aef35a098dd50728ade5fe47d9f07cc7d638439fe709865d7b3ff9e999e34d",
+      "original_object": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/down-only-paired-v182/native_adapter.cpp.o",
+      "argv": [
+        "clang++-18",
+        "-std=c++20",
+        "-O3",
+        "-fno-fast-math",
+        "-ffp-contract=off",
+        "-fPIC",
+        "-pthread",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/down-only-paired-v182/source",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/cpu-pair32-static-v143/source",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/pair-gu-engine-v19/include",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/native-ds41/include",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/build/native-k3-verify-v310/include",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/third_party",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/native-ds41/src/ds41",
+        "-I/usr/local/cuda-13.4/include",
+        "-c",
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/down-only-paired-v182/source/native_adapter.cpp",
+        "-o",
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/build/down-only-paired-v182/native_adapter.cpp.o"
+      ],
+      "cwd": "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41",
+      "evidence": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/down-only-paired-v182/ROOT_RECIPE.json",
+      "score": 0,
+      "sources": [
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/down-only-paired-v182/source/native_adapter.cpp"
+      ]
+    },
+    {
+      "object_sha256": "780d59a4484845ddfaf72a5b1b090cbcf4b3b4525e1289eb739d61986aa28da9",
+      "original_object": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/index-native-admission-v501/pair_indexer_v1.o",
+      "argv": [
+        "clang++-18",
+        "-std=c++20",
+        "-O3",
+        "-fno-fast-math",
+        "-ffp-contract=off",
+        "-fPIC",
+        "-pthread",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/pair-indexer-engine-v1-r2",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/native-ds41/include",
+        "-I/usr/local/cuda-13.4/include",
+        "-c",
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/index-native-admission-v501/source/pair_indexer_v1.cpp",
+        "-o",
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/build/index-native-admission-v501/pair_indexer_v1.o"
+      ],
+      "cwd": "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41",
+      "evidence": "DeepSeek V4.1/work/deepseek41-1017-multigpu/state/index-native-admission-root-build-v501.json",
+      "score": 10,
+      "sources": [
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/index-native-admission-v501/source/pair_indexer_v1.cpp"
+      ]
+    },
+    {
+      "object_sha256": "21659887bd7bf65589674874bc0eee77c85329bd426ebb309f5429b5514950b8",
+      "original_object": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/cpu-numa-bulk-fixed256-engine-v440/262144/pack.cpp.o",
+      "argv": [
+        "clang++-18",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/cpu-numa-bulk-fixed256-engine-v440/source/include",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/cpu-numa-bulk-fixed256-engine-v440/source",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/pair32-combined-v151-r2/source",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/cpu-pair32-static-v143/source",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/pair-gu-engine-v19/include",
+        "-O3",
+        "-DNDEBUG",
+        "-std=c++20",
+        "-fPIC",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/build/native-k3-verify-v310/include",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/native-ds41/include",
+        "-isystem",
+        "/usr/local/cuda/targets/x86_64-linux/include",
+        "-c",
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/cpu-numa-bulk-fixed256-engine-v440/source/pack_headless_v320.cpp",
+        "-o",
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/build/cpu-numa-bulk-fixed256-engine-v440/262144/pack.cpp.o"
+      ],
+      "cwd": "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41",
+      "evidence": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/cpu-numa-bulk-fixed256-engine-v440/ROOT_RECIPE.json",
+      "score": 0,
+      "sources": [
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/cpu-numa-bulk-fixed256-engine-v440/source/pack_headless_v320.cpp"
+      ]
+    },
+    {
+      "object_sha256": "cf596105d2c0447f7ef4534797b1c1d63bd9495937d07462f01f8d06a5ff4579",
+      "original_object": "DeepSeek V4.1/work/deepseek41/build/native-adapter-sm89/CMakeFiles/strata_ds41_engine.dir/src/ds41/ops.cu.o",
+      "argv": [
+        "/usr/local/cuda/bin/nvcc",
+        "-forward-unknown-to-host-compiler",
+        "-DSTRATA_VERSION=\"0.1.39\"",
+        "--options-file",
+        "CMakeFiles/strata_ds41_engine.dir/includes_CUDA.rsp",
+        "-O3",
+        "-DNDEBUG",
+        "-std=c++20",
+        "--generate-code=arch=compute_89,code=[compute_89,sm_89]",
+        "-Xcompiler=-fPIC",
+        "-MD",
+        "-MT",
+        "CMakeFiles/strata_ds41_engine.dir/src/ds41/ops.cu.o",
+        "-MF",
+        "CMakeFiles/strata_ds41_engine.dir/src/ds41/ops.cu.o.d",
+        "-x",
+        "cu",
+        "-c",
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/native-ds41/src/ds41/ops.cu",
+        "-o",
+        "CMakeFiles/strata_ds41_engine.dir/src/ds41/ops.cu.o"
+      ],
+      "cwd": "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/build/native-adapter-sm89",
+      "evidence": "DeepSeek V4.1/work/deepseek41/build/native-adapter-sm89/CMakeFiles/strata_ds41_engine.dir/build.make",
+      "score": -10,
+      "sources": [
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/native-ds41/src/ds41/ops.cu"
+      ]
+    },
+    {
+      "object_sha256": "56c16ed057e3fe98981ddadb584b8caac7e1b24a8bd89f61e17d38053981043b",
+      "original_object": "DeepSeek V4.1/work/deepseek41/build/native-adapter-sm89/CMakeFiles/strata_ds41_engine.dir/src/ds41/native_bf16_many_v33.cu.o",
+      "argv": [
+        "/usr/local/cuda/bin/nvcc",
+        "-forward-unknown-to-host-compiler",
+        "-DSTRATA_VERSION=\"0.1.39\"",
+        "--options-file",
+        "CMakeFiles/strata_ds41_engine.dir/includes_CUDA.rsp",
+        "-O3",
+        "-DNDEBUG",
+        "-std=c++20",
+        "--generate-code=arch=compute_89,code=[compute_89,sm_89]",
+        "-Xcompiler=-fPIC",
+        "-MD",
+        "-MT",
+        "CMakeFiles/strata_ds41_engine.dir/src/ds41/native_bf16_many_v33.cu.o",
+        "-MF",
+        "CMakeFiles/strata_ds41_engine.dir/src/ds41/native_bf16_many_v33.cu.o.d",
+        "-x",
+        "cu",
+        "-c",
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/native-ds41/src/ds41/native_bf16_many_v33.cu",
+        "-o",
+        "CMakeFiles/strata_ds41_engine.dir/src/ds41/native_bf16_many_v33.cu.o"
+      ],
+      "cwd": "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/build/native-adapter-sm89",
+      "evidence": "DeepSeek V4.1/work/deepseek41/build/native-adapter-sm89/CMakeFiles/strata_ds41_engine.dir/build.make",
+      "score": -10,
+      "sources": [
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/native-ds41/src/ds41/native_bf16_many_v33.cu"
+      ]
+    },
+    {
+      "object_sha256": "281c5463e1bfdb1a24f19823c23e1f55363b43c122523dac0bf8b3ffb962abc0",
+      "original_object": "DeepSeek V4.1/work/deepseek41/build/native-adapter-sm89/CMakeFiles/strata_ds41_engine.dir/src/ds41/prefill_ops.cu.o",
+      "argv": [
+        "/usr/local/cuda/bin/nvcc",
+        "-forward-unknown-to-host-compiler",
+        "-DSTRATA_VERSION=\"0.1.39\"",
+        "--options-file",
+        "CMakeFiles/strata_ds41_engine.dir/includes_CUDA.rsp",
+        "-O3",
+        "-DNDEBUG",
+        "-std=c++20",
+        "--generate-code=arch=compute_89,code=[compute_89,sm_89]",
+        "-Xcompiler=-fPIC",
+        "-MD",
+        "-MT",
+        "CMakeFiles/strata_ds41_engine.dir/src/ds41/prefill_ops.cu.o",
+        "-MF",
+        "CMakeFiles/strata_ds41_engine.dir/src/ds41/prefill_ops.cu.o.d",
+        "-x",
+        "cu",
+        "-c",
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/native-ds41/src/ds41/prefill_ops.cu",
+        "-o",
+        "CMakeFiles/strata_ds41_engine.dir/src/ds41/prefill_ops.cu.o"
+      ],
+      "cwd": "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/build/native-adapter-sm89",
+      "evidence": "DeepSeek V4.1/work/deepseek41/build/native-adapter-sm89/CMakeFiles/strata_ds41_engine.dir/build.make",
+      "score": -10,
+      "sources": [
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/native-ds41/src/ds41/prefill_ops.cu"
+      ]
+    },
+    {
+      "object_sha256": "54bfc952c6b58295c29af56a92fc363b9a3b38bc64f701dcd8f020e680396109",
+      "original_object": "DeepSeek V4.1/work/deepseek41/build/native-adapter-sm89/CMakeFiles/strata_ds41_engine.dir/src/ds41/native_prefill_fastdecode.cu.o",
+      "argv": [
+        "/usr/local/cuda/bin/nvcc",
+        "-forward-unknown-to-host-compiler",
+        "-DSTRATA_VERSION=\"0.1.39\"",
+        "--options-file",
+        "CMakeFiles/strata_ds41_engine.dir/includes_CUDA.rsp",
+        "-O3",
+        "-DNDEBUG",
+        "-std=c++20",
+        "--generate-code=arch=compute_89,code=[compute_89,sm_89]",
+        "-Xcompiler=-fPIC",
+        "--ftz=false",
+        "--prec-div=true",
+        "--prec-sqrt=true",
+        "-MD",
+        "-MT",
+        "CMakeFiles/strata_ds41_engine.dir/src/ds41/native_prefill_fastdecode.cu.o",
+        "-MF",
+        "CMakeFiles/strata_ds41_engine.dir/src/ds41/native_prefill_fastdecode.cu.o.d",
+        "-x",
+        "cu",
+        "-c",
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/native-ds41/src/ds41/native_prefill_fastdecode.cu",
+        "-o",
+        "CMakeFiles/strata_ds41_engine.dir/src/ds41/native_prefill_fastdecode.cu.o"
+      ],
+      "cwd": "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/build/native-adapter-sm89",
+      "evidence": "DeepSeek V4.1/work/deepseek41/build/native-adapter-sm89/CMakeFiles/strata_ds41_engine.dir/build.make",
+      "score": -10,
+      "sources": [
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/native-ds41/src/ds41/native_prefill_fastdecode.cu"
+      ]
+    },
+    {
+      "object_sha256": "8fd8b928aa5d0bd9b7b443db8ab7bf361002f5aaadb5b9b91c3a6685453a63a7",
+      "original_object": "DeepSeek V4.1/work/deepseek41/build/native-adapter-sm89/CMakeFiles/strata_ds41_engine.dir/src/ds41/native_act_storage.cu.o",
+      "argv": [
+        "/usr/local/cuda/bin/nvcc",
+        "-forward-unknown-to-host-compiler",
+        "-DSTRATA_VERSION=\"0.1.39\"",
+        "--options-file",
+        "CMakeFiles/strata_ds41_engine.dir/includes_CUDA.rsp",
+        "-O3",
+        "-DNDEBUG",
+        "-std=c++20",
+        "--generate-code=arch=compute_89,code=[compute_89,sm_89]",
+        "-Xcompiler=-fPIC",
+        "--ftz=false",
+        "--prec-div=true",
+        "--prec-sqrt=true",
+        "-MD",
+        "-MT",
+        "CMakeFiles/strata_ds41_engine.dir/src/ds41/native_act_storage.cu.o",
+        "-MF",
+        "CMakeFiles/strata_ds41_engine.dir/src/ds41/native_act_storage.cu.o.d",
+        "-x",
+        "cu",
+        "-c",
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/native-ds41/src/ds41/native_act_storage.cu",
+        "-o",
+        "CMakeFiles/strata_ds41_engine.dir/src/ds41/native_act_storage.cu.o"
+      ],
+      "cwd": "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/build/native-adapter-sm89",
+      "evidence": "DeepSeek V4.1/work/deepseek41/build/native-adapter-sm89/CMakeFiles/strata_ds41_engine.dir/build.make",
+      "score": -10,
+      "sources": [
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/native-ds41/src/ds41/native_act_storage.cu"
+      ]
+    },
+    {
+      "object_sha256": "6dcca5dcf4872b334938d616dc89a3e748216b791c16e05a999d870d3b89653e",
+      "original_object": "DeepSeek V4.1/work/deepseek41/build/native-adapter-sm89/CMakeFiles/strata_ds41_engine.dir/src/ds41/native_main.cu.o",
+      "argv": [
+        "/usr/local/cuda/bin/nvcc",
+        "-forward-unknown-to-host-compiler",
+        "-DSTRATA_VERSION=\"0.1.39\"",
+        "--options-file",
+        "CMakeFiles/strata_ds41_engine.dir/includes_CUDA.rsp",
+        "-O3",
+        "-DNDEBUG",
+        "-std=c++20",
+        "--generate-code=arch=compute_89,code=[compute_89,sm_89]",
+        "-Xcompiler=-fPIC",
+        "--ftz=false",
+        "--prec-div=true",
+        "--prec-sqrt=true",
+        "-MD",
+        "-MT",
+        "CMakeFiles/strata_ds41_engine.dir/src/ds41/native_main.cu.o",
+        "-MF",
+        "CMakeFiles/strata_ds41_engine.dir/src/ds41/native_main.cu.o.d",
+        "-x",
+        "cu",
+        "-c",
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/native-ds41/src/ds41/native_main.cu",
+        "-o",
+        "CMakeFiles/strata_ds41_engine.dir/src/ds41/native_main.cu.o"
+      ],
+      "cwd": "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/build/native-adapter-sm89",
+      "evidence": "DeepSeek V4.1/work/deepseek41/build/native-adapter-sm89/CMakeFiles/strata_ds41_engine.dir/build.make",
+      "score": -10,
+      "sources": [
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/native-ds41/src/ds41/native_main.cu"
+      ]
+    },
+    {
+      "object_sha256": "e3c855a8d3cfa05a8e6fe6f2b0a487451cde4f7ca2b988ef2acb7756addf2b42",
+      "original_object": "DeepSeek V4.1/work/deepseek41/build/native-query-scaled-v175/native_fp8lt_prototype.cu.o",
+      "argv": [
+        "/usr/local/cuda/bin/nvcc",
+        "-forward-unknown-to-host-compiler",
+        "-DSTRATA_VERSION=\"0.1.39\"",
+        "--options-file",
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/build/native-adapter-sm89/CMakeFiles/strata_ds41_engine.dir/includes_CUDA.rsp",
+        "-O3",
+        "-DNDEBUG",
+        "-std=c++20",
+        "--generate-code=arch=compute_89,code=[compute_89,sm_89]",
+        "-Xcompiler=-fPIC",
+        "-x",
+        "cu",
+        "-c",
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/tools/native_fp8lt_prototype_v175.cu",
+        "-o",
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/build/native-query-scaled-v175/native_fp8lt_prototype.cu.o"
+      ],
+      "cwd": "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/build/native-adapter-sm89",
+      "evidence": "DeepSeek V4.1/outputs/deepseek41/analysis/single-request-speed-research/v175-whole-model-build-prepared.json",
+      "score": 0,
+      "sources": [
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/tools/native_fp8lt_prototype_v175.cu"
+      ]
+    },
+    {
+      "object_sha256": "a15bf7e032b0d5b30f0ceed5039d90f3b75365422508defb6e436ca3dd4cca5f",
+      "original_object": "DeepSeek V4.1/work/deepseek41/build/native-adapter-sm89/CMakeFiles/strata_ds41_engine.dir/src/ds41/native_candidate_pack_v89.cu.o",
+      "argv": [
+        "/usr/local/cuda/bin/nvcc",
+        "-forward-unknown-to-host-compiler",
+        "-DSTRATA_VERSION=\"0.1.39\"",
+        "--options-file",
+        "CMakeFiles/strata_ds41_engine.dir/includes_CUDA.rsp",
+        "-O3",
+        "-DNDEBUG",
+        "-std=c++20",
+        "--generate-code=arch=compute_89,code=[compute_89,sm_89]",
+        "-Xcompiler=-fPIC",
+        "-MD",
+        "-MT",
+        "CMakeFiles/strata_ds41_engine.dir/src/ds41/native_candidate_pack_v89.cu.o",
+        "-MF",
+        "CMakeFiles/strata_ds41_engine.dir/src/ds41/native_candidate_pack_v89.cu.o.d",
+        "-x",
+        "cu",
+        "-c",
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/native-ds41/src/ds41/native_candidate_pack_v89.cu",
+        "-o",
+        "CMakeFiles/strata_ds41_engine.dir/src/ds41/native_candidate_pack_v89.cu.o"
+      ],
+      "cwd": "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/build/native-adapter-sm89",
+      "evidence": "DeepSeek V4.1/work/deepseek41/build/native-adapter-sm89/CMakeFiles/strata_ds41_engine.dir/build.make",
+      "score": -10,
+      "sources": [
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/native-ds41/src/ds41/native_candidate_pack_v89.cu"
+      ]
+    },
+    {
+      "object_sha256": "5a12ede9c2a1818deaa2d1cdfcdf60acc7e71b0efa7778841c8d42d8aa3bfec6",
+      "original_object": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/pass-upload-async-native-v558/native_fp8_experts.cu.o",
+      "argv": [
+        "/usr/local/cuda-13.4/bin/nvcc",
+        "-ccbin=/usr/bin/clang++-18",
+        "-O3",
+        "-std=c++20",
+        "--generate-code=arch=compute_89,code=[compute_89,sm_89]",
+        "-Xcompiler=-fPIC",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/prefill-direct-fp8-port-v531/source",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/native-ds41/include",
+        "-c",
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/prefill-direct-fp8-port-v531/source/native_fp8_experts.cu",
+        "-o",
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/build/pass-upload-async-native-v558/native_fp8_experts.cu.o"
+      ],
+      "cwd": "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41",
+      "evidence": "DeepSeek V4.1/work/deepseek41-1017-multigpu/state/pass-upload-async-native-root-build-v558.json",
+      "score": 110,
+      "sources": [
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/prefill-direct-fp8-port-v531/source/native_fp8_experts.cu"
+      ]
+    },
+    {
+      "object_sha256": "f60b92f7e40acc9842a66f8d3bb1ab821e6ce45eeb0a2be74429d3380fd77395",
+      "original_object": "DeepSeek V4.1/work/deepseek41/build/native-adapter-sm89/CMakeFiles/strata_ds41_engine.dir/src/ds41/native_dense_prefill_fp8.cu.o",
+      "argv": [
+        "/usr/local/cuda/bin/nvcc",
+        "-forward-unknown-to-host-compiler",
+        "-DSTRATA_VERSION=\"0.1.39\"",
+        "--options-file",
+        "CMakeFiles/strata_ds41_engine.dir/includes_CUDA.rsp",
+        "-O3",
+        "-DNDEBUG",
+        "-std=c++20",
+        "--generate-code=arch=compute_89,code=[compute_89,sm_89]",
+        "-Xcompiler=-fPIC",
+        "-MD",
+        "-MT",
+        "CMakeFiles/strata_ds41_engine.dir/src/ds41/native_dense_prefill_fp8.cu.o",
+        "-MF",
+        "CMakeFiles/strata_ds41_engine.dir/src/ds41/native_dense_prefill_fp8.cu.o.d",
+        "-x",
+        "cu",
+        "-c",
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/native-ds41/src/ds41/native_dense_prefill_fp8.cu",
+        "-o",
+        "CMakeFiles/strata_ds41_engine.dir/src/ds41/native_dense_prefill_fp8.cu.o"
+      ],
+      "cwd": "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/build/native-adapter-sm89",
+      "evidence": "DeepSeek V4.1/work/deepseek41/build/native-adapter-sm89/CMakeFiles/strata_ds41_engine.dir/build.make",
+      "score": -10,
+      "sources": [
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/native-ds41/src/ds41/native_dense_prefill_fp8.cu"
+      ]
+    },
+    {
+      "object_sha256": "25f3fd6e39fb6e126393d177ea27adba277b64deff8e419187c9c2933a8efc58",
+      "original_object": "DeepSeek V4.1/work/deepseek41/build/native-compact-query-v252/native_gpu_experts.cu.o",
+      "argv": [
+        "/usr/local/cuda/bin/nvcc",
+        "-forward-unknown-to-host-compiler",
+        "-DSTRATA_VERSION=\"0.1.39\"",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/build/native-compact-query-v252/include",
+        "--options-file",
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/build/native-adapter-sm89/CMakeFiles/strata_ds41_engine.dir/includes_CUDA.rsp",
+        "-O3",
+        "-DNDEBUG",
+        "-std=c++20",
+        "--generate-code=arch=compute_89,code=[compute_89,sm_89]",
+        "-Xcompiler=-fPIC",
+        "-x",
+        "cu",
+        "-c",
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/native-ds41/src/ds41/native_gpu_experts_compact_v252.cu",
+        "-o",
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/build/native-compact-query-v252/native_gpu_experts.cu.o"
+      ],
+      "cwd": "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/build/native-adapter-sm89",
+      "evidence": "DeepSeek V4.1/outputs/deepseek41/analysis/single-request-speed-research/v252-whole-model-build-prepared.json",
+      "score": 0,
+      "sources": [
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/native-ds41/src/ds41/native_gpu_experts_compact_v252.cu"
+      ]
+    },
+    {
+      "object_sha256": "418e02ef9394d8455ccac945ae6edcab0d6552b73bf5ded55c042673cca2c501",
+      "original_object": "DeepSeek V4.1/work/deepseek41/build/native-adapter-sm89/CMakeFiles/strata_ds41_engine.dir/src/ds41/native_expert_gemv_fastdecode.cu.o",
+      "argv": [
+        "/usr/local/cuda/bin/nvcc",
+        "-forward-unknown-to-host-compiler",
+        "-DSTRATA_VERSION=\"0.1.39\"",
+        "--options-file",
+        "CMakeFiles/strata_ds41_engine.dir/includes_CUDA.rsp",
+        "-O3",
+        "-DNDEBUG",
+        "-std=c++20",
+        "--generate-code=arch=compute_89,code=[compute_89,sm_89]",
+        "-Xcompiler=-fPIC",
+        "--ftz=false",
+        "--prec-div=true",
+        "--prec-sqrt=true",
+        "-MD",
+        "-MT",
+        "CMakeFiles/strata_ds41_engine.dir/src/ds41/native_expert_gemv_fastdecode.cu.o",
+        "-MF",
+        "CMakeFiles/strata_ds41_engine.dir/src/ds41/native_expert_gemv_fastdecode.cu.o.d",
+        "-x",
+        "cu",
+        "-c",
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/native-ds41/src/ds41/native_expert_gemv_fastdecode.cu",
+        "-o",
+        "CMakeFiles/strata_ds41_engine.dir/src/ds41/native_expert_gemv_fastdecode.cu.o"
+      ],
+      "cwd": "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/build/native-adapter-sm89",
+      "evidence": "DeepSeek V4.1/work/deepseek41/build/native-adapter-sm89/CMakeFiles/strata_ds41_engine.dir/build.make",
+      "score": -10,
+      "sources": [
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/native-ds41/src/ds41/native_expert_gemv_fastdecode.cu"
+      ]
+    },
+    {
+      "object_sha256": "58abced75a24b199e73afed557ccef6f2ba8ddca701fd47b70f2009f2b26c651",
+      "original_object": "DeepSeek V4.1/work/deepseek41/build/native-adapter-sm89/CMakeFiles/strata_ds41_engine.dir/src/ds41/doorbell.cu.o",
+      "argv": [
+        "/usr/local/cuda/bin/nvcc",
+        "-forward-unknown-to-host-compiler",
+        "-DSTRATA_VERSION=\"0.1.39\"",
+        "--options-file",
+        "CMakeFiles/strata_ds41_engine.dir/includes_CUDA.rsp",
+        "-O3",
+        "-DNDEBUG",
+        "-std=c++20",
+        "--generate-code=arch=compute_89,code=[compute_89,sm_89]",
+        "-Xcompiler=-fPIC",
+        "-MD",
+        "-MT",
+        "CMakeFiles/strata_ds41_engine.dir/src/ds41/doorbell.cu.o",
+        "-MF",
+        "CMakeFiles/strata_ds41_engine.dir/src/ds41/doorbell.cu.o.d",
+        "-x",
+        "cu",
+        "-c",
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/native-ds41/src/ds41/doorbell.cu",
+        "-o",
+        "CMakeFiles/strata_ds41_engine.dir/src/ds41/doorbell.cu.o"
+      ],
+      "cwd": "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/build/native-adapter-sm89",
+      "evidence": "DeepSeek V4.1/work/deepseek41/build/native-adapter-sm89/CMakeFiles/strata_ds41_engine.dir/build.make",
+      "score": -10,
+      "sources": [
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/native-ds41/src/ds41/doorbell.cu"
+      ]
+    },
+    {
+      "object_sha256": "2f49d386535436b1f026b682cf3b6f49234471452b2116e09c2eb72951e18745",
+      "original_object": "DeepSeek V4.1/work/deepseek41/build/native-adapter-sm89/CMakeFiles/strata_ds41_engine.dir/src/ds41/expert_staging.cu.o",
+      "argv": [
+        "/usr/local/cuda/bin/nvcc",
+        "-forward-unknown-to-host-compiler",
+        "-DSTRATA_VERSION=\"0.1.39\"",
+        "--options-file",
+        "CMakeFiles/strata_ds41_engine.dir/includes_CUDA.rsp",
+        "-O3",
+        "-DNDEBUG",
+        "-std=c++20",
+        "--generate-code=arch=compute_89,code=[compute_89,sm_89]",
+        "-Xcompiler=-fPIC",
+        "-MD",
+        "-MT",
+        "CMakeFiles/strata_ds41_engine.dir/src/ds41/expert_staging.cu.o",
+        "-MF",
+        "CMakeFiles/strata_ds41_engine.dir/src/ds41/expert_staging.cu.o.d",
+        "-x",
+        "cu",
+        "-c",
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/native-ds41/src/ds41/expert_staging.cu",
+        "-o",
+        "CMakeFiles/strata_ds41_engine.dir/src/ds41/expert_staging.cu.o"
+      ],
+      "cwd": "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/build/native-adapter-sm89",
+      "evidence": "DeepSeek V4.1/work/deepseek41/build/native-adapter-sm89/CMakeFiles/strata_ds41_engine.dir/build.make",
+      "score": -10,
+      "sources": [
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/native-ds41/src/ds41/expert_staging.cu"
+      ]
+    },
+    {
+      "object_sha256": "9a1d97e9f7c8109f9bf02e2fe0792b967c2817f684b1c15b997737c9d1da9f90",
+      "original_object": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/headless-prefill-engine-v320-r2/524288/vram_experts.cu.o",
+      "argv": [
+        "/usr/local/cuda/bin/nvcc",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/headless-prefill-engine-v320/source/include",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/headless-prefill-engine-v320/source",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/pair-gu-engine-v19/524288",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/pair32-combined-v151-r2/source",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/cpu-pair32-static-v143/source",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/pair-packed-inverse-v141-r2/source",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/pair-gu-engine-v19/include",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/pair-indexer-engine-v1-r2",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-nvfp4/research/old-complete-runtime-1017-adapter-v1/source/include",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/native-ds41/src/ds41",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/research/stage-copy-r2/include",
+        "-ccbin=/usr/bin/clang++-18",
+        "-forward-unknown-to-host-compiler",
+        "-DSTRATA_VERSION=\"0.1.39\"",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/build/native-k3-verify-v310/include",
+        "--options-file",
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/build/native-adapter-sm89/CMakeFiles/strata_ds41_engine.dir/includes_CUDA.rsp",
+        "-O3",
+        "-DNDEBUG",
+        "-std=c++20",
+        "--generate-code=arch=compute_89,code=[compute_89,sm_89]",
+        "-Xcompiler=-fPIC",
+        "-x",
+        "cu",
+        "-c",
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/native-ds41/src/ds41/vram_experts.cu",
+        "-o",
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/build/headless-prefill-engine-v320-r2/524288/vram_experts.cu.o"
+      ],
+      "cwd": "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41",
+      "evidence": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/headless-prefill-build-v320-r2/ROOT_RECIPE.json",
+      "score": 0,
+      "sources": [
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/native-ds41/src/ds41/vram_experts.cu"
+      ]
+    },
+    {
+      "object_sha256": "f14b50c8628e00769276dfa968dc8e224f1f14e53b858164d53f846a0876ea76",
+      "original_object": "DeepSeek V4.1/work/deepseek41/build/native-adapter-sm89/CMakeFiles/strata_ds41_engine.dir/src/ds41/engram_rows.cpp.o",
+      "argv": [
+        "/usr/bin/c++",
+        "-DSTRATA_VERSION=\"0.1.39\"",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/native-ds41/include",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/native-ds41/third_party/exllamav3_moe",
+        "-isystem",
+        "/usr/local/cuda/targets/x86_64-linux/include",
+        "-O3",
+        "-DNDEBUG",
+        "-std=c++20",
+        "-fPIC",
+        "-MD",
+        "-MT",
+        "CMakeFiles/strata_ds41_engine.dir/src/ds41/engram_rows.cpp.o",
+        "-MF",
+        "CMakeFiles/strata_ds41_engine.dir/src/ds41/engram_rows.cpp.o.d",
+        "-o",
+        "CMakeFiles/strata_ds41_engine.dir/src/ds41/engram_rows.cpp.o",
+        "-c",
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/native-ds41/src/ds41/engram_rows.cpp"
+      ],
+      "cwd": "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/build/native-adapter-sm89",
+      "evidence": "DeepSeek V4.1/work/deepseek41/build/native-adapter-sm89/CMakeFiles/strata_ds41_engine.dir/build.make",
+      "score": -10,
+      "sources": [
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/native-ds41/src/ds41/engram_rows.cpp"
+      ]
+    },
+    {
+      "object_sha256": "3100957a94b01dfef512790369f4de4524772b0a9af37cb48e700a65384bd716",
+      "original_object": "DeepSeek V4.1/work/deepseek41-1017-nvfp4/research/compact-rolealign-engine-build-v5/runs/root-v3/archive-members/host_experts.cpp.o",
+      "argv": [
+        "/usr/bin/clang++-18",
+        "-std=c++20",
+        "-O3",
+        "-DNDEBUG",
+        "-DSTRATA_VERSION=\"0.1.39\"",
+        "-fno-fast-math",
+        "-ffp-contract=off",
+        "-fPIC",
+        "-pthread",
+        "-I/usr/local/cuda-13.4/include",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-nvfp4/research/compact-scale-expert-gpu-rolealign-v4",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-nvfp4/research/compact-scale-expert-rolealign-v4",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-nvfp4/research/compact-rolealign-engine-binding-v5/include",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-nvfp4/research/compact-rolealign-engine-binding-v5",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-nvfp4/research/native-nvfp4-cpu-experts-v3/include",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-nvfp4/research/native-nvfp4-checkpoint-v1/include",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/build/native-k3-verify-v310/include",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-nvfp4/research/native-nvfp4-engine-v1",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/research/stage-copy-r2/include",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/native-ds41/include",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/native-ds41/src/ds41",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/native-ds41/third_party/exllamav3_moe",
+        "-MMD",
+        "-MF",
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-nvfp4/research/compact-rolealign-engine-build-v5/runs/root-v3/host_experts.cpp.o.d",
+        "-c",
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/native-ds41/src/ds41/host_experts.cpp",
+        "-o",
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-nvfp4/research/compact-rolealign-engine-build-v5/runs/root-v3/archive-members/host_experts.cpp.o"
+      ],
+      "cwd": "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41",
+      "evidence": "DeepSeek V4.1/work/deepseek41-1017-nvfp4/research/compact-rolealign-engine-build-v5/runs/root-v3/build-receipt.json",
+      "score": 10,
+      "sources": [
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/native-ds41/src/ds41/host_experts.cpp"
+      ]
+    },
+    {
+      "object_sha256": "37827b4958c152635540f945af38c16e4e5359fdb552808d55888b45ab657d79",
+      "original_object": "DeepSeek V4.1/work/deepseek41/build/native-adapter-sm89/CMakeFiles/strata_ds41_engine.dir/src/ds41/lookahead.cpp.o",
+      "argv": [
+        "/usr/bin/c++",
+        "-DSTRATA_VERSION=\"0.1.39\"",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/native-ds41/include",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/native-ds41/third_party/exllamav3_moe",
+        "-isystem",
+        "/usr/local/cuda/targets/x86_64-linux/include",
+        "-O3",
+        "-DNDEBUG",
+        "-std=c++20",
+        "-fPIC",
+        "-MD",
+        "-MT",
+        "CMakeFiles/strata_ds41_engine.dir/src/ds41/lookahead.cpp.o",
+        "-MF",
+        "CMakeFiles/strata_ds41_engine.dir/src/ds41/lookahead.cpp.o.d",
+        "-o",
+        "CMakeFiles/strata_ds41_engine.dir/src/ds41/lookahead.cpp.o",
+        "-c",
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/native-ds41/src/ds41/lookahead.cpp"
+      ],
+      "cwd": "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/build/native-adapter-sm89",
+      "evidence": "DeepSeek V4.1/work/deepseek41/build/native-adapter-sm89/CMakeFiles/strata_ds41_engine.dir/build.make",
+      "score": -10,
+      "sources": [
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/native-ds41/src/ds41/lookahead.cpp"
+      ]
+    },
+    {
+      "object_sha256": "14814c9bb74f557495994a8ae16efbd4acea22f03fe41620ce5df21a32a0fb36",
+      "original_object": "DeepSeek V4.1/work/deepseek41-1017-nvfp4/research/compact-rolealign-engine-build-v5/runs/root-v3/archive-members/expert_stream.cpp.o",
+      "argv": [
+        "/usr/bin/clang++-18",
+        "-std=c++20",
+        "-O3",
+        "-DNDEBUG",
+        "-DSTRATA_VERSION=\"0.1.39\"",
+        "-fno-fast-math",
+        "-ffp-contract=off",
+        "-fPIC",
+        "-pthread",
+        "-I/usr/local/cuda-13.4/include",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-nvfp4/research/compact-scale-expert-gpu-rolealign-v4",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-nvfp4/research/compact-scale-expert-rolealign-v4",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-nvfp4/research/compact-rolealign-engine-binding-v5/include",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-nvfp4/research/compact-rolealign-engine-binding-v5",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-nvfp4/research/native-nvfp4-cpu-experts-v3/include",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-nvfp4/research/native-nvfp4-checkpoint-v1/include",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/build/native-k3-verify-v310/include",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-nvfp4/research/native-nvfp4-engine-v1",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/research/stage-copy-r2/include",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/native-ds41/include",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/native-ds41/src/ds41",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/native-ds41/third_party/exllamav3_moe",
+        "-MMD",
+        "-MF",
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-nvfp4/research/compact-rolealign-engine-build-v5/runs/root-v3/expert_stream.cpp.o.d",
+        "-c",
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/native-ds41/src/ds41/expert_stream.cpp",
+        "-o",
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-nvfp4/research/compact-rolealign-engine-build-v5/runs/root-v3/archive-members/expert_stream.cpp.o"
+      ],
+      "cwd": "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41",
+      "evidence": "DeepSeek V4.1/work/deepseek41-1017-nvfp4/research/compact-rolealign-engine-build-v5/runs/root-v3/build-receipt.json",
+      "score": 10,
+      "sources": [
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/native-ds41/src/ds41/expert_stream.cpp"
+      ]
+    },
+    {
+      "object_sha256": "07ca2319e9dce5b5be8738bad2775954a7dadf1a10a7dcb48854263a4c2a7b42",
+      "original_object": "DeepSeek V4.1/work/deepseek41/build/native-woa-many-v116/wo_a_fp8.cu.o",
+      "argv": [
+        "/usr/local/cuda/bin/nvcc",
+        "-O3",
+        "-DNDEBUG",
+        "-std=c++20",
+        "--generate-code=arch=compute_89,code=[compute_89,sm_89]",
+        "-Xcompiler=-fPIC",
+        "-DSTRATA_VERSION=\"0.1.39\"",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/native-ds41/include",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/native-ds41/third_party/exllamav3_moe",
+        "-isystem",
+        "/usr/local/cuda/targets/x86_64-linux/include",
+        "-c",
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/native-ds41/src/ds41/wo_a_fp8.cu",
+        "-o",
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/build/native-woa-many-v116/wo_a_fp8.cu.o"
+      ],
+      "cwd": "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41",
+      "evidence": "DeepSeek V4.1/outputs/deepseek41/analysis/native-woa-many-v116/build-complete.json",
+      "score": 0,
+      "sources": [
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/native-ds41/src/ds41/wo_a_fp8.cu"
+      ]
+    },
+    {
+      "object_sha256": "8227a9ec03703c7cf0260e51c9b3777405494373ade826a76b3408ac883718e8",
+      "original_object": "DeepSeek V4.1/work/deepseek41/build/native-adapter-sm89/CMakeFiles/strata_ds41_engine.dir/src/platform/direct_file.cpp.o",
+      "argv": [
+        "/usr/bin/c++",
+        "-DSTRATA_VERSION=\"0.1.39\"",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/native-ds41/include",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/native-ds41/third_party/exllamav3_moe",
+        "-isystem",
+        "/usr/local/cuda/targets/x86_64-linux/include",
+        "-O3",
+        "-DNDEBUG",
+        "-std=c++20",
+        "-fPIC",
+        "-MD",
+        "-MT",
+        "CMakeFiles/strata_ds41_engine.dir/src/platform/direct_file.cpp.o",
+        "-MF",
+        "CMakeFiles/strata_ds41_engine.dir/src/platform/direct_file.cpp.o.d",
+        "-o",
+        "CMakeFiles/strata_ds41_engine.dir/src/platform/direct_file.cpp.o",
+        "-c",
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/native-ds41/src/platform/direct_file.cpp"
+      ],
+      "cwd": "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/build/native-adapter-sm89",
+      "evidence": "DeepSeek V4.1/work/deepseek41/build/native-adapter-sm89/CMakeFiles/strata_ds41_engine.dir/build.make",
+      "score": -10,
+      "sources": [
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/native-ds41/src/platform/direct_file.cpp"
+      ]
+    },
+    {
+      "object_sha256": "1df47e79939f52d4c3fc95ca01ee3ed4a183592f78ea432ae05727e9a8cd12e8",
+      "original_object": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/pass-upload-async-native-v558/262144/engine.cu.o",
+      "argv": [
+        "/usr/local/cuda/bin/nvcc",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/candidate-cutoff-multicta-v369/source",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/verifier-woa-quant-many-engine-v456/source/base262144/include",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/verifier-woa-quant-many-engine-v456/source/base262144",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/pair-gu-engine-v19/262144",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/pair32-combined-v151-r2/source",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/cpu-pair32-static-v143/source",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/pair-packed-inverse-v141-r2/source",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/pair-gu-engine-v19/include",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/pair-indexer-engine-v1-r2",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-nvfp4/research/old-complete-runtime-1017-adapter-v1/source/include",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/native-ds41/src/ds41",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/research/stage-copy-r2/include",
+        "-ccbin=/usr/bin/clang++-18",
+        "-forward-unknown-to-host-compiler",
+        "-DSTRATA_VERSION=\"0.1.39\"",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/build/native-k3-verify-v310/include",
+        "--options-file",
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/build/native-adapter-sm89/CMakeFiles/strata_ds41_engine.dir/includes_CUDA.rsp",
+        "-O3",
+        "-DNDEBUG",
+        "-std=c++20",
+        "--generate-code=arch=compute_89,code=[compute_89,sm_89]",
+        "-Xcompiler=-fPIC",
+        "-x",
+        "cu",
+        "-c",
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/pass-upload-async-native-v558/source/262144/engine.cu",
+        "-o",
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/build/pass-upload-async-native-v558/262144/engine.cu.o"
+      ],
+      "cwd": "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41",
+      "evidence": "DeepSeek V4.1/work/deepseek41-1017-multigpu/state/pass-upload-async-native-root-build-v558.json",
+      "score": 110,
+      "sources": [
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/pass-upload-async-native-v558/source/262144/engine.cu"
+      ]
+    },
+    {
+      "object_sha256": "b739e1996bd5d64aea3dea369d714497527a1cc1e168be22d7b4873c0d1ce197",
+      "original_object": "DeepSeek V4.1/work/deepseek41/build/native-adapter-sm89/CMakeFiles/strata_ds41_engine.dir/third_party/exllamav3_moe/moe_mul1.cpp.o",
+      "argv": [
+        "/usr/bin/c++",
+        "-DSTRATA_VERSION=\"0.1.39\"",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/native-ds41/include",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/native-ds41/third_party/exllamav3_moe",
+        "-isystem",
+        "/usr/local/cuda/targets/x86_64-linux/include",
+        "-O3",
+        "-DNDEBUG",
+        "-std=c++20",
+        "-fPIC",
+        "-O3",
+        "-MD",
+        "-MT",
+        "CMakeFiles/strata_ds41_engine.dir/third_party/exllamav3_moe/moe_mul1.cpp.o",
+        "-MF",
+        "CMakeFiles/strata_ds41_engine.dir/third_party/exllamav3_moe/moe_mul1.cpp.o.d",
+        "-o",
+        "CMakeFiles/strata_ds41_engine.dir/third_party/exllamav3_moe/moe_mul1.cpp.o",
+        "-c",
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/native-ds41/third_party/exllamav3_moe/moe_mul1.cpp"
+      ],
+      "cwd": "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/build/native-adapter-sm89",
+      "evidence": "DeepSeek V4.1/work/deepseek41/build/native-adapter-sm89/CMakeFiles/strata_ds41_engine.dir/build.make",
+      "score": -10,
+      "sources": [
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/native-ds41/third_party/exllamav3_moe/moe_mul1.cpp"
+      ]
+    },
+    {
+      "object_sha256": "21fb5b72c84cd35c12ab878609d3f79c87e6a450e2179fb35902e8f0f29cedd6",
+      "original_object": "DeepSeek V4.1/work/deepseek41/build/native-query-scaled-v175/native_fp8_scaled_epilogue_v170.cu.o",
+      "argv": [
+        "/usr/local/cuda/bin/nvcc",
+        "-forward-unknown-to-host-compiler",
+        "-DSTRATA_VERSION=\"0.1.39\"",
+        "--options-file",
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/build/native-adapter-sm89/CMakeFiles/strata_ds41_engine.dir/includes_CUDA.rsp",
+        "-O3",
+        "-DNDEBUG",
+        "-std=c++20",
+        "--generate-code=arch=compute_89,code=[compute_89,sm_89]",
+        "-Xcompiler=-fPIC",
+        "-x",
+        "cu",
+        "-c",
+        "--expt-relaxed-constexpr",
+        "--expt-extended-lambda",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/.venv-reference/lib/python3.12/site-packages/tilelang/3rdparty/cutlass/include",
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/tools/native_fp8_scaled_epilogue_v170.cu",
+        "-o",
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/build/native-query-scaled-v175/native_fp8_scaled_epilogue_v170.cu.o"
+      ],
+      "cwd": "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/build/native-adapter-sm89",
+      "evidence": "DeepSeek V4.1/outputs/deepseek41/analysis/single-request-speed-research/v175-whole-model-build-prepared.json",
+      "score": 0,
+      "sources": [
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/tools/native_fp8_scaled_epilogue_v170.cu"
+      ]
+    },
+    {
+      "object_sha256": "52c549af0ab9ae9e4b1fd94f9917749a19159bb0b7b5934b3feeb48da3aa96ba",
+      "original_object": "DeepSeek V4.1/work/deepseek41/build/native-adapter-sm89/CMakeFiles/ds41_k2_fp8_gemm.dir/src/ds41/kernels/k2_fp8_gemm.cu.o",
+      "argv": [
+        "/usr/local/cuda/bin/nvcc",
+        "-forward-unknown-to-host-compiler",
+        "-DSTRATA_VERSION=\"0.1.39\"",
+        "--options-file",
+        "CMakeFiles/ds41_k2_fp8_gemm.dir/includes_CUDA.rsp",
+        "-O3",
+        "-DNDEBUG",
+        "-std=c++20",
+        "--generate-code=arch=compute_89,code=[compute_89,sm_89]",
+        "-Xcompiler=-fPIC",
+        "-MD",
+        "-MT",
+        "CMakeFiles/ds41_k2_fp8_gemm.dir/src/ds41/kernels/k2_fp8_gemm.cu.o",
+        "-MF",
+        "CMakeFiles/ds41_k2_fp8_gemm.dir/src/ds41/kernels/k2_fp8_gemm.cu.o.d",
+        "-x",
+        "cu",
+        "-c",
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/native-ds41/src/ds41/kernels/k2_fp8_gemm.cu",
+        "-o",
+        "CMakeFiles/ds41_k2_fp8_gemm.dir/src/ds41/kernels/k2_fp8_gemm.cu.o"
+      ],
+      "cwd": "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/build/native-adapter-sm89",
+      "evidence": "DeepSeek V4.1/work/deepseek41/build/native-adapter-sm89/CMakeFiles/ds41_k2_fp8_gemm.dir/build.make",
+      "score": -10,
+      "sources": [
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/native-ds41/src/ds41/kernels/k2_fp8_gemm.cu"
+      ]
+    },
+    {
+      "object_sha256": "e06b9e8b7a9fe8240257a784cd402c3932b229b7ed232eb1852a227976378fa1",
+      "original_object": "DeepSeek V4.1/work/deepseek41/build/native-adapter-sm89/CMakeFiles/ds41_k3_sparse_attn.dir/src/ds41/kernels/k3_sparse_attn.cu.o",
+      "argv": [
+        "/usr/local/cuda/bin/nvcc",
+        "-forward-unknown-to-host-compiler",
+        "-DSTRATA_VERSION=\"0.1.39\"",
+        "--options-file",
+        "CMakeFiles/ds41_k3_sparse_attn.dir/includes_CUDA.rsp",
+        "-O3",
+        "-DNDEBUG",
+        "-std=c++20",
+        "--generate-code=arch=compute_89,code=[compute_89,sm_89]",
+        "-Xcompiler=-fPIC",
+        "-MD",
+        "-MT",
+        "CMakeFiles/ds41_k3_sparse_attn.dir/src/ds41/kernels/k3_sparse_attn.cu.o",
+        "-MF",
+        "CMakeFiles/ds41_k3_sparse_attn.dir/src/ds41/kernels/k3_sparse_attn.cu.o.d",
+        "-x",
+        "cu",
+        "-c",
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/native-ds41/src/ds41/kernels/k3_sparse_attn.cu",
+        "-o",
+        "CMakeFiles/ds41_k3_sparse_attn.dir/src/ds41/kernels/k3_sparse_attn.cu.o"
+      ],
+      "cwd": "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/build/native-adapter-sm89",
+      "evidence": "DeepSeek V4.1/work/deepseek41/build/native-adapter-sm89/CMakeFiles/ds41_k3_sparse_attn.dir/build.make",
+      "score": -10,
+      "sources": [
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/native-ds41/src/ds41/kernels/k3_sparse_attn.cu"
+      ]
+    },
+    {
+      "object_sha256": "22faf18fd016c721a979daea056eab44a2dbbdfc9f60e49a675eb70f139c0055",
+      "original_object": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/k5-swizzled-register-v503/candidate.o",
+      "argv": [
+        "/usr/local/cuda-13.4/bin/nvcc",
+        "-ccbin=/usr/bin/clang++-18",
+        "-O3",
+        "-DNDEBUG",
+        "-std=c++20",
+        "--generate-code=arch=compute_89,code=[compute_89,sm_89]",
+        "-Xcompiler=-fPIC",
+        "-Xptxas=-v",
+        "-DDS1017_K5_SWIZZLED_REGISTER_V503=1",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/native-ds41/include",
+        "-c",
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/k5-swizzled-register-v503/k5_swizzled_register_v503.cu",
+        "-o",
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/build/k5-swizzled-register-v503/candidate.o"
+      ],
+      "cwd": "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41",
+      "evidence": "DeepSeek V4.1/work/deepseek41-1017-multigpu/state/k5-swizzled-register-root-build-v503.json",
+      "score": 10,
+      "sources": [
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/k5-swizzled-register-v503/k5_swizzled_register_v503.cu"
+      ]
+    },
+    {
+      "object_sha256": "447b94c77c2d46d700f53948f17e9570d9880e8d608cd6ea9cc090ee5a2c3757",
+      "original_object": "DeepSeek V4.1/work/deepseek41/research/k7-prefetch-ring-r1/build/k7_hc.o",
+      "argv": [
+        "/usr/local/cuda/bin/nvcc",
+        "-ccbin=/usr/bin/clang++-18",
+        "-O3",
+        "-DNDEBUG",
+        "-std=c++20",
+        "-arch=sm_89",
+        "-Xcompiler=-fPIC",
+        "-Xptxas=-v",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/native-ds41/include",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/research/k7-prefetch-ring-r1/source",
+        "-c",
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/research/k7-prefetch-ring-r1/source/k7_hc.cu",
+        "-o",
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/research/k7-prefetch-ring-r1/build/k7_hc.o"
+      ],
+      "cwd": "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41",
+      "evidence": "DeepSeek V4.1/work/deepseek41/research/k7-prefetch-ring-r1/build/receipt.json",
+      "score": 0,
+      "sources": [
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/research/k7-prefetch-ring-r1/source/k7_hc.cu"
+      ]
+    },
+    {
+      "object_sha256": "26f0dce5151e7709752f8012daa1e015cdf962c8c30b0b2c18adec27cdbcb25e",
+      "original_object": "DeepSeek V4.1/work/deepseek41/build/native-adapter-sm89/CMakeFiles/ds41_k8_router.dir/src/ds41/kernels/k8_router.cu.o",
+      "argv": [
+        "/usr/local/cuda/bin/nvcc",
+        "-forward-unknown-to-host-compiler",
+        "-DSTRATA_VERSION=\"0.1.39\"",
+        "--options-file",
+        "CMakeFiles/ds41_k8_router.dir/includes_CUDA.rsp",
+        "-O3",
+        "-DNDEBUG",
+        "-std=c++20",
+        "--generate-code=arch=compute_89,code=[compute_89,sm_89]",
+        "-Xcompiler=-fPIC",
+        "-MD",
+        "-MT",
+        "CMakeFiles/ds41_k8_router.dir/src/ds41/kernels/k8_router.cu.o",
+        "-MF",
+        "CMakeFiles/ds41_k8_router.dir/src/ds41/kernels/k8_router.cu.o.d",
+        "-x",
+        "cu",
+        "-c",
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/native-ds41/src/ds41/kernels/k8_router.cu",
+        "-o",
+        "CMakeFiles/ds41_k8_router.dir/src/ds41/kernels/k8_router.cu.o"
+      ],
+      "cwd": "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/build/native-adapter-sm89",
+      "evidence": "DeepSeek V4.1/work/deepseek41/build/native-adapter-sm89/CMakeFiles/ds41_k8_router.dir/build.make",
+      "score": -10,
+      "sources": [
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/native-ds41/src/ds41/kernels/k8_router.cu"
+      ]
+    },
+    {
+      "object_sha256": "a30af70792fa9f03e337c7a93caed729392dadb434f39c55b74f261e8106d729",
+      "original_object": "DeepSeek V4.1/work/deepseek41/build/native-adapter-sm89/CMakeFiles/ds41_k10_exl3_moe.dir/src/ds41/kernels/k10_exl3_moe.cu.o",
+      "argv": [
+        "/usr/local/cuda/bin/nvcc",
+        "-forward-unknown-to-host-compiler",
+        "-DSTRATA_VERSION=\"0.1.39\"",
+        "--options-file",
+        "CMakeFiles/ds41_k10_exl3_moe.dir/includes_CUDA.rsp",
+        "-O3",
+        "-DNDEBUG",
+        "-std=c++20",
+        "--generate-code=arch=compute_89,code=[compute_89,sm_89]",
+        "-Xcompiler=-fPIC",
+        "-MD",
+        "-MT",
+        "CMakeFiles/ds41_k10_exl3_moe.dir/src/ds41/kernels/k10_exl3_moe.cu.o",
+        "-MF",
+        "CMakeFiles/ds41_k10_exl3_moe.dir/src/ds41/kernels/k10_exl3_moe.cu.o.d",
+        "-x",
+        "cu",
+        "-c",
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/native-ds41/src/ds41/kernels/k10_exl3_moe.cu",
+        "-o",
+        "CMakeFiles/ds41_k10_exl3_moe.dir/src/ds41/kernels/k10_exl3_moe.cu.o"
+      ],
+      "cwd": "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/build/native-adapter-sm89",
+      "evidence": "DeepSeek V4.1/work/deepseek41/build/native-adapter-sm89/CMakeFiles/ds41_k10_exl3_moe.dir/build.make",
+      "score": -10,
+      "sources": [
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/native-ds41/src/ds41/kernels/k10_exl3_moe.cu"
+      ]
+    },
+    {
+      "object_sha256": "a2ea8e1ab9dcc3b8561eb3cabdccfbeed8e289f60e602bf318d859e80071057e",
+      "original_object": "DeepSeek V4.1/work/deepseek41/build/native-adapter-sm89/CMakeFiles/ds41_k13_sparse_attn_prefill.dir/src/ds41/kernels/k13_sparse_attn_prefill.cu.o",
+      "argv": [
+        "/usr/local/cuda/bin/nvcc",
+        "-forward-unknown-to-host-compiler",
+        "-DSTRATA_VERSION=\"0.1.39\"",
+        "--options-file",
+        "CMakeFiles/ds41_k13_sparse_attn_prefill.dir/includes_CUDA.rsp",
+        "-O3",
+        "-DNDEBUG",
+        "-std=c++20",
+        "--generate-code=arch=compute_89,code=[compute_89,sm_89]",
+        "-Xcompiler=-fPIC",
+        "-MD",
+        "-MT",
+        "CMakeFiles/ds41_k13_sparse_attn_prefill.dir/src/ds41/kernels/k13_sparse_attn_prefill.cu.o",
+        "-MF",
+        "CMakeFiles/ds41_k13_sparse_attn_prefill.dir/src/ds41/kernels/k13_sparse_attn_prefill.cu.o.d",
+        "-x",
+        "cu",
+        "-c",
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/native-ds41/src/ds41/kernels/k13_sparse_attn_prefill.cu",
+        "-o",
+        "CMakeFiles/ds41_k13_sparse_attn_prefill.dir/src/ds41/kernels/k13_sparse_attn_prefill.cu.o"
+      ],
+      "cwd": "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/build/native-adapter-sm89",
+      "evidence": "DeepSeek V4.1/work/deepseek41/build/native-adapter-sm89/CMakeFiles/ds41_k13_sparse_attn_prefill.dir/build.make",
+      "score": -10,
+      "sources": [
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/native-ds41/src/ds41/kernels/k13_sparse_attn_prefill.cu"
+      ]
+    },
+    {
+      "object_sha256": "8557e4822056b6ecdd7b6b3458e95f845bf85130bd8c6559274e26cce064dfbc",
+      "original_object": "DeepSeek V4.1/work/deepseek41/research/indexer-s8-full-r4/full-build/k14_indexer_prefill.cu.o",
+      "argv": [
+        "/usr/local/cuda/bin/nvcc",
+        "-ccbin=/usr/bin/clang++-18",
+        "-O3",
+        "-DNDEBUG",
+        "-std=c++20",
+        "--generate-code=arch=compute_89,code=[compute_89,sm_89]",
+        "-Xcompiler=-fPIC",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/native-ds41/include",
+        "-c",
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/research/indexer-s8-full-r4/source/k14_indexer_prefill.cu",
+        "-o",
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/research/indexer-s8-full-r4/full-build/k14_indexer_prefill.cu.o"
+      ],
+      "cwd": "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41",
+      "evidence": "DeepSeek V4.1/work/deepseek41/research/indexer-s8-full-r4/full-build/receipt.json",
+      "score": 0,
+      "sources": [
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/research/indexer-s8-full-r4/source/k14_indexer_prefill.cu"
+      ]
+    },
+    {
+      "object_sha256": "1532a599649e573cde1fce00efa48f93408210ecf62bfa564b69aacf6fddf069",
+      "original_object": "DeepSeek V4.1/work/deepseek41/build/native-adapter-sm89/CMakeFiles/ds41_k15_hc_prefill.dir/src/ds41/kernels/k15_hc_prefill.cu.o",
+      "argv": [
+        "/usr/local/cuda/bin/nvcc",
+        "-forward-unknown-to-host-compiler",
+        "-DSTRATA_VERSION=\"0.1.39\"",
+        "--options-file",
+        "CMakeFiles/ds41_k15_hc_prefill.dir/includes_CUDA.rsp",
+        "-O3",
+        "-DNDEBUG",
+        "-std=c++20",
+        "--generate-code=arch=compute_89,code=[compute_89,sm_89]",
+        "-Xcompiler=-fPIC",
+        "-MD",
+        "-MT",
+        "CMakeFiles/ds41_k15_hc_prefill.dir/src/ds41/kernels/k15_hc_prefill.cu.o",
+        "-MF",
+        "CMakeFiles/ds41_k15_hc_prefill.dir/src/ds41/kernels/k15_hc_prefill.cu.o.d",
+        "-x",
+        "cu",
+        "-c",
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/native-ds41/src/ds41/kernels/k15_hc_prefill.cu",
+        "-o",
+        "CMakeFiles/ds41_k15_hc_prefill.dir/src/ds41/kernels/k15_hc_prefill.cu.o"
+      ],
+      "cwd": "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/build/native-adapter-sm89",
+      "evidence": "DeepSeek V4.1/work/deepseek41/build/native-adapter-sm89/CMakeFiles/ds41_k15_hc_prefill.dir/build.make",
+      "score": -10,
+      "sources": [
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/native-ds41/src/ds41/kernels/k15_hc_prefill.cu"
+      ]
+    },
+    {
+      "object_sha256": "c7562cef0250a8c0017daa279569ef459d918d5334ef7e2712ac0e91cc3b19a5",
+      "original_object": "DeepSeek V4.1/work/deepseek41/build/native-adapter-sm89/CMakeFiles/ds41_k12_exl3_moe_prefill.dir/src/ds41/kernels/k12_exl3_moe_prefill.cu.o",
+      "argv": [
+        "/usr/local/cuda/bin/nvcc",
+        "-forward-unknown-to-host-compiler",
+        "-DSTRATA_VERSION=\"0.1.39\"",
+        "--options-file",
+        "CMakeFiles/ds41_k12_exl3_moe_prefill.dir/includes_CUDA.rsp",
+        "-O3",
+        "-DNDEBUG",
+        "-std=c++20",
+        "--generate-code=arch=compute_89,code=[compute_89,sm_89]",
+        "-Xcompiler=-fPIC",
+        "-MD",
+        "-MT",
+        "CMakeFiles/ds41_k12_exl3_moe_prefill.dir/src/ds41/kernels/k12_exl3_moe_prefill.cu.o",
+        "-MF",
+        "CMakeFiles/ds41_k12_exl3_moe_prefill.dir/src/ds41/kernels/k12_exl3_moe_prefill.cu.o.d",
+        "-x",
+        "cu",
+        "-c",
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/native-ds41/src/ds41/kernels/k12_exl3_moe_prefill.cu",
+        "-o",
+        "CMakeFiles/ds41_k12_exl3_moe_prefill.dir/src/ds41/kernels/k12_exl3_moe_prefill.cu.o"
+      ],
+      "cwd": "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/build/native-adapter-sm89",
+      "evidence": "DeepSeek V4.1/work/deepseek41/build/native-adapter-sm89/CMakeFiles/ds41_k12_exl3_moe_prefill.dir/build.make",
+      "score": -10,
+      "sources": [
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/native-ds41/src/ds41/kernels/k12_exl3_moe_prefill.cu"
+      ]
+    },
+    {
+      "object_sha256": "0f1c038bb0165ca82e53370c6481973579d3ccd41885970ee76a8cf96c481344",
+      "original_object": "DeepSeek V4.1/work/deepseek41/research/fp8-hardware-decode-r1/build/fp8_gemv.o",
+      "argv": [
+        "/usr/local/cuda/bin/nvcc",
+        "-ccbin=/usr/bin/clang++-18",
+        "-O3",
+        "-DNDEBUG",
+        "-std=c++20",
+        "-arch=sm_89",
+        "-Xcompiler=-fPIC",
+        "-Xptxas=-v",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/native-ds41/include",
+        "-c",
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/research/fp8-hardware-decode-r1/source/fp8_gemv.cu",
+        "-o",
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/research/fp8-hardware-decode-r1/build/fp8_gemv.o"
+      ],
+      "cwd": "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41",
+      "evidence": "DeepSeek V4.1/work/deepseek41/research/fp8-hardware-decode-r1/build/receipt.json",
+      "score": 0,
+      "sources": [
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/research/fp8-hardware-decode-r1/source/fp8_gemv.cu"
+      ]
+    },
+    {
+      "object_sha256": "689084d04e4f71072fdda95b317e4b36a96b572fdc387abc256c861c72e2cbc2",
+      "original_object": "DeepSeek V4.1/work/deepseek41/build/native-adapter-cpu/CMakeFiles/ds41_native_host_work.dir/src/ds41/native_host_scatter.cpp.o",
+      "argv": [
+        "/usr/bin/c++",
+        "-DSTRATA_VERSION=\"0.1.39\"",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/native-ds41/include",
+        "-O3",
+        "-DNDEBUG",
+        "-std=c++20",
+        "-fPIC",
+        "-MD",
+        "-MT",
+        "CMakeFiles/ds41_native_host_work.dir/src/ds41/native_host_scatter.cpp.o",
+        "-MF",
+        "CMakeFiles/ds41_native_host_work.dir/src/ds41/native_host_scatter.cpp.o.d",
+        "-o",
+        "CMakeFiles/ds41_native_host_work.dir/src/ds41/native_host_scatter.cpp.o",
+        "-c",
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/native-ds41/src/ds41/native_host_scatter.cpp"
+      ],
+      "cwd": "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/build/native-adapter-cpu",
+      "evidence": "DeepSeek V4.1/work/deepseek41/build/native-adapter-cpu/CMakeFiles/ds41_native_host_work.dir/build.make",
+      "score": -10,
+      "sources": [
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/native-ds41/src/ds41/native_host_scatter.cpp"
+      ]
+    },
+    {
+      "object_sha256": "de16a16351fbfdd2ce2bb04f9a3bdc853a971edad708b35b2e5d207225032af7",
+      "original_object": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/pass-upload-async-native-v558/cohort539/native_experts_cohort_v539.o",
+      "argv": [
+        "clang++-18",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/upload-reserved-cohort-v539/source",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/cpu-pair32-static-v143/source",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/cpu-numa-bulk-task-v418/source",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/whole-adaptive-engine-v387/source",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/cpu-pair32-static-v143/source",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/pair32-combined-v151-r2/source",
+        "-std=c++20",
+        "-O3",
+        "-fno-fast-math",
+        "-ffp-contract=off",
+        "-fPIC",
+        "-pthread",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/pair32-combined-v151-r2/source",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/cpu-pair32-static-v143/source",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/pair-gu-engine-v19/include",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/native-ds41/include",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/build/native-k3-verify-v310/include",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/third_party",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/native-ds41/src/ds41",
+        "-I/usr/local/cuda-13.4/include",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/whole-fixed-plan-owner-v469/source",
+        "-march=znver4",
+        "-frounding-math",
+        "-c",
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/upload-reserved-cohort-v539/source/native_experts_cohort_v539.cpp",
+        "-o",
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/build/pass-upload-async-native-v558/cohort539/native_experts_cohort_v539.o"
+      ],
+      "cwd": "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41",
+      "evidence": "DeepSeek V4.1/work/deepseek41-1017-multigpu/state/pass-upload-async-native-root-build-v558.json",
+      "score": 110,
+      "sources": [
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/upload-reserved-cohort-v539/source/native_experts_cohort_v539.cpp"
+      ]
+    },
+    {
+      "object_sha256": "31f496bc56ead91fe8b9116e9092fbd008299f2517afbf6d2b423c120ce0d183",
+      "original_object": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/down-only-paired-v182/borrowed_weights.cpp.o",
+      "argv": [
+        "clang++-18",
+        "-std=c++20",
+        "-O3",
+        "-fno-fast-math",
+        "-ffp-contract=off",
+        "-fPIC",
+        "-pthread",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/down-only-paired-v182/source",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/cpu-pair32-static-v143/source",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/pair-gu-engine-v19/include",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/native-ds41/include",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/build/native-k3-verify-v310/include",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/third_party",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/native-ds41/src/ds41",
+        "-I/usr/local/cuda-13.4/include",
+        "-c",
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/down-only-paired-v182/source/borrowed_weights.cpp",
+        "-o",
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/build/down-only-paired-v182/borrowed_weights.cpp.o"
+      ],
+      "cwd": "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41",
+      "evidence": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/down-only-paired-v182/ROOT_RECIPE.json",
+      "score": 0,
+      "sources": [
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/down-only-paired-v182/source/borrowed_weights.cpp"
+      ]
+    },
+    {
+      "object_sha256": "4cbcfc6c00d896a2278ef91364cc663ded216009441e9bc5098a64c4ed8612e8",
+      "original_object": "DeepSeek V4.1/work/deepseek41/research/protected-ids-cache-r1/build/borrowed_rows_simd.cpp.o",
+      "argv": [
+        "clang++-18",
+        "-O3",
+        "-DNDEBUG",
+        "-std=c++20",
+        "-fPIC",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/build/native-k3-verify-v310/include",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/native-ds41/include",
+        "-isystem",
+        "/usr/local/cuda/targets/x86_64-linux/include",
+        "-c",
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/research/protected-ids-cache-r1/source/borrowed_rows_simd.cpp",
+        "-o",
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/research/protected-ids-cache-r1/build/borrowed_rows_simd.cpp.o"
+      ],
+      "cwd": "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41",
+      "evidence": "DeepSeek V4.1/work/deepseek41/research/owned-bench-r2/results/compile-protected-ids-cache-r1.json",
+      "score": 0,
+      "sources": [
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/research/protected-ids-cache-r1/source/borrowed_rows_simd.cpp"
+      ]
+    },
+    {
+      "object_sha256": "04b8f45ef6993815caba6dc58f7cc4f80080fc37728057e0921e4e4a1dd2732f",
+      "original_object": "DeepSeek V4.1/work/deepseek41/build/native-adapter-cpu/CMakeFiles/ds41_borrowed_weights.dir/src/ds41/native_checkpoint.cpp.o",
+      "argv": [
+        "/usr/bin/c++",
+        "-DSTRATA_VERSION=\"0.1.39\"",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/native-ds41/include",
+        "-O3",
+        "-DNDEBUG",
+        "-std=c++20",
+        "-fPIC",
+        "-MD",
+        "-MT",
+        "CMakeFiles/ds41_borrowed_weights.dir/src/ds41/native_checkpoint.cpp.o",
+        "-MF",
+        "CMakeFiles/ds41_borrowed_weights.dir/src/ds41/native_checkpoint.cpp.o.d",
+        "-o",
+        "CMakeFiles/ds41_borrowed_weights.dir/src/ds41/native_checkpoint.cpp.o",
+        "-c",
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/native-ds41/src/ds41/native_checkpoint.cpp"
+      ],
+      "cwd": "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/build/native-adapter-cpu",
+      "evidence": "DeepSeek V4.1/work/deepseek41/build/native-adapter-cpu/CMakeFiles/ds41_borrowed_weights.dir/build.make",
+      "score": -10,
+      "sources": [
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/native-ds41/src/ds41/native_checkpoint.cpp"
+      ]
+    },
+    {
+      "object_sha256": "6cd5dd4d5c18b3cf44a64cb7f07dde361819c23b44689748cd581a9f14854241",
+      "original_object": "DeepSeek V4.1/work/deepseek41/build/native-adapter-cpu/CMakeFiles/ds41_native_prefill_layout.dir/src/ds41/native_prefill_layout.cpp.o",
+      "argv": [
+        "/usr/bin/c++",
+        "-DSTRATA_VERSION=\"0.1.39\"",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/native-ds41/include",
+        "-O3",
+        "-DNDEBUG",
+        "-std=c++20",
+        "-fPIC",
+        "-MD",
+        "-MT",
+        "CMakeFiles/ds41_native_prefill_layout.dir/src/ds41/native_prefill_layout.cpp.o",
+        "-MF",
+        "CMakeFiles/ds41_native_prefill_layout.dir/src/ds41/native_prefill_layout.cpp.o.d",
+        "-o",
+        "CMakeFiles/ds41_native_prefill_layout.dir/src/ds41/native_prefill_layout.cpp.o",
+        "-c",
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/native-ds41/src/ds41/native_prefill_layout.cpp"
+      ],
+      "cwd": "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/build/native-adapter-cpu",
+      "evidence": "DeepSeek V4.1/work/deepseek41/build/native-adapter-cpu/CMakeFiles/ds41_native_prefill_layout.dir/build.make",
+      "score": -10,
+      "sources": [
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/native-ds41/src/ds41/native_prefill_layout.cpp"
+      ]
+    },
+    {
+      "object_sha256": "75aa8f221194bb4398d65611530175640180f1dffc5258fae126e41d4e8dba0e",
+      "original_object": "DeepSeek V4.1/work/deepseek41/build/native-adapter-cpu/CMakeFiles/ds41_native_prefill_layout.dir/src/ds41/native_routes.cpp.o",
+      "argv": [
+        "/usr/bin/c++",
+        "-DSTRATA_VERSION=\"0.1.39\"",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/native-ds41/include",
+        "-O3",
+        "-DNDEBUG",
+        "-std=c++20",
+        "-fPIC",
+        "-MD",
+        "-MT",
+        "CMakeFiles/ds41_native_prefill_layout.dir/src/ds41/native_routes.cpp.o",
+        "-MF",
+        "CMakeFiles/ds41_native_prefill_layout.dir/src/ds41/native_routes.cpp.o.d",
+        "-o",
+        "CMakeFiles/ds41_native_prefill_layout.dir/src/ds41/native_routes.cpp.o",
+        "-c",
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/native-ds41/src/ds41/native_routes.cpp"
+      ],
+      "cwd": "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/build/native-adapter-cpu",
+      "evidence": "DeepSeek V4.1/work/deepseek41/build/native-adapter-cpu/CMakeFiles/ds41_native_prefill_layout.dir/build.make",
+      "score": -10,
+      "sources": [
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/native-ds41/src/ds41/native_routes.cpp"
+      ]
+    },
+    {
+      "object_sha256": "893d7436a0bc6ab16f67ca55e253d09d78fb6f981e3ad903f2025ffb4cbf5d6b",
+      "original_object": "DeepSeek V4.1/work/deepseek41/build/native-adapter-cpu/CMakeFiles/ds41_native_prefill_layout.dir/src/ds41/native_act_storage_layout.cpp.o",
+      "argv": [
+        "/usr/bin/c++",
+        "-DSTRATA_VERSION=\"0.1.39\"",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/native-ds41/include",
+        "-O3",
+        "-DNDEBUG",
+        "-std=c++20",
+        "-fPIC",
+        "-MD",
+        "-MT",
+        "CMakeFiles/ds41_native_prefill_layout.dir/src/ds41/native_act_storage_layout.cpp.o",
+        "-MF",
+        "CMakeFiles/ds41_native_prefill_layout.dir/src/ds41/native_act_storage_layout.cpp.o.d",
+        "-o",
+        "CMakeFiles/ds41_native_prefill_layout.dir/src/ds41/native_act_storage_layout.cpp.o",
+        "-c",
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/native-ds41/src/ds41/native_act_storage_layout.cpp"
+      ],
+      "cwd": "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/build/native-adapter-cpu",
+      "evidence": "DeepSeek V4.1/work/deepseek41/build/native-adapter-cpu/CMakeFiles/ds41_native_prefill_layout.dir/build.make",
+      "score": -10,
+      "sources": [
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/native-ds41/src/ds41/native_act_storage_layout.cpp"
+      ]
+    },
+    {
+      "object_sha256": "04b71d81962465762932c88b03457285cbbe57c45cf1eef09df9e43c2efc4358",
+      "original_object": "DeepSeek V4.1/work/deepseek41/build/native-adapter-cpu/CMakeFiles/ds41_native_prefill_layout.dir/src/ds41/native_host_prefill_layout.cpp.o",
+      "argv": [
+        "/usr/bin/c++",
+        "-DSTRATA_VERSION=\"0.1.39\"",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/native-ds41/include",
+        "-O3",
+        "-DNDEBUG",
+        "-std=c++20",
+        "-fPIC",
+        "-MD",
+        "-MT",
+        "CMakeFiles/ds41_native_prefill_layout.dir/src/ds41/native_host_prefill_layout.cpp.o",
+        "-MF",
+        "CMakeFiles/ds41_native_prefill_layout.dir/src/ds41/native_host_prefill_layout.cpp.o.d",
+        "-o",
+        "CMakeFiles/ds41_native_prefill_layout.dir/src/ds41/native_host_prefill_layout.cpp.o",
+        "-c",
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/native-ds41/src/ds41/native_host_prefill_layout.cpp"
+      ],
+      "cwd": "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/build/native-adapter-cpu",
+      "evidence": "DeepSeek V4.1/work/deepseek41/build/native-adapter-cpu/CMakeFiles/ds41_native_prefill_layout.dir/build.make",
+      "score": -10,
+      "sources": [
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/native-ds41/src/ds41/native_host_prefill_layout.cpp"
+      ]
+    },
+    {
+      "object_sha256": "08d5a732f2d8fad88bec5ce60eca52264cfd5f3d0cbaf845a4550027b8133f89",
+      "original_object": "DeepSeek V4.1/work/deepseek41/build/native-k3-causal-v309/k3_causal_batch_v309.cu.o",
+      "argv": [
+        "/usr/local/cuda/bin/nvcc",
+        "-O3",
+        "-DNDEBUG",
+        "-std=c++20",
+        "-Xcompiler=-fPIC",
+        "--generate-code=arch=compute_89,code=[compute_89,sm_89]",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/native-ds41/include",
+        "-c",
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/native-ds41/src/ds41/kernels/k3_causal_batch_v309.cu",
+        "-o",
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/build/native-k3-causal-v309/k3_causal_batch_v309.cu.o"
+      ],
+      "cwd": "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41",
+      "evidence": "DeepSeek V4.1/outputs/deepseek41/analysis/native-K3-causal-batch-v309/prepared-API.json",
+      "score": 0,
+      "sources": [
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/native-ds41/src/ds41/kernels/k3_causal_batch_v309.cu"
+      ]
+    },
+    {
+      "object_sha256": "b1236d041ef27ba602f37fe652a2510dc2ac7b3a86fd5a2700a63d3a3c45d58d",
+      "original_object": "DeepSeek V4.1/work/deepseek41/build/native-output16-fp8-v244.so",
+      "argv": [
+        "/usr/local/cuda/bin/nvcc",
+        "-std=c++20",
+        "-O3",
+        "--generate-code=arch=compute_89,code=sm_89",
+        "-Xcompiler=-fPIC",
+        "-shared",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/native-ds41/include",
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/native-ds41/src/ds41/native_fp8_output16_v244.cu",
+        "-o",
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/build/native-output16-fp8-v244.so"
+      ],
+      "cwd": "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41",
+      "evidence": "DeepSeek V4.1/outputs/deepseek41/analysis/single-request-speed-research/output16-GPUfeeding-v244-prepared.json",
+      "score": 0,
+      "sources": [
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/native-ds41/src/ds41/native_fp8_output16_v244.cu"
+      ]
+    },
+    {
+      "object_sha256": "c86d6118f6a0bb7b8d82daed8960e7f79e3ccf1dd6de5769b674eba94204bb15",
+      "original_object": "DeepSeek V4.1/work/deepseek41/build/native-recompute-input-r1.so",
+      "argv": [
+        "clang++-18",
+        "-fuse-ld=mold",
+        "-shared",
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/research/recompute-input-r1/build/recompute.o",
+        "-L/usr/local/cuda/lib64",
+        "-lcudart",
+        "-Wl,-rpath,/usr/local/cuda/lib64",
+        "-o",
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/build/native-recompute-input-r1.so"
+      ],
+      "cwd": "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41",
+      "evidence": "DeepSeek V4.1/work/deepseek41/research/owned-bench-r2/results/compile-recompute-input-r1.json",
+      "score": 0,
+      "sources": []
+    },
+    {
+      "object_sha256": "8504097d58e3b3bb717f6bbe142a994daf54c6d6c7e835c7e3a87b831752c8a2",
+      "original_object": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/down-only-paired-v182/pair_registry_v145.cpp.o",
+      "argv": [
+        "clang++-18",
+        "-std=c++20",
+        "-O3",
+        "-fno-fast-math",
+        "-ffp-contract=off",
+        "-fPIC",
+        "-pthread",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/down-only-paired-v182/source",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/cpu-pair32-static-v143/source",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/pair-gu-engine-v19/include",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/native-ds41/include",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/build/native-k3-verify-v310/include",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/third_party",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/native-ds41/src/ds41",
+        "-I/usr/local/cuda-13.4/include",
+        "-c",
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/down-only-paired-v182/source/pair_registry_v145.cpp",
+        "-o",
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/build/down-only-paired-v182/pair_registry_v145.cpp.o"
+      ],
+      "cwd": "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41",
+      "evidence": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/down-only-paired-v182/ROOT_RECIPE.json",
+      "score": 0,
+      "sources": [
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/down-only-paired-v182/source/pair_registry_v145.cpp"
+      ]
+    },
+    {
+      "object_sha256": "e1cc809d82e296b394ae5857b15d396f9659195274bc40ae937cecb755fc5c68",
+      "original_object": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/pair-packed-inverse-v141-r2/inverse.o",
+      "argv": [
+        "/usr/local/cuda-13.4/bin/nvcc",
+        "-ccbin=/usr/bin/clang++-18",
+        "-O3",
+        "-std=c++17",
+        "--generate-code=arch=compute_89,code=[compute_89,sm_89]",
+        "-Xcompiler=-fPIC",
+        "-c",
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/pair-packed-inverse-v141-r2/source/pair_inverse_v141.cu",
+        "-o",
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/build/pair-packed-inverse-v141-r2/inverse.o"
+      ],
+      "cwd": "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41",
+      "evidence": "DeepSeek V4.1/work/deepseek41-1017-multigpu/state/pair-packed-inverse-build-v141-r2.json",
+      "score": 0,
+      "sources": [
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/pair-packed-inverse-v141-r2/source/pair_inverse_v141.cu"
+      ]
+    },
+    {
+      "object_sha256": "2b29a7ac69955b9e96c09681df2660cac84ea4b0a3c6b89bce803a2b522635c4",
+      "original_object": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/index-native-admission-v501/paired_owner_v147.o",
+      "argv": [
+        "clang++-18",
+        "-frtti",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/pair-packed-inverse-v141-r2/source",
+        "-std=c++20",
+        "-O3",
+        "-fno-fast-math",
+        "-ffp-contract=off",
+        "-fPIC",
+        "-pthread",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/pair32-combined-v151-r2/source",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/cpu-pair32-static-v143/source",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/pair-gu-engine-v19/include",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/native-ds41/include",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/build/native-k3-verify-v310/include",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/third_party",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/native-ds41/src/ds41",
+        "-I/usr/local/cuda-13.4/include",
+        "-c",
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/index-native-admission-v501/source/paired_owner_v147.cpp",
+        "-o",
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/build/index-native-admission-v501/paired_owner_v147.o"
+      ],
+      "cwd": "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41",
+      "evidence": "DeepSeek V4.1/work/deepseek41-1017-multigpu/state/index-native-admission-root-build-v501.json",
+      "score": 10,
+      "sources": [
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/index-native-admission-v501/source/paired_owner_v147.cpp"
+      ]
+    },
+    {
+      "object_sha256": "d4edf14df08b3692506d225a6b8fb6b44a9bb42465afb8ee84c5b7c29ba7f8cb",
+      "original_object": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/gpu-gu-byteperm-v13-root-855b/batch_v5.cu.o",
+      "argv": [
+        "/usr/local/cuda/bin/nvcc",
+        "-ccbin=/usr/bin/clang++-18",
+        "-O3",
+        "-std=c++20",
+        "--generate-code=arch=compute_89,code=[compute_89,sm_89]",
+        "--fmad=false",
+        "--ftz=false",
+        "-Xptxas=-v",
+        "-Xcompiler=-fPIC",
+        "-c",
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/gpu-gu-byteperm-v13/byteperm_v13.cu",
+        "-o",
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/build/gpu-gu-byteperm-v13-root-855b/batch_v5.cu.o"
+      ],
+      "cwd": "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41",
+      "evidence": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/gpu-gu-byteperm-v13/ROOT_RECIPE.json",
+      "score": 0,
+      "sources": [
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/gpu-gu-byteperm-v13/byteperm_v13.cu"
+      ]
+    },
+    {
+      "object_sha256": "1d101350b8538e3b80b3ba2d3d2829fad4fcd111a40a697cbee3aaeef83eb284",
+      "original_object": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/candidate-cutoff-multicta-v369/candidate.o",
+      "argv": [
+        "/usr/local/cuda-13.4/bin/nvcc",
+        "-ccbin=/usr/bin/clang++-18",
+        "-O3",
+        "-std=c++20",
+        "--generate-code=arch=compute_89,code=[compute_89,sm_89]",
+        "--ftz=false",
+        "-Xcompiler=-fPIC",
+        "-Xcompiler=-fvisibility=hidden",
+        "-Xptxas=-v",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/candidate-cutoff-multicta-v369/source",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/native-ds41/include",
+        "-c",
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/candidate-cutoff-multicta-v369/source/candidate_cutoff_v369.cu",
+        "-o",
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/build/candidate-cutoff-multicta-v369/candidate.o"
+      ],
+      "cwd": "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu",
+      "evidence": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/candidate-cutoff-multicta-v369/ROOT_RECIPE.json",
+      "score": 0,
+      "sources": [
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/candidate-cutoff-multicta-v369/source/candidate_cutoff_v369.cu"
+      ]
+    },
+    {
+      "object_sha256": "2e6a3e576e35aab8545f081a02cd47b86a5276cf5203067c1231925b357b3b54",
+      "original_object": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/whole-adaptive-engine-v387/native_adaptive_lease_v387.o",
+      "argv": [
+        "clang++-18",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/whole-adaptive-engine-v387/source",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/cpu-pair32-static-v143/source",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/pair32-combined-v151-r2/source",
+        "-std=c++20",
+        "-O3",
+        "-fno-fast-math",
+        "-ffp-contract=off",
+        "-fPIC",
+        "-pthread",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/pair32-combined-v151-r2/source",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/cpu-pair32-static-v143/source",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/pair-gu-engine-v19/include",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/native-ds41/include",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/build/native-k3-verify-v310/include",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/third_party",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/native-ds41/src/ds41",
+        "-I/usr/local/cuda-13.4/include",
+        "-c",
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/whole-adaptive-engine-v387/source/native_adaptive_lease_v387.cpp",
+        "-o",
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/build/whole-adaptive-engine-v387/native_adaptive_lease_v387.o"
+      ],
+      "cwd": "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41",
+      "evidence": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/whole-adaptive-engine-v387/ROOT_RECIPE.json",
+      "score": 0,
+      "sources": [
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/whole-adaptive-engine-v387/source/native_adaptive_lease_v387.cpp"
+      ]
+    },
+    {
+      "object_sha256": "c8bbc047a5a2aa0693798f9868ea9371e53c2558de4e6d131600eb3dc95fccfe",
+      "original_object": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/index-native-admission-v501/whole_owner_fixed_v469.o",
+      "argv": [
+        "clang++-18",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/cpu-pair32-static-v143/source",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/cpu-numa-bulk-task-v418/source",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/whole-adaptive-engine-v387/source",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/cpu-pair32-static-v143/source",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/pair32-combined-v151-r2/source",
+        "-std=c++20",
+        "-O3",
+        "-fno-fast-math",
+        "-ffp-contract=off",
+        "-fPIC",
+        "-pthread",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/pair32-combined-v151-r2/source",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/cpu-pair32-static-v143/source",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/pair-gu-engine-v19/include",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/native-ds41/include",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/build/native-k3-verify-v310/include",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/third_party",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/native-ds41/src/ds41",
+        "-I/usr/local/cuda-13.4/include",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/whole-fixed-plan-owner-v469/source",
+        "-march=znver4",
+        "-frounding-math",
+        "-c",
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/index-native-admission-v501/source/whole_owner_fixed_v469.cpp",
+        "-o",
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/build/index-native-admission-v501/whole_owner_fixed_v469.o"
+      ],
+      "cwd": "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41",
+      "evidence": "DeepSeek V4.1/work/deepseek41-1017-multigpu/state/index-native-admission-root-build-v501.json",
+      "score": 10,
+      "sources": [
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/index-native-admission-v501/source/whole_owner_fixed_v469.cpp"
+      ]
+    },
+    {
+      "object_sha256": "714d5a951110ef975106f8c676f66753f0b2526db198701b56822a7f9962c2ea",
+      "original_object": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/index-native-admission-v501/resources_v469.o",
+      "argv": [
+        "clang++-18",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/cpu-pair32-static-v143/source",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/cpu-numa-bulk-task-v418/source",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/whole-adaptive-engine-v387/source",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/cpu-pair32-static-v143/source",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/pair32-combined-v151-r2/source",
+        "-std=c++20",
+        "-O3",
+        "-fno-fast-math",
+        "-ffp-contract=off",
+        "-fPIC",
+        "-pthread",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/pair32-combined-v151-r2/source",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/cpu-pair32-static-v143/source",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/pair-gu-engine-v19/include",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/native-ds41/include",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/build/native-k3-verify-v310/include",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/third_party",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/native-ds41/src/ds41",
+        "-I/usr/local/cuda-13.4/include",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/whole-fixed-plan-owner-v469/source",
+        "-march=znver4",
+        "-frounding-math",
+        "-c",
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/index-native-admission-v501/source/resources_v469.cpp",
+        "-o",
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/build/index-native-admission-v501/resources_v469.o"
+      ],
+      "cwd": "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41",
+      "evidence": "DeepSeek V4.1/work/deepseek41-1017-multigpu/state/index-native-admission-root-build-v501.json",
+      "score": 10,
+      "sources": [
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/index-native-admission-v501/source/resources_v469.cpp"
+      ]
+    },
+    {
+      "object_sha256": "71ca58e081b16fcc49c825668d0be12ec6685647997828dc83c7c4c172e331eb",
+      "original_object": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/index-native-admission-v501/whole_operator_v391.o",
+      "argv": [
+        "/usr/bin/clang++-18",
+        "-O3",
+        "-std=c++20",
+        "-march=znver4",
+        "-ffp-contract=off",
+        "-fno-fast-math",
+        "-frounding-math",
+        "-fPIC",
+        "-I/usr/local/cuda/include",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/whole-down-metadata-transport-v391/source",
+        "-c",
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/index-native-admission-v501/source/whole_operator_v391.cpp",
+        "-o",
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/build/index-native-admission-v501/whole_operator_v391.o"
+      ],
+      "cwd": "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41",
+      "evidence": "DeepSeek V4.1/work/deepseek41-1017-multigpu/state/index-native-admission-root-build-v501.json",
+      "score": 10,
+      "sources": [
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/index-native-admission-v501/source/whole_operator_v391.cpp"
+      ]
+    },
+    {
+      "object_sha256": "87c64bbf620e8657c074f19f7823e9a6caf2b9b9164a68e28aefa43c056fb22e",
+      "original_object": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/whole-expert-async-operator-v303/join_v303.o",
+      "argv": [
+        "/usr/local/cuda/bin/nvcc",
+        "-ccbin=/usr/bin/clang++-18",
+        "-forward-unknown-to-host-compiler",
+        "-O3",
+        "-std=c++20",
+        "--generate-code=arch=compute_89,code=[compute_89,sm_89]",
+        "--ftz=false",
+        "--prec-div=true",
+        "--prec-sqrt=true",
+        "--fmad=false",
+        "-Xcompiler=-fPIC",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/whole-expert-async-operator-v303/source",
+        "-c",
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/whole-expert-async-operator-v303/source/join_v303.cu",
+        "-o",
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/build/whole-expert-async-operator-v303/join_v303.o"
+      ],
+      "cwd": "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/whole-expert-async-operator-v303",
+      "evidence": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/whole-expert-async-operator-v303/ROOT_RECIPE.json",
+      "score": 0,
+      "sources": [
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/whole-expert-async-operator-v303/source/join_v303.cu"
+      ]
+    },
+    {
+      "object_sha256": "f6e8ea9d0148c85b85f049c5cf29f4c222c581041accda4a8932ed82a2c9d3c7",
+      "original_object": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/whole-expert-exact-component-v291/literal53.o",
+      "argv": [
+        "/usr/local/cuda/bin/nvcc",
+        "-ccbin=/usr/bin/clang++-18",
+        "-forward-unknown-to-host-compiler",
+        "-O3",
+        "-std=c++20",
+        "--generate-code=arch=compute_89,code=[compute_89,sm_89]",
+        "--ftz=false",
+        "--prec-div=true",
+        "--prec-sqrt=true",
+        "--fmad=false",
+        "-Xcompiler=-fPIC",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/exact-down-component-v53",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/whole-expert-exact-component-v291/source",
+        "-c",
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/exact-down-component-v53/down_v53.cu",
+        "-o",
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/build/whole-expert-exact-component-v291/literal53.o"
+      ],
+      "cwd": "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41",
+      "evidence": "DeepSeek V4.1/work/deepseek41-1017-multigpu/state/whole-expert-exact-root-build-v291.json",
+      "score": 10,
+      "sources": [
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/exact-down-component-v53/down_v53.cu"
+      ]
+    },
+    {
+      "object_sha256": "f212c20e5e98b82ede08fb191839adbeea8823b0bbf7a9c1e7c1b14f3529027f",
+      "original_object": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/whole-expert-exact-component-v291/literal276.o",
+      "argv": [
+        "/usr/local/cuda/bin/nvcc",
+        "-ccbin=/usr/bin/clang++-18",
+        "-forward-unknown-to-host-compiler",
+        "-O3",
+        "-std=c++20",
+        "--generate-code=arch=compute_89,code=[compute_89,sm_89]",
+        "--ftz=false",
+        "--prec-div=true",
+        "--prec-sqrt=true",
+        "--fmad=false",
+        "-Xcompiler=-fPIC",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/bf16-gate-libmvec-table-v276/source",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/whole-expert-exact-component-v291/source",
+        "-c",
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/bf16-gate-libmvec-table-v276/source/hidden_gpu_v276.cu",
+        "-o",
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/build/whole-expert-exact-component-v291/literal276.o"
+      ],
+      "cwd": "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41",
+      "evidence": "DeepSeek V4.1/work/deepseek41-1017-multigpu/state/whole-expert-exact-root-build-v291.json",
+      "score": 10,
+      "sources": [
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/bf16-gate-libmvec-table-v276/source/hidden_gpu_v276.cu"
+      ]
+    },
+    {
+      "object_sha256": "9aa1c5a0b947e8b40ff0dba626bcb9a9ecfa29826f5abe26cde8e27b8d3589b6",
+      "original_object": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/bf16-gate-libmvec-table-v276/libds276_cpu_table.so",
+      "argv": [
+        "/usr/bin/clang++-18",
+        "-O2",
+        "-std=c++20",
+        "-march=znver4",
+        "-ffp-contract=off",
+        "-fno-fast-math",
+        "-frounding-math",
+        "-pthread",
+        "-fuse-ld=mold",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/bf16-gate-libmvec-table-v276/source",
+        "-fPIC",
+        "-shared",
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/bf16-gate-libmvec-table-v276/source/exp_table_v276.cpp",
+        "-lmvec",
+        "-lm",
+        "-o",
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/build/bf16-gate-libmvec-table-v276/libds276_cpu_table.so"
+      ],
+      "cwd": "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/bf16-gate-libmvec-table-v276",
+      "evidence": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/bf16-gate-libmvec-table-v276/CPU_ROOT_RECIPE.json",
+      "score": 0,
+      "sources": [
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/bf16-gate-libmvec-table-v276/source/exp_table_v276.cpp"
+      ]
+    },
+    {
+      "object_sha256": "cb72f351f67897ce2462c20d57ed8f69f805ac2a63c83c885d44ab5070b099ef",
+      "original_object": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/pass-upload-async-native-v558/524288/engine.cu.o",
+      "argv": [
+        "/usr/local/cuda/bin/nvcc",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/candidate-cutoff-multicta-v369/source",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/verifier-woa-quant-many-engine-v456/source/base524288/include",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/verifier-woa-quant-many-engine-v456/source/base524288",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/pair-gu-engine-v19/524288",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/pair32-combined-v151-r2/source",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/cpu-pair32-static-v143/source",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/pair-packed-inverse-v141-r2/source",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/pair-gu-engine-v19/include",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/pair-indexer-engine-v1-r2",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-nvfp4/research/old-complete-runtime-1017-adapter-v1/source/include",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/native-ds41/src/ds41",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/research/stage-copy-r2/include",
+        "-ccbin=/usr/bin/clang++-18",
+        "-forward-unknown-to-host-compiler",
+        "-DSTRATA_VERSION=\"0.1.39\"",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/build/native-k3-verify-v310/include",
+        "--options-file",
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/build/native-adapter-sm89/CMakeFiles/strata_ds41_engine.dir/includes_CUDA.rsp",
+        "-O3",
+        "-DNDEBUG",
+        "-std=c++20",
+        "--generate-code=arch=compute_89,code=[compute_89,sm_89]",
+        "-Xcompiler=-fPIC",
+        "-x",
+        "cu",
+        "-c",
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/pass-upload-async-native-v558/source/524288/engine.cu",
+        "-o",
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/build/pass-upload-async-native-v558/524288/engine.cu.o"
+      ],
+      "cwd": "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41",
+      "evidence": "DeepSeek V4.1/work/deepseek41-1017-multigpu/state/pass-upload-async-native-root-build-v558.json",
+      "score": 110,
+      "sources": [
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/pass-upload-async-native-v558/source/524288/engine.cu"
+      ]
+    },
+    {
+      "object_sha256": "7949715af3731c6caa614d01d84410142553766d770dc2d71f052a84b6ac4181",
+      "original_object": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/k14-packed-register-score-v334-r4/candidate.o",
+      "argv": [
+        "/usr/local/cuda-13.4/bin/nvcc",
+        "-ccbin=/usr/bin/clang++-18",
+        "-O3",
+        "-DNDEBUG",
+        "-std=c++20",
+        "--generate-code=arch=compute_89,code=[compute_89,sm_89]",
+        "-Xcompiler=-fPIC",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/native-ds41/include",
+        "-c",
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/k14-packed-register-score-v334-r4/source/k14_packed_register_v334.cu",
+        "-o",
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/build/k14-packed-register-score-v334-r4/candidate.o"
+      ],
+      "cwd": "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu",
+      "evidence": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/k14-packed-register-score-v334-r4/ROOT_RECIPE.json",
+      "score": 0,
+      "sources": [
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/k14-packed-register-score-v334-r4/source/k14_packed_register_v334.cu"
+      ]
+    },
+    {
+      "object_sha256": "7f5204fbd660804caffefe654ee3ef191a528a929d04731eee66fb932ea38d86",
+      "original_object": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/cpu-numa-bulk-task-v418/cpu.so",
+      "argv": [
+        "/usr/bin/clang++-18",
+        "-O3",
+        "-std=c++17",
+        "-march=znver4",
+        "-ffp-contract=off",
+        "-fno-fast-math",
+        "-fPIC",
+        "-shared",
+        "-pthread",
+        "-fuse-ld=mold",
+        "-fopenmp=libgomp",
+        "-DDS41_CPU_PREFETCH_GROUPS_V125=16",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/cpu-numa-bulk-task-v418/source",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/cpu-post-lifetime-v94/source",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/native-ds41/src/ds41",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/Strata/backend/deepseek41",
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/cpu-numa-bulk-task-v418/source/projection_home_v418.cpp",
+        "-lm",
+        "-lmvec",
+        "-o",
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/build/cpu-numa-bulk-task-v418/cpu.so"
+      ],
+      "cwd": "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/cpu-numa-bulk-task-v418",
+      "evidence": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/cpu-numa-bulk-task-v418/CORE_ROOT_RECIPE.json",
+      "score": 0,
+      "sources": [
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/cpu-numa-bulk-task-v418/source/projection_home_v418.cpp"
+      ]
+    },
+    {
+      "object_sha256": "6b21def7528646d3dd2ccb35cdc36c387aaa22b97f12f6fb848fb15945311eff",
+      "original_object": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/whole-generation-compute-off-task-v489/task.so",
+      "argv": [
+        "/usr/bin/clang++-18",
+        "-O3",
+        "-std=c++20",
+        "-march=znver4",
+        "-fno-fast-math",
+        "-ffp-contract=off",
+        "-fPIC",
+        "-shared",
+        "-pthread",
+        "-fuse-ld=mold",
+        "-Wl,-z,defs",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/cpu-pair32-static-v143/source",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/whole-generation-compute-off-task-v489/source",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/cpu-numa-bulk-active-epoch-v427/source",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/cpu-numa-bulk-task-v418/source",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/whole-adaptive-task-gap-v386/source",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/whole-expert-resident-owner-v299/source",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/native-ds41/include",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/native-ds41/src/ds41",
+        "-I/usr/local/cuda-13.4/include",
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/whole-generation-compute-off-task-v489/source/task_gpu1_off_v489.cpp",
+        "-ldl",
+        "-lmvec",
+        "-lm",
+        "-o",
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/build/whole-generation-compute-off-task-v489/task.so"
+      ],
+      "cwd": "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/whole-generation-compute-off-task-v489",
+      "evidence": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/whole-generation-compute-off-task-v489/ROOT_RECIPE.json",
+      "score": 0,
+      "sources": [
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/whole-generation-compute-off-task-v489/source/task_gpu1_off_v489.cpp"
+      ]
+    },
+    {
+      "object_sha256": "4f8b0a241495940544408f27a8cd6f2aa1f4b21e64a7f3c2285991bbe5fd18ab",
+      "original_object": "DeepSeek V4.1/work/deepseek41-1017-nvfp4/research/old-output16-v4-packer-v1/build/libds1017_output16_v4_packer_v1.so",
+      "argv": [
+        "clang++-18",
+        "-std=c++20",
+        "-O3",
+        "-fPIC",
+        "-fvisibility=hidden",
+        "-shared",
+        "-fuse-ld=mold",
+        "-Wl,-z,relro",
+        "-Wl,-z,now",
+        "-IDeepSeek V4.1/work/deepseek41-1017-nvfp4/research/compact-scale-expert-rolealign-v4",
+        "DeepSeek V4.1/work/deepseek41-1017-nvfp4/research/old-output16-v4-packer-v1/output16_v4_packer_v1.cpp",
+        "-o",
+        "DeepSeek V4.1/work/deepseek41-1017-nvfp4/research/old-output16-v4-packer-v1/build/libds1017_output16_v4_packer_v1.so"
+      ],
+      "cwd": "${HISTORICAL_WORKSPACE}",
+      "evidence": "DeepSeek V4.1/work/deepseek41-1017-nvfp4/state/old-output16-v4-packer-root-proof-v1.json",
+      "score": 10,
+      "sources": [
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41-1017-nvfp4/research/old-output16-v4-packer-v1/output16_v4_packer_v1.cpp"
+      ]
+    },
+    {
+      "object_sha256": "55caf605a91c530bb0d936e04df675569411213d51ae4c55da55e790f4313a38",
+      "original_object": "DeepSeek V4.1/work/deepseek41/research/recompute-input-r1/build/recompute.o",
+      "argv": [
+        "/usr/local/cuda/bin/nvcc",
+        "-ccbin=/usr/bin/clang++-18",
+        "-O3",
+        "-std=c++20",
+        "--generate-code=arch=compute_89,code=sm_89",
+        "-Xcompiler=-fPIC",
+        "-I${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/native-ds41/include",
+        "-c",
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/research/recompute-input-r1/source/recompute.cu",
+        "-o",
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/research/recompute-input-r1/build/recompute.o"
+      ],
+      "cwd": "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41",
+      "evidence": "DeepSeek V4.1/work/deepseek41/research/owned-bench-r2/results/compile-recompute-input-r1.json",
+      "score": 0,
+      "sources": [
+        "${HISTORICAL_WORKSPACE}/DeepSeek V4.1/work/deepseek41/research/recompute-input-r1/source/recompute.cu"
+      ]
+    }
+  ],
+  "links": {
+    "262144": {
+      "evidence": "DeepSeek V4.1/work/deepseek41-1017-multigpu/state/pass-upload-async-native-root-build-v558.json",
+      "ordered_inputs": [
+        {
+          "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/pass-upload-async-native-v558/pair_scope_v531.o"
+        },
+        {
+          "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/pass-upload-async-native-v558/pair_fp8_v531.o"
+        },
+        {
+          "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/index-native-admission-v501/native_engine_gu_v501.o"
+        },
+        {
+          "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/pair32-combined-v151-r3/native_adapter.cpp.o"
+        },
+        {
+          "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/index-native-admission-v501/pair_indexer_v1.o"
+        },
+        {
+          "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/pass-upload-async-native-v558/262144/libstrata_ds41_engine.a"
+        },
+        {
+          "input": "DeepSeek V4.1/work/deepseek41/build/native-adapter-sm89/libds41_k2_fp8_gemm.a"
+        },
+        {
+          "input": "DeepSeek V4.1/work/deepseek41/build/native-adapter-sm89/libds41_k3_sparse_attn.a"
+        },
+        {
+          "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/index-k5-swizzled-v504/libds41_k5_indexer.a"
+        },
+        {
+          "input": "DeepSeek V4.1/work/deepseek41/research/k7-prefetch-ring-r1/full-build/libds41_k7_hc.a"
+        },
+        {
+          "input": "DeepSeek V4.1/work/deepseek41/build/native-adapter-sm89/libds41_k8_router.a"
+        },
+        {
+          "input": "DeepSeek V4.1/work/deepseek41/build/native-adapter-sm89/libds41_k10_exl3_moe.a"
+        },
+        {
+          "input": "DeepSeek V4.1/work/deepseek41/build/native-adapter-sm89/libds41_k13_sparse_attn_prefill.a"
+        },
+        {
+          "input": "DeepSeek V4.1/work/deepseek41/research/indexer-s8-full-r4/full-build/libds41_k14_indexer_prefill.a"
+        },
+        {
+          "input": "DeepSeek V4.1/work/deepseek41/build/native-adapter-sm89/libds41_k15_hc_prefill.a"
+        },
+        {
+          "input": "DeepSeek V4.1/work/deepseek41/build/native-adapter-sm89/libds41_k12_exl3_moe_prefill.a"
+        },
+        {
+          "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/pass-upload-async-native-v558/262144/libstrata_ds41_engine.a"
+        },
+        {
+          "input": "DeepSeek V4.1/work/deepseek41/build/native-adapter-sm89/libds41_k2_fp8_gemm.a"
+        },
+        {
+          "input": "DeepSeek V4.1/work/deepseek41/build/native-adapter-sm89/libds41_k3_sparse_attn.a"
+        },
+        {
+          "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/index-k5-swizzled-v504/libds41_k5_indexer.a"
+        },
+        {
+          "input": "DeepSeek V4.1/work/deepseek41/research/k7-prefetch-ring-r1/full-build/libds41_k7_hc.a"
+        },
+        {
+          "input": "DeepSeek V4.1/work/deepseek41/build/native-adapter-sm89/libds41_k8_router.a"
+        },
+        {
+          "input": "DeepSeek V4.1/work/deepseek41/build/native-adapter-sm89/libds41_k10_exl3_moe.a"
+        },
+        {
+          "input": "DeepSeek V4.1/work/deepseek41/build/native-adapter-sm89/libds41_k13_sparse_attn_prefill.a"
+        },
+        {
+          "input": "DeepSeek V4.1/work/deepseek41/research/indexer-s8-full-r4/full-build/libds41_k14_indexer_prefill.a"
+        },
+        {
+          "input": "DeepSeek V4.1/work/deepseek41/build/native-adapter-sm89/libds41_k15_hc_prefill.a"
+        },
+        {
+          "input": "DeepSeek V4.1/work/deepseek41/build/native-adapter-sm89/libds41_k12_exl3_moe_prefill.a"
+        },
+        {
+          "input": "DeepSeek V4.1/work/deepseek41/research/speed-combined-r6/full-build/libstrata_ds41.a"
+        },
+        {
+          "input": "DeepSeek V4.1/work/deepseek41/build/native-adapter-sm89/libds41_native_host_work.a"
+        },
+        {
+          "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/pass-upload-async-native-v558/cohort539/libds41_native_experts.a"
+        },
+        {
+          "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/pair32-combined-v151-r3/libds41_borrowed_weights.a"
+        },
+        {
+          "input": "DeepSeek V4.1/work/deepseek41/build/native-adapter-sm89/libds41_native_prefill_layout.a"
+        },
+        {
+          "system_library": "libcudart.so"
+        },
+        {
+          "system_library": "libcublas.so"
+        },
+        {
+          "system_library": "libcublasLt.so"
+        },
+        {
+          "system_library": "libculibos.a"
+        },
+        {
+          "input": "DeepSeek V4.1/work/deepseek41/build/native-k3-causal-v309/k3_causal_batch_v309.cu.o"
+        },
+        {
+          "input": "DeepSeek V4.1/work/deepseek41/build/native-output16-fp8-v244.so"
+        },
+        {
+          "input": "DeepSeek V4.1/work/deepseek41/build/native-recompute-input-r1.so"
+        },
+        {
+          "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/pair32-combined-v151-r3/pair_registry_v145.cpp.o"
+        },
+        {
+          "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/pair-packed-inverse-v141-r2/inverse.o"
+        },
+        {
+          "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/index-native-admission-v501/paired_owner_v147.o"
+        },
+        {
+          "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/gpu-gu-byteperm-v13-root-855b/batch_v5.cu.o"
+        },
+        {
+          "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/candidate-cutoff-multicta-v369/candidate.o"
+        },
+        {
+          "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/whole-adaptive-engine-v387/native_adaptive_lease_v387.o"
+        },
+        {
+          "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/index-native-admission-v501/whole_owner_fixed_v469.o"
+        },
+        {
+          "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/index-native-admission-v501/resources_v469.o"
+        },
+        {
+          "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/index-native-admission-v501/libds303_whole_operator_v501.a"
+        },
+        {
+          "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/whole-expert-exact-component-v291/literal53.o"
+        },
+        {
+          "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/whole-expert-exact-component-v291/literal276.o"
+        },
+        {
+          "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/bf16-gate-libmvec-table-v276/libds276_cpu_table.so"
+        }
+      ]
+    },
+    "524288": {
+      "evidence": "DeepSeek V4.1/work/deepseek41-1017-multigpu/state/pass-upload-async-native-root-build-v558.json",
+      "ordered_inputs": [
+        {
+          "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/pass-upload-async-native-v558/pair_scope_v531.o"
+        },
+        {
+          "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/pass-upload-async-native-v558/pair_fp8_v531.o"
+        },
+        {
+          "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/index-native-admission-v501/native_engine_gu_v501.o"
+        },
+        {
+          "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/pair32-combined-v151-r3/native_adapter.cpp.o"
+        },
+        {
+          "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/index-native-admission-v501/pair_indexer_v1.o"
+        },
+        {
+          "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/pass-upload-async-native-v558/524288/libstrata_ds41_engine.a"
+        },
+        {
+          "input": "DeepSeek V4.1/work/deepseek41/build/native-adapter-sm89/libds41_k2_fp8_gemm.a"
+        },
+        {
+          "input": "DeepSeek V4.1/work/deepseek41/build/native-adapter-sm89/libds41_k3_sparse_attn.a"
+        },
+        {
+          "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/index-k5-swizzled-v504/libds41_k5_indexer.a"
+        },
+        {
+          "input": "DeepSeek V4.1/work/deepseek41/research/k7-prefetch-ring-r1/full-build/libds41_k7_hc.a"
+        },
+        {
+          "input": "DeepSeek V4.1/work/deepseek41/build/native-adapter-sm89/libds41_k8_router.a"
+        },
+        {
+          "input": "DeepSeek V4.1/work/deepseek41/build/native-adapter-sm89/libds41_k10_exl3_moe.a"
+        },
+        {
+          "input": "DeepSeek V4.1/work/deepseek41/build/native-adapter-sm89/libds41_k13_sparse_attn_prefill.a"
+        },
+        {
+          "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/k14-packed-register-score-v334-r4/libds41_k14_indexer_prefill.a"
+        },
+        {
+          "input": "DeepSeek V4.1/work/deepseek41/build/native-adapter-sm89/libds41_k15_hc_prefill.a"
+        },
+        {
+          "input": "DeepSeek V4.1/work/deepseek41/build/native-adapter-sm89/libds41_k12_exl3_moe_prefill.a"
+        },
+        {
+          "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/pass-upload-async-native-v558/524288/libstrata_ds41_engine.a"
+        },
+        {
+          "input": "DeepSeek V4.1/work/deepseek41/build/native-adapter-sm89/libds41_k2_fp8_gemm.a"
+        },
+        {
+          "input": "DeepSeek V4.1/work/deepseek41/build/native-adapter-sm89/libds41_k3_sparse_attn.a"
+        },
+        {
+          "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/index-k5-swizzled-v504/libds41_k5_indexer.a"
+        },
+        {
+          "input": "DeepSeek V4.1/work/deepseek41/research/k7-prefetch-ring-r1/full-build/libds41_k7_hc.a"
+        },
+        {
+          "input": "DeepSeek V4.1/work/deepseek41/build/native-adapter-sm89/libds41_k8_router.a"
+        },
+        {
+          "input": "DeepSeek V4.1/work/deepseek41/build/native-adapter-sm89/libds41_k10_exl3_moe.a"
+        },
+        {
+          "input": "DeepSeek V4.1/work/deepseek41/build/native-adapter-sm89/libds41_k13_sparse_attn_prefill.a"
+        },
+        {
+          "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/k14-packed-register-score-v334-r4/libds41_k14_indexer_prefill.a"
+        },
+        {
+          "input": "DeepSeek V4.1/work/deepseek41/build/native-adapter-sm89/libds41_k15_hc_prefill.a"
+        },
+        {
+          "input": "DeepSeek V4.1/work/deepseek41/build/native-adapter-sm89/libds41_k12_exl3_moe_prefill.a"
+        },
+        {
+          "input": "DeepSeek V4.1/work/deepseek41/research/speed-combined-r6/full-build/libstrata_ds41.a"
+        },
+        {
+          "input": "DeepSeek V4.1/work/deepseek41/build/native-adapter-sm89/libds41_native_host_work.a"
+        },
+        {
+          "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/pass-upload-async-native-v558/cohort539/libds41_native_experts.a"
+        },
+        {
+          "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/pair32-combined-v151-r3/libds41_borrowed_weights.a"
+        },
+        {
+          "input": "DeepSeek V4.1/work/deepseek41/build/native-adapter-sm89/libds41_native_prefill_layout.a"
+        },
+        {
+          "system_library": "libcudart.so"
+        },
+        {
+          "system_library": "libcublas.so"
+        },
+        {
+          "system_library": "libcublasLt.so"
+        },
+        {
+          "system_library": "libculibos.a"
+        },
+        {
+          "input": "DeepSeek V4.1/work/deepseek41/build/native-k3-causal-v309/k3_causal_batch_v309.cu.o"
+        },
+        {
+          "input": "DeepSeek V4.1/work/deepseek41/build/native-output16-fp8-v244.so"
+        },
+        {
+          "input": "DeepSeek V4.1/work/deepseek41/build/native-recompute-input-r1.so"
+        },
+        {
+          "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/pair32-combined-v151-r3/pair_registry_v145.cpp.o"
+        },
+        {
+          "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/pair-packed-inverse-v141-r2/inverse.o"
+        },
+        {
+          "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/index-native-admission-v501/paired_owner_v147.o"
+        },
+        {
+          "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/gpu-gu-byteperm-v13-root-855b/batch_v5.cu.o"
+        },
+        {
+          "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/candidate-cutoff-multicta-v369/candidate.o"
+        },
+        {
+          "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/whole-adaptive-engine-v387/native_adaptive_lease_v387.o"
+        },
+        {
+          "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/index-native-admission-v501/whole_owner_fixed_v469.o"
+        },
+        {
+          "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/index-native-admission-v501/resources_v469.o"
+        },
+        {
+          "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/index-native-admission-v501/libds303_whole_operator_v501.a"
+        },
+        {
+          "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/whole-expert-exact-component-v291/literal53.o"
+        },
+        {
+          "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/whole-expert-exact-component-v291/literal276.o"
+        },
+        {
+          "input": "DeepSeek V4.1/work/deepseek41-1017-multigpu/build/bf16-gate-libmvec-table-v276/libds276_cpu_table.so"
+        }
+      ]
+    }
+  },
+  "unresolved": [],
+  "constraints": {
+    "build_executed": false,
+    "gpu_executed": false,
+    "binary_exported": false
+  }
+}

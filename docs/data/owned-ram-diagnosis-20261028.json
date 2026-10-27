@@ -1,0 +1,357 @@
+{
+  "tuned_STREAM": {
+    "source_sha256": "1e225593e1fdd9d858d0bb3a2f15c7a5d2ce617373a4344bbf1991f8dbef9a32",
+    "numerics_validation_passed_all": true,
+    "modes": {
+      "dual-32": {
+        "Copy": {
+          "best_MB_s": 521234.9,
+          "best_GB_s": 521.2349,
+          "avg_seconds": 0.008269,
+          "min_seconds": 0.00824,
+          "max_seconds": 0.008308
+        },
+        "Scale": {
+          "best_MB_s": 520031.1,
+          "best_GB_s": 520.0310999999999,
+          "avg_seconds": 0.008299,
+          "min_seconds": 0.008259,
+          "max_seconds": 0.008346
+        },
+        "Add": {
+          "best_MB_s": 601991.6,
+          "best_GB_s": 601.9916,
+          "avg_seconds": 0.010793,
+          "min_seconds": 0.010702,
+          "max_seconds": 0.010882
+        },
+        "Triad": {
+          "best_MB_s": 597070.0,
+          "best_GB_s": 597.07,
+          "avg_seconds": 0.01084,
+          "min_seconds": 0.01079,
+          "max_seconds": 0.010879
+        }
+      },
+      "dual-64": {
+        "Copy": {
+          "best_MB_s": 510033.9,
+          "best_GB_s": 510.0339,
+          "avg_seconds": 0.008453,
+          "min_seconds": 0.008421,
+          "max_seconds": 0.008508
+        },
+        "Scale": {
+          "best_MB_s": 511293.3,
+          "best_GB_s": 511.2933,
+          "avg_seconds": 0.008432,
+          "min_seconds": 0.0084,
+          "max_seconds": 0.008456
+        },
+        "Add": {
+          "best_MB_s": 556435.0,
+          "best_GB_s": 556.435,
+          "avg_seconds": 0.011625,
+          "min_seconds": 0.011578,
+          "max_seconds": 0.011679
+        },
+        "Triad": {
+          "best_MB_s": 558078.4,
+          "best_GB_s": 558.0784,
+          "avg_seconds": 0.011578,
+          "min_seconds": 0.011544,
+          "max_seconds": 0.011632
+        }
+      },
+      "dual-96": {
+        "Copy": {
+          "best_MB_s": 558222.5,
+          "best_GB_s": 558.2225,
+          "avg_seconds": 0.007738,
+          "min_seconds": 0.007694,
+          "max_seconds": 0.007788
+        },
+        "Scale": {
+          "best_MB_s": 560410.6,
+          "best_GB_s": 560.4105999999999,
+          "avg_seconds": 0.007698,
+          "min_seconds": 0.007664,
+          "max_seconds": 0.007724
+        },
+        "Add": {
+          "best_MB_s": 603281.9,
+          "best_GB_s": 603.2819000000001,
+          "avg_seconds": 0.010739,
+          "min_seconds": 0.010679,
+          "max_seconds": 0.010789
+        },
+        "Triad": {
+          "best_MB_s": 606913.2,
+          "best_GB_s": 606.9132,
+          "avg_seconds": 0.010674,
+          "min_seconds": 0.010615,
+          "max_seconds": 0.01074
+        }
+      },
+      "dual-128": {
+        "Copy": {
+          "best_MB_s": 590616.7,
+          "best_GB_s": 590.6166999999999,
+          "avg_seconds": 0.007337,
+          "min_seconds": 0.007272,
+          "max_seconds": 0.007379
+        },
+        "Scale": {
+          "best_MB_s": 589650.0,
+          "best_GB_s": 589.65,
+          "avg_seconds": 0.007374,
+          "min_seconds": 0.007284,
+          "max_seconds": 0.00744
+        },
+        "Add": {
+          "best_MB_s": 629463.2,
+          "best_GB_s": 629.4631999999999,
+          "avg_seconds": 0.010266,
+          "min_seconds": 0.010235,
+          "max_seconds": 0.010294
+        },
+        "Triad": {
+          "best_MB_s": 634533.2,
+          "best_GB_s": 634.5332,
+          "avg_seconds": 0.010182,
+          "min_seconds": 0.010153,
+          "max_seconds": 0.010225
+        }
+      },
+      "dual-192": {
+        "Copy": {
+          "best_MB_s": 605872.2,
+          "best_GB_s": 605.8721999999999,
+          "avg_seconds": 0.007126,
+          "min_seconds": 0.007089,
+          "max_seconds": 0.007159
+        },
+        "Scale": {
+          "best_MB_s": 607076.9,
+          "best_GB_s": 607.0769,
+          "avg_seconds": 0.007154,
+          "min_seconds": 0.007075,
+          "max_seconds": 0.007424
+        },
+        "Add": {
+          "best_MB_s": 653785.2,
+          "best_GB_s": 653.7851999999999,
+          "avg_seconds": 0.009885,
+          "min_seconds": 0.009854,
+          "max_seconds": 0.009965
+        },
+        "Triad": {
+          "best_MB_s": 658677.8,
+          "best_GB_s": 658.6778,
+          "avg_seconds": 0.009833,
+          "min_seconds": 0.009781,
+          "max_seconds": 0.009864
+        }
+      },
+      "dual-252": {
+        "Copy": {
+          "best_MB_s": 647324.7,
+          "best_GB_s": 647.3247,
+          "avg_seconds": 0.006742,
+          "min_seconds": 0.006635,
+          "max_seconds": 0.006888
+        },
+        "Scale": {
+          "best_MB_s": 645284.2,
+          "best_GB_s": 645.2841999999999,
+          "avg_seconds": 0.006761,
+          "min_seconds": 0.006656,
+          "max_seconds": 0.006976
+        },
+        "Add": {
+          "best_MB_s": 680456.2,
+          "best_GB_s": 680.4562,
+          "avg_seconds": 0.009666,
+          "min_seconds": 0.009468,
+          "max_seconds": 0.00993
+        },
+        "Triad": {
+          "best_MB_s": 683468.2,
+          "best_GB_s": 683.4681999999999,
+          "avg_seconds": 0.009626,
+          "min_seconds": 0.009426,
+          "max_seconds": 0.009749
+        }
+      }
+    },
+    "difference": "AVX2 streaming stores, sfence, explicit64-byte alignment; original reference kept"
+  },
+  "huge_read": {
+    "source_sha256": "a73921cd7c155409b58822c3f269606382cce9e113b5d1e393c01ffacf497860",
+    "modes": {
+      "128": {
+        "peak_GB_s": 663.513757,
+        "median_GB_s": 654.973768,
+        "samples": [
+          {
+            "event": "sample",
+            "warmup": true,
+            "rep": -1,
+            "bytes": 8589934592,
+            "seconds": 0.014158964,
+            "GB_s": 606.678179
+          },
+          {
+            "event": "sample",
+            "warmup": false,
+            "rep": 0,
+            "bytes": 8589934592,
+            "seconds": 0.013091087,
+            "GB_s": 656.166625
+          },
+          {
+            "event": "sample",
+            "warmup": false,
+            "rep": 1,
+            "bytes": 8589934592,
+            "seconds": 0.013114929,
+            "GB_s": 654.973768
+          },
+          {
+            "event": "sample",
+            "warmup": false,
+            "rep": 2,
+            "bytes": 8589934592,
+            "seconds": 0.012977839,
+            "GB_s": 661.892547
+          },
+          {
+            "event": "sample",
+            "warmup": false,
+            "rep": 3,
+            "bytes": 8589934592,
+            "seconds": 0.013455868,
+            "GB_s": 638.378345
+          },
+          {
+            "event": "sample",
+            "warmup": false,
+            "rep": 4,
+            "bytes": 8589934592,
+            "seconds": 0.012946129,
+            "GB_s": 663.513757
+          },
+          {
+            "event": "sample",
+            "warmup": false,
+            "rep": 5,
+            "bytes": 8589934592,
+            "seconds": 0.013209105,
+            "GB_s": 650.304081
+          },
+          {
+            "event": "sample",
+            "warmup": false,
+            "rep": 6,
+            "bytes": 8589934592,
+            "seconds": 0.013239861,
+            "GB_s": 648.793435
+          }
+        ],
+        "placement": {
+          "N0": 4294967296,
+          "N1": 4294967296
+        }
+      },
+      "252": {
+        "peak_GB_s": 699.330286,
+        "median_GB_s": 685.166534,
+        "samples": [
+          {
+            "event": "sample",
+            "warmup": true,
+            "rep": -1,
+            "bytes": 8589934592,
+            "seconds": 0.018044949,
+            "GB_s": 476.029874
+          },
+          {
+            "event": "sample",
+            "warmup": false,
+            "rep": 0,
+            "bytes": 8589934592,
+            "seconds": 0.012550116,
+            "GB_s": 684.450636
+          },
+          {
+            "event": "sample",
+            "warmup": false,
+            "rep": 1,
+            "bytes": 8589934592,
+            "seconds": 0.012286901,
+            "GB_s": 699.113166
+          },
+          {
+            "event": "sample",
+            "warmup": false,
+            "rep": 2,
+            "bytes": 8589934592,
+            "seconds": 0.012283087,
+            "GB_s": 699.330286
+          },
+          {
+            "event": "sample",
+            "warmup": false,
+            "rep": 3,
+            "bytes": 8589934592,
+            "seconds": 0.012603998,
+            "GB_s": 681.524582
+          },
+          {
+            "event": "sample",
+            "warmup": false,
+            "rep": 4,
+            "bytes": 8589934592,
+            "seconds": 0.012380123,
+            "GB_s": 693.848881
+          },
+          {
+            "event": "sample",
+            "warmup": false,
+            "rep": 5,
+            "bytes": 8589934592,
+            "seconds": 0.012542009,
+            "GB_s": 684.893014
+          },
+          {
+            "event": "sample",
+            "warmup": false,
+            "rep": 6,
+            "bytes": 8589934592,
+            "seconds": 0.012537003,
+            "GB_s": 685.166534
+          }
+        ],
+        "placement": {
+          "N0": 4226793472,
+          "N1": 4363141120
+        }
+      }
+    },
+    "difference": "2MiB aligned own allocation +MADV_HUGEPAGE advice +per-worker local mbind; no model changes"
+  },
+  "DMI": {
+    "observed_date": "2026-10-28",
+    "source": "actual sudo dmidecode --type17 exit0; serial/asset identifiers omitted",
+    "populated_modules": 24,
+    "module_size_GB": 32,
+    "modules_per_socket": 12,
+    "configured_memory_speed_MT_s": 4800,
+    "rated_speed_MT_s": 4800,
+    "type": "DDR5",
+    "configured_rate_not_live_controller_counter": true
+  },
+  "theoretical_GB_s": 921.6,
+  "bios_not_changed": true,
+  "system_policy_not_changed": true
+}

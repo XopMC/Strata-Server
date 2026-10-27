@@ -1,0 +1,496 @@
+{
+  "phase": "PROVEN_UNSELECTED_SOURCE_PRUNED",
+  "created_utc": "2026-10-27T22:05:02.636691+00:00",
+  "scope": "publication source copy only; original research/workspace untouched",
+  "removed_files": [
+    {
+      "path": "source/Swift Flash Next FourGPU/work/swift-flash-next-fourgpu/research/mmq-paired-gu-model-v311/policy_v311.hpp",
+      "bytes": 1339,
+      "sha256": "c4c254ecc2b98ebe4d1d21b9e3190bdd4ca491c139b9a0c61fe9b17b25bdbd44"
+    },
+    {
+      "path": "source/Shared/work/strata-llama/ggml/src/ggml-sycl/gemm.hpp",
+      "bytes": 3479,
+      "sha256": "218162efabb3f4de58560e219716c2ff5c5f8c058c3b782701c27cbaf8040997"
+    },
+    {
+      "path": "source/Shared/work/strata-llama/ggml/src/ggml-sycl/fattn-buffers.hpp",
+      "bytes": 1782,
+      "sha256": "ba95ed1ad1ef76c6bca6d72630c060f0dd9f28d5673dff4d62acc5f626634b2d"
+    },
+    {
+      "path": "source/Shared/work/strata-llama/ggml/src/ggml-sycl/type.hpp",
+      "bytes": 3584,
+      "sha256": "26b16638ee5a9b7df6ecd7ca43f93bef027a69aeb7eeb1f7a6f0a3faaee40c97"
+    },
+    {
+      "path": "source/Shared/work/strata-llama/ggml/src/ggml-sycl/softmax.hpp",
+      "bytes": 622,
+      "sha256": "4104bf526fce651ab99d7fcb94cdb61a2503ec68be9dd4dd4c378aa589f23b62"
+    },
+    {
+      "path": "source/Shared/work/strata-llama/ggml/src/ggml-sycl/roll.hpp",
+      "bytes": 482,
+      "sha256": "fd5871666cd128dc6e08defe0ce0b2acb7a81029a948911449356f563a061223"
+    },
+    {
+      "path": "source/Shared/work/strata-llama/ggml/src/ggml-sycl/backend.hpp",
+      "bytes": 1193,
+      "sha256": "2b1dc3429d8d8389a7b7bbee1d658ada48934d74765acdb98652be955d7bac27"
+    },
+    {
+      "path": "source/Shared/work/strata-llama/ggml/src/ggml-sycl/diag.hpp",
+      "bytes": 110,
+      "sha256": "5cfaf3d7a9ae72a51074a920fedf42ad4b89004b80596031e8a13b7eb078cf4c"
+    },
+    {
+      "path": "source/Shared/work/strata-llama/ggml/src/ggml-sycl/fwht.hpp",
+      "bytes": 492,
+      "sha256": "69f1d7fbbc01e8dcca07c0496e697bf8c9653b706096362ff9995328e4c5e4f4"
+    },
+    {
+      "path": "source/Shared/work/strata-llama/ggml/src/ggml-sycl/quants.hpp",
+      "bytes": 8259,
+      "sha256": "1e094e840db40f231aa47da2c0c768b40f57a840c3126fab53847990b94583d3"
+    },
+    {
+      "path": "source/Shared/work/strata-llama/ggml/src/ggml-sycl/gla.hpp",
+      "bytes": 195,
+      "sha256": "5ac6a8495e7f4e0fc93fbdf86b123b109c1c1d0dc79c135e47e8ba9d0f09236f"
+    },
+    {
+      "path": "source/Shared/work/strata-llama/ggml/src/ggml-sycl/conv2d.hpp",
+      "bytes": 228,
+      "sha256": "f8d5fb4b28ee26a02167721d741696d8b25b4cc62adbc5fa0a3669fd7c441678"
+    },
+    {
+      "path": "source/Shared/work/strata-llama/ggml/src/ggml-sycl/esimd.hpp",
+      "bytes": 27981,
+      "sha256": "67db9fe5d5f22ce7615c66d955161c7983cc23a8621f80f4b772d29af4252794"
+    },
+    {
+      "path": "source/Shared/work/strata-llama/ggml/src/ggml-sycl/quantize.hpp",
+      "bytes": 5811,
+      "sha256": "0897642347d0a974f39b4ef1738be73dda4731974a98bdfa1af273c8ebf6679c"
+    },
+    {
+      "path": "source/Shared/work/strata-llama/ggml/src/ggml-sycl/conv.hpp",
+      "bytes": 498,
+      "sha256": "bf14bf4d201a92f2a04b3c93d57b655589d88fe318a2ec71bff8caf0154dd385"
+    },
+    {
+      "path": "source/Shared/work/strata-llama/ggml/src/ggml-sycl/concat.hpp",
+      "bytes": 493,
+      "sha256": "7dde2e59d7b6cddad4c47b545fab64efbe06ca40a727496f3dbc08a8972ceb7c"
+    },
+    {
+      "path": "source/Shared/work/strata-llama/ggml/src/ggml-sycl/conv3d.hpp",
+      "bytes": 193,
+      "sha256": "1f73fcb1bb208a42c3f39d234a01f100c4e06b21297175bb00eabd0f65c54b78"
+    },
+    {
+      "path": "source/Shared/work/strata-llama/ggml/src/ggml-sycl/fattn-onednn.hpp",
+      "bytes": 905,
+      "sha256": "80543fc89989b0c3bd67e9e848e7f759a00778f9b4d46b198cf4e09b8200bd3c"
+    },
+    {
+      "path": "source/Shared/work/strata-llama/ggml/src/ggml-sycl/col2im-1d.hpp",
+      "bytes": 204,
+      "sha256": "c558e96bd862b59bf132fb68dcd8957e45f71180eadc30c4ffe7ae97384921d5"
+    },
+    {
+      "path": "source/Shared/work/strata-llama/ggml/src/ggml-sycl/mmq.hpp",
+      "bytes": 819,
+      "sha256": "da88e98e058c55878652f52a68584990d76b2971adb13ddc27b95d7bdef06f0f"
+    },
+    {
+      "path": "source/Shared/work/strata-llama/ggml/src/ggml-sycl/lightning-indexer.hpp",
+      "bytes": 236,
+      "sha256": "ae1946d05026972263219dc14dbf5b08b432b7b0b9282729fcb963b0e7bcc7e9"
+    },
+    {
+      "path": "source/Shared/work/strata-llama/ggml/src/ggml-sycl/fusion.hpp",
+      "bytes": 787,
+      "sha256": "ddfb598868e2af3ded90c5561eb3aa1c2086e4f8e9795065239eb815721b1ebd"
+    },
+    {
+      "path": "source/Shared/work/strata-llama/ggml/src/ggml-sycl/mem.hpp",
+      "bytes": 354,
+      "sha256": "60f7bcb5672c4c82af30a68661c8ca87c3703808174d8f3a691ed2c0005ca048"
+    },
+    {
+      "path": "source/Shared/work/strata-llama/ggml/src/ggml-sycl/pool.hpp",
+      "bytes": 589,
+      "sha256": "e4275eca0793e02ab16460d19f15827895fec0e8495b5a0775cf98bbe226f315"
+    },
+    {
+      "path": "source/Shared/work/strata-llama/ggml/src/ggml-sycl/dequantize.hpp",
+      "bytes": 59981,
+      "sha256": "55ad21a2a8c40f46100c49adc0eeab01ce8bb7153e3febe855d072aa871caa5d"
+    },
+    {
+      "path": "source/Shared/work/strata-llama/ggml/src/ggml-sycl/topk-moe.hpp",
+      "bytes": 479,
+      "sha256": "6482291f3ac7a5fa9f9fa8cf1ee5a6e773d27f6f7ddb9569fcbae309fb0001da"
+    },
+    {
+      "path": "source/Shared/work/strata-llama/ggml/src/ggml-sycl/count-equal.hpp",
+      "bytes": 248,
+      "sha256": "3590e0a274c6f95db6d1cb34ab0eea20e991b60694f3f66c160b1bc20cde495f"
+    },
+    {
+      "path": "source/Shared/work/strata-llama/ggml/src/ggml-sycl/fattn-common.hpp",
+      "bytes": 45932,
+      "sha256": "8c0808c976b4c4bc4a11cdd1162deb4ab8d2efd4d51203b287cf52500f88be44"
+    },
+    {
+      "path": "source/Shared/work/strata-llama/ggml/src/ggml-sycl/mmvq.hpp",
+      "bytes": 3232,
+      "sha256": "8ae065ed9a4176e7d2ea462559685aa7673d873bb0f26982eadd76c70cef2746"
+    },
+    {
+      "path": "source/Shared/work/strata-llama/ggml/src/ggml-sycl/dmmv.hpp",
+      "bytes": 808,
+      "sha256": "4ecfa6dc1aa0b76c491c76ef5a9fe4bd6c9124bb1947d92774885bc73ea89463"
+    },
+    {
+      "path": "source/Shared/work/strata-llama/ggml/src/ggml-sycl/conv2d-dw.hpp",
+      "bytes": 243,
+      "sha256": "542fe2fe56ef52640a77617ef27f00700c06fb859efa12659fdceef1af3fe26a"
+    },
+    {
+      "path": "source/Shared/work/strata-llama/ggml/src/ggml-sycl/fattn-tile.hpp",
+      "bytes": 58798,
+      "sha256": "b0d5641bbab449eef5908d3ad8bbaf57d9e92666d7ab5b30adf6988d06b31bce"
+    },
+    {
+      "path": "source/Shared/work/strata-llama/ggml/src/ggml-sycl/CMakeLists.txt",
+      "bytes": 8991,
+      "sha256": "7f681af923948d02149792ecb1bcef1b5d430875ee886f4951a95410c3ae683f"
+    },
+    {
+      "path": "source/Shared/work/strata-llama/ggml/src/ggml-sycl/conv2d-transpose.hpp",
+      "bytes": 278,
+      "sha256": "a822eee0fd8574bcddaa73d0e97e0a4274646344e6cddc520b57df139b2c9501"
+    },
+    {
+      "path": "source/Shared/work/strata-llama/ggml/src/ggml-sycl/sycl_hw.hpp",
+      "bytes": 987,
+      "sha256": "2dec51ba32744a05dbf6c40c1862d2651c03b9160a9e9a3c36f521305351308c"
+    },
+    {
+      "path": "source/Shared/work/strata-llama/ggml/src/ggml-sycl/tsembd.hpp",
+      "bytes": 506,
+      "sha256": "4e5633ed5f815f37de70c4f50d9fc03e135add66af727d92ed5a1d8bc175e606"
+    },
+    {
+      "path": "source/Shared/work/strata-llama/ggml/src/ggml-sycl/base.hpp",
+      "bytes": 1289,
+      "sha256": "d4a7f4aa9f49e4fd6fee75c2f3c31746d39510a6300f0908191fe68e371be25c"
+    },
+    {
+      "path": "source/Shared/work/strata-llama/ggml/src/ggml-sycl/cross_entropy_loss.hpp",
+      "bytes": 217,
+      "sha256": "52e8b1c67b9fe98d717fbc90f386d4c0300f80f63d27acca171d2584a259601e"
+    },
+    {
+      "path": "source/Shared/work/strata-llama/ggml/src/ggml-sycl/outprod.hpp",
+      "bytes": 197,
+      "sha256": "b79b96799b00f56896946040ac3087ae5ea0ab611903f08d60487263892e867e"
+    },
+    {
+      "path": "source/Shared/work/strata-llama/ggml/src/ggml-sycl/pad_reflect_1d.hpp",
+      "bytes": 266,
+      "sha256": "9d8820bd22e84cf4cea7db852ecf26b86f31572480842f66f65a0ddc09c79590"
+    },
+    {
+      "path": "source/Shared/work/strata-llama/ggml/src/ggml-sycl/cpy.hpp",
+      "bytes": 15457,
+      "sha256": "0d87d44d3b2d97a7b16e723839335612a4f204faa428379b38aff24a881ba716"
+    },
+    {
+      "path": "source/Shared/work/strata-llama/ggml/src/ggml-sycl/getrows.hpp",
+      "bytes": 498,
+      "sha256": "2cdfda536c1d4351bc41e2b9c7798af50c7fe1d093569564517597e6a59ee793"
+    },
+    {
+      "path": "source/Shared/work/strata-llama/ggml/src/ggml-sycl/ssm_conv.hpp",
+      "bytes": 240,
+      "sha256": "35c95c2baab13f5a40fd149a8dcf705d391948568fdee021c72aad8fe7dac20f"
+    },
+    {
+      "path": "source/Shared/work/strata-llama/ggml/src/ggml-sycl/memtrace.hpp",
+      "bytes": 787,
+      "sha256": "ef36b46a55ac51191ba2567d361574b71edb1e20440545571d0120670f1c5419"
+    },
+    {
+      "path": "source/Shared/work/strata-llama/ggml/src/ggml-sycl/fattn.hpp",
+      "bytes": 1717,
+      "sha256": "d553ec91b5413e5c0890743c5246bf90e685322f3b800beb0242b98d9e02c7b8"
+    },
+    {
+      "path": "source/Shared/work/strata-llama/ggml/src/ggml-sycl/upscale.hpp",
+      "bytes": 202,
+      "sha256": "9cdbce0f7382ac4cfa2bcd0ceff1ca3b8f7919b59ca6f886f1a1c62e8e0baced"
+    },
+    {
+      "path": "source/Shared/work/strata-llama/ggml/src/ggml-sycl/convert.hpp",
+      "bytes": 2300,
+      "sha256": "8352bcf4081257b1e97e2cebb003e52d7bc809eff5dfe489f8432f1d24b6ce97"
+    },
+    {
+      "path": "source/Shared/work/strata-llama/ggml/src/ggml-sycl/common.hpp",
+      "bytes": 33669,
+      "sha256": "3ff51d7366494d69544314c17ca3699166acba283af11cf0a7d41e12e530cf7a"
+    },
+    {
+      "path": "source/Shared/work/strata-llama/ggml/src/ggml-sycl/dsv4-hc.hpp",
+      "bytes": 368,
+      "sha256": "904e991ac8df4d7a315df0fbabf2459d6cd388f21a4739f467e8f8c427afe188"
+    },
+    {
+      "path": "source/Shared/work/strata-llama/ggml/src/ggml-sycl/repeat_back.hpp",
+      "bytes": 213,
+      "sha256": "00d0b9dd8e5747dce38ca34b6ce7dbaad84c9ed526a6ddef38405efa8fb49333"
+    },
+    {
+      "path": "source/Shared/work/strata-llama/ggml/src/ggml-sycl/pad.hpp",
+      "bytes": 588,
+      "sha256": "752fea37c2691b01f90e453557452fdfb791025b0d2e7772f505f8fc0a22786d"
+    },
+    {
+      "path": "source/Shared/work/strata-llama/ggml/src/ggml-sycl/fill.hpp",
+      "bytes": 110,
+      "sha256": "814806071cca8ebacb735f354fa2a70847f58aa73c95f06c38d66c35a8920104"
+    },
+    {
+      "path": "source/Shared/work/strata-llama/ggml/src/ggml-sycl/set_rows.hpp",
+      "bytes": 200,
+      "sha256": "d81566b4a1e7dc90b206bcfd313978d2e21c6f476b80c38157e8f7bd6f6bc4bc"
+    },
+    {
+      "path": "source/Shared/work/strata-llama/ggml/src/ggml-sycl/gated_delta_net.hpp",
+      "bytes": 839,
+      "sha256": "70497b1241dd8fa8fcff9aa410a772b5f7797ccd371996312c24c30c0096931c"
+    },
+    {
+      "path": "source/Shared/work/strata-llama/ggml/src/ggml-sycl/cumsum.hpp",
+      "bytes": 112,
+      "sha256": "f0226904eccf152b884edc02f41cea90c0861b9d3d136944609f703a72fba769"
+    },
+    {
+      "path": "source/Shared/work/strata-llama/ggml/src/ggml-sycl/rope.hpp",
+      "bytes": 699,
+      "sha256": "c5e6a7116b2e6121af30f406980b16c0854d84b65e371705eb4396f7854f4505"
+    },
+    {
+      "path": "source/Shared/work/strata-llama/ggml/src/ggml-sycl/norm.hpp",
+      "bytes": 1178,
+      "sha256": "f0f6da257633e38d1e6ec1c8b668f07651bd7ba702ede840094bc12143a4a05b"
+    },
+    {
+      "path": "source/Shared/work/strata-llama/ggml/src/ggml-sycl/im2col.hpp",
+      "bytes": 611,
+      "sha256": "5e3dd60141339206183ca0a0f397db0b65a6f8776a1dea463aeabcb80db9b861"
+    },
+    {
+      "path": "source/Shared/work/strata-llama/ggml/src/ggml-sycl/ssm_scan.hpp",
+      "bytes": 114,
+      "sha256": "7c35b2005bfd8d30929ee77b19a56cdfb04b40ed23ad9fa2cec073c81307e44f"
+    },
+    {
+      "path": "source/Shared/work/strata-llama/ggml/src/ggml-sycl/presets.hpp",
+      "bytes": 2345,
+      "sha256": "f0a634da7478bca1afb0eff51f95d81cc22233b9dfeecd081a51e90be7c02424"
+    },
+    {
+      "path": "source/Shared/work/strata-llama/ggml/src/ggml-sycl/opt-step.hpp",
+      "bytes": 201,
+      "sha256": "45290ce837a0058d7c0edfd1a557146b9a98dbb66c0be8b1662658af8dddfaac"
+    },
+    {
+      "path": "source/Shared/work/strata-llama/ggml/src/ggml-sycl/topk-radix.hpp",
+      "bytes": 1133,
+      "sha256": "29976ea58e2e3dac17566162355431e757f02d7966016d4278dbf5ed532bc051"
+    },
+    {
+      "path": "source/Shared/work/strata-llama/ggml/src/ggml-sycl/set.hpp",
+      "bytes": 130,
+      "sha256": "7226f9e5c1548b7ab11a42d1e11d5d3ea35477e3937b8deea4ae474999fe8984"
+    },
+    {
+      "path": "source/Shared/work/strata-llama/ggml/src/ggml-sycl/vecdotq.hpp",
+      "bytes": 64530,
+      "sha256": "5bcae45c2d8b75076516a9f5c29366da853950b59078fc053c1ad9b22e29497a"
+    },
+    {
+      "path": "source/Shared/work/strata-llama/ggml/src/ggml-sycl/wkv.hpp",
+      "bytes": 268,
+      "sha256": "d368f6398ae35e2e1f424d0b7ad4722d6dfa5ead2f2727239d6c50ff4e1eddef"
+    },
+    {
+      "path": "source/Shared/work/strata-llama/ggml/src/ggml-sycl/binbcast.hpp",
+      "bytes": 2133,
+      "sha256": "3aa617c1e7b5f2c0720b7f26d119fd69db44c00b34455982ae58fe0751120ae9"
+    },
+    {
+      "path": "source/Shared/work/strata-llama/ggml/src/ggml-sycl/add-id.hpp",
+      "bytes": 189,
+      "sha256": "3d2587e00909a0d7aed79625723aeae41a77ea7dd9d624ab9fda2af256478d68"
+    },
+    {
+      "path": "source/Shared/work/strata-llama/ggml/src/ggml-sycl/solve_tri.hpp",
+      "bytes": 180,
+      "sha256": "f1de5f8c8ec721e75e134cfe781608fd797f94afc85e021bd3a662d0869b6e0f"
+    },
+    {
+      "path": "source/Shared/work/strata-llama/ggml/src/ggml-sycl/fattn-vec.hpp",
+      "bytes": 28562,
+      "sha256": "d9dfe924e635a7b9d637a8ac0a6b158101702b028cc43ad4f5c50c733b66de76"
+    },
+    {
+      "path": "source/Shared/work/strata-llama/ggml/src/ggml-sycl/element_wise.hpp",
+      "bytes": 5042,
+      "sha256": "35d955bcaec4bee98efa8a5a6ec92449ab8b8494ab7f11c55d1847c4216ac43b"
+    },
+    {
+      "path": "source/Shared/work/strata-llama/ggml/src/ggml-sycl/dpct/helper.hpp",
+      "bytes": 159552,
+      "sha256": "86dfd3a9e83cddbb37983d5f8b34c3ed6ca0e2cd797a94fb9cfdf4e4ae61c368"
+    },
+    {
+      "path": "source/Shared/work/strata-llama/ggml/src/ggml-openvino/ggml-openvino-extra.h",
+      "bytes": 10249,
+      "sha256": "8b81c12ae5ee45cb3dcb92aa31cbec39518e447259e58cd27739525e4b8b5874"
+    },
+    {
+      "path": "source/Shared/work/strata-llama/ggml/src/ggml-openvino/model-cache.h",
+      "bytes": 3128,
+      "sha256": "1ecf0ba79ff49b7ee3c02850381adca62e755c68b90ae1df6e5f9cb3335644c9"
+    },
+    {
+      "path": "source/Shared/work/strata-llama/ggml/src/ggml-openvino/CMakeLists.txt",
+      "bytes": 846,
+      "sha256": "ef742b322c4b8b88400c76651887a69050e9e4a90e09495449e87215d6d555a9"
+    },
+    {
+      "path": "source/Shared/work/strata-llama/ggml/src/ggml-openvino/ggml-quants.h",
+      "bytes": 2340,
+      "sha256": "4ba77cbb70bc68b7bc578373eb8ee57bec2b8da00273ae6586603e3b9c648b44"
+    },
+    {
+      "path": "source/Shared/work/strata-llama/ggml/src/ggml-openvino/ggml-decoder.h",
+      "bytes": 22619,
+      "sha256": "25be9264b10298ef94e2a2c7d0cb8841225ba18ee0d625c2ee702391571723b6"
+    },
+    {
+      "path": "source/Shared/work/strata-llama/ggml/src/ggml-openvino/utils.h",
+      "bytes": 7412,
+      "sha256": "9868cc5461f7ca5f155fe5861adfa24876ca4da9a47906069baa8568427621ab"
+    },
+    {
+      "path": "source/Shared/work/strata-llama/ggml/src/ggml-openvino/openvino/input_model.h",
+      "bytes": 586,
+      "sha256": "2109ae368b4a30c55697f2cd33ae358f2664209e268643e9023199b28f74adb3"
+    },
+    {
+      "path": "source/Shared/work/strata-llama/ggml/src/ggml-openvino/openvino/translate_session.h",
+      "bytes": 845,
+      "sha256": "3b87de253c9b80b95e71170ce8fecaba0a075f6b8c387bde3bf5b68d4b52076e"
+    },
+    {
+      "path": "source/Shared/work/strata-llama/ggml/src/ggml-openvino/openvino/node_context.h",
+      "bytes": 7102,
+      "sha256": "d7f4cf51d1e7211691c15b451c4e44403f66644c34a0760a2fb4a73fc2d8adfc"
+    },
+    {
+      "path": "source/Shared/work/strata-llama/ggml/src/ggml-openvino/openvino/frontend.h",
+      "bytes": 404,
+      "sha256": "f3d3179b4e9cf4ca9ec4b43903faab18cb9a484ed5a093e120d83caf9c3dfac3"
+    },
+    {
+      "path": "source/Shared/work/strata-llama/ggml/src/ggml-openvino/openvino/decoder.h",
+      "bytes": 5002,
+      "sha256": "2d9040795b477fa55a76865fee15dfc0de7f5db705b4ba8a1500b1ab6755e48e"
+    },
+    {
+      "path": "source/Shared/work/strata-llama/ggml/src/ggml-openvino/openvino/op_table.h",
+      "bytes": 2091,
+      "sha256": "afb5288ffc5844986cef482a803eec1774bc902bceb5d7d4da00412e306027af"
+    },
+    {
+      "path": "source/Shared/work/strata-llama/ggml/src/ggml-openvino/openvino/utils.h",
+      "bytes": 3139,
+      "sha256": "c5281beb20c6e77bd89b7af6ba1ac68e8e56151666eeb3c2fd3eb6442a30dccb"
+    },
+    {
+      "path": "source/Shared/work/strata-llama/ggml/src/ggml-openvino/openvino/pass/mark_dequantization_subgraph.h",
+      "bytes": 1696,
+      "sha256": "1d5a639ef7ab457dca3d9e0180010dcd96ca0f5224ad58d6583c3ec419c89ae7"
+    },
+    {
+      "path": "source/Shared/work/strata-llama/ggml/src/ggml-openvino/openvino/pass/squeeze_matmul.h",
+      "bytes": 360,
+      "sha256": "1f1231d5b0f7ee1b6943c5d5b4737718bac6e23d190180561a3727ab096483ce"
+    },
+    {
+      "path": "source/Shared/work/strata-llama/ggml/src/ggml-openvino/openvino/pass/fuse_moe_compressed.h",
+      "bytes": 540,
+      "sha256": "6586043997ead4dc60061d098d7b04d3f943330c48511fb301d81c6cff8ce744"
+    },
+    {
+      "path": "source/Shared/work/strata-llama/ggml/src/ggml-openvino/openvino/pass/kv_state_seq_axis.h",
+      "bytes": 1004,
+      "sha256": "5146b3245a1479992cb4e00548e9c6871a097b30b4a6e2c9d6a631fcc3d7f2e5"
+    },
+    {
+      "path": "source/Shared/work/strata-llama/ggml/src/ggml-openvino/openvino/pass/fuse_to_conv.h",
+      "bytes": 351,
+      "sha256": "32756898d52216e6f44bdebe4dc3ef0e7a44e01a43bff79320709f26f1c40530"
+    },
+    {
+      "path": "source/Shared/work/strata-llama/ggml/src/ggml-openvino/openvino/pass/mark_decompression_convert_constant_folding.h",
+      "bytes": 770,
+      "sha256": "cb814172e46b77f4623323793d9904e10085ba0da1fff2134f60c01463a58e76"
+    },
+    {
+      "path": "source/Shared/work/strata-llama/ggml/src/ggml-openvino/openvino/pass/fuse_to_sdpa.h",
+      "bytes": 351,
+      "sha256": "fec577bebf66a545fe7980ffa4ecc1cda6a510a7eb5ece96d49f2114e57058dd"
+    },
+    {
+      "path": "source/Shared/work/strata-llama/ggml/src/ggml-openvino/openvino/rt_info/weightless_caching_attributes.hpp",
+      "bytes": 1346,
+      "sha256": "e9b53eba5e98335e6160641ca36edeed3a08be40042b3106a196d05fbc77b0dc"
+    },
+    {
+      "path": "source/Shared/work/strata-llama/ggml/src/ggml-openvino/openvino/op/moe_compressed.hpp",
+      "bytes": 2836,
+      "sha256": "e30346a8ba578ef7e076bc4cfedc225208ad59a80f3c5dbe4f93408bf6177ce3"
+    },
+    {
+      "path": "source/Shared/work/strata-llama/ggml/src/ggml-openvino/openvino/op/gather_matmul.hpp",
+      "bytes": 1452,
+      "sha256": "54695d980b9a1784e87340c2337c8368074c47981f7eb37486d036b79fe335aa"
+    },
+    {
+      "path": "source/Shared/work/strata-llama/ggml/src/ggml-openvino/openvino/op/gated_delta_net.hpp",
+      "bytes": 2676,
+      "sha256": "fde7af332559a3c0d27ae5bf80cb17ea2284f917ab4859f33e578dafb02e8f5e"
+    }
+  ],
+  "removed_count": 95,
+  "removed_bytes": 646399,
+  "proof": {
+    "selected_translation_units_across_six_profiles": 317,
+    "no_selected_TU_in_pruned_trees": true,
+    "no_SYCL_OpenVINO_compile_definitions": true,
+    "obsolete_policy_compile_command_count": 1,
+    "actual_quoted_policy_resolution": "source/Swift Flash Next FourGPU/work/swift-flash-next-fourgpu/research/four-gpu-runtime-v11-r1/policy_v311.hpp",
+    "actual_policy_dynamic": true,
+    "all_selected_TU_hashes_preserved": true,
+    "CUTLASS_and_CUDA_required_islands_untouched": true
+  },
+  "provenance_note": "Existing import copied_files are historical import provenance; this receipt records intentional post-import removal of unselected headers. No model or binary artifact was removed.",
+  "no_build_GPU_driver_power_or_reboot": true
+}

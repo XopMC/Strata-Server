@@ -1,0 +1,1860 @@
+{
+  "schema": 1,
+  "status": "PUBLICATION_IMPORTED_FACTORY_EXPLICITLY_DISABLED_ROOT_REBIND_REQUIRED",
+  "factory_revision": 563,
+  "cold_revision": 565,
+  "files": {
+    "sources/DeepSeek V4.1/work/deepseek41-1017-nvfp4/research/old-complete-runtime-1017-adapter-v1/one_bank_store.py": {
+      "original": "DeepSeek V4.1/work/deepseek41-1017-nvfp4/research/old-complete-runtime-1017-adapter-v1/one_bank_store.py",
+      "original_sha256": "d4794c02ac19442f821579f4a1f1d049fe574bbbd6cf398d5b6e013feb4acedc",
+      "exported_sha256": "d4794c02ac19442f821579f4a1f1d049fe574bbbd6cf398d5b6e013feb4acedc",
+      "path_literal_rewrites": 0,
+      "source_helper": false
+    },
+    "sources/DeepSeek V4.1/work/deepseek41/Strata/backend/deepseek41/bundle.py": {
+      "original": "DeepSeek V4.1/work/deepseek41/Strata/backend/deepseek41/bundle.py",
+      "original_sha256": "5f5da01c6274af7397b138b0772c1af4d1080d32760f33db13fcdf8d6d955db9",
+      "exported_sha256": "5f5da01c6274af7397b138b0772c1af4d1080d32760f33db13fcdf8d6d955db9",
+      "path_literal_rewrites": 0,
+      "source_helper": false
+    },
+    "sources/DeepSeek V4.1/work/deepseek41/Strata/backend/deepseek41/weights.py": {
+      "original": "DeepSeek V4.1/work/deepseek41/Strata/backend/deepseek41/weights.py",
+      "original_sha256": "996bd2d760aacc5561dd7f1d7b777de7b7df59c7e637827b6c24ef6ab0baacfa",
+      "exported_sha256": "996bd2d760aacc5561dd7f1d7b777de7b7df59c7e637827b6c24ef6ab0baacfa",
+      "path_literal_rewrites": 0,
+      "source_helper": false
+    },
+    "sources/DeepSeek V4.1/work/deepseek41/Strata/backend/deepseek41/native.py": {
+      "original": "DeepSeek V4.1/work/deepseek41/Strata/backend/deepseek41/native.py",
+      "original_sha256": "9b5e8aa691ac57e893526969f29e991c6bf672ac92c72791de206fe341e52d11",
+      "exported_sha256": "9b5e8aa691ac57e893526969f29e991c6bf672ac92c72791de206fe341e52d11",
+      "path_literal_rewrites": 0,
+      "source_helper": false
+    },
+    "sources/DeepSeek V4.1/work/deepseek41/Strata/backend/deepseek41/mixed_quant.py": {
+      "original": "DeepSeek V4.1/work/deepseek41/Strata/backend/deepseek41/mixed_quant.py",
+      "original_sha256": "309636cc5e15a28ce252d962aeb1f5ce0a8fdad325c910d531ffb62004785274",
+      "exported_sha256": "309636cc5e15a28ce252d962aeb1f5ce0a8fdad325c910d531ffb62004785274",
+      "path_literal_rewrites": 0,
+      "source_helper": false
+    },
+    "sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-server-v565/strict_owner.py": {
+      "original": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-server-v565/strict_owner.py",
+      "original_sha256": "c2e48b5590a13a6a6d0aac1298043d278534769a6a6468b071d39bce4e6995a9",
+      "exported_sha256": "c2e48b5590a13a6a6d0aac1298043d278534769a6a6468b071d39bce4e6995a9",
+      "path_literal_rewrites": 0,
+      "source_helper": false
+    },
+    "sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-server-v565/serving_transport.py": {
+      "original": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-server-v565/serving_transport.py",
+      "original_sha256": "41a8a1f5d3e3fe3132c7511674bd851d1262405dabb670ff11cd4066c9060726",
+      "exported_sha256": "41a8a1f5d3e3fe3132c7511674bd851d1262405dabb670ff11cd4066c9060726",
+      "path_literal_rewrites": 0,
+      "source_helper": false
+    },
+    "sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-server-v565/serve.py": {
+      "original": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-server-v565/serve.py",
+      "original_sha256": "df6d0ea7e5f224081708291f33d5fbc84aa573a7d71dce9407a3a125c7b26f81",
+      "exported_sha256": "5cb0c7c30154aa9a412e30424be2c0652abd308950371713ddcd82a4c6b218a1",
+      "path_literal_rewrites": 0,
+      "source_helper": false,
+      "staging_exported_sha256": "df6d0ea7e5f224081708291f33d5fbc84aa573a7d71dce9407a3a125c7b26f81",
+      "publication_factory_disabled_guard": true
+    },
+    "sources/DeepSeek V4.1/work/deepseek41/Strata/backend/deepseek41/fifo.py": {
+      "original": "DeepSeek V4.1/work/deepseek41/Strata/backend/deepseek41/fifo.py",
+      "original_sha256": "f79fd4ea785f67a3ca0121a82607e842390b902bc7592f679d8f2b78752f3dc0",
+      "exported_sha256": "f79fd4ea785f67a3ca0121a82607e842390b902bc7592f679d8f2b78752f3dc0",
+      "path_literal_rewrites": 0,
+      "source_helper": false
+    },
+    "sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-server-v565/bindings.py": {
+      "original": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-server-v565/bindings.py",
+      "original_sha256": "dac5f5414d444c39bde880e1a8ec0b2691eacbd75e69eb63abf10ce32f9429f7",
+      "exported_sha256": "dac5f5414d444c39bde880e1a8ec0b2691eacbd75e69eb63abf10ce32f9429f7",
+      "path_literal_rewrites": 0,
+      "source_helper": false
+    },
+    "sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-server-v565/dependency_pins_v536.py": {
+      "original": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-server-v565/dependency_pins_v536.py",
+      "original_sha256": "50e81291011d2893523d89ab96f7c8902f00e3b3b8d8c35b8f6fa9b21ac0e42e",
+      "exported_sha256": "50e81291011d2893523d89ab96f7c8902f00e3b3b8d8c35b8f6fa9b21ac0e42e",
+      "path_literal_rewrites": 0,
+      "source_helper": false
+    },
+    "sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-server-v565/content_cache_v565.py": {
+      "original": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-server-v565/content_cache_v565.py",
+      "original_sha256": "cf7c404201d06573e000bf548ba95fee5ab5dea41b28a231af57a115c0de8efb",
+      "exported_sha256": "cf7c404201d06573e000bf548ba95fee5ab5dea41b28a231af57a115c0de8efb",
+      "path_literal_rewrites": 0,
+      "source_helper": false
+    },
+    "sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-server-v565/closure_hash_cache.py": {
+      "original": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-server-v565/closure_hash_cache.py",
+      "original_sha256": "dc0368cccf65af8ce3ef7aa5840c965bb7447ebec3ef1719dadbdf53b4e2910f",
+      "exported_sha256": "dc0368cccf65af8ce3ef7aa5840c965bb7447ebec3ef1719dadbdf53b4e2910f",
+      "path_literal_rewrites": 0,
+      "source_helper": false
+    },
+    "sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-server-v565/check_source_v565.py": {
+      "original": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-server-v565/check_source_v565.py",
+      "original_sha256": "148276b3ccf8e07ee9f3a54ad46e41923ae9adbbb2b38d3affd89d371b52c3f7",
+      "exported_sha256": "148276b3ccf8e07ee9f3a54ad46e41923ae9adbbb2b38d3affd89d371b52c3f7",
+      "path_literal_rewrites": 0,
+      "source_helper": false
+    },
+    "sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-server-v565/delivery_contract_v536.py": {
+      "original": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-server-v565/delivery_contract_v536.py",
+      "original_sha256": "06e438f0b707044b71fb2fec5c1a9482dc25c927566a75a7cdd16d3254cf8893",
+      "exported_sha256": "06e438f0b707044b71fb2fec5c1a9482dc25c927566a75a7cdd16d3254cf8893",
+      "path_literal_rewrites": 0,
+      "source_helper": false
+    },
+    "sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-server-v565/admission_v536.py": {
+      "original": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-server-v565/admission_v536.py",
+      "original_sha256": "e1402ecabe8b2ec7c9b378c2b48415dfb1c8aef9338a382f81d7a224100aa81c",
+      "exported_sha256": "e1402ecabe8b2ec7c9b378c2b48415dfb1c8aef9338a382f81d7a224100aa81c",
+      "path_literal_rewrites": 0,
+      "source_helper": false
+    },
+    "sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-server-v565/cpu_expected_preflight_v512_r2.py": {
+      "original": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-server-v565/cpu_expected_preflight_v512_r2.py",
+      "original_sha256": "13ef46fc485701ca75639dc71ffa8562f24b083d1466f2d4a87d0c5c794a7db1",
+      "exported_sha256": "f03a28f445b3c69f8b1d4fa2075599d3d4a633e2bb46e094501d4b5b2685edeb",
+      "path_literal_rewrites": 1,
+      "source_helper": true
+    },
+    "sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/pair-controller-index-v497/controller_v146.py": {
+      "original": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/pair-controller-index-v497/controller_v146.py",
+      "original_sha256": "503146dd1329bad594b2eb9d780eebebe2372011dbbf50de9cbfc70d7c1b7991",
+      "exported_sha256": "503146dd1329bad594b2eb9d780eebebe2372011dbbf50de9cbfc70d7c1b7991",
+      "path_literal_rewrites": 0,
+      "source_helper": false
+    },
+    "sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/pair-controller-index-v497/revalidate_v174.py": {
+      "original": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/pair-controller-index-v497/revalidate_v174.py",
+      "original_sha256": "0b31b5d33f3e31e3d04b22ee2607be3a45def163b5b7aec1545279884e218999",
+      "exported_sha256": "0b31b5d33f3e31e3d04b22ee2607be3a45def163b5b7aec1545279884e218999",
+      "path_literal_rewrites": 0,
+      "source_helper": false
+    },
+    "sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/pair-controller-index-v497/maintenance_v146.py": {
+      "original": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/pair-controller-index-v497/maintenance_v146.py",
+      "original_sha256": "457e37d3c650d6441df4ca4e2a6a1fc4dd9297dade2693aaf75858762990a286",
+      "exported_sha256": "457e37d3c650d6441df4ca4e2a6a1fc4dd9297dade2693aaf75858762990a286",
+      "path_literal_rewrites": 0,
+      "source_helper": false
+    },
+    "sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/pair-controller-index-v497/index_devices_v497.py": {
+      "original": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/pair-controller-index-v497/index_devices_v497.py",
+      "original_sha256": "33c080bebd3dc83f26eafdf0624340003644b80fdc31210f596be330756e8bfa",
+      "exported_sha256": "33c080bebd3dc83f26eafdf0624340003644b80fdc31210f596be330756e8bfa",
+      "path_literal_rewrites": 0,
+      "source_helper": false
+    },
+    "sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-server-v565/index_devices_v536.py": {
+      "original": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-server-v565/index_devices_v536.py",
+      "original_sha256": "33c080bebd3dc83f26eafdf0624340003644b80fdc31210f596be330756e8bfa",
+      "exported_sha256": "33c080bebd3dc83f26eafdf0624340003644b80fdc31210f596be330756e8bfa",
+      "path_literal_rewrites": 0,
+      "source_helper": false
+    },
+    "sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-server-v565/maintenance_v146.py": {
+      "original": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-server-v565/maintenance_v146.py",
+      "original_sha256": "90e811f4e257541c34a899ee96edec6035c496952a1f7831fc525bb99415d7f5",
+      "exported_sha256": "90e811f4e257541c34a899ee96edec6035c496952a1f7831fc525bb99415d7f5",
+      "path_literal_rewrites": 0,
+      "source_helper": false
+    },
+    "sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-server-v565/lifecycle.py": {
+      "original": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-server-v565/lifecycle.py",
+      "original_sha256": "2ff4845203a86aec00dd3bad05fa436b593679f75f970b60b4bb7c76ed9e8c23",
+      "exported_sha256": "2ff4845203a86aec00dd3bad05fa436b593679f75f970b60b4bb7c76ed9e8c23",
+      "path_literal_rewrites": 0,
+      "source_helper": false
+    },
+    "sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-server-v565/launch.py": {
+      "original": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-server-v565/launch.py",
+      "original_sha256": "9b2b04941cdbc6857598f72a1ab9078c9d073f6483fbb131396b421108ff332e",
+      "exported_sha256": "7f081686852bd34d134a19697cd27e8fd001d13f92b001e59e9eced5804e91cf",
+      "path_literal_rewrites": 0,
+      "source_helper": false,
+      "staging_exported_sha256": "9b2b04941cdbc6857598f72a1ab9078c9d073f6483fbb131396b421108ff332e",
+      "publication_factory_disabled_guard": true
+    },
+    "sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-server-v565/api_transport_v252.py": {
+      "original": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-server-v565/api_transport_v252.py",
+      "original_sha256": "1d1da8baadd5057c28fe5c8d2089c35b6e9271f0ee1ac50023bd87e5a3022b53",
+      "exported_sha256": "1d1da8baadd5057c28fe5c8d2089c35b6e9271f0ee1ac50023bd87e5a3022b53",
+      "path_literal_rewrites": 0,
+      "source_helper": false
+    },
+    "sources/DeepSeek V4.1/work/deepseek41/Strata/backend/deepseek41/api_codec.py": {
+      "original": "DeepSeek V4.1/work/deepseek41/Strata/backend/deepseek41/api_codec.py",
+      "original_sha256": "2524e05584e4026d3fe7c0e222c21f4cf7b468088ff3ba6e4533f2a77038583b",
+      "exported_sha256": "2524e05584e4026d3fe7c0e222c21f4cf7b468088ff3ba6e4533f2a77038583b",
+      "path_literal_rewrites": 0,
+      "source_helper": false
+    },
+    "sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/serving_runtime_v529.py": {
+      "original": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/serving_runtime_v529.py",
+      "original_sha256": "1875a0b46a77a248b537533e4fa5deacef82417cf242d9555a4a7862d036e7c5",
+      "exported_sha256": "3c5191dd025e4b2d590a5c465e3ddc92dd285bc3c64b01835074d22bf7a45db2",
+      "path_literal_rewrites": 0,
+      "source_helper": false,
+      "staging_exported_sha256": "1875a0b46a77a248b537533e4fa5deacef82417cf242d9555a4a7862d036e7c5",
+      "publication_factory_disabled_guard": true
+    },
+    "sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/serving_validation_v529.py": {
+      "original": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/serving_validation_v529.py",
+      "original_sha256": "f0b41c3d14f0806de68f8348154b38d9f30474d8fcaa6db6681a338969c8f942",
+      "exported_sha256": "f0b41c3d14f0806de68f8348154b38d9f30474d8fcaa6db6681a338969c8f942",
+      "path_literal_rewrites": 0,
+      "source_helper": false
+    },
+    "sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/serving_binding_v529.py": {
+      "original": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/serving_binding_v529.py",
+      "original_sha256": "f84a9881279b873a2975de079b4138808537d185724bd0fa2aff30cdc663c9eb",
+      "exported_sha256": "f84a9881279b873a2975de079b4138808537d185724bd0fa2aff30cdc663c9eb",
+      "path_literal_rewrites": 0,
+      "source_helper": false
+    },
+    "sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/cohort_binding_v539.py": {
+      "original": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/cohort_binding_v539.py",
+      "original_sha256": "d97d34662f128039e5ab57527375ad6a14b9398cd5c8614e4eca5a5b1286830d",
+      "exported_sha256": "d97d34662f128039e5ab57527375ad6a14b9398cd5c8614e4eca5a5b1286830d",
+      "path_literal_rewrites": 0,
+      "source_helper": false
+    },
+    "sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/524288/source/wavefront_counters_v506.py": {
+      "original": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/524288/source/wavefront_counters_v506.py",
+      "original_sha256": "0e0c749d813dc2a79a57d1ba56f638083d5d3a523dac110e7988fcd6773147b9",
+      "exported_sha256": "0e0c749d813dc2a79a57d1ba56f638083d5d3a523dac110e7988fcd6773147b9",
+      "path_literal_rewrites": 0,
+      "source_helper": false
+    },
+    "sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/524288/source/prefill_seam_binding_v506.py": {
+      "original": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/524288/source/prefill_seam_binding_v506.py",
+      "original_sha256": "c615b9079cc6fe90fe0c797645fd711800a6b8a33594ee8ee64492992dcf9a92",
+      "exported_sha256": "c615b9079cc6fe90fe0c797645fd711800a6b8a33594ee8ee64492992dcf9a92",
+      "path_literal_rewrites": 0,
+      "source_helper": false
+    },
+    "sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/524288/source/composition_binding_v506.py": {
+      "original": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/524288/source/composition_binding_v506.py",
+      "original_sha256": "944b06610fa03acace46475b91c63b6de13899327ed3259f37a8d7725bfa3def",
+      "exported_sha256": "03ee2eabf41933e65a779a7271fcb7c0cbf874c25e4dd6e429ac10ade3c905f7",
+      "path_literal_rewrites": 1,
+      "source_helper": true
+    },
+    "sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/524288/source/candidate_cutoff_binding_v506.py": {
+      "original": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/524288/source/candidate_cutoff_binding_v506.py",
+      "original_sha256": "b19d7ede7869880c2300519bec85ecf275360cb321153f929464ecfec2dca7cc",
+      "exported_sha256": "1725fac1cfab8fa43c495d50dd11c25e3a68c230a906a20fba5d8b2112ddb897",
+      "path_literal_rewrites": 1,
+      "source_helper": true
+    },
+    "sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/524288/source/adaptive_binding_v506.py": {
+      "original": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/524288/source/adaptive_binding_v506.py",
+      "original_sha256": "f716c488393fe3a35a6d1e6018dd95e25419376371824043eae24f30eac58cf4",
+      "exported_sha256": "f716c488393fe3a35a6d1e6018dd95e25419376371824043eae24f30eac58cf4",
+      "path_literal_rewrites": 0,
+      "source_helper": false
+    },
+    "sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/524288/source/bulk_binding_v506.py": {
+      "original": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/524288/source/bulk_binding_v506.py",
+      "original_sha256": "5cf736dea6df6d17a2d0d0f41e5325849c3cd48fca32eab69b19acca48e61f09",
+      "exported_sha256": "5cf736dea6df6d17a2d0d0f41e5325849c3cd48fca32eab69b19acca48e61f09",
+      "path_literal_rewrites": 0,
+      "source_helper": false
+    },
+    "sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/524288/source/fixed_binding_v506.py": {
+      "original": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/524288/source/fixed_binding_v506.py",
+      "original_sha256": "7cd41f48a1fc4f4c31c4471eac7adef03d01518d653b4dbea10622a05064b505",
+      "exported_sha256": "420ca0387426f34abaa274bfe3a71cb7ed7c4ba6d0c56defc2809d90d7da8364",
+      "path_literal_rewrites": 1,
+      "source_helper": true
+    },
+    "sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/524288/source/generation_off_binding_v506.py": {
+      "original": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/524288/source/generation_off_binding_v506.py",
+      "original_sha256": "a9c69026f6c99280dfa0aee0aa21134d402b0e2fc5046f493d8bb8a41f39a3bb",
+      "exported_sha256": "a9c69026f6c99280dfa0aee0aa21134d402b0e2fc5046f493d8bb8a41f39a3bb",
+      "path_literal_rewrites": 0,
+      "source_helper": false
+    },
+    "sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/524288/source/cohort_binding_v539.py": {
+      "original": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/524288/source/cohort_binding_v539.py",
+      "original_sha256": "d97d34662f128039e5ab57527375ad6a14b9398cd5c8614e4eca5a5b1286830d",
+      "exported_sha256": "d97d34662f128039e5ab57527375ad6a14b9398cd5c8614e4eca5a5b1286830d",
+      "path_literal_rewrites": 0,
+      "source_helper": false
+    },
+    "sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/524288/source/rank_copy_binding_v506.py": {
+      "original": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/524288/source/rank_copy_binding_v506.py",
+      "original_sha256": "ebfa9711df15c9bd105ca7b3e28c68c506e7b1a2eec7e2e98d718424731f8533",
+      "exported_sha256": "ebfa9711df15c9bd105ca7b3e28c68c506e7b1a2eec7e2e98d718424731f8533",
+      "path_literal_rewrites": 0,
+      "source_helper": false
+    },
+    "sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/524288/source/early_attention_binding_v506.py": {
+      "original": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/524288/source/early_attention_binding_v506.py",
+      "original_sha256": "963c4e0f4fe6414e85375605a377292214e58ccd3318b624966b7f6928b65489",
+      "exported_sha256": "963c4e0f4fe6414e85375605a377292214e58ccd3318b624966b7f6928b65489",
+      "path_literal_rewrites": 0,
+      "source_helper": false
+    },
+    "sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/524288/source/index_native_binding_v506.py": {
+      "original": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/524288/source/index_native_binding_v506.py",
+      "original_sha256": "c8b70fc12ed623f0630a6fa5c8cae3524e74b3f9845bc3dc3b16e4e0d8ba00ad",
+      "exported_sha256": "c8b70fc12ed623f0630a6fa5c8cae3524e74b3f9845bc3dc3b16e4e0d8ba00ad",
+      "path_literal_rewrites": 0,
+      "source_helper": false
+    },
+    "sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/524288/source/k5_composite_binding_v506.py": {
+      "original": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/524288/source/k5_composite_binding_v506.py",
+      "original_sha256": "0ca57f4dc0903e192d6bfa3cf0bdd87bedafe027633d7da9f9a134eabeb3bc27",
+      "exported_sha256": "44f255c8aaa792e03e2278b681f640ee2cf163f2d747d5b4d15f2d7c37aa592e",
+      "path_literal_rewrites": 1,
+      "source_helper": true
+    },
+    "sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/524288/source/serving_binding_v529.py": {
+      "original": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/524288/source/serving_binding_v529.py",
+      "original_sha256": "f84a9881279b873a2975de079b4138808537d185724bd0fa2aff30cdc663c9eb",
+      "exported_sha256": "f84a9881279b873a2975de079b4138808537d185724bd0fa2aff30cdc663c9eb",
+      "path_literal_rewrites": 0,
+      "source_helper": false
+    },
+    "sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/524288/source/k14_register_binding_v506.py": {
+      "original": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/524288/source/k14_register_binding_v506.py",
+      "original_sha256": "979aff611a11cf49c28972b997e3134ddf2cf6e4a12e98b6ff3449a4d8db4e67",
+      "exported_sha256": "9ea7fb63d4123a3f16693e46a701145d6b2ae3ff076b92e59141a0ce2eaa49ca",
+      "path_literal_rewrites": 1,
+      "source_helper": true
+    },
+    "sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/524288/source/verify_woa_quant_counters_v506.py": {
+      "original": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/524288/source/verify_woa_quant_counters_v506.py",
+      "original_sha256": "cc4ce140e0bddc74a152d87351b7289f7d92e74a1813257e545afb088e3672e2",
+      "exported_sha256": "52924a487f39000491ac798bd782bb82505edcdfd89a6b83aaa12653db44e1fd",
+      "path_literal_rewrites": 1,
+      "source_helper": true
+    },
+    "sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/524288/source/verify_woa_hash_cache_v506.py": {
+      "original": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/524288/source/verify_woa_hash_cache_v506.py",
+      "original_sha256": "acf13edf3fa77054a75095f9ecdc22d23eab0c7767a1eab03581924525cece6f",
+      "exported_sha256": "acf13edf3fa77054a75095f9ecdc22d23eab0c7767a1eab03581924525cece6f",
+      "path_literal_rewrites": 0,
+      "source_helper": false
+    },
+    "sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/524288/source/verify_woa_counters_v506.py": {
+      "original": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/524288/source/verify_woa_counters_v506.py",
+      "original_sha256": "4c9b190f335dbc2e450dc40f87575d70d6e2bb813e8c7be75f214e058bc3559b",
+      "exported_sha256": "6b66a9d9c38bdc97de55eb0f35a531f1d16afb2be7dce9885b7947bc2d4f9af0",
+      "path_literal_rewrites": 1,
+      "source_helper": true
+    },
+    "sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/524288/source/verify_woa_binding_v506.py": {
+      "original": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/524288/source/verify_woa_binding_v506.py",
+      "original_sha256": "95f2bdec3574e4c59de59bcbab855c1c5a7931a2043569127a3f01932869b694",
+      "exported_sha256": "95f2bdec3574e4c59de59bcbab855c1c5a7931a2043569127a3f01932869b694",
+      "path_literal_rewrites": 0,
+      "source_helper": false
+    },
+    "sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/524288/source/transport_model_v506.py": {
+      "original": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/524288/source/transport_model_v506.py",
+      "original_sha256": "04ed913183d057eaca06f7c0b9880fec08f185283cf829c35ae953d5bf00db62",
+      "exported_sha256": "04ed913183d057eaca06f7c0b9880fec08f185283cf829c35ae953d5bf00db62",
+      "path_literal_rewrites": 0,
+      "source_helper": false
+    },
+    "sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/524288/source/stage_devices_pair_v506.py": {
+      "original": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/524288/source/stage_devices_pair_v506.py",
+      "original_sha256": "1f769e292b64e1f4bac539f03f1509775fe06c1142e3169d2058816cef2c4c81",
+      "exported_sha256": "1f769e292b64e1f4bac539f03f1509775fe06c1142e3169d2058816cef2c4c81",
+      "path_literal_rewrites": 0,
+      "source_helper": false
+    },
+    "sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/524288/source/pair_runtime_policy_v506.py": {
+      "original": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/524288/source/pair_runtime_policy_v506.py",
+      "original_sha256": "04f539716d41e308d665a41ff1b30bac9c1caf0bcd5dca9abfff2febe579298c",
+      "exported_sha256": "04f539716d41e308d665a41ff1b30bac9c1caf0bcd5dca9abfff2febe579298c",
+      "path_literal_rewrites": 0,
+      "source_helper": false
+    },
+    "sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/524288/source/index_selection_v506.py": {
+      "original": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/524288/source/index_selection_v506.py",
+      "original_sha256": "1e1363b71988d043fe604e7094bfabbb957beb5068437e769b4cb0e94f7cd4d6",
+      "exported_sha256": "1e1363b71988d043fe604e7094bfabbb957beb5068437e769b4cb0e94f7cd4d6",
+      "path_literal_rewrites": 0,
+      "source_helper": false
+    },
+    "sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/524288/source/index_devices_v506.py": {
+      "original": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/524288/source/index_devices_v506.py",
+      "original_sha256": "33c080bebd3dc83f26eafdf0624340003644b80fdc31210f596be330756e8bfa",
+      "exported_sha256": "33c080bebd3dc83f26eafdf0624340003644b80fdc31210f596be330756e8bfa",
+      "path_literal_rewrites": 0,
+      "source_helper": false
+    },
+    "sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/524288/source/serving_validation_v529.py": {
+      "original": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/524288/source/serving_validation_v529.py",
+      "original_sha256": "f0b41c3d14f0806de68f8348154b38d9f30474d8fcaa6db6681a338969c8f942",
+      "exported_sha256": "f0b41c3d14f0806de68f8348154b38d9f30474d8fcaa6db6681a338969c8f942",
+      "path_literal_rewrites": 0,
+      "source_helper": false
+    },
+    "sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/524288/source/runtime_base_index_v506.py": {
+      "original": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/524288/source/runtime_base_index_v506.py",
+      "original_sha256": "96f1d69faebb1cd526212ddbf157ff969d7f363655b933c7812b45b233b0664b",
+      "exported_sha256": "d778f3a142dc784fb3d39c9e48e3d1c4d4bd4b2da1da9ec7c4a2d161caa3a997",
+      "path_literal_rewrites": 1,
+      "source_helper": true
+    },
+    "sources/DeepSeek V4.1/work/deepseek41/Strata/backend/deepseek41/own_rows_kernel.py": {
+      "original": "DeepSeek V4.1/work/deepseek41/Strata/backend/deepseek41/own_rows_kernel.py",
+      "original_sha256": "2200fe018a5c6cc12902e99a7b159a3ad161e98dc90e932b881efabf201eb934",
+      "exported_sha256": "2200fe018a5c6cc12902e99a7b159a3ad161e98dc90e932b881efabf201eb934",
+      "path_literal_rewrites": 0,
+      "source_helper": false
+    },
+    "sources/DeepSeek V4.1/work/deepseek41/Strata/backend/deepseek41/cuda_admission.py": {
+      "original": "DeepSeek V4.1/work/deepseek41/Strata/backend/deepseek41/cuda_admission.py",
+      "original_sha256": "8aca47bd603f4a10656b3d67dba4976714a2f6ba25ec0b17ea1140648e998cda",
+      "exported_sha256": "8aca47bd603f4a10656b3d67dba4976714a2f6ba25ec0b17ea1140648e998cda",
+      "path_literal_rewrites": 0,
+      "source_helper": false
+    },
+    "sources/DeepSeek V4.1/work/deepseek41/Strata/backend/deepseek41/cpu_batch_pool.py": {
+      "original": "DeepSeek V4.1/work/deepseek41/Strata/backend/deepseek41/cpu_batch_pool.py",
+      "original_sha256": "bfa27adefcba437301178fd0076e222f0be6f2d0a1ea96cead26406e3934b432",
+      "exported_sha256": "bfa27adefcba437301178fd0076e222f0be6f2d0a1ea96cead26406e3934b432",
+      "path_literal_rewrites": 0,
+      "source_helper": false
+    },
+    "sources/DeepSeek V4.1/work/deepseek41/Strata/backend/deepseek41/cpu_mxfp4.py": {
+      "original": "DeepSeek V4.1/work/deepseek41/Strata/backend/deepseek41/cpu_mxfp4.py",
+      "original_sha256": "f7bcce9798a9ac4fd9d9f3e840764b7caa80226c1f5359214ff50e1666008f50",
+      "exported_sha256": "f7bcce9798a9ac4fd9d9f3e840764b7caa80226c1f5359214ff50e1666008f50",
+      "path_literal_rewrites": 0,
+      "source_helper": false
+    },
+    "sources/DeepSeek V4.1/work/deepseek41/Strata/backend/deepseek41/cpu_batch_admission.py": {
+      "original": "DeepSeek V4.1/work/deepseek41/Strata/backend/deepseek41/cpu_batch_admission.py",
+      "original_sha256": "4d87956c568f7b78ede829b8e633328f86829845f5ff3132c9cb9f4aa60b7355",
+      "exported_sha256": "4d87956c568f7b78ede829b8e633328f86829845f5ff3132c9cb9f4aa60b7355",
+      "path_literal_rewrites": 0,
+      "source_helper": false
+    },
+    "sources/DeepSeek V4.1/work/deepseek41/Strata/backend/deepseek41/wxa8_cpu_batch.py": {
+      "original": "DeepSeek V4.1/work/deepseek41/Strata/backend/deepseek41/wxa8_cpu_batch.py",
+      "original_sha256": "43d437aca4c46bcf55ddebf80cd24939f16551d918f18e1cb5399082e6898e2c",
+      "exported_sha256": "43d437aca4c46bcf55ddebf80cd24939f16551d918f18e1cb5399082e6898e2c",
+      "path_literal_rewrites": 0,
+      "source_helper": false
+    },
+    "sources/DeepSeek V4.1/work/deepseek41/Strata/backend/deepseek41/wxa8_cpu_admission.py": {
+      "original": "DeepSeek V4.1/work/deepseek41/Strata/backend/deepseek41/wxa8_cpu_admission.py",
+      "original_sha256": "9c177bb121a385ae51f97ea983e8f27c670990e8a728240e58e40b4dd1e7af01",
+      "exported_sha256": "9c177bb121a385ae51f97ea983e8f27c670990e8a728240e58e40b4dd1e7af01",
+      "path_literal_rewrites": 0,
+      "source_helper": false
+    },
+    "sources/DeepSeek V4.1/work/deepseek41/Strata/backend/deepseek41/admission_evidence.py": {
+      "original": "DeepSeek V4.1/work/deepseek41/Strata/backend/deepseek41/admission_evidence.py",
+      "original_sha256": "f324d799aa60f1c77092dfa446f0c488a1b92ce704ffbb950f453f76453e0a01",
+      "exported_sha256": "f324d799aa60f1c77092dfa446f0c488a1b92ce704ffbb950f453f76453e0a01",
+      "path_literal_rewrites": 0,
+      "source_helper": false
+    },
+    "sources/DeepSeek V4.1/work/deepseek41/Strata/backend/deepseek41/cpu_moe_graph_task.py": {
+      "original": "DeepSeek V4.1/work/deepseek41/Strata/backend/deepseek41/cpu_moe_graph_task.py",
+      "original_sha256": "f409c7f8d142092a9734ea825e01956c4078849448081def056e37becfb270e0",
+      "exported_sha256": "f409c7f8d142092a9734ea825e01956c4078849448081def056e37becfb270e0",
+      "path_literal_rewrites": 0,
+      "source_helper": false
+    },
+    "sources/DeepSeek V4.1/work/deepseek41/Strata/backend/deepseek41/context_capacity.py": {
+      "original": "DeepSeek V4.1/work/deepseek41/Strata/backend/deepseek41/context_capacity.py",
+      "original_sha256": "57ec3477eeffc44e8d75cb120e783a28d12544197262576a961f01907159ba79",
+      "exported_sha256": "57ec3477eeffc44e8d75cb120e783a28d12544197262576a961f01907159ba79",
+      "path_literal_rewrites": 0,
+      "source_helper": false
+    },
+    "sources/DeepSeek V4.1/work/deepseek41/Strata/backend/deepseek41/native_fp4_cache.py": {
+      "original": "DeepSeek V4.1/work/deepseek41/Strata/backend/deepseek41/native_fp4_cache.py",
+      "original_sha256": "3ca42783d48668dcacdfdad9f4a9e5b2475d07336e80246b3e6e5d86b418e31b",
+      "exported_sha256": "3ca42783d48668dcacdfdad9f4a9e5b2475d07336e80246b3e6e5d86b418e31b",
+      "path_literal_rewrites": 0,
+      "source_helper": false
+    },
+    "sources/DeepSeek V4.1/work/deepseek41/Strata/backend/deepseek41/native_fp4_attention.py": {
+      "original": "DeepSeek V4.1/work/deepseek41/Strata/backend/deepseek41/native_fp4_attention.py",
+      "original_sha256": "5320cbd50647d25029f659e38e38bf2fba6402414737d312e3fcf7072c142eb5",
+      "exported_sha256": "5320cbd50647d25029f659e38e38bf2fba6402414737d312e3fcf7072c142eb5",
+      "path_literal_rewrites": 0,
+      "source_helper": false
+    },
+    "sources/DeepSeek V4.1/work/deepseek41/Strata/backend/deepseek41/tensor_layout.py": {
+      "original": "DeepSeek V4.1/work/deepseek41/Strata/backend/deepseek41/tensor_layout.py",
+      "original_sha256": "94f730062f0d7e713e6e0b87dfe350c43c96ecd81bfe341a81246f386bbe782f",
+      "exported_sha256": "94f730062f0d7e713e6e0b87dfe350c43c96ecd81bfe341a81246f386bbe782f",
+      "path_literal_rewrites": 0,
+      "source_helper": false
+    },
+    "sources/DeepSeek V4.1/work/deepseek41/Strata/backend/deepseek41/q4_cache.py": {
+      "original": "DeepSeek V4.1/work/deepseek41/Strata/backend/deepseek41/q4_cache.py",
+      "original_sha256": "86961891337475de6cb6fe258624f733bebccba96c1713acaa0bdd1efcabb97f",
+      "exported_sha256": "86961891337475de6cb6fe258624f733bebccba96c1713acaa0bdd1efcabb97f",
+      "path_literal_rewrites": 0,
+      "source_helper": false
+    },
+    "sources/DeepSeek V4.1/work/deepseek41/Strata/backend/deepseek41/q4_attention.py": {
+      "original": "DeepSeek V4.1/work/deepseek41/Strata/backend/deepseek41/q4_attention.py",
+      "original_sha256": "8c1820f0766f085702ce6bb7124f348d4e025a27f85867a0c9799fe319733b21",
+      "exported_sha256": "8c1820f0766f085702ce6bb7124f348d4e025a27f85867a0c9799fe319733b21",
+      "path_literal_rewrites": 0,
+      "source_helper": false
+    },
+    "sources/DeepSeek V4.1/work/deepseek41/Strata/backend/deepseek41/selected_experts.py": {
+      "original": "DeepSeek V4.1/work/deepseek41/Strata/backend/deepseek41/selected_experts.py",
+      "original_sha256": "a96268135baa3a9fbed6b2bd924810ceb2ee454aaf5d0bfec135075d5dc256df",
+      "exported_sha256": "a96268135baa3a9fbed6b2bd924810ceb2ee454aaf5d0bfec135075d5dc256df",
+      "path_literal_rewrites": 0,
+      "source_helper": false
+    },
+    "sources/DeepSeek V4.1/work/deepseek41/Strata/backend/deepseek41/grouped_experts.py": {
+      "original": "DeepSeek V4.1/work/deepseek41/Strata/backend/deepseek41/grouped_experts.py",
+      "original_sha256": "12d322c9290b7cff726810b7a6afff2829c32b03727d84dd211af4e77701b14c",
+      "exported_sha256": "12d322c9290b7cff726810b7a6afff2829c32b03727d84dd211af4e77701b14c",
+      "path_literal_rewrites": 0,
+      "source_helper": false
+    },
+    "sources/DeepSeek V4.1/work/deepseek41/Strata/backend/deepseek41/staging.py": {
+      "original": "DeepSeek V4.1/work/deepseek41/Strata/backend/deepseek41/staging.py",
+      "original_sha256": "763de10dbf5bbff458ac42a616570b41c261dd751f00504bdbc7e6edf0783662",
+      "exported_sha256": "763de10dbf5bbff458ac42a616570b41c261dd751f00504bdbc7e6edf0783662",
+      "path_literal_rewrites": 0,
+      "source_helper": false
+    },
+    "sources/DeepSeek V4.1/work/deepseek41/Strata/backend/deepseek41/complete_residency.py": {
+      "original": "DeepSeek V4.1/work/deepseek41/Strata/backend/deepseek41/complete_residency.py",
+      "original_sha256": "5cc23dd38e42ca4f0009462756c7ce21a522c271c286364d039619e0d5e32eed",
+      "exported_sha256": "5cc23dd38e42ca4f0009462756c7ce21a522c271c286364d039619e0d5e32eed",
+      "path_literal_rewrites": 0,
+      "source_helper": false
+    },
+    "sources/DeepSeek V4.1/work/deepseek41/Strata/backend/deepseek41/portable_kernels.py": {
+      "original": "DeepSeek V4.1/work/deepseek41/Strata/backend/deepseek41/portable_kernels.py",
+      "original_sha256": "c0d56db6aa5fbaedbafd6857301c6bf69a249454722c902e92d0410cefe0e2a3",
+      "exported_sha256": "c0d56db6aa5fbaedbafd6857301c6bf69a249454722c902e92d0410cefe0e2a3",
+      "path_literal_rewrites": 0,
+      "source_helper": false
+    },
+    "sources/DeepSeek V4.1/work/deepseek41/Strata/backend/deepseek41/speculative.py": {
+      "original": "DeepSeek V4.1/work/deepseek41/Strata/backend/deepseek41/speculative.py",
+      "original_sha256": "a6cdb95b0ef9dd3bced9f7832edd3b350d333f0e35d023c4ac37c846df06b067",
+      "exported_sha256": "a6cdb95b0ef9dd3bced9f7832edd3b350d333f0e35d023c4ac37c846df06b067",
+      "path_literal_rewrites": 0,
+      "source_helper": false
+    },
+    "sources/DeepSeek V4.1/work/deepseek41/Strata/backend/deepseek41/cpu_experts.py": {
+      "original": "DeepSeek V4.1/work/deepseek41/Strata/backend/deepseek41/cpu_experts.py",
+      "original_sha256": "e412bf506cdeb49f276d7484c1a21f7b96963c3a2c2d21f5be9e2d5d0c9020a8",
+      "exported_sha256": "e412bf506cdeb49f276d7484c1a21f7b96963c3a2c2d21f5be9e2d5d0c9020a8",
+      "path_literal_rewrites": 0,
+      "source_helper": false
+    },
+    "sources/DeepSeek V4.1/work/deepseek41/Strata/backend/deepseek41/own_cpu_rows.py": {
+      "original": "DeepSeek V4.1/work/deepseek41/Strata/backend/deepseek41/own_cpu_rows.py",
+      "original_sha256": "ecaf558d815c60b486e6b18a6a5bd22f477f7447dc05593ae9f4d96742a6015a",
+      "exported_sha256": "ecaf558d815c60b486e6b18a6a5bd22f477f7447dc05593ae9f4d96742a6015a",
+      "path_literal_rewrites": 0,
+      "source_helper": false
+    },
+    "sources/DeepSeek V4.1/work/deepseek41/Strata/backend/deepseek41/own_cpu_admission.py": {
+      "original": "DeepSeek V4.1/work/deepseek41/Strata/backend/deepseek41/own_cpu_admission.py",
+      "original_sha256": "84ac00d4d813e9537cfb5cbc052765f1bf6fc8912aef1bb4e4b58086b546edeb",
+      "exported_sha256": "84ac00d4d813e9537cfb5cbc052765f1bf6fc8912aef1bb4e4b58086b546edeb",
+      "path_literal_rewrites": 0,
+      "source_helper": false
+    },
+    "sources/DeepSeek V4.1/work/deepseek41/Strata/backend/deepseek41/cpu_worker_pool.py": {
+      "original": "DeepSeek V4.1/work/deepseek41/Strata/backend/deepseek41/cpu_worker_pool.py",
+      "original_sha256": "aeb83a3fefca48095700c09c5cb71bc45633c31bc3368160c50288995843bcb4",
+      "exported_sha256": "aeb83a3fefca48095700c09c5cb71bc45633c31bc3368160c50288995843bcb4",
+      "path_literal_rewrites": 0,
+      "source_helper": false
+    },
+    "sources/DeepSeek V4.1/work/deepseek41/Strata/backend/deepseek41/dense_residency.py": {
+      "original": "DeepSeek V4.1/work/deepseek41/Strata/backend/deepseek41/dense_residency.py",
+      "original_sha256": "ab595f3e839ccc72c4f54873f65c9c06c318adbca6635225422ba5e188dc68b7",
+      "exported_sha256": "ab595f3e839ccc72c4f54873f65c9c06c318adbca6635225422ba5e188dc68b7",
+      "path_literal_rewrites": 0,
+      "source_helper": false
+    },
+    "sources/DeepSeek V4.1/work/deepseek41/Strata/backend/deepseek41/sm89_index.py": {
+      "original": "DeepSeek V4.1/work/deepseek41/Strata/backend/deepseek41/sm89_index.py",
+      "original_sha256": "dcc49b4cf130b3dcc25c813c616a0d70c8df197510348809853e1509d39515f2",
+      "exported_sha256": "dcc49b4cf130b3dcc25c813c616a0d70c8df197510348809853e1509d39515f2",
+      "path_literal_rewrites": 0,
+      "source_helper": false
+    },
+    "sources/DeepSeek V4.1/work/deepseek41/Strata/backend/deepseek41/long_context.py": {
+      "original": "DeepSeek V4.1/work/deepseek41/Strata/backend/deepseek41/long_context.py",
+      "original_sha256": "8fddaeb72c49d844c89fd715efdb42687edd3535d18bac14bddfe370fe979a9c",
+      "exported_sha256": "8fddaeb72c49d844c89fd715efdb42687edd3535d18bac14bddfe370fe979a9c",
+      "path_literal_rewrites": 0,
+      "source_helper": false
+    },
+    "sources/DeepSeek V4.1/work/deepseek41/Strata/backend/deepseek41/layerwise_reference.py": {
+      "original": "DeepSeek V4.1/work/deepseek41/Strata/backend/deepseek41/layerwise_reference.py",
+      "original_sha256": "05171b8fe70178a1341ed4f661e4e7603e1ffad1bf546333ecb773fc22a19eb5",
+      "exported_sha256": "05171b8fe70178a1341ed4f661e4e7603e1ffad1bf546333ecb773fc22a19eb5",
+      "path_literal_rewrites": 0,
+      "source_helper": false
+    },
+    "sources/DeepSeek V4.1/work/deepseek41/Strata/backend/deepseek41/chunked_reference.py": {
+      "original": "DeepSeek V4.1/work/deepseek41/Strata/backend/deepseek41/chunked_reference.py",
+      "original_sha256": "19dba711e8b32946a1e941a8bc6b47ec0d6d87458b029d3a412c2e10dd22e066",
+      "exported_sha256": "19dba711e8b32946a1e941a8bc6b47ec0d6d87458b029d3a412c2e10dd22e066",
+      "path_literal_rewrites": 0,
+      "source_helper": false
+    },
+    "sources/DeepSeek V4.1/work/deepseek41/Strata/backend/deepseek41/streamed_reference.py": {
+      "original": "DeepSeek V4.1/work/deepseek41/Strata/backend/deepseek41/streamed_reference.py",
+      "original_sha256": "52ad292f0f07282d153258ed5f617a7a31d0e7713454326deb93e22508cbd31f",
+      "exported_sha256": "52ad292f0f07282d153258ed5f617a7a31d0e7713454326deb93e22508cbd31f",
+      "path_literal_rewrites": 0,
+      "source_helper": false
+    },
+    "sources/DeepSeek V4.1/work/deepseek41/Strata/backend/deepseek41/sm89_attention.py": {
+      "original": "DeepSeek V4.1/work/deepseek41/Strata/backend/deepseek41/sm89_attention.py",
+      "original_sha256": "04181e9005adb953048f779d063cd355086e9cd74b9e234bdc53b0207ba3bcfa",
+      "exported_sha256": "04181e9005adb953048f779d063cd355086e9cd74b9e234bdc53b0207ba3bcfa",
+      "path_literal_rewrites": 0,
+      "source_helper": false
+    },
+    "sources/DeepSeek V4.1/work/deepseek41/Strata/backend/deepseek41/packed_cuda.py": {
+      "original": "DeepSeek V4.1/work/deepseek41/Strata/backend/deepseek41/packed_cuda.py",
+      "original_sha256": "d9c4336ad74531c129ecf575ad99130b8fd97ac90e99c333414005066c41536c",
+      "exported_sha256": "d9c4336ad74531c129ecf575ad99130b8fd97ac90e99c333414005066c41536c",
+      "path_literal_rewrites": 0,
+      "source_helper": false
+    },
+    "sources/DeepSeek V4.1/work/deepseek41/Strata/backend/deepseek41/sm89_quant.py": {
+      "original": "DeepSeek V4.1/work/deepseek41/Strata/backend/deepseek41/sm89_quant.py",
+      "original_sha256": "9d53030ef69bb8df4bbdbf980ef4ff0b7deb2c36562159116b1e81cf31057348",
+      "exported_sha256": "9d53030ef69bb8df4bbdbf980ef4ff0b7deb2c36562159116b1e81cf31057348",
+      "path_literal_rewrites": 0,
+      "source_helper": false
+    },
+    "sources/DeepSeek V4.1/work/deepseek41/Strata/backend/deepseek41/residency.py": {
+      "original": "DeepSeek V4.1/work/deepseek41/Strata/backend/deepseek41/residency.py",
+      "original_sha256": "dc3dbd7db18567f3becf8b6ed8faa20f50139d9123ecdff74e912de74a05a462",
+      "exported_sha256": "dc3dbd7db18567f3becf8b6ed8faa20f50139d9123ecdff74e912de74a05a462",
+      "path_literal_rewrites": 0,
+      "source_helper": false
+    },
+    "sources/DeepSeek V4.1/work/deepseek41/Strata/backend/deepseek41/reference_graph.py": {
+      "original": "DeepSeek V4.1/work/deepseek41/Strata/backend/deepseek41/reference_graph.py",
+      "original_sha256": "ee0479357f6327801b1876e1a1cabe38465f99b34abf1a5154d35514e78189d6",
+      "exported_sha256": "ee0479357f6327801b1876e1a1cabe38465f99b34abf1a5154d35514e78189d6",
+      "path_literal_rewrites": 0,
+      "source_helper": false
+    },
+    "sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/524288/source/runtime_524288_pair_v506.py": {
+      "original": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/524288/source/runtime_524288_pair_v506.py",
+      "original_sha256": "1711c4ae5ac4f09c3c09c8a67bde767ec6f07296a856eb962fcedd98e2b7dc8b",
+      "exported_sha256": "1711c4ae5ac4f09c3c09c8a67bde767ec6f07296a856eb962fcedd98e2b7dc8b",
+      "path_literal_rewrites": 0,
+      "source_helper": false
+    },
+    "sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/524288/source/mtp_driver_pair_v506.py": {
+      "original": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/524288/source/mtp_driver_pair_v506.py",
+      "original_sha256": "45bb4f0722610f17281d04c21ef5e3f4d0b1dbeae0d492d89e1bca8d49e4a071",
+      "exported_sha256": "45bb4f0722610f17281d04c21ef5e3f4d0b1dbeae0d492d89e1bca8d49e4a071",
+      "path_literal_rewrites": 0,
+      "source_helper": false
+    },
+    "sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/524288/source/mtp_cost256_pair_v506.py": {
+      "original": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/524288/source/mtp_cost256_pair_v506.py",
+      "original_sha256": "4c49c1fa78e2cfc2f69357d0794ed1a2cdd58c06153091ebf5676a041f800bdc",
+      "exported_sha256": "4c49c1fa78e2cfc2f69357d0794ed1a2cdd58c06153091ebf5676a041f800bdc",
+      "path_literal_rewrites": 0,
+      "source_helper": false
+    },
+    "sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/524288/source/mtp_cost128_pair_v506.py": {
+      "original": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/524288/source/mtp_cost128_pair_v506.py",
+      "original_sha256": "e79d153b7e917ccb129d47d0c649287a4adbe9abf586976ba5f65ba6f00fda61",
+      "exported_sha256": "e79d153b7e917ccb129d47d0c649287a4adbe9abf586976ba5f65ba6f00fda61",
+      "path_literal_rewrites": 0,
+      "source_helper": false
+    },
+    "sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/524288/source/mtp_setup_pair_v506.py": {
+      "original": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/524288/source/mtp_setup_pair_v506.py",
+      "original_sha256": "37a7d5f3241f8f4f3440e81a3b9fb720122bfde21ab17b3321a833a7bf7c0a14",
+      "exported_sha256": "37a7d5f3241f8f4f3440e81a3b9fb720122bfde21ab17b3321a833a7bf7c0a14",
+      "path_literal_rewrites": 0,
+      "source_helper": false
+    },
+    "sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/524288/source/factory_cache_pair_v506.py": {
+      "original": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/524288/source/factory_cache_pair_v506.py",
+      "original_sha256": "921410eeef7dcbe421d14fafaea9789294ee6906aca79619e58e9980867f9192",
+      "exported_sha256": "921410eeef7dcbe421d14fafaea9789294ee6906aca79619e58e9980867f9192",
+      "path_literal_rewrites": 0,
+      "source_helper": false
+    },
+    "sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/524288/source/resident_dense_stream_pair_v506.py": {
+      "original": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/524288/source/resident_dense_stream_pair_v506.py",
+      "original_sha256": "712cf2420257bda64868b28b03219b5480a11ca9a92d5ffd5912d6b2f1fc56d9",
+      "exported_sha256": "74c809ba1cf85f35c294ad70562badcc6d7a2ebeded3053bfb53d48b80aab4e1",
+      "path_literal_rewrites": 1,
+      "source_helper": true
+    },
+    "sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/524288/source/native_cuda_loader_pair_v506.py": {
+      "original": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/524288/source/native_cuda_loader_pair_v506.py",
+      "original_sha256": "583ea3c76d716b7893c913ef5e3f71da8d73409ab487fa6731dc346e0535e1f4",
+      "exported_sha256": "583ea3c76d716b7893c913ef5e3f71da8d73409ab487fa6731dc346e0535e1f4",
+      "path_literal_rewrites": 0,
+      "source_helper": false
+    },
+    "sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/524288/source/resident_source_stream_pair_v506.py": {
+      "original": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/524288/source/resident_source_stream_pair_v506.py",
+      "original_sha256": "6d5ff5e19200967b7a19df74440ec8e17cd57216a11a364b989d4e23f5482e91",
+      "exported_sha256": "6d5ff5e19200967b7a19df74440ec8e17cd57216a11a364b989d4e23f5482e91",
+      "path_literal_rewrites": 0,
+      "source_helper": false
+    },
+    "sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/524288/source/resident_stream_pair_v506.py": {
+      "original": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/524288/source/resident_stream_pair_v506.py",
+      "original_sha256": "c1264f53f2221bda87542e28e2f4247081570b12996f69aeaf712897345027ec",
+      "exported_sha256": "bc2972fd968835fa3e87fe104b6c66d39b1e64f99c3b1f69f6c12d81e24edeae",
+      "path_literal_rewrites": 1,
+      "source_helper": true
+    },
+    "sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/524288/source/resident_moe_pair_v506.py": {
+      "original": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/524288/source/resident_moe_pair_v506.py",
+      "original_sha256": "f433380eb609b432710e2acef423a8dffffb58aaec7527ccc097b34013f079ff",
+      "exported_sha256": "97da01eff751ac4452c1a196a913a20551aa63f315f198e30d2dd4b0a79e4749",
+      "path_literal_rewrites": 1,
+      "source_helper": true
+    },
+    "sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/524288/source/proposal_gap_v506.py": {
+      "original": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/524288/source/proposal_gap_v506.py",
+      "original_sha256": "4d91511c40f9b68287689040035f897683b877bdcca4b8496001cbdeb4630b4e",
+      "exported_sha256": "4d838e6b9103b3ea17d8d1c1e88410dfc1d1a4dd1eee575d05be7752b8e8bfbd",
+      "path_literal_rewrites": 1,
+      "source_helper": true
+    },
+    "sources/DeepSeek V4.1/work/deepseek41-1017-nvfp4/delivery/single-gpu-frozen-v1/source-snapshot/native_mtp_commit_graph_v45_1017.py": {
+      "original": "DeepSeek V4.1/work/deepseek41-1017-nvfp4/delivery/single-gpu-frozen-v1/source-snapshot/native_mtp_commit_graph_v45_1017.py",
+      "original_sha256": "63201f33633e527da2a06f01e5c5aaf39c2e500880569b9905b1fb89c2f2c893",
+      "exported_sha256": "63201f33633e527da2a06f01e5c5aaf39c2e500880569b9905b1fb89c2f2c893",
+      "path_literal_rewrites": 0,
+      "source_helper": false
+    },
+    "sources/DeepSeek V4.1/work/deepseek41-1017-nvfp4/delivery/single-gpu-frozen-v1/source-snapshot/native_mtp_graph_v41_1017.py": {
+      "original": "DeepSeek V4.1/work/deepseek41-1017-nvfp4/delivery/single-gpu-frozen-v1/source-snapshot/native_mtp_graph_v41_1017.py",
+      "original_sha256": "bbc4d8b7ee418720b5001a0f5cac298c4ca516ccd231bbb3e0f12c8f0bdee67f",
+      "exported_sha256": "bbc4d8b7ee418720b5001a0f5cac298c4ca516ccd231bbb3e0f12c8f0bdee67f",
+      "path_literal_rewrites": 0,
+      "source_helper": false
+    },
+    "sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/524288/source/adaptive_validation_v506.py": {
+      "original": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/524288/source/adaptive_validation_v506.py",
+      "original_sha256": "bfe42236725687c3bb75443a7b41394c7e111e173f8079f7dda32da744b16433",
+      "exported_sha256": "bfe42236725687c3bb75443a7b41394c7e111e173f8079f7dda32da744b16433",
+      "path_literal_rewrites": 0,
+      "source_helper": false
+    },
+    "sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/524288/source/epoch_counters_v506.py": {
+      "original": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/524288/source/epoch_counters_v506.py",
+      "original_sha256": "cc12dd3e5325a371d8d4b58f9bc85a436fcf272b0fe4ee8374f3a78f8420a681",
+      "exported_sha256": "052184198c4afeeab1db9768f9c9e972555f808c1e37b81583274d16bf071e34",
+      "path_literal_rewrites": 1,
+      "source_helper": true
+    },
+    "sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/524288/source/bulk_counters_v506.py": {
+      "original": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/524288/source/bulk_counters_v506.py",
+      "original_sha256": "1c40ab439f11ef2d85d4e4c650f6fb575bab034df17c446734ba2d6f7c840801",
+      "exported_sha256": "bfee3c35ec4d04b1e7f2f7653880f47d9e7b61ef81562051af387e1c6683a353",
+      "path_literal_rewrites": 1,
+      "source_helper": true
+    },
+    "sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/524288/source/boundary_receipt_v506.py": {
+      "original": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/524288/source/boundary_receipt_v506.py",
+      "original_sha256": "0877737d1814a223482223d8ddcc62de0b868bdc9ba10e96e3f7822fb61525e1",
+      "exported_sha256": "d7fab9f5e3cb28eb74484b95d75c8cd84c1e34561a29cd591f8f24cd35978456",
+      "path_literal_rewrites": 1,
+      "source_helper": true
+    },
+    "sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/524288/source/capacity_policy_v506.py": {
+      "original": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/524288/source/capacity_policy_v506.py",
+      "original_sha256": "eddab84516decf493facabfbb4aa021d22745be792b00a576793aaa063cb0e26",
+      "exported_sha256": "eddab84516decf493facabfbb4aa021d22745be792b00a576793aaa063cb0e26",
+      "path_literal_rewrites": 0,
+      "source_helper": false
+    },
+    "sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/524288/source/fixed_counters_v506.py": {
+      "original": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/524288/source/fixed_counters_v506.py",
+      "original_sha256": "08e2428677edfce76a868e568ea36792b1b78cb9d20973168b4e196ba2131c62",
+      "exported_sha256": "08e2428677edfce76a868e568ea36792b1b78cb9d20973168b4e196ba2131c62",
+      "path_literal_rewrites": 0,
+      "source_helper": false
+    },
+    "sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/524288/source/generation_off_counters_v506.py": {
+      "original": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/524288/source/generation_off_counters_v506.py",
+      "original_sha256": "c35200b2d3d97134501df49ac06df1487370d65466718bed20aa90367918a1f7",
+      "exported_sha256": "c35200b2d3d97134501df49ac06df1487370d65466718bed20aa90367918a1f7",
+      "path_literal_rewrites": 0,
+      "source_helper": false
+    },
+    "sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/524288/source/adaptive_gap_v506.py": {
+      "original": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/524288/source/adaptive_gap_v506.py",
+      "original_sha256": "178360ff5bda20943e6c069528abb4eafdb0f61074d99cd66547f2c9eaf57809",
+      "exported_sha256": "178360ff5bda20943e6c069528abb4eafdb0f61074d99cd66547f2c9eaf57809",
+      "path_literal_rewrites": 0,
+      "source_helper": false
+    },
+    "sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/524288/source/candidate_cutoff_counters_v506.py": {
+      "original": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/524288/source/candidate_cutoff_counters_v506.py",
+      "original_sha256": "2685ea90d1670ed8b4c6b909a5f4d1e64929316a941447c0a8eb8335fdb4d4d1",
+      "exported_sha256": "2685ea90d1670ed8b4c6b909a5f4d1e64929316a941447c0a8eb8335fdb4d4d1",
+      "path_literal_rewrites": 0,
+      "source_helper": false
+    },
+    "sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/524288/source/rank_copy_counters_v506.py": {
+      "original": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/524288/source/rank_copy_counters_v506.py",
+      "original_sha256": "5618d919bd6e8842ac0ea62b479e06f4637e9187a1bdd7e19d72ee343209b168",
+      "exported_sha256": "5618d919bd6e8842ac0ea62b479e06f4637e9187a1bdd7e19d72ee343209b168",
+      "path_literal_rewrites": 0,
+      "source_helper": false
+    },
+    "sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/524288/source/early_attention_counters_v506.py": {
+      "original": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/524288/source/early_attention_counters_v506.py",
+      "original_sha256": "c54ebc05666f7c405a0a2c0558dc7b55812cdbc0621781aefe2ec7331dbb820e",
+      "exported_sha256": "c54ebc05666f7c405a0a2c0558dc7b55812cdbc0621781aefe2ec7331dbb820e",
+      "path_literal_rewrites": 0,
+      "source_helper": false
+    },
+    "sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/524288/source/k14_register_counters_v506.py": {
+      "original": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/524288/source/k14_register_counters_v506.py",
+      "original_sha256": "95106d9856ebfe98622fd00b2e4b54915461decf4dd56f315b13f4b987e7dfb9",
+      "exported_sha256": "95106d9856ebfe98622fd00b2e4b54915461decf4dd56f315b13f4b987e7dfb9",
+      "path_literal_rewrites": 0,
+      "source_helper": false
+    },
+    "sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/524288/source/prefill_seam_counters_v506.py": {
+      "original": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/524288/source/prefill_seam_counters_v506.py",
+      "original_sha256": "f7e7ed33749a73658866a8619da088c8ab25b5dc4bbe6b2f208ddcded510827f",
+      "exported_sha256": "f7e7ed33749a73658866a8619da088c8ab25b5dc4bbe6b2f208ddcded510827f",
+      "path_literal_rewrites": 0,
+      "source_helper": false
+    },
+    "sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/524288/source/request_memory_pair_v506.py": {
+      "original": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/524288/source/request_memory_pair_v506.py",
+      "original_sha256": "d4676992f2471126f8377f79d0a6a5d33f3301bdfad8e3f69f9d69dd2ce9df3c",
+      "exported_sha256": "d4676992f2471126f8377f79d0a6a5d33f3301bdfad8e3f69f9d69dd2ce9df3c",
+      "path_literal_rewrites": 0,
+      "source_helper": false
+    },
+    "sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/524288/source/native_engine_pair_v506.py": {
+      "original": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/524288/source/native_engine_pair_v506.py",
+      "original_sha256": "c6b20827d756b5c227ce00af3435dd70c30e945522315fe6fa7ae77aeba869b2",
+      "exported_sha256": "c6b20827d756b5c227ce00af3435dd70c30e945522315fe6fa7ae77aeba869b2",
+      "path_literal_rewrites": 0,
+      "source_helper": false
+    },
+    "sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/524288/source/pair_indexer_counters_v506.py": {
+      "original": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/524288/source/pair_indexer_counters_v506.py",
+      "original_sha256": "0556cc60dd30c8c3bca97de634673be0f5b2499d85c8668fbbeb1b8670c1aa52",
+      "exported_sha256": "0556cc60dd30c8c3bca97de634673be0f5b2499d85c8668fbbeb1b8670c1aa52",
+      "path_literal_rewrites": 0,
+      "source_helper": false
+    },
+    "sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/524288/source/cpu_projection_binding_v506.py": {
+      "original": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/524288/source/cpu_projection_binding_v506.py",
+      "original_sha256": "97c0beb690d54c20ae6d691ebdcf5655f074682a704da9f6e34e2ae435e084df",
+      "exported_sha256": "97c0beb690d54c20ae6d691ebdcf5655f074682a704da9f6e34e2ae435e084df",
+      "path_literal_rewrites": 0,
+      "source_helper": false
+    },
+    "sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/524288/source/pair_format_v506.py": {
+      "original": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/524288/source/pair_format_v506.py",
+      "original_sha256": "8e5ee7a30abc61ba19f32014dc5f47669103aad2bac7055a0f256f5ad153bf52",
+      "exported_sha256": "8e5ee7a30abc61ba19f32014dc5f47669103aad2bac7055a0f256f5ad153bf52",
+      "path_literal_rewrites": 0,
+      "source_helper": false
+    },
+    "sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/524288/source/bootstrap_pair_v506.py": {
+      "original": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/524288/source/bootstrap_pair_v506.py",
+      "original_sha256": "6a871c15c8618a6b72362af9340279924457dfcbb61aac7e215840fc02712881",
+      "exported_sha256": "6a871c15c8618a6b72362af9340279924457dfcbb61aac7e215840fc02712881",
+      "path_literal_rewrites": 0,
+      "source_helper": false
+    },
+    "sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/524288/source/native_registry_pair_v506.py": {
+      "original": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/524288/source/native_registry_pair_v506.py",
+      "original_sha256": "bf7b68435d206cf9137a43665109f980dd13f7e0ff683e6efc63af115bdfd938",
+      "exported_sha256": "bf7b68435d206cf9137a43665109f980dd13f7e0ff683e6efc63af115bdfd938",
+      "path_literal_rewrites": 0,
+      "source_helper": false
+    },
+    "sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/524288/source/reference_pair_v506.py": {
+      "original": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/524288/source/reference_pair_v506.py",
+      "original_sha256": "c8437b6c74c44991dc2aa56abc2c1d7d32f6ea5f952beac777ee2eefda9a849e",
+      "exported_sha256": "c8437b6c74c44991dc2aa56abc2c1d7d32f6ea5f952beac777ee2eefda9a849e",
+      "path_literal_rewrites": 0,
+      "source_helper": false
+    },
+    "sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/524288/source/private_source_loader_v506.py": {
+      "original": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/524288/source/private_source_loader_v506.py",
+      "original_sha256": "85601a510050e234af67b63da664292931c424b6cce31deb9a5cf515c97256dd",
+      "exported_sha256": "85601a510050e234af67b63da664292931c424b6cce31deb9a5cf515c97256dd",
+      "path_literal_rewrites": 0,
+      "source_helper": false
+    },
+    "sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/524288/source/owner_contract_v506.py": {
+      "original": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/524288/source/owner_contract_v506.py",
+      "original_sha256": "11cd390ff52601c1ff3f9dd43163823a233dd6876a3fd5de2bc7e3b7825db75f",
+      "exported_sha256": "45ffcc2478d0abc76908a94a5db563ae4ebebcaf40c5371c5b8c48d174f138b6",
+      "path_literal_rewrites": 1,
+      "source_helper": true
+    },
+    "sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/524288/source/pair_policy_snapshot_v506.py": {
+      "original": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/524288/source/pair_policy_snapshot_v506.py",
+      "original_sha256": "e072bed1516562e9f16de57ba0909e0803cf17f0515d9ae7f7675d5c75d2921c",
+      "exported_sha256": "e072bed1516562e9f16de57ba0909e0803cf17f0515d9ae7f7675d5c75d2921c",
+      "path_literal_rewrites": 0,
+      "source_helper": false
+    },
+    "sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/524288/source/runtime_262144_pair_v506.py": {
+      "original": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/524288/source/runtime_262144_pair_v506.py",
+      "original_sha256": "73bba1346ce44e5d86f9d40ec2e8331425a1b2cd84affde15b3e96dbf5860591",
+      "exported_sha256": "73bba1346ce44e5d86f9d40ec2e8331425a1b2cd84affde15b3e96dbf5860591",
+      "path_literal_rewrites": 0,
+      "source_helper": false
+    },
+    "sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/524288/source/pair_runtime_loader_v506.py": {
+      "original": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/524288/source/pair_runtime_loader_v506.py",
+      "original_sha256": "d3006b312cfc7e6e4dee83de7b8cb36061a125e1de54110dd0f551c1696c36b8",
+      "exported_sha256": "5bfc62e1355105014eae53938f67f4373eb9a14f2ba2a255eb1059b22fd90f84",
+      "path_literal_rewrites": 1,
+      "source_helper": true
+    },
+    "sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/524288/source/pair_factory_v506.py": {
+      "original": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/524288/source/pair_factory_v506.py",
+      "original_sha256": "70560a72297d484623fed7a43f9aaceb174d334203550fbf601814f05e3331aa",
+      "exported_sha256": "70560a72297d484623fed7a43f9aaceb174d334203550fbf601814f05e3331aa",
+      "path_literal_rewrites": 0,
+      "source_helper": false
+    },
+    "sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/524288/source/controller_metadata_compat_v506.py": {
+      "original": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/524288/source/controller_metadata_compat_v506.py",
+      "original_sha256": "5629f1763a3615654007756539766986d82f2bcc92723292d2eb22779df6723e",
+      "exported_sha256": "54dc0d836d714167f158a3cdc9342ffcf29b3d362a3c1fd3e648a56c65454bed",
+      "path_literal_rewrites": 1,
+      "source_helper": true
+    },
+    "sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/524288/source/gpu0_health_index_v506.py": {
+      "original": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/524288/source/gpu0_health_index_v506.py",
+      "original_sha256": "d43b90109b3f25f7ee6bfebaccdb74d4be8037daecc24fad62c84129f4516997",
+      "exported_sha256": "1396553eabda59bb0fc0daa2bf43827d6bc4a5bf5f109576e67d3a178e212c5e",
+      "path_literal_rewrites": 1,
+      "source_helper": true
+    },
+    "sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/524288/source/epoch_binding_v506.py": {
+      "original": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/524288/source/epoch_binding_v506.py",
+      "original_sha256": "4ac7962f8fec51b8ac86b5f6e544cfbce413f3333517db7ec348b97876b93cda",
+      "exported_sha256": "4ac7962f8fec51b8ac86b5f6e544cfbce413f3333517db7ec348b97876b93cda",
+      "path_literal_rewrites": 0,
+      "source_helper": false
+    },
+    "sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/524288/source/cuda_admission_index_v506.py": {
+      "original": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/524288/source/cuda_admission_index_v506.py",
+      "original_sha256": "65d68499acb57f251118c43bbd2a6bad8cbd8b4eaeb85d9771381aef92ce1760",
+      "exported_sha256": "65d68499acb57f251118c43bbd2a6bad8cbd8b4eaeb85d9771381aef92ce1760",
+      "path_literal_rewrites": 0,
+      "source_helper": false
+    },
+    "sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/524288/source/cpu_evidence_v506.py": {
+      "original": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/524288/source/cpu_evidence_v506.py",
+      "original_sha256": "34cad92e2b60921f17d9aa8c95027fde759a50aa2b32b523fce35e576a4a4078",
+      "exported_sha256": "34cad92e2b60921f17d9aa8c95027fde759a50aa2b32b523fce35e576a4a4078",
+      "path_literal_rewrites": 0,
+      "source_helper": false
+    },
+    "sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/524288/source/balanced_hash_cache_v506.py": {
+      "original": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/524288/source/balanced_hash_cache_v506.py",
+      "original_sha256": "e8b5cf7a783aaad90e59b62f14f2d8475b7ad6f2a7e863f7fa1ee60b54aca10c",
+      "exported_sha256": "e8b5cf7a783aaad90e59b62f14f2d8475b7ad6f2a7e863f7fa1ee60b54aca10c",
+      "path_literal_rewrites": 0,
+      "source_helper": false
+    },
+    "sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/524288/source/balanced_binding_v506.py": {
+      "original": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/524288/source/balanced_binding_v506.py",
+      "original_sha256": "8ee838d4d4b1473e09096a1e0b0782b6aee0900a12ad2d7947678040d7b12041",
+      "exported_sha256": "8ee838d4d4b1473e09096a1e0b0782b6aee0900a12ad2d7947678040d7b12041",
+      "path_literal_rewrites": 0,
+      "source_helper": false
+    },
+    "sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/524288/source/auxiliary_index_v506.py": {
+      "original": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/524288/source/auxiliary_index_v506.py",
+      "original_sha256": "5a04494ef077e0d439e4d2859156fddcced969b93cd70a25e9d8f6e2d7e6c1c3",
+      "exported_sha256": "150f7a4750df2aa73e199cdffae196ed8b9ef6e8cc27ff1f5d4fb7cba05cb371",
+      "path_literal_rewrites": 1,
+      "source_helper": true
+    },
+    "sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/262144/system_library_pins_v512_r2.py": {
+      "original": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/262144/system_library_pins_v512_r2.py",
+      "original_sha256": "aa5f58610e359b6647ecc355ff36955cc025600a0cdbc616645bd64b1d5abff4",
+      "exported_sha256": "aa5f58610e359b6647ecc355ff36955cc025600a0cdbc616645bd64b1d5abff4",
+      "path_literal_rewrites": 0,
+      "source_helper": false
+    },
+    "sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/262144/source/verify_woa_quant_counters_v512.py": {
+      "original": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/262144/source/verify_woa_quant_counters_v512.py",
+      "original_sha256": "303b46e4316005773766e699fde4d251f8b54c69d1fa96d228d2dbb8a9802b07",
+      "exported_sha256": "342654a75d683877b234b5418766a11206e1dc0592d978e3d6f0e8cf3e0a088b",
+      "path_literal_rewrites": 1,
+      "source_helper": true
+    },
+    "sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/262144/source/verify_woa_hash_cache_v512.py": {
+      "original": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/262144/source/verify_woa_hash_cache_v512.py",
+      "original_sha256": "acf13edf3fa77054a75095f9ecdc22d23eab0c7767a1eab03581924525cece6f",
+      "exported_sha256": "acf13edf3fa77054a75095f9ecdc22d23eab0c7767a1eab03581924525cece6f",
+      "path_literal_rewrites": 0,
+      "source_helper": false
+    },
+    "sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/262144/source/verify_woa_counters_v512.py": {
+      "original": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/262144/source/verify_woa_counters_v512.py",
+      "original_sha256": "ba183e268fc66cb7157e4395bc0846df7c0822c3ea6ccdc8c1cfba73e89b691e",
+      "exported_sha256": "9301b3596ee81823ff9d1a427fb456d934dcf3550636aba0e45463ed1d396516",
+      "path_literal_rewrites": 1,
+      "source_helper": true
+    },
+    "sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/262144/source/verify_woa_binding_v512.py": {
+      "original": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/262144/source/verify_woa_binding_v512.py",
+      "original_sha256": "f6c196cf3a34c69671068c441bb3a693815cff2ab99441c8b136ad22bc94b271",
+      "exported_sha256": "e1f28eda48a630627eaf5d21342ef9de0c007c039bb1221e597219e0962ccc98",
+      "path_literal_rewrites": 1,
+      "source_helper": true
+    },
+    "sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/262144/source/transport_model_v512.py": {
+      "original": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/262144/source/transport_model_v512.py",
+      "original_sha256": "04ed913183d057eaca06f7c0b9880fec08f185283cf829c35ae953d5bf00db62",
+      "exported_sha256": "04ed913183d057eaca06f7c0b9880fec08f185283cf829c35ae953d5bf00db62",
+      "path_literal_rewrites": 0,
+      "source_helper": false
+    },
+    "sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/262144/source/stage_devices_pair_v512.py": {
+      "original": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/262144/source/stage_devices_pair_v512.py",
+      "original_sha256": "8e53996b66017c4ea4f28c1d93bb74a08ceec705b7037bf172723efddf15d93a",
+      "exported_sha256": "8e53996b66017c4ea4f28c1d93bb74a08ceec705b7037bf172723efddf15d93a",
+      "path_literal_rewrites": 0,
+      "source_helper": false
+    },
+    "sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/262144/source/pair_runtime_policy_v512.py": {
+      "original": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/262144/source/pair_runtime_policy_v512.py",
+      "original_sha256": "6da7e5c567ae0207d59e70927406cb0284406284b0be4f378680fd2a2a540867",
+      "exported_sha256": "6da7e5c567ae0207d59e70927406cb0284406284b0be4f378680fd2a2a540867",
+      "path_literal_rewrites": 0,
+      "source_helper": false
+    },
+    "sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/262144/source/index_selection_v512.py": {
+      "original": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/262144/source/index_selection_v512.py",
+      "original_sha256": "8719390a4ee24d10a1788def10bfc24a952d9601f6944019e516b34a18621202",
+      "exported_sha256": "8719390a4ee24d10a1788def10bfc24a952d9601f6944019e516b34a18621202",
+      "path_literal_rewrites": 0,
+      "source_helper": false
+    },
+    "sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/262144/source/index_devices_v512.py": {
+      "original": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/262144/source/index_devices_v512.py",
+      "original_sha256": "33c080bebd3dc83f26eafdf0624340003644b80fdc31210f596be330756e8bfa",
+      "exported_sha256": "33c080bebd3dc83f26eafdf0624340003644b80fdc31210f596be330756e8bfa",
+      "path_literal_rewrites": 0,
+      "source_helper": false
+    },
+    "sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/262144/source/serving_validation_v529.py": {
+      "original": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/262144/source/serving_validation_v529.py",
+      "original_sha256": "f0b41c3d14f0806de68f8348154b38d9f30474d8fcaa6db6681a338969c8f942",
+      "exported_sha256": "f0b41c3d14f0806de68f8348154b38d9f30474d8fcaa6db6681a338969c8f942",
+      "path_literal_rewrites": 0,
+      "source_helper": false
+    },
+    "sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/262144/source/serving_binding_v529.py": {
+      "original": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/262144/source/serving_binding_v529.py",
+      "original_sha256": "f84a9881279b873a2975de079b4138808537d185724bd0fa2aff30cdc663c9eb",
+      "exported_sha256": "f84a9881279b873a2975de079b4138808537d185724bd0fa2aff30cdc663c9eb",
+      "path_literal_rewrites": 0,
+      "source_helper": false
+    },
+    "sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/262144/source/serial_reference_v512.py": {
+      "original": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/262144/source/serial_reference_v512.py",
+      "original_sha256": "7d17a32c15711198f72083d0eafa887150df4e27373b714a072c61ddab3e6f0a",
+      "exported_sha256": "bfdb429af57bc259e5eda1205a743deb8499154116fcd3d2b4e5dcd2a738bab8",
+      "path_literal_rewrites": 1,
+      "source_helper": true
+    },
+    "sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/262144/source/serial_copy_off_v512.py": {
+      "original": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/262144/source/serial_copy_off_v512.py",
+      "original_sha256": "01232ba243d6469c1900e8e1355be40b7f9397c8ff514aa604cca889af567b27",
+      "exported_sha256": "01232ba243d6469c1900e8e1355be40b7f9397c8ff514aa604cca889af567b27",
+      "path_literal_rewrites": 0,
+      "source_helper": false
+    },
+    "sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/262144/source/runtime_base_index_v512.py": {
+      "original": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/262144/source/runtime_base_index_v512.py",
+      "original_sha256": "8f7e706ba505e5a41e5269e1e0f0240a1c59fb2d80da05e1c989b0f3317b212d",
+      "exported_sha256": "885bd2f38107b997b3984942a025577d5b5363ea546bc323db45cfa043561a19",
+      "path_literal_rewrites": 1,
+      "source_helper": true
+    },
+    "sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/262144/source/runtime_524288_pair_v512.py": {
+      "original": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/262144/source/runtime_524288_pair_v512.py",
+      "original_sha256": "1aea57fe936a686f1357f4ed6c59f72b902dd8083b89b61a9f99ac8737f01362",
+      "exported_sha256": "1aea57fe936a686f1357f4ed6c59f72b902dd8083b89b61a9f99ac8737f01362",
+      "path_literal_rewrites": 0,
+      "source_helper": false
+    },
+    "sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/262144/source/runtime_262144_pair_v512.py": {
+      "original": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/262144/source/runtime_262144_pair_v512.py",
+      "original_sha256": "28660f13a15c85648aff315a422bf647c93c138d84c2394a56c67c544f84ab7f",
+      "exported_sha256": "28660f13a15c85648aff315a422bf647c93c138d84c2394a56c67c544f84ab7f",
+      "path_literal_rewrites": 0,
+      "source_helper": false
+    },
+    "sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/262144/source/mtp_driver_pair_v512.py": {
+      "original": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/262144/source/mtp_driver_pair_v512.py",
+      "original_sha256": "bd78e6d68073ab0af304477de0887c96dad9eb4137a9d8bd3bc06e54280d146e",
+      "exported_sha256": "bd78e6d68073ab0af304477de0887c96dad9eb4137a9d8bd3bc06e54280d146e",
+      "path_literal_rewrites": 0,
+      "source_helper": false
+    },
+    "sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/262144/source/mtp_cost256_pair_v512.py": {
+      "original": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/262144/source/mtp_cost256_pair_v512.py",
+      "original_sha256": "4c49c1fa78e2cfc2f69357d0794ed1a2cdd58c06153091ebf5676a041f800bdc",
+      "exported_sha256": "4c49c1fa78e2cfc2f69357d0794ed1a2cdd58c06153091ebf5676a041f800bdc",
+      "path_literal_rewrites": 0,
+      "source_helper": false
+    },
+    "sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/262144/source/mtp_cost128_pair_v512.py": {
+      "original": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/262144/source/mtp_cost128_pair_v512.py",
+      "original_sha256": "e79d153b7e917ccb129d47d0c649287a4adbe9abf586976ba5f65ba6f00fda61",
+      "exported_sha256": "e79d153b7e917ccb129d47d0c649287a4adbe9abf586976ba5f65ba6f00fda61",
+      "path_literal_rewrites": 0,
+      "source_helper": false
+    },
+    "sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/262144/source/mtp_setup_pair_v512.py": {
+      "original": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/262144/source/mtp_setup_pair_v512.py",
+      "original_sha256": "37a7d5f3241f8f4f3440e81a3b9fb720122bfde21ab17b3321a833a7bf7c0a14",
+      "exported_sha256": "37a7d5f3241f8f4f3440e81a3b9fb720122bfde21ab17b3321a833a7bf7c0a14",
+      "path_literal_rewrites": 0,
+      "source_helper": false
+    },
+    "sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/262144/source/factory_cache_pair_v512.py": {
+      "original": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/262144/source/factory_cache_pair_v512.py",
+      "original_sha256": "1802a90d17b298e378daf2a7cb3abe3d80b3a2a0a101fec0df0bdd20506b6d8d",
+      "exported_sha256": "1802a90d17b298e378daf2a7cb3abe3d80b3a2a0a101fec0df0bdd20506b6d8d",
+      "path_literal_rewrites": 0,
+      "source_helper": false
+    },
+    "sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/262144/source/resident_dense_stream_pair_v512.py": {
+      "original": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/262144/source/resident_dense_stream_pair_v512.py",
+      "original_sha256": "aa7a5abeca5d39517d8ad62d03c3b29148453100159359985b3b0e8a248d5cce",
+      "exported_sha256": "5a7f32edfb932fc050c0ddcc99adee169ecf234bb5b99cd9f4a0825a37bd64b0",
+      "path_literal_rewrites": 1,
+      "source_helper": true
+    },
+    "sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/262144/source/native_cuda_loader_pair_v512.py": {
+      "original": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/262144/source/native_cuda_loader_pair_v512.py",
+      "original_sha256": "482466c750e5e7047e5d6a50040ec9ab3541b229780df768dee5ba382afd70aa",
+      "exported_sha256": "482466c750e5e7047e5d6a50040ec9ab3541b229780df768dee5ba382afd70aa",
+      "path_literal_rewrites": 0,
+      "source_helper": false
+    },
+    "sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/262144/source/resident_source_stream_pair_v512.py": {
+      "original": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/262144/source/resident_source_stream_pair_v512.py",
+      "original_sha256": "cad2d5d5f08c8511b0a5ceb14032833d63dc981e3101fb2e79846138583b6d6c",
+      "exported_sha256": "cad2d5d5f08c8511b0a5ceb14032833d63dc981e3101fb2e79846138583b6d6c",
+      "path_literal_rewrites": 0,
+      "source_helper": false
+    },
+    "sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/262144/source/resident_stream_pair_v512.py": {
+      "original": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/262144/source/resident_stream_pair_v512.py",
+      "original_sha256": "4ea3909b36a4d95e6de1cc089480cc1a30c19bd0ec9137f2350fd69b78af5ede",
+      "exported_sha256": "c87569fe11e8913e5f5a1c2797a8f331fd92d61dc0d139a0c1cc3ed0b03aef8f",
+      "path_literal_rewrites": 1,
+      "source_helper": true
+    },
+    "sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/262144/source/resident_moe_pair_v512.py": {
+      "original": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/262144/source/resident_moe_pair_v512.py",
+      "original_sha256": "5cb6f1f6274bfcad7d27ea991f357f114af88ef68966be3169961dd7493f23f8",
+      "exported_sha256": "b258b7a19ac3147b344d697e66207f953b11aac4480500c828eafc48d7605d75",
+      "path_literal_rewrites": 1,
+      "source_helper": true
+    },
+    "sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/262144/source/proposal_gap_v512.py": {
+      "original": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/262144/source/proposal_gap_v512.py",
+      "original_sha256": "4d91511c40f9b68287689040035f897683b877bdcca4b8496001cbdeb4630b4e",
+      "exported_sha256": "4d838e6b9103b3ea17d8d1c1e88410dfc1d1a4dd1eee575d05be7752b8e8bfbd",
+      "path_literal_rewrites": 1,
+      "source_helper": true
+    },
+    "sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/262144/source/adaptive_validation_v512.py": {
+      "original": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/262144/source/adaptive_validation_v512.py",
+      "original_sha256": "59758b143ad4e76a5206bb30411d77be701f0bb0967c1d4bcb4f8b19cb6c1b75",
+      "exported_sha256": "59758b143ad4e76a5206bb30411d77be701f0bb0967c1d4bcb4f8b19cb6c1b75",
+      "path_literal_rewrites": 0,
+      "source_helper": false
+    },
+    "sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/262144/source/fixed_binding_v512.py": {
+      "original": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/262144/source/fixed_binding_v512.py",
+      "original_sha256": "b4e37c77e4a9229651f1fd982e2f705a71bccc324ec8fc085a32dadf3a0edc1a",
+      "exported_sha256": "72eb8ec3007c034b5894ef7644bb3dafd1e8e3c5481adee53db8a227d74a20d6",
+      "path_literal_rewrites": 1,
+      "source_helper": true
+    },
+    "sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/262144/source/generation_off_binding_v512.py": {
+      "original": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/262144/source/generation_off_binding_v512.py",
+      "original_sha256": "a9c69026f6c99280dfa0aee0aa21134d402b0e2fc5046f493d8bb8a41f39a3bb",
+      "exported_sha256": "a9c69026f6c99280dfa0aee0aa21134d402b0e2fc5046f493d8bb8a41f39a3bb",
+      "path_literal_rewrites": 0,
+      "source_helper": false
+    },
+    "sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/262144/source/port_binding_v512.py": {
+      "original": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/262144/source/port_binding_v512.py",
+      "original_sha256": "d923d69e9b4886e4d5fd5d5232dde826893decb51cfa6cb07a15d5080eb03c91",
+      "exported_sha256": "3213c07c2f7ba837a8f8527bdd37b2e339ff621d464d85f3b76d408021c8fad7",
+      "path_literal_rewrites": 1,
+      "source_helper": true
+    },
+    "sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/262144/source/cohort_binding_v539.py": {
+      "original": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/262144/source/cohort_binding_v539.py",
+      "original_sha256": "d97d34662f128039e5ab57527375ad6a14b9398cd5c8614e4eca5a5b1286830d",
+      "exported_sha256": "d97d34662f128039e5ab57527375ad6a14b9398cd5c8614e4eca5a5b1286830d",
+      "path_literal_rewrites": 0,
+      "source_helper": false
+    },
+    "sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/262144/source/epoch_counters_v512.py": {
+      "original": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/262144/source/epoch_counters_v512.py",
+      "original_sha256": "57bbf04d03009f4e78fb3575e8070208284aa189ee5d9685c1e4d05a782dc567",
+      "exported_sha256": "546d5c79b2cdcea7ad1e15aa7a7050d5bb86c76a7a08a04cd8d49acff3a08c3d",
+      "path_literal_rewrites": 1,
+      "source_helper": true
+    },
+    "sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/262144/source/bulk_binding_v512.py": {
+      "original": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/262144/source/bulk_binding_v512.py",
+      "original_sha256": "587e1b1a5036680f079907982bded4bef8ac9a5d5bf360c546ba3062982a8022",
+      "exported_sha256": "587e1b1a5036680f079907982bded4bef8ac9a5d5bf360c546ba3062982a8022",
+      "path_literal_rewrites": 0,
+      "source_helper": false
+    },
+    "sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/262144/source/bulk_counters_v512.py": {
+      "original": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/262144/source/bulk_counters_v512.py",
+      "original_sha256": "ff86aeaa3d43d5bfe9b7f97ada9507e3b6f90facf8cdf8155e6f060ba6cb0e07",
+      "exported_sha256": "2f56538bd3abfd6593007c2afdaa9452e02edbab996682d740b9bfdf3ea199d9",
+      "path_literal_rewrites": 1,
+      "source_helper": true
+    },
+    "sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/262144/source/boundary_receipt_v512.py": {
+      "original": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/262144/source/boundary_receipt_v512.py",
+      "original_sha256": "35d66bd4bc3811b4dfacd64f149c5800c4c3f737f456a82f80a8e616d5d11fb5",
+      "exported_sha256": "5a4fce45c02a6b027d88e8714ca6e2410194ee12bda8c0ceaf6497332cf449f5",
+      "path_literal_rewrites": 1,
+      "source_helper": true
+    },
+    "sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/262144/source/capacity_policy_v512.py": {
+      "original": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/262144/source/capacity_policy_v512.py",
+      "original_sha256": "eddab84516decf493facabfbb4aa021d22745be792b00a576793aaa063cb0e26",
+      "exported_sha256": "eddab84516decf493facabfbb4aa021d22745be792b00a576793aaa063cb0e26",
+      "path_literal_rewrites": 0,
+      "source_helper": false
+    },
+    "sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/262144/source/fixed_counters_v512.py": {
+      "original": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/262144/source/fixed_counters_v512.py",
+      "original_sha256": "385395525e8f2467d3c50ed7704cae11f250058e7396dad07c3d6531ded867fc",
+      "exported_sha256": "385395525e8f2467d3c50ed7704cae11f250058e7396dad07c3d6531ded867fc",
+      "path_literal_rewrites": 0,
+      "source_helper": false
+    },
+    "sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/262144/source/generation_off_counters_v512.py": {
+      "original": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/262144/source/generation_off_counters_v512.py",
+      "original_sha256": "262863a6fea3707b2779a39ee860fa415388cbbce1f25cb1f0b2439e1bf6fa17",
+      "exported_sha256": "262863a6fea3707b2779a39ee860fa415388cbbce1f25cb1f0b2439e1bf6fa17",
+      "path_literal_rewrites": 0,
+      "source_helper": false
+    },
+    "sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/262144/source/adaptive_gap_v512.py": {
+      "original": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/262144/source/adaptive_gap_v512.py",
+      "original_sha256": "178360ff5bda20943e6c069528abb4eafdb0f61074d99cd66547f2c9eaf57809",
+      "exported_sha256": "178360ff5bda20943e6c069528abb4eafdb0f61074d99cd66547f2c9eaf57809",
+      "path_literal_rewrites": 0,
+      "source_helper": false
+    },
+    "sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/262144/source/fixed_geometry_counters_v512.py": {
+      "original": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/262144/source/fixed_geometry_counters_v512.py",
+      "original_sha256": "80d7c36a63ca28e44484a9f8612af95d44b1a19f12d36651506c17952d0de0c5",
+      "exported_sha256": "80d7c36a63ca28e44484a9f8612af95d44b1a19f12d36651506c17952d0de0c5",
+      "path_literal_rewrites": 0,
+      "source_helper": false
+    },
+    "sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/262144/source/prefill_seam_binding_v512.py": {
+      "original": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/262144/source/prefill_seam_binding_v512.py",
+      "original_sha256": "4e4d1e2221db98986eaccb65ca74114336601e0b6f1f041f6f935558af64a3ac",
+      "exported_sha256": "4e4d1e2221db98986eaccb65ca74114336601e0b6f1f041f6f935558af64a3ac",
+      "path_literal_rewrites": 0,
+      "source_helper": false
+    },
+    "sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/262144/source/index_native_binding_v512.py": {
+      "original": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/262144/source/index_native_binding_v512.py",
+      "original_sha256": "e6fb1ef82fa78e4429e56ade558b50e4e13b56cc71e8660b7cdd58c6c0bf4486",
+      "exported_sha256": "e6fb1ef82fa78e4429e56ade558b50e4e13b56cc71e8660b7cdd58c6c0bf4486",
+      "path_literal_rewrites": 0,
+      "source_helper": false
+    },
+    "sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/262144/source/k5_composite_binding_v512.py": {
+      "original": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/262144/source/k5_composite_binding_v512.py",
+      "original_sha256": "9f606dcf9d54a981b53eb811345f688a9c06bddb7a08bfe24c28164c872e5368",
+      "exported_sha256": "9f606dcf9d54a981b53eb811345f688a9c06bddb7a08bfe24c28164c872e5368",
+      "path_literal_rewrites": 0,
+      "source_helper": false
+    },
+    "sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/262144/source/candidate_cutoff_binding_v512.py": {
+      "original": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/262144/source/candidate_cutoff_binding_v512.py",
+      "original_sha256": "5807d197425bdec30450679b41d77c01eea1fd22733bc1bfdb2a8836ac62a7c7",
+      "exported_sha256": "69cb4bd11465d406c729976182a91ae2790420f2bebd3a35c375ddf8e99d0fc8",
+      "path_literal_rewrites": 1,
+      "source_helper": true
+    },
+    "sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/262144/source/adaptive_binding_v512.py": {
+      "original": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/262144/source/adaptive_binding_v512.py",
+      "original_sha256": "eb6e36176cf0eac7cf9559a5d485fa17fe609582ac26239e0874c2dd652b00a8",
+      "exported_sha256": "eb6e36176cf0eac7cf9559a5d485fa17fe609582ac26239e0874c2dd652b00a8",
+      "path_literal_rewrites": 0,
+      "source_helper": false
+    },
+    "sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/262144/source/prefill_seam_counters_v512.py": {
+      "original": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/262144/source/prefill_seam_counters_v512.py",
+      "original_sha256": "6176601c5d0f473532e875d0e94a4e5e7fa95b466ff89e764bbee83247831b60",
+      "exported_sha256": "6176601c5d0f473532e875d0e94a4e5e7fa95b466ff89e764bbee83247831b60",
+      "path_literal_rewrites": 0,
+      "source_helper": false
+    },
+    "sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/262144/source/candidate_cutoff_counters_v512.py": {
+      "original": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/262144/source/candidate_cutoff_counters_v512.py",
+      "original_sha256": "a761c1e65dbd1446369eeaed8b08892c2cde9994788366eb9cfdb6cb4bf4ffce",
+      "exported_sha256": "a761c1e65dbd1446369eeaed8b08892c2cde9994788366eb9cfdb6cb4bf4ffce",
+      "path_literal_rewrites": 0,
+      "source_helper": false
+    },
+    "sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/262144/source/request_memory_pair_v512.py": {
+      "original": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/262144/source/request_memory_pair_v512.py",
+      "original_sha256": "fcfbd3dd121685d265df9f5fc5663e4a7096e33a9d355d9e851ad63cf865ace0",
+      "exported_sha256": "fcfbd3dd121685d265df9f5fc5663e4a7096e33a9d355d9e851ad63cf865ace0",
+      "path_literal_rewrites": 0,
+      "source_helper": false
+    },
+    "sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/262144/source/native_engine_pair_v512.py": {
+      "original": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/262144/source/native_engine_pair_v512.py",
+      "original_sha256": "7a72af2df19759985e26f90a094773be789f9aef3cbec90fd4e33946fb2b375f",
+      "exported_sha256": "7a72af2df19759985e26f90a094773be789f9aef3cbec90fd4e33946fb2b375f",
+      "path_literal_rewrites": 0,
+      "source_helper": false
+    },
+    "sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/262144/source/pair_indexer_counters_v512.py": {
+      "original": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/262144/source/pair_indexer_counters_v512.py",
+      "original_sha256": "0556cc60dd30c8c3bca97de634673be0f5b2499d85c8668fbbeb1b8670c1aa52",
+      "exported_sha256": "0556cc60dd30c8c3bca97de634673be0f5b2499d85c8668fbbeb1b8670c1aa52",
+      "path_literal_rewrites": 0,
+      "source_helper": false
+    },
+    "sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/262144/source/cpu_projection_binding_v512.py": {
+      "original": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/262144/source/cpu_projection_binding_v512.py",
+      "original_sha256": "3fae83945ae6caf3793666f7e7a551a899b664df15d70706f712e70835bfe5fb",
+      "exported_sha256": "3fae83945ae6caf3793666f7e7a551a899b664df15d70706f712e70835bfe5fb",
+      "path_literal_rewrites": 0,
+      "source_helper": false
+    },
+    "sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/262144/source/pair_format_v512.py": {
+      "original": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/262144/source/pair_format_v512.py",
+      "original_sha256": "8e5ee7a30abc61ba19f32014dc5f47669103aad2bac7055a0f256f5ad153bf52",
+      "exported_sha256": "8e5ee7a30abc61ba19f32014dc5f47669103aad2bac7055a0f256f5ad153bf52",
+      "path_literal_rewrites": 0,
+      "source_helper": false
+    },
+    "sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/262144/source/bootstrap_pair_v512.py": {
+      "original": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/262144/source/bootstrap_pair_v512.py",
+      "original_sha256": "ab261318ccff1401b3713f18aea7aaeb6a815d6eaa92bb03078cba7e364bf88b",
+      "exported_sha256": "ab261318ccff1401b3713f18aea7aaeb6a815d6eaa92bb03078cba7e364bf88b",
+      "path_literal_rewrites": 0,
+      "source_helper": false
+    },
+    "sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/262144/source/native_registry_pair_v512.py": {
+      "original": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/262144/source/native_registry_pair_v512.py",
+      "original_sha256": "86fe2f1b3987a3222f59111f9b3e7a06c15eb0b3726905d2ad74e7f7415f3239",
+      "exported_sha256": "86fe2f1b3987a3222f59111f9b3e7a06c15eb0b3726905d2ad74e7f7415f3239",
+      "path_literal_rewrites": 0,
+      "source_helper": false
+    },
+    "sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/262144/source/reference_pair_v512.py": {
+      "original": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/262144/source/reference_pair_v512.py",
+      "original_sha256": "0d94342e4584f91cc73d8a2e62b0196e6df92ff3d3a401f3b70b1471ffca779f",
+      "exported_sha256": "0d94342e4584f91cc73d8a2e62b0196e6df92ff3d3a401f3b70b1471ffca779f",
+      "path_literal_rewrites": 0,
+      "source_helper": false
+    },
+    "sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/262144/source/private_source_loader_v512.py": {
+      "original": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/262144/source/private_source_loader_v512.py",
+      "original_sha256": "f46bb9d2aadf4662b01dcf81db54f2c455b2e832166a6a2652c58d422ad2951a",
+      "exported_sha256": "f46bb9d2aadf4662b01dcf81db54f2c455b2e832166a6a2652c58d422ad2951a",
+      "path_literal_rewrites": 0,
+      "source_helper": false
+    },
+    "sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/262144/source/owner_contract_v512.py": {
+      "original": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/262144/source/owner_contract_v512.py",
+      "original_sha256": "11cd390ff52601c1ff3f9dd43163823a233dd6876a3fd5de2bc7e3b7825db75f",
+      "exported_sha256": "45ffcc2478d0abc76908a94a5db563ae4ebebcaf40c5371c5b8c48d174f138b6",
+      "path_literal_rewrites": 1,
+      "source_helper": true
+    },
+    "sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/262144/source/pair_policy_snapshot_v512.py": {
+      "original": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/262144/source/pair_policy_snapshot_v512.py",
+      "original_sha256": "4d1507939aa7e21f62a630ec46f66b1a2d620e3f74ddf8cbae566da3d71c4ed7",
+      "exported_sha256": "4d1507939aa7e21f62a630ec46f66b1a2d620e3f74ddf8cbae566da3d71c4ed7",
+      "path_literal_rewrites": 0,
+      "source_helper": false
+    },
+    "sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/262144/source/pair_runtime_loader_v512.py": {
+      "original": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/262144/source/pair_runtime_loader_v512.py",
+      "original_sha256": "37580d93cde91e4bb85ff62eed4c517d8e4e612845acdb4783ff00fea19868fb",
+      "exported_sha256": "dedc3ac84320e8eddc81d90fac8f3dc7a021660a9dca3299cb802c445e6d6b7d",
+      "path_literal_rewrites": 1,
+      "source_helper": true
+    },
+    "sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/262144/source/pair_factory_v512.py": {
+      "original": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/262144/source/pair_factory_v512.py",
+      "original_sha256": "c17c70dae5bf5a85488cf559152ef810bdd1c8f098bd4a78439e992b73a4d898",
+      "exported_sha256": "c17c70dae5bf5a85488cf559152ef810bdd1c8f098bd4a78439e992b73a4d898",
+      "path_literal_rewrites": 0,
+      "source_helper": false
+    },
+    "sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/262144/source/controller_metadata_compat_v512.py": {
+      "original": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/262144/source/controller_metadata_compat_v512.py",
+      "original_sha256": "5629f1763a3615654007756539766986d82f2bcc92723292d2eb22779df6723e",
+      "exported_sha256": "54dc0d836d714167f158a3cdc9342ffcf29b3d362a3c1fd3e648a56c65454bed",
+      "path_literal_rewrites": 1,
+      "source_helper": true
+    },
+    "sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/262144/source/gpu0_health_index_v512.py": {
+      "original": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/262144/source/gpu0_health_index_v512.py",
+      "original_sha256": "c7776c20adc26c336ed52910474dfd7fe63a12ca3ee57a3a023155038c4d3888",
+      "exported_sha256": "6ec51eaa80b233eb497b4c2077b1c9f5214487f02308a2bae82c4a4e13049861",
+      "path_literal_rewrites": 1,
+      "source_helper": true
+    },
+    "sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/262144/source/fixed256_binding_v512.py": {
+      "original": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/262144/source/fixed256_binding_v512.py",
+      "original_sha256": "e298f925180938a2fdde64ef9f7270b083f651f55a4030a2baf92a24d488cc75",
+      "exported_sha256": "e298f925180938a2fdde64ef9f7270b083f651f55a4030a2baf92a24d488cc75",
+      "path_literal_rewrites": 0,
+      "source_helper": false
+    },
+    "sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/262144/source/balanced_hash_cache_v512.py": {
+      "original": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/262144/source/balanced_hash_cache_v512.py",
+      "original_sha256": "e578fc1201d19bff27764ec7e9eb215ebd161d47c731788564eba6c07e96abbf",
+      "exported_sha256": "e578fc1201d19bff27764ec7e9eb215ebd161d47c731788564eba6c07e96abbf",
+      "path_literal_rewrites": 0,
+      "source_helper": false
+    },
+    "sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/262144/source/epoch_binding_v512.py": {
+      "original": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/262144/source/epoch_binding_v512.py",
+      "original_sha256": "b4a14a074751f8e3638a4f847b6b18520baa3618c73b8a0480f2ddb5c788f7f1",
+      "exported_sha256": "b4a14a074751f8e3638a4f847b6b18520baa3618c73b8a0480f2ddb5c788f7f1",
+      "path_literal_rewrites": 0,
+      "source_helper": false
+    },
+    "sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/262144/source/cuda_admission_index_v512.py": {
+      "original": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/262144/source/cuda_admission_index_v512.py",
+      "original_sha256": "191fc9c0547274c5bb971f34dcb7580113daf503c96babb5f1983bb764c8b3c4",
+      "exported_sha256": "191fc9c0547274c5bb971f34dcb7580113daf503c96babb5f1983bb764c8b3c4",
+      "path_literal_rewrites": 0,
+      "source_helper": false
+    },
+    "sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/262144/source/cpu_evidence_v512.py": {
+      "original": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/262144/source/cpu_evidence_v512.py",
+      "original_sha256": "34cad92e2b60921f17d9aa8c95027fde759a50aa2b32b523fce35e576a4a4078",
+      "exported_sha256": "34cad92e2b60921f17d9aa8c95027fde759a50aa2b32b523fce35e576a4a4078",
+      "path_literal_rewrites": 0,
+      "source_helper": false
+    },
+    "sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/262144/source/context_witness_v512.py": {
+      "original": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/262144/source/context_witness_v512.py",
+      "original_sha256": "9f1f198ade3f6230ebcd5923f53ad3e9c6e908c9514e731c7f95c30bbdf92452",
+      "exported_sha256": "9f1f198ade3f6230ebcd5923f53ad3e9c6e908c9514e731c7f95c30bbdf92452",
+      "path_literal_rewrites": 0,
+      "source_helper": false
+    },
+    "sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/262144/source/baseline499_reference_v512.py": {
+      "original": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/262144/source/baseline499_reference_v512.py",
+      "original_sha256": "10081c378e25f263cf72f9c360d6175922a474928d9cc68fc18b46b7e60f3fbf",
+      "exported_sha256": "10081c378e25f263cf72f9c360d6175922a474928d9cc68fc18b46b7e60f3fbf",
+      "path_literal_rewrites": 0,
+      "source_helper": false
+    },
+    "sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/262144/source/auxiliary_index_v512.py": {
+      "original": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/262144/source/auxiliary_index_v512.py",
+      "original_sha256": "50f4cf0098bfe2807b55403db7274bb2d2abb4ad862cc7d8bd75bb26d8026b9a",
+      "exported_sha256": "f2a9fd5cd22b925f6773035659e489db87ba2f874f5ea451ff42b425a03b70a9",
+      "path_literal_rewrites": 1,
+      "source_helper": true
+    },
+    "sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/262144/cpu_expected_preflight_v512_r2.py": {
+      "original": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/262144/cpu_expected_preflight_v512_r2.py",
+      "original_sha256": "13ef46fc485701ca75639dc71ffa8562f24b083d1466f2d4a87d0c5c794a7db1",
+      "exported_sha256": "0aa9eb6c344f2ec4c98b3ea0d50ec9aeb6feaff1015bb630203eaa7bdfc2665f",
+      "path_literal_rewrites": 1,
+      "source_helper": true
+    }
+  },
+  "unresolved": [
+    {
+      "kind": "fixed hardware identity source refused",
+      "source": "DeepSeek V4.1/work/deepseek41/Strata/backend/deepseek41/cpu_moe_graph.py"
+    },
+    {
+      "kind": "fixed hardware identity source refused",
+      "source": "DeepSeek V4.1/work/deepseek41/Strata/backend/deepseek41/own_quant_rows.py"
+    },
+    {
+      "kind": "fixed hardware identity source refused",
+      "source": "DeepSeek V4.1/work/deepseek41/Strata/backend/deepseek41/critical_residency.py"
+    },
+    {
+      "kind": "fixed hardware identity source refused",
+      "source": "DeepSeek V4.1/work/deepseek41/Strata/backend/deepseek41/linear_graph.py"
+    },
+    {
+      "kind": "fixed hardware identity source refused",
+      "source": "DeepSeek V4.1/work/deepseek41/Strata/backend/deepseek41/decode_budget.py"
+    },
+    {
+      "kind": "fixed hardware identity source refused",
+      "source": "DeepSeek V4.1/work/deepseek41/Strata/backend/deepseek41/hc_native.py"
+    },
+    {
+      "kind": "fixed hardware identity source refused",
+      "source": "DeepSeek V4.1/work/deepseek41/Strata/backend/deepseek41/head_bf16_gemv.py"
+    },
+    {
+      "kind": "fixed hardware identity source refused",
+      "source": "DeepSeek V4.1/work/deepseek41/Strata/backend/deepseek41/fork_fp8_gemv.py"
+    },
+    {
+      "kind": "fixed hardware identity source refused",
+      "source": "DeepSeek V4.1/work/deepseek41/Strata/backend/deepseek41/expert_gemv.py"
+    },
+    {
+      "kind": "fixed hardware identity source refused",
+      "source": "DeepSeek V4.1/work/deepseek41/Strata/backend/deepseek41/hc_graph.py"
+    },
+    {
+      "kind": "fixed hardware identity source refused",
+      "source": "DeepSeek V4.1/work/deepseek41/Strata/backend/deepseek41/native_factory_cache.py"
+    },
+    {
+      "kind": "fixed hardware identity source refused",
+      "source": "DeepSeek V4.1/work/deepseek41/Strata/backend/deepseek41/row_staging.py"
+    },
+    {
+      "kind": "fixed hardware identity source refused",
+      "source": "DeepSeek V4.1/work/deepseek41/Strata/backend/deepseek41/runtime.py"
+    },
+    {
+      "kind": "fixed hardware identity source refused",
+      "source": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/pair-controller-v1/controller_v1.py"
+    }
+  ],
+  "dynamic_imports": [
+    {
+      "source": "DeepSeek V4.1/work/deepseek41-1017-nvfp4/research/old-complete-runtime-1017-adapter-v1/one_bank_store.py",
+      "line": 26,
+      "call": "importlib.util.spec_from_file_location(name,path)"
+    },
+    {
+      "source": "DeepSeek V4.1/work/deepseek41-1017-nvfp4/research/old-complete-runtime-1017-adapter-v1/one_bank_store.py",
+      "line": 253,
+      "call": "importlib.util.spec_from_file_location('_new1017_old_engine_hash',self.source/item['output_name'])"
+    },
+    {
+      "source": "DeepSeek V4.1/work/deepseek41/Strata/backend/deepseek41/weights.py",
+      "line": 157,
+      "call": "importlib.util.spec_from_file_location('deepseek41_ram_admission',root/'tools/run_guarded.py')"
+    },
+    {
+      "source": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-server-v565/serving_transport.py",
+      "line": 60,
+      "call": "importlib.util.spec_from_file_location(name,path)"
+    },
+    {
+      "source": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-server-v565/serve.py",
+      "line": 93,
+      "call": "importlib.import_module('serving_runtime_v529')"
+    },
+    {
+      "source": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/serving_runtime_v529.py",
+      "line": 45,
+      "call": "importlib.import_module(f'stage_devices_pair_v{version}')"
+    },
+    {
+      "source": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/serving_runtime_v529.py",
+      "line": 46,
+      "call": "importlib.import_module('serving_binding_v529')"
+    },
+    {
+      "source": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/serving_runtime_v529.py",
+      "line": 48,
+      "call": "importlib.import_module(f'pair_factory_v{version}')"
+    },
+    {
+      "source": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/524288/source/fixed_binding_v506.py",
+      "line": 21,
+      "call": "importlib.import_module(name+'_v457')"
+    },
+    {
+      "source": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/524288/source/runtime_base_index_v506.py",
+      "line": 281,
+      "call": "importlib.util.spec_from_file_location('deepseek41_runtime_images',ROOT/'reference/inference/image_processor.py')"
+    },
+    {
+      "source": "DeepSeek V4.1/work/deepseek41/Strata/backend/deepseek41/own_rows_kernel.py",
+      "line": 55,
+      "call": "importlib.util.spec_from_file_location('own_rows_guard',root/'tools/run_guarded.py')"
+    },
+    {
+      "source": "DeepSeek V4.1/work/deepseek41/Strata/backend/deepseek41/native_fp4_attention.py",
+      "line": 90,
+      "call": "importlib.util.spec_from_file_location('native_fp4_attention_guard',root/'tools/run_guarded.py')"
+    },
+    {
+      "source": "DeepSeek V4.1/work/deepseek41/Strata/backend/deepseek41/q4_attention.py",
+      "line": 86,
+      "call": "importlib.util.spec_from_file_location('q4_attention_guard',root/'tools/run_guarded.py')"
+    },
+    {
+      "source": "DeepSeek V4.1/work/deepseek41/Strata/backend/deepseek41/grouped_experts.py",
+      "line": 89,
+      "call": "importlib.util.spec_from_file_location('deepseek41_grouped_admission',root/'tools/run_guarded.py')"
+    },
+    {
+      "source": "DeepSeek V4.1/work/deepseek41/Strata/backend/deepseek41/sm89_index.py",
+      "line": 70,
+      "call": "importlib.util.spec_from_file_location('deepseek41_index_admission',root/'tools/run_guarded.py')"
+    },
+    {
+      "source": "DeepSeek V4.1/work/deepseek41/Strata/backend/deepseek41/sm89_attention.py",
+      "line": 91,
+      "call": "importlib.util.spec_from_file_location('deepseek41_attention_admission',root/'tools/run_guarded.py')"
+    },
+    {
+      "source": "DeepSeek V4.1/work/deepseek41/Strata/backend/deepseek41/packed_cuda.py",
+      "line": 37,
+      "call": "importlib.util.spec_from_file_location('deepseek41_pinned_cuda_kernel',path)"
+    },
+    {
+      "source": "DeepSeek V4.1/work/deepseek41/Strata/backend/deepseek41/packed_cuda.py",
+      "line": 51,
+      "call": "importlib.util.spec_from_file_location('deepseek41_packed_admission',project_root/'tools/run_guarded.py')"
+    },
+    {
+      "source": "DeepSeek V4.1/work/deepseek41/Strata/backend/deepseek41/sm89_quant.py",
+      "line": 56,
+      "call": "importlib.util.spec_from_file_location('deepseek41_quant_admission',root/'tools/run_guarded.py')"
+    },
+    {
+      "source": "DeepSeek V4.1/work/deepseek41/Strata/backend/deepseek41/reference_graph.py",
+      "line": 46,
+      "call": "importlib.util.spec_from_file_location(name, reference_directory / (name + '.py'))"
+    },
+    {
+      "source": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/524288/source/runtime_524288_pair_v506.py",
+      "line": 264,
+      "call": "importlib.util.spec_from_file_location('native_bundle_image_processor',IMAGE_PROCESSOR)"
+    },
+    {
+      "source": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/524288/source/reference_pair_v506.py",
+      "line": 46,
+      "call": "importlib.util.spec_from_file_location('_new1017_old_operator_kernel',store.source/asset['output_name'])"
+    },
+    {
+      "source": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/524288/source/private_source_loader_v506.py",
+      "line": 22,
+      "call": "importlib.util.spec_from_file_location(name,path)"
+    },
+    {
+      "source": "DeepSeek V4.1/work/deepseek41/Strata/backend/deepseek41/runtime.py",
+      "line": 280,
+      "call": "importlib.util.spec_from_file_location('deepseek41_runtime_images',ROOT/'reference/inference/image_processor.py')"
+    },
+    {
+      "source": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/524288/source/runtime_262144_pair_v506.py",
+      "line": 247,
+      "call": "importlib.util.spec_from_file_location('native_bundle_image_processor',IMAGE_PROCESSOR)"
+    },
+    {
+      "source": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/524288/source/pair_runtime_loader_v506.py",
+      "line": 37,
+      "call": "importlib.import_module('backend.deepseek41')"
+    },
+    {
+      "source": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/524288/source/pair_runtime_loader_v506.py",
+      "line": 56,
+      "call": "importlib.util.spec_from_file_location(name, SOURCE/f'runtime_{context}_pair_v506.py')"
+    },
+    {
+      "source": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/524288/source/pair_runtime_loader_v506.py",
+      "line": 45,
+      "call": "importlib.util.spec_from_file_location(fullname,target)"
+    },
+    {
+      "source": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/524288/source/auxiliary_index_v506.py",
+      "line": 21,
+      "call": "importlib.import_module('features_v7')"
+    },
+    {
+      "source": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/524288/source/auxiliary_index_v506.py",
+      "line": 55,
+      "call": "importlib.util.spec_from_file_location(n,path)"
+    },
+    {
+      "source": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/524288/source/auxiliary_index_v506.py",
+      "line": 93,
+      "call": "importlib.import_module('deepseek41_1017.fast_admission')"
+    },
+    {
+      "source": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/524288/source/auxiliary_index_v506.py",
+      "line": 99,
+      "call": "importlib.import_module('deepseek41_1017.streamed_reference')"
+    },
+    {
+      "source": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/524288/source/auxiliary_index_v506.py",
+      "line": 99,
+      "call": "importlib.import_module('deepseek41_1017.packed_cuda')"
+    },
+    {
+      "source": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/524288/source/auxiliary_index_v506.py",
+      "line": 99,
+      "call": "importlib.import_module('deepseek41_1017.residency')"
+    },
+    {
+      "source": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/524288/source/auxiliary_index_v506.py",
+      "line": 99,
+      "call": "importlib.import_module('deepseek41_1017.portable_kernels')"
+    },
+    {
+      "source": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/524288/source/auxiliary_index_v506.py",
+      "line": 99,
+      "call": "importlib.import_module('deepseek41_1017.sm89_quant')"
+    },
+    {
+      "source": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/524288/source/auxiliary_index_v506.py",
+      "line": 108,
+      "call": "importlib.util.spec_from_file_location('_bundle_native_kernel_v8',path)"
+    },
+    {
+      "source": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/262144/source/runtime_base_index_v512.py",
+      "line": 281,
+      "call": "importlib.util.spec_from_file_location('deepseek41_runtime_images',ROOT/'reference/inference/image_processor.py')"
+    },
+    {
+      "source": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/262144/source/runtime_262144_pair_v512.py",
+      "line": 262,
+      "call": "importlib.util.spec_from_file_location('native_bundle_image_processor',IMAGE_PROCESSOR)"
+    },
+    {
+      "source": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/262144/source/port_binding_v512.py",
+      "line": 14,
+      "call": "importlib.import_module(f'{name}_v{version}')"
+    },
+    {
+      "source": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/262144/source/reference_pair_v512.py",
+      "line": 46,
+      "call": "importlib.util.spec_from_file_location('_new1017_old_operator_kernel',store.source/asset['output_name'])"
+    },
+    {
+      "source": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/262144/source/private_source_loader_v512.py",
+      "line": 22,
+      "call": "importlib.util.spec_from_file_location(name,path)"
+    },
+    {
+      "source": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/262144/source/pair_runtime_loader_v512.py",
+      "line": 37,
+      "call": "importlib.import_module('backend.deepseek41')"
+    },
+    {
+      "source": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/262144/source/pair_runtime_loader_v512.py",
+      "line": 56,
+      "call": "importlib.util.spec_from_file_location(name, SOURCE/f'runtime_{context}_pair_v512.py')"
+    },
+    {
+      "source": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/262144/source/pair_runtime_loader_v512.py",
+      "line": 45,
+      "call": "importlib.util.spec_from_file_location(fullname,target)"
+    },
+    {
+      "source": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/262144/source/auxiliary_index_v512.py",
+      "line": 21,
+      "call": "importlib.import_module('features_v7')"
+    },
+    {
+      "source": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/262144/source/auxiliary_index_v512.py",
+      "line": 55,
+      "call": "importlib.util.spec_from_file_location(n,path)"
+    },
+    {
+      "source": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/262144/source/auxiliary_index_v512.py",
+      "line": 93,
+      "call": "importlib.import_module('deepseek41_1017.fast_admission')"
+    },
+    {
+      "source": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/262144/source/auxiliary_index_v512.py",
+      "line": 99,
+      "call": "importlib.import_module('deepseek41_1017.streamed_reference')"
+    },
+    {
+      "source": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/262144/source/auxiliary_index_v512.py",
+      "line": 99,
+      "call": "importlib.import_module('deepseek41_1017.packed_cuda')"
+    },
+    {
+      "source": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/262144/source/auxiliary_index_v512.py",
+      "line": 99,
+      "call": "importlib.import_module('deepseek41_1017.residency')"
+    },
+    {
+      "source": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/262144/source/auxiliary_index_v512.py",
+      "line": 99,
+      "call": "importlib.import_module('deepseek41_1017.portable_kernels')"
+    },
+    {
+      "source": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/262144/source/auxiliary_index_v512.py",
+      "line": 99,
+      "call": "importlib.import_module('deepseek41_1017.sm89_quant')"
+    },
+    {
+      "source": "DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/source/adapters/262144/source/auxiliary_index_v512.py",
+      "line": 108,
+      "call": "importlib.util.spec_from_file_location('_bundle_native_kernel_v8',path)"
+    }
+  ],
+  "not_exported": [
+    "private DELIVERY_BINDINGS/SEALED/DEPENDENCY_PINS/runtime profiles",
+    "model manifests/payloads, API secrets, logs, benchmark prompts, old DSOs"
+  ],
+  "blockers": [
+    "Fresh clean-build source/content bindings and native idle/API qualification required.",
+    "Historical guards reference many comparison receipts; port to common publication binder without deleting numerical/lifetime guards.",
+    "Dynamic private-source loaders must bind the exported module graph, not legacy machine paths.",
+    "Cold565 remains pending independent actual cold-start qualification."
+  ],
+  "publication_factory_enabled": false
+}

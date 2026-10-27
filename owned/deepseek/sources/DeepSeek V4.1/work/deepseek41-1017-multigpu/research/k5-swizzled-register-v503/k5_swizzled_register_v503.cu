@@ -1,0 +1,851 @@
+// Isolated v172 K5 copy: skip only wholly masked 64-key tensor score CTAs.
+// Same positions, score bits, live-prefix bounds and selector/graph contract.
+// Set DS41_K5_MASK_SKIP_V172=0 for a paired scalar-control component build.
+#ifndef DS41_K5_MASK_SKIP_V172
+#define DS41_K5_MASK_SKIP_V172 1
+#endif
+#if DS41_K5_MASK_SKIP_V172 != 0 && DS41_K5_MASK_SKIP_V172 != 1
+#error "DS41_K5_MASK_SKIP_V172 requires explicit 0 or 1"
+#endif
+#include <stdexcept>
+// K5-14: K5-11 tensor scores and caller-storage radix with warp-private histograms.
+// The same pipeline is used eagerly and in CUDA graphs; no internal global scratch exists.
+#include "strata/ds41/kernels/k5_indexer.hpp"
+
+#include <mma.h>
+#include <math_constants.h>
+
+#include <algorithm>
+#include <cassert>
+#include <cstdio>
+#include <cstdlib>
+
+namespace strata::ds41::kernels {
+namespace {
+using bf16 = __nv_bfloat16;
+constexpr int kThreads = 256;
+constexpr int kRadixItems = 4096;
+constexpr int kMetadataHeader = 8;
+constexpr int kSelectItems = 1024;
+constexpr unsigned kFullWarp = 0xffffffffu;
+using Count = unsigned long long;
+
+void check(cudaError_t e, const char* operation) {
+    if (e != cudaSuccess) {
+        std::fprintf(stderr, "K5 %s: %s\n", operation, cudaGetErrorString(e));
+        throw std::runtime_error("kernels/k5_indexer.cu: checked operation failed; see diagnostic");
+    }
+}
+__device__ __forceinline__ float rounded(float x) {
+    return __bfloat162float(__float2bfloat16_rn(x));
+}
+
+__device__ __forceinline__ int64_t live_length(const int* pos, int ratio, int64_t cap) {
+    const int64_t t = (int64_t(*pos) + 1) / ratio;
+    assert(t >= 0 && t <= cap);
+    return t;
+}
+
+__global__ void small_scores(const bf16* q, const bf16* keys, int64_t n, const bf16* w,
+                             const uint8_t* cand, float* scores, const int* pos = nullptr, int ratio = 1) {
+    if (pos) {
+        n = live_length(pos, ratio, n);
+        if (n > 512) return;
+    }
+    const int64_t j = int64_t(blockIdx.x) * 8 + (threadIdx.x >> 5);
+    const int lane = threadIdx.x & 31;
+    if (j >= n) return;
+    if (cand && !cand[j]) {
+        if (lane == 0) scores[j] = -CUDART_INF_F;
+        return;
+    }
+    float total = 0.0f;
+    for (int h = 0; h < 32; ++h) {
+        float dot = 0.0f;
+        for (int d = lane; d < 128; d += 32)
+            dot += __bfloat162float(q[h * 128 + d]) * __bfloat162float(keys[j * 128 + d]);
+        for (int delta = 16; delta; delta >>= 1)
+            dot += __shfl_xor_sync(kFullWarp, dot, delta);
+        total += rounded(fmaxf(rounded(dot), 0.0f) * __bfloat162float(w[h]));
+    }
+    if (lane == 0) scores[j] = rounded(total);
+}
+
+// Float-flip maps finite values and infinities to unsigned ascending order.
+// Signed zero compares equal under the public contract, so canonicalize it.
+// BF16 scores need only two radix bytes. Candidate block inputs retain all four.
+template <bool Bf16Scores>
+__device__ __forceinline__ uint32_t key_of(float value) {
+    uint32_t bits = value == 0.0f ? 0u : __float_as_uint(value);
+    uint32_t key = bits ^ ((bits & 0x80000000u) ? 0xffffffffu : 0x80000000u);
+    if constexpr (Bf16Scores) key >>= 16;
+    return key;
+}
+
+struct Selection {
+    uint32_t prefix;
+    Count remaining;  // Number of ties still needed within this prefix.
+};
+
+// Each warp computes 32 heads x 16 positions. The matrix intermediates are
+// FP32; the three BF16 conversions remain separate from tensor accumulation.
+__global__ void tensor_scores(const bf16* q, const bf16* keys, int64_t n, const bf16* w,
+                              const uint8_t* cand, float* scores, const int* pos = nullptr, int ratio = 1) {
+    if (pos) {
+        n = live_length(pos, ratio, n);
+        if (n <= 512 || int64_t(blockIdx.x) * 64 >= n) return;
+    }
+    const int tid = threadIdx.x;
+    const int warp = tid >> 5;
+    const int64_t base = int64_t(blockIdx.x) * 64;
+#if DS41_K5_MASK_SKIP_V172
+    if (cand) {
+        // Each of all four complete warps reads the SAME 64 immutable mask
+        // entries (two per lane). A mask producer runs earlier on this stream;
+        // tensor_scores never changes it. Thus every warp gets the same vote,
+        // and every one of the 128 threads returns or reaches both barriers.
+        // No inter-warp communication/shared state or added CTA barrier.
+        const int lane = tid & 31;
+        const int64_t j0 = base + lane, j1 = j0 + 32;
+        const bool keep0 = j0 < n && cand[j0] != 0;
+        const bool keep1 = j1 < n && cand[j1] != 0;
+        if (__ballot_sync(kFullWarp, keep0 || keep1) == 0) {
+            if (tid < 64 && base + tid < n)
+                scores[base + tid] = -CUDART_INF_F;
+            return;
+        }
+    }
+#endif
+    __shared__ __align__(32) bf16 sq[32 * 128];
+    __shared__ __align__(32) bf16 sk[64 * 128];
+    __shared__ __align__(32) float dots[32 * 64];
+    __shared__ float weights[32];
+    for (int i = tid; i < 32 * 128; i += 128) sq[i] = q[i];
+    for (int i = tid; i < 64 * 128; i += 128) {
+        const int64_t j = base + i / 128;
+        sk[i] = j < n ? keys[j * 128 + i % 128] : __float2bfloat16_rn(0.0f);
+    }
+    if (tid < 32) weights[tid] = __bfloat162float(w[tid]);
+    __syncthreads();
+
+    namespace wm = nvcuda::wmma;
+    wm::fragment<wm::matrix_a, 16, 16, 16, bf16, wm::row_major> a0, a1;
+    wm::fragment<wm::matrix_b, 16, 16, 16, bf16, wm::col_major> b;
+    wm::fragment<wm::accumulator, 16, 16, 16, float> c0, c1;
+    wm::fill_fragment(c0, 0.0f);
+    wm::fill_fragment(c1, 0.0f);
+#pragma unroll
+    for (int d = 0; d < 128; d += 16) {
+        wm::load_matrix_sync(a0, sq + d, 128);
+        wm::load_matrix_sync(a1, sq + 16 * 128 + d, 128);
+        wm::load_matrix_sync(b, sk + warp * 16 * 128 + d, 128);
+        wm::mma_sync(c0, a0, b, c0);
+        wm::mma_sync(c1, a1, b, c1);
+    }
+    wm::store_matrix_sync(dots + warp * 16, c0, 64, wm::mem_row_major);
+    wm::store_matrix_sync(dots + 16 * 64 + warp * 16, c1, 64, wm::mem_row_major);
+    __syncthreads();
+    if (tid < 64 && base + tid < n) {
+        if (cand && !cand[base + tid]) {
+            scores[base + tid] = -CUDART_INF_F;
+        } else {
+            float total = 0.0f;
+#pragma unroll
+            for (int h = 0; h < 32; ++h)
+                total += rounded(fmaxf(rounded(dots[h * 64 + tid]), 0.0f) * weights[h]);
+            scores[base + tid] = rounded(total);
+        }
+    }
+}
+
+__global__ void tensor_scores_swizzled_v503(const bf16* q, const bf16* keys, int64_t n, const bf16* w,
+                              const uint8_t* cand, float* scores, const int* pos = nullptr, int ratio = 1) {
+    if (pos) {
+        n = live_length(pos, ratio, n);
+        if (n <= 512 || int64_t(blockIdx.x) * 64 >= n) return;
+    }
+    const int tid = threadIdx.x;
+    const int warp = tid >> 5;
+    const int64_t base = int64_t(blockIdx.x) * 64;
+#if DS41_K5_MASK_SKIP_V172
+    if (cand) {
+        // Each of all four complete warps reads the SAME 64 immutable mask
+        // entries (two per lane). A mask producer runs earlier on this stream;
+        // tensor_scores never changes it. Thus every warp gets the same vote,
+        // and every one of the 128 threads returns or reaches both barriers.
+        // No inter-warp communication/shared state or added CTA barrier.
+        const int lane = tid & 31;
+        const int64_t j0 = base + lane, j1 = j0 + 32;
+        const bool keep0 = j0 < n && cand[j0] != 0;
+        const bool keep1 = j1 < n && cand[j1] != 0;
+        if (__ballot_sync(kFullWarp, keep0 || keep1) == 0) {
+            if (tid < 64 && base + tid < n)
+                scores[base + tid] = -CUDART_INF_F;
+            return;
+        }
+    }
+#endif
+    __shared__ __align__(32) bf16 sq[32 * 128];
+    __shared__ __align__(32) bf16 sk[64 * 128];
+    __shared__ float weights[32];
+    for (int i = tid; i < 32 * 128; i += 128) sq[(i/128)*128+((i%128)^(((i/128)&7)*8))] = q[i];
+    for (int i = tid; i < 64 * 128; i += 128) {
+        const int64_t j = base + i / 128;
+        sk[(i/128)*128+((i%128)^(((i/128)&7)*8))] = j < n ? keys[j * 128 + i % 128] : __float2bfloat16_rn(0.0f);
+    }
+    if (tid < 32) weights[tid] = __bfloat162float(w[tid]);
+    __syncthreads();
+
+    const int lane=tid&31;
+    float acc[2][2][4] = {};
+#pragma unroll
+    for(int d=0;d<128;d+=16){
+        unsigned br[2][2];
+#pragma unroll
+        for(int kh=0;kh<2;kh++){
+            const int row=warp*16+kh*8+lane%8,col=d+((lane/8)%2)*8;
+            unsigned ba=unsigned(__cvta_generic_to_shared(sk+row*128+(col^((row&7)*8))));
+            asm volatile("ldmatrix.sync.aligned.m8n8.x2.shared.b16 {%0,%1}, [%2];"
+                :"=r"(br[kh][0]),"=r"(br[kh][1]):"r"(ba));
+        }
+#pragma unroll
+        for(int mg=0;mg<2;mg++){
+            unsigned ar[4];const int row=mg*16+lane%16,col=d+(lane/16)*8;
+            unsigned aa=unsigned(__cvta_generic_to_shared(sq+row*128+(col^((row&7)*8))));
+            asm volatile("ldmatrix.sync.aligned.m8n8.x4.shared.b16 {%0,%1,%2,%3}, [%4];"
+                :"=r"(ar[0]),"=r"(ar[1]),"=r"(ar[2]),"=r"(ar[3]):"r"(aa));
+#pragma unroll
+            for(int kh=0;kh<2;kh++){
+                asm volatile("mma.sync.aligned.m16n8k16.row.col.f32.bf16.bf16.f32 {%0,%1,%2,%3}, {%4,%5,%6,%7}, {%8,%9}, {%0,%1,%2,%3};"
+                    :"+f"(acc[mg][kh][0]),"+f"(acc[mg][kh][1]),"+f"(acc[mg][kh][2]),"+f"(acc[mg][kh][3])
+                    :"r"(ar[0]),"r"(ar[1]),"r"(ar[2]),"r"(ar[3]),"r"(br[kh][0]),"r"(br[kh][1]));
+            }
+        }
+    }
+    // BF16 dot rounding, max, weight product and BF16 product rounding remain separate.
+    unsigned packed[2][2][2];
+#pragma unroll
+    for(int mg=0;mg<2;mg++){
+#pragma unroll
+        for(int kh=0;kh<2;kh++){
+#pragma unroll
+            for(int rh=0;rh<2;rh++){
+                int head=mg*16+lane/4+rh*8;
+                bf16 lo=__float2bfloat16_rn(fmaxf(rounded(acc[mg][kh][2*rh]),0.0f)*weights[head]);
+                bf16 hi=__float2bfloat16_rn(fmaxf(rounded(acc[mg][kh][2*rh+1]),0.0f)*weights[head]);
+                packed[mg][kh][rh]=unsigned(__bfloat16_as_ushort(lo))|(unsigned(__bfloat16_as_ushort(hi))<<16);
+            }
+        }
+    }
+    const int key=lane&15;
+    float total=0.0f;
+#pragma unroll
+    for(int h=0;h<32;h++){
+        const int mg=h/16,rh=(h%16)/8,sender=(h%8)*4+(key%8)/2;
+        unsigned p0=__shfl_sync(kFullWarp,packed[mg][0][rh],sender);
+        unsigned p1=__shfl_sync(kFullWarp,packed[mg][1][rh],sender);
+        unsigned word=((key<8?p0:p1)>>(16*(key&1)))&65535u;
+        total+=__bfloat162float(__ushort_as_bfloat16(static_cast<unsigned short>(word)));
+    }
+    const int64_t j=base+warp*16+key;
+    if(lane<16&&j<n)scores[j]=cand&&!cand[j]?-CUDART_INF_F:rounded(total);
+}
+
+#ifndef DS1017_K5_SWIZZLED_REGISTER_V503
+#define DS1017_K5_SWIZZLED_REGISTER_V503 0
+#endif
+#if DS1017_K5_SWIZZLED_REGISTER_V503 == 1
+#define K5_TENSOR_LAUNCH_V503 tensor_scores_swizzled_v503
+#elif DS1017_K5_SWIZZLED_REGISTER_V503 == 0
+#define K5_TENSOR_LAUNCH_V503 tensor_scores
+#else
+#error "DS1017_K5_SWIZZLED_REGISTER_V503 must be 0 or1"
+#endif
+
+// Candidate block maxima are computed on demand. This removes an unbounded
+// temporary allocation, and preserves every FP32 bit in candidate selection.
+template <bool Candidate>
+struct Values {
+    const float* scores;
+    int64_t positions;
+    int block_size;
+    __device__ __forceinline__ float get(int64_t j) const {
+        if constexpr (!Candidate) {
+            return scores[j];
+        } else {
+            if (j == (positions - 1) / block_size) return CUDART_INF_F;
+            float value = -CUDART_INF_F;
+            const int64_t begin = j * block_size;
+            for (int d = 0; d < block_size && begin + d < positions; ++d)
+                value = fmaxf(value, scores[begin + d]);
+            return value;
+        }
+    }
+};
+
+__global__ void all_positions(int64_t n, int32_t offset, int32_t* out) {
+    const int64_t j = int64_t(blockIdx.x) * blockDim.x + threadIdx.x;
+    if (j < n) out[j] = int32_t(j) + offset;
+}
+
+__global__ void all_candidates(const float* scores, int64_t n, int block_size, uint8_t* cand) {
+    const int64_t blocks = (n - 1) / block_size + 1;
+    for (int64_t b = int64_t(blockIdx.x) * blockDim.x + threadIdx.x; b < blocks;
+         b += int64_t(gridDim.x) * blockDim.x) {
+        float best = -CUDART_INF_F;
+        for (int d = 0; d < block_size && b * block_size + d < n; ++d)
+            best = fmaxf(best, scores[b * block_size + d]);
+        const uint8_t keep = best != -CUDART_INF_F || b == (n - 1) / block_size;
+        for (int d = 0; d < block_size && b * block_size + d < n; ++d) cand[b * block_size + d] = keep;
+    }
+}
+
+// A single CTA owns the complete cutoff and ordered emission. Histograms and
+// scan state live only in shared memory, so every invocation and every graph
+// replay has independent storage. There are no host-side lifetime assumptions.
+template <bool Candidate>
+__global__ void select_without_scratch(Values<Candidate> values, int64_t n,
+                                       int k, int32_t offset, int32_t* out,
+                                       uint8_t* cand, const int* pos = nullptr, int ratio = 1, bool small_only = false) {
+    if (pos) {
+        values.positions = live_length(pos, ratio, values.positions);
+        if (values.positions == 0) return;
+        n = Candidate ? (values.positions - 1) / values.block_size + 1 : values.positions;
+        k = int(n < k ? n : k);
+        if (small_only && !Candidate && n >= kRadixItems && k > 0 && k < n) return;
+        if (k <= 0) {
+            if constexpr (Candidate) {
+                for (int64_t j = threadIdx.x; j < values.positions; j += blockDim.x) cand[j] = 0;
+            }
+            return;
+        }
+    }
+    __shared__ Count bins[256];
+    __shared__ Selection state;
+    __shared__ uint32_t greater_prefix[32], equal_prefix[32];
+    __shared__ uint32_t batch_greater, batch_equal;
+    const int tid = threadIdx.x, lane = tid & 31, warp = tid >> 5;
+    const uint32_t lane_mask = (uint32_t(1) << lane) - 1;
+    uint32_t prefix = 0, prefix_mask = 0;
+    constexpr int first_shift = Candidate ? 24 : 8;
+    for (int shift = first_shift; shift >= 0; shift -= 8) {
+        bins[tid] = 0;
+        __syncthreads();
+        for (int64_t base = 0; base < n; base += kThreads) {
+            const int64_t j = base + tid;
+            const uint32_t key = j < n ? key_of<!Candidate>(values.get(j)) : 0;
+            const bool valid = j < n && (key & prefix_mask) == prefix;
+            const unsigned active = __ballot_sync(kFullWarp, valid);
+            if (valid) {
+                const uint32_t bin = (key >> shift) & 255u;
+                const unsigned peers = __match_any_sync(active, bin);
+                if (lane == __ffs(peers) - 1) atomicAdd(bins + bin, Count(__popc(peers)));
+            }
+        }
+        __syncthreads();
+        if (tid == 0) {
+            Count remaining = shift == first_shift ? Count(k) : state.remaining;
+            for (int bin = 255; bin >= 0; --bin) {
+                if (bins[bin] >= remaining) {
+                    state.prefix = prefix | (uint32_t(bin) << shift);
+                    state.remaining = remaining;
+                    break;
+                }
+                remaining -= bins[bin];
+            }
+        }
+        __syncthreads();
+        prefix = state.prefix;
+        prefix_mask |= 255u << shift;
+    }
+    const Count quota = state.remaining;
+    Count greater_before = 0, equal_before = 0;
+    // Four consecutive 256-position parts reduce barrier overhead. The first
+    // warp scans all 32 (part, warp) totals in positional order. Its exclusive
+    // prefixes then give both the tie quota and the ascending output address.
+    for (int64_t base = 0; base < n; base += kSelectItems) {
+        unsigned greater_lanes[4], equal_lanes[4];
+        uint32_t keys[4];
+#pragma unroll
+        for (int part = 0; part < 4; ++part) {
+            const int64_t j = base + part * kThreads + tid;
+            const uint32_t key = j < n ? key_of<!Candidate>(values.get(j)) : 0;
+            keys[part] = key;
+            greater_lanes[part] = __ballot_sync(kFullWarp, j < n && key > prefix);
+            equal_lanes[part] = __ballot_sync(kFullWarp, j < n && key == prefix);
+            if (lane == 0) {
+                greater_prefix[part * 8 + warp] = __popc(greater_lanes[part]);
+                equal_prefix[part * 8 + warp] = __popc(equal_lanes[part]);
+            }
+        }
+        __syncthreads();
+        if (warp == 0) {
+            const uint32_t own_greater = greater_prefix[lane];
+            const uint32_t own_equal = equal_prefix[lane];
+            uint32_t greater = own_greater, equal = own_equal;
+#pragma unroll
+            for (int delta = 1; delta < 32; delta <<= 1) {
+                const uint32_t previous_greater = __shfl_up_sync(kFullWarp, greater, delta);
+                const uint32_t previous_equal = __shfl_up_sync(kFullWarp, equal, delta);
+                if (lane >= delta) { greater += previous_greater; equal += previous_equal; }
+            }
+            greater_prefix[lane] = greater - own_greater;
+            equal_prefix[lane] = equal - own_equal;
+            if (lane == 31) { batch_greater = greater; batch_equal = equal; }
+        }
+        __syncthreads();
+#pragma unroll
+        for (int part = 0; part < 4; ++part) {
+            const int64_t j = base + part * kThreads + tid;
+            const Count preceding_greater = greater_before + greater_prefix[part * 8 + warp]
+                + __popc(greater_lanes[part] & lane_mask);
+            const Count preceding_equal = equal_before + equal_prefix[part * 8 + warp]
+                + __popc(equal_lanes[part] & lane_mask);
+            const bool selected = j < n && (keys[part] > prefix ||
+                (keys[part] == prefix && preceding_equal < quota));
+            if constexpr (Candidate) {
+                if (j < n) {
+                    const uint8_t keep = selected && keys[part] != key_of<false>(-CUDART_INF_F);
+                    const int64_t begin = j * values.block_size;
+                    for (int d = 0; d < values.block_size && begin + d < values.positions; ++d)
+                        cand[begin + d] = keep;
+                }
+            } else if (selected) {
+                out[preceding_greater + (preceding_equal < quota ? preceding_equal : quota)] = int32_t(j) + offset;
+            }
+        }
+        greater_before += batch_greater;
+        equal_before += batch_equal;
+        __syncthreads();
+    }
+}
+
+// Every produced score is an exactly representable BF16 float, hence its low
+// halfword is zero. Between score production and restoration ONLY these PTX
+// halfword accesses touch scores: high halves are read-only values, low halves
+// hold temporary metadata. No overlapping 32-bit access occurs in this phase.
+// Separate same-stream kernel launches order metadata reuse and restoration.
+__device__ __forceinline__ uint16_t load_word(const float* scores, int64_t word) {
+    uint16_t value;
+    const char* address = reinterpret_cast<const char*>(scores) + word * 2;
+    asm volatile("ld.global.u16 %0, [%1];" : "=h"(value) : "l"(address) : "memory");
+    return value;
+}
+__device__ __forceinline__ void store_low(float* scores, int64_t index, uint16_t value) {
+    char* address = reinterpret_cast<char*>(scores) + index * 4;
+    asm volatile("st.global.u16 [%0], %1;" :: "l"(address), "h"(value) : "memory");
+}
+__device__ __forceinline__ uint32_t high_key(const float* scores, int64_t j) {
+    uint32_t bits = load_word(scores, 2 * j + 1);
+    if ((bits & 0x7fffu) == 0) bits = 0;
+    return bits ^ ((bits & 0x8000u) ? 0xffffu : 0x8000u);
+}
+__device__ __forceinline__ Count load_count(const float* scores, int64_t index) {
+    Count result = 0;
+#pragma unroll
+    for (int r = 0; r < 4; ++r)
+        result |= Count(load_word(scores, 2 * (index + r))) << (16 * r);
+    return result;
+}
+__device__ __forceinline__ void store_count(float* scores, int64_t index, Count value) {
+#pragma unroll
+    for (int r = 0; r < 4; ++r) store_low(scores, index + r, uint16_t(value >> (16 * r)));
+}
+
+// Four low halfwords hold each 64-bit count. With P<=ceil(n/4096),
+// 8+1024*P<=n for every n>=4096, including a partial final partition.
+// Each bounded round visits at most 16 batches of 256 positions per CTA.
+// A warp therefore contributes at most 16*32=512 to any uint32_t local bin,
+// regardless of n or the 256-CTA launch cap. Each bin's owner converts all
+// eight local counts to Count before accumulating into its 64-bit total.
+// The scorer, two radix bytes, global count layout, and launch count are unchanged.
+__device__ __forceinline__ int64_t parallel_live(int64_t cap,const int*pos,int ratio,int k){
+    const int64_t n=live_length(pos,ratio,cap);
+    return n>=kRadixItems && k>0 && k<n ? n : 0;
+}
+template<bool First>
+__global__ void parallel_histogram(float* scores, int64_t n,const int*pos=nullptr,int ratio=1,int selection_k=1) {
+    if(pos){n=parallel_live(n,pos,ratio,selection_k);if(!n)return;}
+    const int active_parts=pos?int(min((n-1)/kRadixItems+1,int64_t(256))):int(gridDim.x);
+    if(int(blockIdx.x)>=active_parts)return;
+    __shared__ uint32_t warp_bins[kThreads / 32][256];
+    constexpr int batches_per_round = kRadixItems / kThreads;
+    static_assert(batches_per_round * 32 == 512, "warp-local count bound");
+    const int tid = threadIdx.x, lane = tid & 31, warp = tid >> 5;
+    const uint32_t prefix = First ? 0u : load_word(scores, 0);
+    const int64_t stride = int64_t(active_parts) * kThreads;
+    Count total = 0;
+    for (int64_t begin = int64_t(blockIdx.x) * kThreads; begin < n;
+         begin += stride * batches_per_round) {
+#pragma unroll
+        for (int w = 0; w < kThreads / 32; ++w) warp_bins[w][tid] = 0;
+        __syncthreads();
+        for (int batch = 0; batch < batches_per_round; ++batch) {
+            const int64_t base = begin + int64_t(batch) * stride;
+            if (base >= n) break;  // Uniform for the complete CTA.
+            const int64_t j = base + tid;
+            const uint32_t key = j < n ? high_key(scores, j) : 0;
+            const bool valid = j < n && (First || (key & 0xff00u) == prefix);
+            const unsigned active = __ballot_sync(kFullWarp, valid);
+            if (valid) {
+                const uint32_t bin = First ? key >> 8 : key & 255u;
+                const unsigned peers = __match_any_sync(active, bin);
+                if (lane == __ffs(peers) - 1)
+                    atomicAdd(&warp_bins[warp][bin], uint32_t(__popc(peers)));
+            }
+        }
+        __syncthreads();
+#pragma unroll
+        for (int w = 0; w < kThreads / 32; ++w) total += Count(warp_bins[w][tid]);
+        // All eight readers finish before any thread resets the next round.
+        // No extra barrier is needed after the final round's read-only reduction.
+        if (begin + stride * batches_per_round < n) __syncthreads();
+    }
+    store_count(scores, kMetadataHeader + (int64_t(blockIdx.x) * 256 + tid) * 4, total);
+}
+
+template<bool First>
+__global__ void choose_parallel_byte(float* scores, int parts, int k,int64_t cap=0,const int*pos=nullptr,int ratio=1) {
+    if(pos){const int64_t n=parallel_live(cap,pos,ratio,k);if(!n)return;parts=int(min((n-1)/kRadixItems+1,int64_t(256)));}
+    __shared__ Count bins[256];
+    Count sum = 0;
+    for (int p = 0; p < parts; ++p)
+        sum += load_count(scores, kMetadataHeader + (int64_t(p) * 256 + threadIdx.x) * 4);
+    bins[threadIdx.x] = sum;
+    __syncthreads();
+    if (threadIdx.x == 0) {
+        Count remaining = First ? Count(k) : load_count(scores, 1);
+        uint32_t prefix = First ? 0u : load_word(scores, 0);
+        for (int b = 255; b >= 0; --b) {
+            if (bins[b] >= remaining) {
+                prefix |= uint32_t(b) << (First ? 8 : 0);
+                store_low(scores, 0, uint16_t(prefix));
+                store_count(scores, 1, remaining);
+                break;
+            }
+            remaining -= bins[b];
+        }
+    }
+}
+
+struct Pair { Count greater, equal; };
+__device__ __forceinline__ Pair scan_pair(Pair own, Pair* warps, Pair& total) {
+    const int lane = threadIdx.x & 31, warp = threadIdx.x >> 5;
+    Pair running = own;
+#pragma unroll
+    for (int d = 1; d < 32; d <<= 1) {
+        const Count g = __shfl_up_sync(kFullWarp, running.greater, d);
+        const Count e = __shfl_up_sync(kFullWarp, running.equal, d);
+        if (lane >= d) { running.greater += g; running.equal += e; }
+    }
+    if (lane == 31) warps[warp] = running;
+    __syncthreads();
+    if (warp == 0) {
+        Pair p = lane < 8 ? warps[lane] : Pair{0, 0};
+#pragma unroll
+        for (int d = 1; d < 8; d <<= 1) {
+            const Count g = __shfl_up_sync(kFullWarp, p.greater, d);
+            const Count e = __shfl_up_sync(kFullWarp, p.equal, d);
+            if (lane >= d) { p.greater += g; p.equal += e; }
+        }
+        if (lane < 8) warps[lane] = p;
+    }
+    __syncthreads();
+    const Pair before = warp ? warps[warp - 1] : Pair{0, 0};
+    total = warps[7];
+    const Pair prefix{before.greater + running.greater - own.greater,
+                      before.equal + running.equal - own.equal};
+    __syncthreads();
+    return prefix;
+}
+
+__global__ void count_partitions(float* scores, int64_t n,const int*pos=nullptr,int ratio=1,int selection_k=1) {
+    if(pos){n=parallel_live(n,pos,ratio,selection_k);if(!n)return;}
+    __shared__ Pair warps[8];
+    const uint32_t cutoff = load_word(scores, 0);
+    const int64_t partitions = (n - 1) / kRadixItems + 1;
+    for (int64_t partition = blockIdx.x; partition < partitions; partition += gridDim.x) {
+        Pair count{0, 0};
+#pragma unroll
+        for (int part = 0; part < kRadixItems / kThreads; ++part) {
+            const int64_t j = partition * kRadixItems + part * kThreads + threadIdx.x;
+            if (j < n) {
+                const uint32_t key = high_key(scores, j);
+                count.greater += key > cutoff;
+                count.equal += key == cutoff;
+            }
+        }
+        Pair total;
+        scan_pair(count, warps, total);
+        if (threadIdx.x == 0) {
+            const int64_t metadata = kMetadataHeader + partition * 8;
+            store_count(scores, metadata, total.greater);
+            store_count(scores, metadata + 4, total.equal);
+        }
+    }
+}
+
+__global__ void prefix_partitions(float* scores, int64_t parts,int64_t cap=0,const int*pos=nullptr,int ratio=1,int selection_k=1) {
+    if(pos){const int64_t n=parallel_live(cap,pos,ratio,selection_k);if(!n)return;parts=(n-1)/kRadixItems+1;}
+    __shared__ Pair warps[8];
+    Pair carry{0, 0};
+    for (int64_t base = 0; base < parts; base += kThreads) {
+        const int64_t part = base + threadIdx.x;
+        const int64_t metadata = kMetadataHeader + part * 8;
+        const Pair own = part < parts ? Pair{load_count(scores, metadata), load_count(scores, metadata + 4)}
+                                      : Pair{0, 0};
+        Pair total;
+        const Pair prefix = scan_pair(own, warps, total);
+        if (part < parts) {
+            store_count(scores, metadata, carry.greater + prefix.greater);
+            store_count(scores, metadata + 4, carry.equal + prefix.equal);
+        }
+        carry.greater += total.greater;
+        carry.equal += total.equal;
+        __syncthreads();
+    }
+}
+
+__global__ void emit_partitions(const float* scores, int64_t n, int32_t offset, int32_t* out,const int*pos=nullptr,int ratio=1,int selection_k=1) {
+    if(pos){n=parallel_live(n,pos,ratio,selection_k);if(!n)return;}
+    __shared__ uint32_t prefix_g[32], prefix_e[32], batch_g, batch_e;
+    const int tid = threadIdx.x, lane = tid & 31, warp = tid >> 5;
+    const uint32_t lane_mask = (uint32_t(1) << lane) - 1;
+    const uint32_t cutoff = load_word(scores, 0);
+    const Count quota = load_count(scores, 1);
+    const int64_t partitions = (n - 1) / kRadixItems + 1;
+    for (int64_t partition = blockIdx.x; partition < partitions; partition += gridDim.x) {
+        const int64_t metadata = kMetadataHeader + partition * 8;
+        Count preceding_g = load_count(scores, metadata);
+        Count preceding_e = load_count(scores, metadata + 4);
+#pragma unroll
+        for (int batch = 0; batch < kRadixItems / kSelectItems; ++batch) {
+            const int64_t base = partition * kRadixItems + batch * kSelectItems;
+            unsigned gm[4], em[4];
+            uint32_t keys[4];
+#pragma unroll
+            for (int part = 0; part < 4; ++part) {
+                const int64_t j = base + part * kThreads + tid;
+                keys[part] = j < n ? high_key(scores, j) : 0;
+                gm[part] = __ballot_sync(kFullWarp, j < n && keys[part] > cutoff);
+                em[part] = __ballot_sync(kFullWarp, j < n && keys[part] == cutoff);
+                if (lane == 0) {
+                    prefix_g[part * 8 + warp] = __popc(gm[part]);
+                    prefix_e[part * 8 + warp] = __popc(em[part]);
+                }
+            }
+            __syncthreads();
+            if (warp == 0) {
+                const uint32_t own_g = prefix_g[lane], own_e = prefix_e[lane];
+                uint32_t g = own_g, e = own_e;
+#pragma unroll
+                for (int d = 1; d < 32; d <<= 1) {
+                    const uint32_t pg = __shfl_up_sync(kFullWarp, g, d);
+                    const uint32_t pe = __shfl_up_sync(kFullWarp, e, d);
+                    if (lane >= d) { g += pg; e += pe; }
+                }
+                prefix_g[lane] = g - own_g;
+                prefix_e[lane] = e - own_e;
+                if (lane == 31) { batch_g = g; batch_e = e; }
+            }
+            __syncthreads();
+#pragma unroll
+            for (int part = 0; part < 4; ++part) {
+                const int64_t j = base + part * kThreads + tid;
+                const Count g = preceding_g + prefix_g[part * 8 + warp] + __popc(gm[part] & lane_mask);
+                const Count e = preceding_e + prefix_e[part * 8 + warp] + __popc(em[part] & lane_mask);
+                if (j < n && (keys[part] > cutoff || (keys[part] == cutoff && e < quota)))
+                    out[g + (e < quota ? e : quota)] = int32_t(j) + offset;
+            }
+            preceding_g += batch_g;
+            preceding_e += batch_e;
+            __syncthreads();
+        }
+    }
+}
+
+// No selector accesses scores after this separate launch starts. Restore only
+// the written metadata span; all remaining low halves were never touched.
+__global__ void restore_scores(float* scores, int64_t words,int64_t cap=0,const int*pos=nullptr,int ratio=1,int selection_k=1) {
+    if(pos){const int64_t n=parallel_live(cap,pos,ratio,selection_k);if(!n)return;const int64_t parts=(n-1)/kRadixItems+1;words=kMetadataHeader+max(int64_t(1024)*min(parts,int64_t(256)),8*parts);}
+    for (int64_t j = int64_t(blockIdx.x) * kThreads + threadIdx.x; j < words;
+         j += int64_t(gridDim.x) * kThreads) store_low(scores, j, 0);
+}
+
+void parallel_select(float* scores, int64_t n, int k, int32_t offset,
+                     int32_t* out, cudaStream_t stream) {
+    const int64_t parts = (n - 1) / kRadixItems + 1;
+    const int hist_parts = int(std::min<int64_t>(parts, 256));
+    parallel_histogram<true><<<hist_parts, kThreads, 0, stream>>>(scores, n);
+    choose_parallel_byte<true><<<1, kThreads, 0, stream>>>(scores, hist_parts, k);
+    parallel_histogram<false><<<hist_parts, kThreads, 0, stream>>>(scores, n);
+    choose_parallel_byte<false><<<1, kThreads, 0, stream>>>(scores, hist_parts, k);
+    count_partitions<<<hist_parts, kThreads, 0, stream>>>(scores, n);
+    prefix_partitions<<<1, kThreads, 0, stream>>>(scores, parts);
+    emit_partitions<<<hist_parts, kThreads, 0, stream>>>(scores, n, offset, out);
+    const int64_t written = kMetadataHeader + std::max<int64_t>(1024 * hist_parts, 8 * parts);
+    restore_scores<<<hist_parts, kThreads, 0, stream>>>(scores, written);
+}
+
+void parallel_select_device(float*scores,int64_t cap,int k,int32_t offset,int32_t*out,const int*pos,int ratio,cudaStream_t stream){
+    const int64_t parts=(cap-1)/kRadixItems+1;
+    const int hist_parts=int(std::min<int64_t>(parts,256));
+    parallel_histogram<true><<<hist_parts,kThreads,0,stream>>>(scores,cap,pos,ratio,k);
+    choose_parallel_byte<true><<<1,kThreads,0,stream>>>(scores,hist_parts,k,cap,pos,ratio);
+    parallel_histogram<false><<<hist_parts,kThreads,0,stream>>>(scores,cap,pos,ratio,k);
+    choose_parallel_byte<false><<<1,kThreads,0,stream>>>(scores,hist_parts,k,cap,pos,ratio);
+    count_partitions<<<hist_parts,kThreads,0,stream>>>(scores,cap,pos,ratio,k);
+    prefix_partitions<<<1,kThreads,0,stream>>>(scores,parts,cap,pos,ratio,k);
+    emit_partitions<<<hist_parts,kThreads,0,stream>>>(scores,cap,offset,out,pos,ratio,k);
+    restore_scores<<<hist_parts,kThreads,0,stream>>>(scores,0,cap,pos,ratio,k);
+}
+}  // namespace
+
+void indexer_topk(const bf16* q, const bf16* keys, int64_t t, const bf16* w,
+                  const uint8_t* cand, int k, int32_t offset, float* scores,
+                  int32_t* out_idx, cudaStream_t stream) {
+    if (t <= 0) return;
+    if (t <= 512) {
+        small_scores<<<unsigned((t + 7) / 8), kThreads, 0, stream>>>(q, keys, t, w, cand, scores);
+    } else {
+        K5_TENSOR_LAUNCH_V503<<<unsigned((t - 1) / 64 + 1), 128, 0, stream>>>(q, keys, t, w, cand, scores);
+    }
+    // Finish all full-width score writes before any selector borrows low halves.
+    // Same-stream kernel ordering also applies during every graph replay.
+    k = int(std::min<int64_t>(std::max(k, 0), t));
+    if (k == t) {
+        all_positions<<<unsigned((t + 255) / 256), kThreads, 0, stream>>>(t, offset, out_idx);
+    } else if (k > 0 && t >= kRadixItems) {
+        parallel_select(scores, t, k, offset, out_idx, stream);
+    } else if (k > 0) {
+        select_without_scratch<false><<<1, kThreads, 0, stream>>>({scores, t, 1}, t, k, offset, out_idx, nullptr);
+    }
+    check(cudaGetLastError(), "indexer launch");
+}
+
+void candidate_blocks(const float* scores, int64_t t, int topk_blocks, int block,
+                       uint8_t* cand, cudaStream_t stream) {
+    if (t <= 0 || block <= 0) return;
+    if (topk_blocks <= 0) {
+        check(cudaMemsetAsync(cand, 0, size_t(t), stream), "empty candidates");
+    } else {
+        const int64_t blocks = (t - 1) / block + 1;
+        if (topk_blocks >= blocks) {
+            all_candidates<<<unsigned(std::min<int64_t>(256, (blocks - 1) / 256 + 1)), kThreads, 0, stream>>>(scores, t, block, cand);
+        } else {
+            select_without_scratch<true><<<1, kThreads, 0, stream>>>(
+                {scores, t, block}, blocks, topk_blocks, 0, nullptr, cand);
+        }
+    }
+    check(cudaGetLastError(), "candidate launch");
+}
+
+void indexer_topk_device(const bf16* q, const bf16* keys, const int* pos_dev,
+                         int ratio, int64_t t_cap, const bf16* w, const uint8_t* cand,
+                         int k, int32_t offset, float* scores, int32_t* out_idx, cudaStream_t stream) {
+    if (ratio <= 0 || t_cap < 0 || !pos_dev) {
+        std::fprintf(stderr, "K5: invalid device length parameters\n"); throw std::runtime_error("kernels/k5_indexer.cu: checked operation failed; see diagnostic");
+    }
+    if (t_cap == 0) return;
+    small_scores<<<unsigned((std::min<int64_t>(t_cap, 512) + 7) / 8), kThreads, 0, stream>>>(
+        q, keys, t_cap, w, cand, scores, pos_dev, ratio);
+    if (t_cap > 512) K5_TENSOR_LAUNCH_V503<<<unsigned((t_cap + 63) / 64), 128, 0, stream>>>(
+        q, keys, t_cap, w, cand, scores, pos_dev, ratio);
+    select_without_scratch<false><<<1, kThreads, 0, stream>>>(
+        {scores, t_cap, 1}, t_cap, k, offset, out_idx, nullptr, pos_dev, ratio, t_cap>=kRadixItems);
+    if(t_cap>=kRadixItems)parallel_select_device(scores,t_cap,k,offset,out_idx,pos_dev,ratio,stream);
+    check(cudaGetLastError(), "device indexer launch");
+}
+
+void candidate_blocks_device(const float* scores, const int* pos_dev, int ratio, int64_t t_cap,
+                              int topk_blocks, int block, uint8_t* cand, cudaStream_t stream) {
+    if (ratio <= 0 || t_cap < 0 || !pos_dev) {
+        std::fprintf(stderr, "K5: invalid device length parameters\n"); throw std::runtime_error("kernels/k5_indexer.cu: checked operation failed; see diagnostic");
+    }
+    if (t_cap == 0 || block <= 0) return;
+    select_without_scratch<true><<<1, kThreads, 0, stream>>>(
+        {scores, t_cap, block}, 0, topk_blocks, 0, nullptr, cand, pos_dev, ratio);
+    check(cudaGetLastError(), "device candidate launch");
+}
+
+
+// Tiny component C ABI; no allocations/synchronization/production counters.
+// All numerical buffers and pos are device pointers; caller keeps them stable
+// until same-stream completion. Return0=successful submission,1=geometry,2=CUDA.
+extern "C" int ds41_index_scores_v172(const uint16_t* q, const uint16_t* keys,
+                                      int64_t n, const uint16_t* weights,
+                                      const uint8_t* mask, float* scores, void* stream) {
+    if (!q || !keys || !weights || !scores || n < 0 || n > 524288) return 1;
+    if (!n) return 0;
+    const auto st = static_cast<cudaStream_t>(stream);
+    if (n <= 512)
+        small_scores<<<unsigned((n + 7) / 8), kThreads, 0, st>>>(
+            reinterpret_cast<const bf16*>(q), reinterpret_cast<const bf16*>(keys),
+            n, reinterpret_cast<const bf16*>(weights), mask, scores);
+    else
+        K5_TENSOR_LAUNCH_V503<<<unsigned((n + 63) / 64), 128, 0, st>>>(
+            reinterpret_cast<const bf16*>(q), reinterpret_cast<const bf16*>(keys),
+            n, reinterpret_cast<const bf16*>(weights), mask, scores);
+    return cudaGetLastError() == cudaSuccess ? 0 : 2;
+}
+
+extern "C" int ds41_index_topk_v172(const uint16_t* q, const uint16_t* keys,
+                                    int64_t n, const uint16_t* weights,
+                                    const uint8_t* mask, int k, int offset,
+                                    float* scores, int32_t* ids, void* stream) {
+    if (!q || !keys || !weights || !scores || !ids || n < 0 || n > 524288 || k < 0 || k > 512) return 1;
+    try {
+        indexer_topk(reinterpret_cast<const bf16*>(q), reinterpret_cast<const bf16*>(keys),
+            n, reinterpret_cast<const bf16*>(weights), mask, k, offset, scores, ids,
+            static_cast<cudaStream_t>(stream));
+        return 0;
+    } catch (...) { return 2; }
+}
+
+extern "C" int ds41_index_dynamic_v172(const uint16_t* q, const uint16_t* keys,
+                                       const int32_t* pos, int ratio, int64_t capacity,
+                                       const uint16_t* weights, const uint8_t* mask,
+                                       int k, int offset, float* scores,
+                                       int32_t* ids, void* stream) {
+    if (!q || !keys || !pos || !weights || !scores || !ids || ratio < 1 || ratio > 64 ||
+        capacity < 0 || capacity > 524288 || k < 0 || k > 512) return 1;
+    try {
+        indexer_topk_device(reinterpret_cast<const bf16*>(q), reinterpret_cast<const bf16*>(keys),
+            pos, ratio, capacity, reinterpret_cast<const bf16*>(weights), mask, k, offset,
+            scores, ids, static_cast<cudaStream_t>(stream));
+        return 0;
+    } catch (...) { return 2; }
+}
+
+extern "C" int ds41_index_candidates_v172(const float* scores, int64_t n,
+                                          int topk_blocks, int block,
+                                          uint8_t* mask, void* stream) {
+    if (!scores || !mask || n < 0 || n > 524288 || topk_blocks < 0 || topk_blocks > 2048 ||
+        block < 1 || block > 64) return 1;
+    try {
+        candidate_blocks(scores, n, topk_blocks, block, mask, static_cast<cudaStream_t>(stream));
+        return 0;
+    } catch (...) { return 2; }
+}
+
+extern "C" int ds41_index_info_v172(uint64_t* out, int count) {
+    if (!out || count != 5) return 1;
+    out[0] = 172;
+    out[1] = DS41_K5_MASK_SKIP_V172;
+    out[2] = 64;
+    out[3] = 128;
+    out[4] = 0;  // explicit extra device buffer allocation bytes
+    return 0;
+}
+
+}  // namespace strata::ds41::kernels
+
+namespace strata::ds41::kernels {
+extern "C" int ds503_score_resources(int* out){
+ if(!out)return 1;
+ cudaFuncAttributes a{};cudaError_t e=cudaFuncGetAttributes(&a,K5_TENSOR_LAUNCH_V503);if(e!=cudaSuccess)return int(e);
+ int blocks=0;e=cudaOccupancyMaxActiveBlocksPerMultiprocessor(&blocks,K5_TENSOR_LAUNCH_V503,128,0);if(e!=cudaSuccess)return int(e);
+ out[0]=a.numRegs;out[1]=int(a.sharedSizeBytes);out[2]=int(a.localSizeBytes);out[3]=blocks;out[4]=a.binaryVersion;return 0;
+}
+
+}

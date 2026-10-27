@@ -1,0 +1,34 @@
+{
+  "schema": 1,
+  "numerical_or_C_ABI_changes": false,
+  "files": [
+    {
+      "path": "sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/serving_runtime_v529.py",
+      "staging_sha256": "1875a0b46a77a248b537533e4fa5deacef82417cf242d9555a4a7862d036e7c5",
+      "imported_sha256": "3c5191dd025e4b2d590a5c465e3ddc92dd285bc3c64b01835074d22bf7a45db2",
+      "guarded_entrypoints": [
+        "create"
+      ],
+      "diff": "--- sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/serving_runtime_v529.py\n+++ sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-delivery-v563/serving_runtime_v529.py\n@@ -6,6 +6,9 @@\n sys.dont_write_bytecode=True\n HERE=Path(__file__).resolve().parent\n CONTEXTS=(262144,524288)\n+\n+# Publication admission only; original numerical/lifetime body follows unchanged.\n+PUBLICATION_FACTORY_ENABLED = False\n \n def need(v,m):\n  if not v:raise RuntimeError('delivery529: '+m)\n@@ -29,6 +32,8 @@\n  return d\n \n def create(store,context):\n+ if not PUBLICATION_FACTORY_ENABLED:\n+  raise RuntimeError(\"DeepSeek publication factory is disabled: clean-build binding/reseal and cold lifecycle qualification are pending\")\n  need(type(context)is int and context in CONTEXTS,'API256/512 only')\n  bank=dict(getattr(store,'bank_format_binding_v146',{}));need(bank.get('layout_tag')==139 and bank.get('format_epoch',0)>=2 and getattr(store,'bank_runtime_admissible_v146',False)is True,'Manager actual inherited139 admissibility required')\n  need(bank.get('owner_generation')==store.generation and bank.get('owner_epoch')==store._owner_epoch and bank['owner_epoch']['pid']!=os.getpid(),'fresh inherited child; no PID attach/reload/current-owner reinterpretation')\n"
+    },
+    {
+      "path": "sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-server-v565/launch.py",
+      "staging_sha256": "9b2b04941cdbc6857598f72a1ab9078c9d073f6483fbb131396b421108ff332e",
+      "imported_sha256": "7f081686852bd34d134a19697cd27e8fd001d13f92b001e59e9eced5804e91cf",
+      "guarded_entrypoints": [
+        "launch_plan"
+      ],
+      "diff": "--- sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-server-v565/launch.py\n+++ sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-server-v565/launch.py\n@@ -3,6 +3,9 @@\n import argparse,json,os,signal,subprocess,sys,time,uuid\n from pathlib import Path\n from bindings import HERE,M,D,OUT,need,plan,profile_path\n+\n+# Publication admission only; original numerical/lifetime body follows unchanged.\n+PUBLICATION_FACTORY_ENABLED = False\n \n def environment():\n  names=('HOME','USER','LOGNAME','PATH','LANG','LC_ALL','XDG_RUNTIME_DIR','DBUS_SESSION_BUS_ADDRESS')\n@@ -11,6 +14,8 @@\n  return env\n \n def launch_plan(variant,context,*,execute=False):\n+ if not PUBLICATION_FACTORY_ENABLED:\n+  raise RuntimeError(\"DeepSeek publication factory is disabled: clean-build binding/reseal and cold lifecycle qualification are pending\")\n  profile=profile_path(variant,context*1024);v=plan(profile,execution=execute)\n  rid=f'pair-{context}-v563-parent565-'+time.strftime('%Y%m%d-%H%M%S-')+uuid.uuid4().hex[:8]\n  unit='ds1017-pair-'+uuid.uuid4().hex[:12]\n"
+    },
+    {
+      "path": "sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-server-v565/serve.py",
+      "staging_sha256": "df6d0ea7e5f224081708291f33d5fbc84aa573a7d71dce9407a3a125c7b26f81",
+      "imported_sha256": "5cb0c7c30154aa9a412e30424be2c0652abd308950371713ddcd82a4c6b218a1",
+      "guarded_entrypoints": [
+        "serve_child",
+        "execute"
+      ],
+      "diff": "--- sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-server-v565/serve.py\n+++ sources/DeepSeek V4.1/work/deepseek41-1017-multigpu/research/paired-console-server-v565/serve.py\n@@ -7,6 +7,9 @@\n from index_devices_v536 import resolve_current_pair\n from admission_v536 import Registry,validate_manager_profile,revalidate_plan,runtime_plan,validate_descriptor,control_admission_pin\n from bindings import HERE,M,Q,D,ROOT,MODEL,BANK_BYTES,OUT,FACTORY_ROOT,PRIOR_OWNER_STATE,need,read,sha,run_name,plan,profile_path,lease_paths,import_owner\n+\n+# Publication admission only; original numerical/lifetime body follows unchanged.\n+PUBLICATION_FACTORY_ENABLED = False\n \n def write(path,value):\n  path=Path(path);temp=path.with_suffix('.partial')\n@@ -77,6 +80,8 @@\n  except ProcessLookupError:pass\n \n def serve_child(store,v,pair,generation,ready_fd,shutdown_seconds,idle_seconds,close_path):\n+ if not PUBLICATION_FACTORY_ENABLED:\n+  raise RuntimeError(\"DeepSeek publication factory is disabled: clean-build binding/reseal and cold lifecycle qualification are pending\")\n  # API/FIFO threads exist only in this fresh CUDA child, never CPU parent.\n  import threading\n  stop=threading.Event();drain=threading.Event()\n@@ -135,6 +140,8 @@\n   log('PAIR_CUDA_CHILD_CLOSED',close_proof=str(close_path))\n \n def execute(args,v):\n+ if not PUBLICATION_FACTORY_ENABLED:\n+  raise RuntimeError(\"DeepSeek publication factory is disabled: clean-build binding/reseal and cold lifecycle qualification are pending\")\n  need(sys.dont_write_bytecode and Path(sys.prefix)==D/'.venv-reference','use existing reference Python -B')\n  sanitize();parent_guard();numa=numa_guard();require_prior_owner_closed();pair=resolve_current_pair();health=lambda:pair_health(pair);name=run_name(args.run_id)\n  OUT.mkdir(parents=True,exist_ok=True);folder=OUT/name;folder.mkdir(mode=0o700)\n"
+    }
+  ]
+}

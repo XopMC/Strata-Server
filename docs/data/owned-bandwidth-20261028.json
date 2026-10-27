@@ -1,0 +1,16 @@
+{
+  "observed_utc": "2026-10-27T21:21:34Z",
+  "method": "Host-wall enqueue plus final stream synchronize; no model workload;4 warmups;32MiB x32 repetitions or256KiB x256; sequential directions; pinned host buffers; payload edge checks.",
+  "units": "decimal GB/s, microseconds; MiB=2^20 bytes",
+  "current_indices": [
+    0,
+    1
+  ],
+  "driver": "615.71.09",
+  "pcie": "4.0x16 each",
+  "power_limit_W": 500,
+  "component_result": "STRATA_P2P_DEFAULT devices=2 directed_pairs=2 native_required=1 host_fallback=0 order_verified=1\nPAIR src=1 dst=0 bytes=262144 reps=256 GBps=17.716318 us_per_copy=14.796754\nPAIR src=0 dst=1 bytes=262144 reps=256 GBps=17.716360 us_per_copy=14.796719\nPAIR src=1 dst=0 bytes=33554432 reps=32 GBps=26.245211 us_per_copy=1278.497344\nPAIR src=0 dst=1 bytes=33554432 reps=32 GBps=26.256813 us_per_copy=1277.932375\nHOST device=0 direction=H2D bytes=33554432 reps=32 GBps=26.825785\nHOST device=0 direction=D2H bytes=33554432 reps=32 GBps=26.358069\nHOST device=1 direction=H2D bytes=33554432 reps=32 GBps=26.835949\nHOST device=1 direction=D2H bytes=33554432 reps=32 GBps=26.367700\nTWO_PEER_BANDWIDTH_PASS component_copy_engine_only no_model_TPS\n",
+  "not_model_throughput": true,
+  "system_RAM_visible_bytes": 810996461568,
+  "no_RAM_STREAM_result": true
+}

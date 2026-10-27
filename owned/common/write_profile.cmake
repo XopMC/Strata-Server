@@ -1,0 +1,5 @@
+if(NOT EXISTS "${BINARY}" OR NOT DEFINED PROFILE)
+  message(FATAL_ERROR "Native profile stamp requires the successfully built binary")
+endif()
+file(SHA256 "${BINARY}" DIGEST)
+file(WRITE "${OUTPUT}" "{\n  \"schema\": 1,\n  \"profile\": \"${PROFILE}\",\n  \"binary_sha256\": \"${DIGEST}\"\n}\n")

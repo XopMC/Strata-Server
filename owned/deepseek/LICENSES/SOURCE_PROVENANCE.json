@@ -1,0 +1,12 @@
+{
+  "vLLM-Apache-2.0.txt": {
+    "source": "https://raw.githubusercontent.com/vllm-project/vllm/v0.8.5/LICENSE",
+    "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+    "bytes": 11357
+  },
+  "TPurtell-ds41rt-MIT.txt": {
+    "source": "https://raw.githubusercontent.com/tpurtell/ds41rt/3067d0684a0b572d88a17d38ca3f7d10599619b4/LICENSE",
+    "sha256": "0a3535964622b6d987f46a6ad5bcf197abe4dc9eba2f84f0e0b5e0982c8b2f36",
+    "bytes": 1069
+  }
+}

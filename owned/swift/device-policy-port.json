@@ -1,0 +1,18 @@
+{
+  "numerical_math_changed": false,
+  "patches": [
+    {
+      "path": "source/Swift Flash Next ThreeGPU/work/swift-flash-next-threegpu/research/mmq-paired-gu-model-v311/policy_v311.hpp",
+      "before_sha256": "c4c254ecc2b98ebe4d1d21b9e3190bdd4ca491c139b9a0c61fe9b17b25bdbd44",
+      "after_sha256": "891711e34fd305f1848a5daac1bb8f0458be34241d297aa8b87343831c2e2527",
+      "change": "Fixed two-device UUID allowlist replaced by this-launch ordered snapshot+actual CUDA identity/count; SM89 retained"
+    },
+    {
+      "path": "source/Swift Flash Next MultiGPU/work/swift-flash-next-multigpu/research/prefill-output-lt-restore-v301-r2-r1/output_lt_restore_r2.cpp",
+      "before_sha256": "e1d080b47521ebca1b9e4a24b2bda40cf8e21c61b91560f452842b12d8a69d34",
+      "after_sha256": "c2a47114a3201523593eb2132117219a1c0b9610e8d21041865a5304b409cffc",
+      "change": "Fixed UUID gate replaced by this-launch ordered snapshot+actual CUDA identity/count; original ordinal/SM89/version/algorithm checks retained"
+    }
+  ],
+  "native_P2P": "Entrypoint mandatory admission retained; helper only validates this launch identity and CUDA ordinal order"
+}

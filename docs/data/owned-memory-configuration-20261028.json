@@ -1,0 +1,11 @@
+{
+  "observed_date": "2026-10-28",
+  "source": "actual sudo dmidecode --type17 exit0; serial/asset identifiers omitted",
+  "populated_modules": 24,
+  "module_size_GB": 32,
+  "modules_per_socket": 12,
+  "configured_memory_speed_MT_s": 4800,
+  "rated_speed_MT_s": 4800,
+  "type": "DDR5",
+  "configured_rate_not_live_controller_counter": true
+}

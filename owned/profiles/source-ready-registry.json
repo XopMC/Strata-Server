@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "kind": "source-profile-index-not-a-launch-profile",
+  "profiles": [
+    {
+      "profile": "swift-nvfp4-one-256k",
+      "file": "swift-nvfp4-one-256k.json",
+      "cmake_profile": "swift1-256k",
+      "gpus": 1,
+      "context": "256k",
+      "launch_enabled": false,
+      "experimental": false
+    },
+    {
+      "profile": "swift-nvfp4-one-512k",
+      "file": "swift-nvfp4-one-512k.json",
+      "cmake_profile": "swift1-512k",
+      "gpus": 1,
+      "context": "512k",
+      "launch_enabled": false,
+      "experimental": false
+    },
+    {
+      "profile": "swift-nvfp4-one-1m",
+      "file": "swift-nvfp4-one-1m.json",
+      "cmake_profile": "swift1-1024k",
+      "gpus": 1,
+      "context": "1m",
+      "launch_enabled": false,
+      "experimental": false
+    },
+    {
+      "profile": "swift-nvfp4-three-256k",
+      "file": "swift-nvfp4-three-256k.json",
+      "cmake_profile": "swift3-v431",
+      "gpus": 3,
+      "context": "256k",
+      "launch_enabled": false,
+      "experimental": false
+    },
+    {
+      "profile": "swift-nvfp4-three-512k",
+      "file": "swift-nvfp4-three-512k.json",
+      "cmake_profile": "swift3-v431",
+      "gpus": 3,
+      "context": "512k",
+      "launch_enabled": false,
+      "experimental": false
+    },
+    {
+      "profile": "swift-nvfp4-four-experimental-256k",
+      "file": "swift-nvfp4-four-experimental-256k.json",
+      "cmake_profile": "swift4-v421-experimental",
+      "gpus": 4,
+      "context": "256k",
+      "launch_enabled": false,
+      "experimental": true
+    }
+  ]
+}

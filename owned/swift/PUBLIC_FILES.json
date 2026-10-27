@@ -1,0 +1,15 @@
+{
+  "include": [
+    "CMakeLists.txt",
+    "README.md",
+    "closure.json",
+    "compile-source-map.json",
+    "source/**",
+    "include/**",
+    "device-policy-port.json"
+  ],
+  "exclude": [
+    "_private/**"
+  ],
+  "note": "All manifest/source paths are relative; source flags use declared CMake source/toolkit variables. Historical source associations are not a fresh compile equivalence proof."
+}
