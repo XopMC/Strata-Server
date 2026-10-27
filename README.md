@@ -30,7 +30,7 @@
 
 **Strata-Server** collects our Swift Flash Next and DeepSeek native work while keeping Strata's original app and Terminal. Source-only integration and qualification are in progress; the measured original implementations and reconstructed builds are identified separately.
 
-[Source build and flags](owned/README.md) · [Measured results and limits](docs/XOPMC_RESULTS.md) · [Test hardware and bandwidth](docs/XOPMC_HARDWARE.md) · [Our models on Hugging Face](https://huggingface.co/XopMC513) · [Model formats and downloads](docs/XOPMC_MODELS.md) · [Required native P2P](docs/XOPMC_P2P.md)
+[Source build and flags](owned/README.md) · [Measured results and limits](docs/XOPMC_RESULTS.md) · [Test hardware and bandwidth](docs/XOPMC_HARDWARE.md) · [Our models on Hugging Face](https://huggingface.co/XopMC513) · [Model formats and downloads](docs/XOPMC_MODELS.md) · [Required native P2P](docs/XOPMC_P2P.md) · [Upstream and adjacent research](docs/XOPMC_RESEARCH.md)
 
 ## Models
 
