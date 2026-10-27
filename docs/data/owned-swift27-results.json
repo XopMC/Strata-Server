@@ -1,0 +1,124 @@
+{
+  "model": "own Swift1.5 Qwen3.8 27B gentleHeretic",
+  "selected": [
+    {
+      "gpus": 1,
+      "capacity": 131072,
+      "actual_new_tokens": 129024,
+      "generated": 1792,
+      "TG": 122.28436200814,
+      "NEWPP": 2351.8201898725147,
+      "repeat_TG": 121.75813029547591,
+      "main_format": "Q4_K_M unchanged",
+      "KV": "Q4_0",
+      "draft": "DFlash2 Q4 stock128k / MarathonR32 256k",
+      "scope": "historical selected v19/APIr9 coding workload, singlepass,1792output budget",
+      "evidence_label": "gdn-pair-filled128-r1",
+      "source_receipt_sha256": "efbd7dbb7518464f7ca8683d35ade5c06e5be4e91802b38bbb1e9087f5815df9"
+    },
+    {
+      "gpus": 1,
+      "capacity": 262144,
+      "actual_new_tokens": 260096,
+      "generated": 1792,
+      "TG": 108.2747414434238,
+      "NEWPP": 1923.997739693231,
+      "repeat_TG": 108.18378631292079,
+      "main_format": "Q4_K_M unchanged",
+      "KV": "Q4_0",
+      "draft": "DFlash2 Q4 stock128k / MarathonR32 256k",
+      "scope": "historical selected v19/APIr9 coding workload, singlepass,1792output budget",
+      "evidence_label": "gdn-pair-filled256-r1",
+      "source_receipt_sha256": "77b505f12e4370142049cc5398ab384b3310c88876f059349cd86a827131f52d"
+    }
+  ],
+  "sequential_independent_replicas": [
+    {
+      "gpu": 1,
+      "new_prompt_tokens": 129024,
+      "NEW_PP": 1097.1895530077618,
+      "TG": 101.22685135207082,
+      "repeat_TG": 100.8942634315981,
+      "ready_VRAM_used_MiB": 22204,
+      "ready_VRAM_free_MiB": 1960,
+      "outputs_exact_GPU1": [
+        true,
+        true
+      ],
+      "single_pass": true
+    },
+    {
+      "gpu": 2,
+      "new_prompt_tokens": 129024,
+      "NEW_PP": 1092.1058162371141,
+      "TG": 100.27040537740497,
+      "repeat_TG": 99.9694621481065,
+      "ready_VRAM_used_MiB": 22204,
+      "ready_VRAM_free_MiB": 1960,
+      "outputs_exact_GPU1": [
+        true,
+        true
+      ],
+      "single_pass": true
+    },
+    {
+      "gpu": 3,
+      "new_prompt_tokens": 129024,
+      "NEW_PP": 1098.418161725899,
+      "TG": 101.09811976125039,
+      "repeat_TG": 100.84414034171017,
+      "ready_VRAM_used_MiB": 22204,
+      "ready_VRAM_free_MiB": 1960,
+      "outputs_exact_GPU1": [
+        true,
+        true
+      ],
+      "single_pass": true
+    },
+    {
+      "gpu": 4,
+      "new_prompt_tokens": 129024,
+      "NEW_PP": 1092.7655413108678,
+      "TG": 100.50183579986498,
+      "repeat_TG": 100.16768999716275,
+      "ready_VRAM_used_MiB": 22204,
+      "ready_VRAM_free_MiB": 1960,
+      "outputs_exact_GPU1": [
+        true,
+        true
+      ],
+      "single_pass": true
+    },
+    {
+      "gpu": 5,
+      "new_prompt_tokens": 129024,
+      "NEW_PP": 1095.8539521165399,
+      "TG": 100.70854166440574,
+      "repeat_TG": 100.34643331461245,
+      "ready_VRAM_used_MiB": 22204,
+      "ready_VRAM_free_MiB": 1960,
+      "outputs_exact_GPU1": [
+        true,
+        true
+      ],
+      "single_pass": true
+    },
+    {
+      "gpu": 6,
+      "new_prompt_tokens": 129024,
+      "NEW_PP": 1096.6625823442525,
+      "TG": 100.73081301577086,
+      "repeat_TG": 100.33071041257433,
+      "ready_VRAM_used_MiB": 22204,
+      "ready_VRAM_free_MiB": 1960,
+      "outputs_exact_GPU1": [
+        true,
+        true
+      ],
+      "single_pass": true
+    }
+  ],
+  "replica_hardware_scope": "17October2026 historical4090 onPCIe2x1; not currentindexmapping; not one-request multiGPUsharding",
+  "replica_receipt_sha256": "36ff3a66183444c3d40492f298f96faae3692715a60a1e5563fbfc4d731c07c2",
+  "portable_source_status": "separate original runtime; not integrated into currentownedCMake/launchselector"
+}

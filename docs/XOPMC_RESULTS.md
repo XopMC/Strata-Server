@@ -49,3 +49,35 @@ Weights are separate downloads. This code repository contains no checkpoints, cr
 Use the source build in [owned](../owned/README.md) and preserve the exact family, topology, context, KV, MTP, CPU affinity and expert budgets. Record GPU identity as a fresh launch snapshot, never a stored allowlist. Native P2P is required for owned multi-card profiles; missing peer access is a startup error. It is not permission to alter a user's driver or power settings.
 
 Source provenance and clean-build status accompany each provider. Numerical parity is tested independently from speed. A successful kernel test or a large external Tensor Core peak is not an end-to-end throughput result. These measurements are specific to the listed hardware/profile and are not guarantees of broader quality or speed.
+
+## Complete Swift Flash Next 1–4 GPU inventory
+
+This table lists original historical profiles and the tested unified source rebuild. Single-GPU values are medians of three runs. The remaining numerical rows are individual completed runs. Different profiles/epochs are not a controlled hardware scaling curve. Missing rows are explicitly unmeasured in the audited receipt set.
+
+| GPUs | New input / allocated context | Generation | New prompt | Recorded profile |
+| ---: | ---: | ---: | ---: | --- |
+| **1** | 260,000 / 262,144 | **173.26 tok/s** | **5,297 tok/s** | Historical adaptive, median of 3 |
+| **1** | 520,000 / 524,288 | **181.79 tok/s** | **4,752 tok/s** | Historical adaptive, median of 3 |
+| **1** | 1,040,000 / 1,048,576 | **175.29 tok/s** | **3,833 tok/s** | Historical adaptive, median of 3 |
+| **2** | 260,000 / 262,144 | **209.04 tok/s** | **9,005 tok/s** | Original shared-bank profile |
+| **2** | 520,000 / 524,288 | **192.34 tok/s** | **9,265 tok/s** | **Unified source rebuild** |
+| **2** | 1,040,000 / 1,048,576 | **187.64 tok/s** | **7,753 tok/s** | Original selected V454/V458 |
+| **3** | 260,000 / 262,144 | **177.89 tok/s** | **11,457 tok/s** | Original prefill profile V444 |
+| **3** | 520,000 / 524,288 | **185.38 tok/s** | **12,321 tok/s** | Original prefill profile V444 |
+| **3** | 1,040,000 / 1,048,576 | **173.90 tok/s** | **10,778 tok/s** | Historical three-dense V55 |
+| **4** | 260,000 / 262,144 | **169.18 tok/s** | **5,939 tok/s** | Experimental shared-bank control |
+| 4 | — / 524,288 | — | — | No completed result in the audited set |
+| 4 | — / 1,048,576 | — | — | No completed result in the audited set |
+
+Alternative measured profiles, kept separate:
+
+| GPUs | New input / allocated context | Generation | New prompt | Alternative profile |
+| ---: | ---: | ---: | ---: | --- |
+| 3 | 260,000 / 262,144 | 205.04 tok/s | 8,725 tok/s | Original generation-oriented profile |
+| 4 | 260,000 / 262,144 | 169.38 tok/s | 5,997 tok/s | Later four-GPU V28 experiment, not selected |
+
+[Sanitized evidence and TTFT](data/owned-swift-1-4-gpu-results.json).
+
+## Swift 1.5 Qwen3.8 27B
+
+The separate original Q4_K_M backend measured 122.284 / 2,351.820 generation / new-prompt tok/s at 129,024 / 131,072 tokens, and 108.275 / 1,923.998 tok/s at 260,096 / 262,144 tokens. Both generated 1,792 tokens, using Q4_0 KV and target-verified DFlash2. Six historical 128K replicas were tested sequentially as independent instances. The 27B runtime is not yet imported into the public `owned/` selector. [Backend details](XOPMC_SWIFT27.md) · [Sanitized receipts](data/owned-swift27-results.json).

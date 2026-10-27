@@ -1,0 +1,196 @@
+{
+  "model": "own Swift1.5 FlashNext Heretic mixedNVFP4",
+  "warning": "different profiles and epochs, not a controlled hardware scaling curve; N1; SHORT/cached/component speeds excluded",
+  "rows": [
+    {
+      "gpus": 1,
+      "capacity": 262144,
+      "actual_new_tokens": 260000,
+      "TG": 173.26271975093482,
+      "NEWPP": 5297.419545440654,
+      "TTFT": 49.1643554540351,
+      "generated": 1024,
+      "scope": "historical adaptive single-GPU, median of3; different scheduling from later multiGPU",
+      "evidence_label": "filled256-swiglu-quant-r62c",
+      "source_receipt_sha256": [
+        "c9d7b4552749871010bc96c2cf1c79491c5a184f0d0bce82dd6c49a1ea990877",
+        "c542d8d071be6546f2594a77213d4cfdb4b7b3f8b5ac445c6fb272ea30feb1e4",
+        "4138c68d530e9bf032a9cbc14101b9822c571f5f9e6c9cea93f9923dd24f0319"
+      ]
+    },
+    {
+      "gpus": 1,
+      "capacity": 524288,
+      "actual_new_tokens": 520000,
+      "TG": 181.78590449139003,
+      "NEWPP": 4751.74420995399,
+      "TTFT": 109.59974151599454,
+      "generated": 1024,
+      "scope": "historical adaptive single-GPU, median of3; different scheduling from later multiGPU",
+      "evidence_label": "filled512-selected-long-r64",
+      "source_receipt_sha256": [
+        "2dc054383825d4e86dd417684c7b4559cd74e56d2f63381d18b06d02bf34ab3e",
+        "76494f807d9b125e6249a4a3381f94b7ff6f2438495f16b3ac5a0f5d491a0b73",
+        "2898ce00c55dea5a12c1e404549bab6ab5e02e1fc56102cf48931b886abcc249"
+      ]
+    },
+    {
+      "gpus": 1,
+      "capacity": 1048576,
+      "actual_new_tokens": 1040000,
+      "TG": 175.28543795682913,
+      "NEWPP": 3833.363680795806,
+      "TTFT": 271.6042915570433,
+      "generated": 1024,
+      "scope": "historical adaptive single-GPU, median of3; different scheduling from later multiGPU",
+      "evidence_label": "filled1024-selected-long-r64",
+      "source_receipt_sha256": [
+        "be921308f26466cf2d26b5e1aeb77f05652d1bcb4a74629f0b8c973c3f0250aa",
+        "646799da3f7cf6c6c4db775b4983b3f1ee92c1d015881ee58396ced1c7b86071",
+        "05706efae9abf015039582ea275664742d055a00a1f764e967cc11d7a9f7a899"
+      ]
+    },
+    {
+      "gpus": 2,
+      "capacity": 262144,
+      "actual_new_tokens": 260000,
+      "TG": 209.03505011533673,
+      "NEWPP": 9005.139856749005,
+      "TTFT": 28.98730320300092,
+      "generated": 1024,
+      "scope": "original shared-bank profile, one run",
+      "evidence_label": "shared421-bank-filled256-first",
+      "source_receipt_sha256": [
+        "9b0a0c5a055444ee2d36be32ece85d452fe4ab80f2ace6a36309bf78de0b8375"
+      ]
+    },
+    {
+      "gpus": 2,
+      "capacity": 524288,
+      "actual_new_tokens": 520000,
+      "TG": 192.34020173181315,
+      "NEWPP": 9265.181980646461,
+      "TTFT": 56.307599132996984,
+      "generated": 1024,
+      "scope": "unified source rebuild",
+      "evidence_label": "public-source-swift-v2-full512-small",
+      "source_receipt_sha256": [
+        "7145e121897953970e734300d4506b72af3565c0e24f95e8fc914f21b72aaef7"
+      ]
+    },
+    {
+      "gpus": 2,
+      "capacity": 1048576,
+      "actual_new_tokens": 1040000,
+      "TG": 187.63513761131676,
+      "NEWPP": 7752.52161947195,
+      "TTFT": 134.50548094099213,
+      "generated": 1024,
+      "scope": "original V454+V458; one run",
+      "evidence_label": "prefetch458-v454-full1M-small",
+      "source_receipt_sha256": [
+        "58d8cb8296330d8cd0877809ce6ae742990212cad530f70aea381b0401767559"
+      ]
+    },
+    {
+      "gpus": 3,
+      "capacity": 262144,
+      "actual_new_tokens": 260000,
+      "TG": 177.8858681490489,
+      "NEWPP": 11456.722231769492,
+      "TTFT": 22.817101997003192,
+      "generated": 1024,
+      "scope": "original selected three-dense prefill, one run",
+      "evidence_label": "V444-256",
+      "source_receipt_sha256": [
+        "d03028fc7505a0f56e62d043a11f05a62705792733822cc00cb5461a58ae8821"
+      ]
+    },
+    {
+      "gpus": 3,
+      "capacity": 524288,
+      "actual_new_tokens": 520000,
+      "TG": 185.37627400930504,
+      "NEWPP": 12321.136198313425,
+      "TTFT": 42.42402194299211,
+      "generated": 1024,
+      "scope": "original selected three-dense prefill, one run",
+      "evidence_label": "V444-512",
+      "source_receipt_sha256": [
+        "d03028fc7505a0f56e62d043a11f05a62705792733822cc00cb5461a58ae8821"
+      ]
+    },
+    {
+      "gpus": 3,
+      "capacity": 1048576,
+      "actual_new_tokens": 1040000,
+      "TG": 173.89532316679686,
+      "NEWPP": 10777.760505725686,
+      "TTFT": 96.8710546250004,
+      "generated": 1024,
+      "scope": "historical three-dense V55, one run; rebuilt1M unqualified",
+      "evidence_label": "filled-1024k-v55-adapt72-boot2",
+      "source_receipt_sha256": [
+        "45a5bdd6137f5545b1b8bdcd35adb8d578299c91ccf9bb922996d4bdce692cfc"
+      ]
+    },
+    {
+      "gpus": 4,
+      "capacity": 262144,
+      "actual_new_tokens": 260000,
+      "TG": 169.17510614746652,
+      "NEWPP": 5939.259648441515,
+      "TTFT": 43.89802568600862,
+      "generated": 1024,
+      "scope": "preserved four-GPU source control, one run; experimental",
+      "evidence_label": "shared421-bank-filled256-first",
+      "source_receipt_sha256": [
+        "60935474d0b92584b86d0193b8b3d9bd580523eadc8347adcb2d5fbbf8456a82"
+      ]
+    },
+    {
+      "gpus": 4,
+      "capacity": 524288,
+      "actual_new_tokens": null,
+      "TG": null,
+      "NEWPP": null,
+      "TTFT": null,
+      "scope": "no completed full-context result in audited fourGPU receipt set"
+    },
+    {
+      "gpus": 4,
+      "capacity": 1048576,
+      "actual_new_tokens": null,
+      "TG": null,
+      "NEWPP": null,
+      "TTFT": null,
+      "scope": "no completed full-context result in audited fourGPU receipt set"
+    }
+  ],
+  "alternative_profiles": [
+    {
+      "gpus": 3,
+      "capacity": 262144,
+      "actual_new_tokens": 260000,
+      "TG": 205.03784389892274,
+      "NEWPP": 8725.125004194771,
+      "TTFT": 29.925645025999984,
+      "generated": 1024,
+      "evidence_label": "shared421-bank-filled256-first",
+      "scope": "original alternative experiment, separate profile",
+      "source_receipt_sha256": "6ddda2a74719da13481d2397c8ae005408fd7e1c9dc9fc47cd47a83a17c14203"
+    },
+    {
+      "gpus": 4,
+      "capacity": 262144,
+      "actual_new_tokens": 260000,
+      "TG": 169.3765817026978,
+      "NEWPP": 5997.181324777355,
+      "TTFT": 43.46912260099634,
+      "generated": 1024,
+      "evidence_label": "four28-combined-affine-filled256-performance-first",
+      "scope": "original alternative experiment, separate profile",
+      "source_receipt_sha256": "170f6a3964a3ad68fb5db7f95eb6674851fe808cec79776b5d63c0899573d271"
+    }
+  ]
+}

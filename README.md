@@ -7,7 +7,7 @@
 
 <h2 align="center">Strata-Server</h2>
 <h3 align="center">Large models. Your hardware. Native CPU and GPU execution.</h3>
-<p align="center">Swift Flash Next and DeepSeek, with shared expert memory and direct multi-GPU transport.</p>
+<p align="center">Swift Flash Next, Swift 27B and DeepSeek — native model backends and measured local performance.</p>
 
 <p align="center">
   <a href="#what-is-strata-server">Overview</a> ·
@@ -58,18 +58,35 @@ Our gentle-Heretic Swift is available as original-precision weights, **Q4_K_M**,
 
 These are our local, single-request measurements. New-prompt speed counts newly encoded input. Long rows use genuinely filled contexts; output is 1,024 real generated tokens.
 
-| Backend | GPUs | New input / allocated context | Generation | New prompt |
-| --- | ---: | ---: | ---: | ---: |
-| Mixed NVFP4, **unified source rebuild** | 2 | 520,000 / 524,288 | **192.34 tok/s** | **9,265 tok/s** |
-| Mixed NVFP4, original qualified implementation | 2 | 1,040,000 / 1,048,576 | **187.64 tok/s** | **7,753 tok/s** |
-| Mixed NVFP4, original prefill-oriented profile | 3 | 260,000 / 262,144 | **177.89 tok/s** | **11,457 tok/s** |
-| Mixed NVFP4, original prefill-oriented profile | 3 | 520,000 / 524,288 | **185.38 tok/s** | **12,321 tok/s** |
+| GPUs | New input / allocated context | Generation | New prompt | Recorded profile |
+| ---: | ---: | ---: | ---: | --- |
+| **1** | 260,000 / 262,144 | **173.26 tok/s** | **5,297 tok/s** | Historical adaptive, median of 3 |
+| **1** | 520,000 / 524,288 | **181.79 tok/s** | **4,752 tok/s** | Historical adaptive, median of 3 |
+| **1** | 1,040,000 / 1,048,576 | **175.29 tok/s** | **3,833 tok/s** | Historical adaptive, median of 3 |
+| **2** | 260,000 / 262,144 | **209.04 tok/s** | **9,005 tok/s** | Original shared-bank profile |
+| **2** | 520,000 / 524,288 | **192.34 tok/s** | **9,265 tok/s** | **Unified source rebuild** |
+| **2** | 1,040,000 / 1,048,576 | **187.64 tok/s** | **7,753 tok/s** | Original selected V454/V458 |
+| **3** | 260,000 / 262,144 | **177.89 tok/s** | **11,457 tok/s** | Original prefill profile V444 |
+| **3** | 520,000 / 524,288 | **185.38 tok/s** | **12,321 tok/s** | Original prefill profile V444 |
+| **3** | 1,040,000 / 1,048,576 | **173.90 tok/s** | **10,778 tok/s** | Historical three-dense V55 |
+| **4** | 260,000 / 262,144 | **169.18 tok/s** | **5,939 tok/s** | Experimental shared-bank control |
+| 4 | — / 524,288 | — | — | No completed result in the audited set |
+| 4 | — / 1,048,576 | — | — | No completed result in the audited set |
 
-The three-GPU prefill and two-GPU generation results belong to different profiles. Their best numbers are not combined into an imaginary configuration. More cards did not automatically improve generation; four-GPU work remains experimental.
+The table covers **1–4 GPUs and 256K / 512K / 1M**. One-GPU rows are historical medians of three runs; the other numerical rows are individual completed runs. The profiles and test epochs differ, so this is an inventory of recorded versions, **not a controlled GPU-scaling curve**. A historical 1M run does not qualify a newly rebuilt 1M profile. A dash means no completed result in this receipt set, not zero performance.
+
+**Other preserved trade-offs:**
+
+| GPUs | New input / allocated context | Generation | New prompt | Alternative profile |
+| ---: | ---: | ---: | ---: | --- |
+| 3 | 260,000 / 262,144 | 205.04 tok/s | 8,725 tok/s | Original generation-oriented profile |
+| 4 | 260,000 / 262,144 | 169.38 tok/s | 5,997 tok/s | Later four-GPU V28 experiment, not selected |
+
+The three-GPU generation-oriented profile is faster at generation, while the separate prefill profile reads new prompts faster. They are not one combined configuration. The later four-GPU result remains experimental; more cards did not automatically improve generation.
+
+[Full 1–4 GPU receipt table, including TTFT →](docs/data/owned-swift-1-4-gpu-results.json)
 
 **Small fill in a long allocation:** the unified two-GPU build measured **225.05 generation tok/s** and **3,298 new-prompt tok/s** at **16,384 / 524,288** tokens. This was a fresh short request in the same process, not a filled 512K result.
-
-Historical single-GPU medians were **173.26 / 181.79 / 175.29 generation tok/s** and **5,297 / 4,752 / 3,833 new-prompt tok/s** at 256K / 512K / 1M. Those used a different adaptive profile and are not a controlled scaling comparison.
 
 ### Swift source profiles
 
@@ -121,6 +138,56 @@ python3 owned/launch.py \
 </details>
 
 <details>
+<summary><img src="docs/media/models/qwen.svg" width="22" alt="" align="middle"> &nbsp;<b>Swift 1.5 Qwen3.8 27B Heretic</b></summary>
+
+**Our dense 27B variant**, derived from [ukisai/Swift-1.5-Qwen3.8-27b](https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-27b), with its own gentle-Heretic weights and separate optimized native backend.
+
+### Swift 27B formats and backend
+
+| Item | Prepared version |
+| --- | --- |
+| Original-precision model | Retained **BF16 Heretic** checkpoint |
+| Native model | **Q4_K_M**, unchanged during runtime optimization; approximately 18.20 GB, with separate BF16 vision projection |
+| Apple format | **MLX 4-bit**, plus native MTP assets and a separate DFlash2 head; strict CPU reload checked, no Apple inference speed claim |
+| Selected draft | **DFlash2 Q4**, stock head at 128K and Marathon R32 at 256K, with target verification |
+| Attention cache | **Q4_0** in the recorded selected runs |
+| Contexts | **128K / 256K** |
+
+The native work includes async packed-Q4 KV prefetch, pairwarp GDN, a compact exact recurrence/rollback journal, fused FFN prefill and separate Main/draft memory budgets. Native same-checkpoint MTP and other draft heads were compared; DFlash2 remained selected on these measured workloads.
+
+### Swift 27B performance
+
+Original selected v19 / API r9 backend, **CPU + one RTX 4090**, one coding request, 1,792 generated tokens:
+
+| GPUs | New input / allocated context | Generation | New prompt | Draft |
+| ---: | ---: | ---: | ---: | --- |
+| 1 | 129,024 / 131,072 | **122.28 tok/s** | **2,352 tok/s** | DFlash2 Q4 |
+| 1 | 260,096 / 262,144 | **108.27 tok/s** | **1,924 tok/s** | DFlash2 Marathon R32 Q4 |
+
+These are fresh, filled-context runs, not sums of parallel requests. Same-geometry output checks against the preceding selected backend passed; these checks do not establish a broad model-quality benchmark.
+
+### Independent per-GPU copies
+
+The original local deployment also supported independent **128K** instances on individual cards, with per-GPU replacement and a two-hour idle TTL. The following historical tests loaded and unloaded each replica **sequentially** on the then-installed PCIe 2.0 ×1 cards. These indices describe the 17 October setup, not a permanent binding to today's cards.
+
+| Historical GPU | New input / allocated context | Generation | New prompt |
+| ---: | ---: | ---: | ---: |
+| 1 | 129,024 / 131,072 | 101.23 tok/s | 1,097 tok/s |
+| 2 | 129,024 / 131,072 | 100.27 tok/s | 1,092 tok/s |
+| 3 | 129,024 / 131,072 | 101.10 tok/s | 1,098 tok/s |
+| 4 | 129,024 / 131,072 | 100.50 tok/s | 1,093 tok/s |
+| 5 | 129,024 / 131,072 | 100.71 tok/s | 1,096 tok/s |
+| 6 | 129,024 / 131,072 | 100.73 tok/s | 1,097 tok/s |
+
+These are separate model instances. They are **not** one Swift 27B request accelerated by 2–4 GPUs, and their rates are not added together.
+
+The original local API profiles are `swift27-128k`, `swift27-256k` and `swift27-gpu1-128k` through `swift27-gpu6-128k`. The common `owned/` source selector does **not yet include this separate 27B runtime**; these names describe the retained original deployment, not a ready generic build target in this fork. Own 27B Heretic artifacts are not among the two currently published XopMC513 model repositories; the link above is the unmodified base model.
+
+[Swift 27B backend and formats →](docs/XOPMC_SWIFT27.md) · [Recorded measurements →](docs/data/owned-swift27-results.json)
+
+</details>
+
+<details>
 <summary><img src="docs/media/models/deepseek.svg" width="22" alt="" align="middle"> &nbsp;<b>DeepSeek V4.1 Flash 1017 Heretic</b></summary>
 
 **[Download on Hugging Face →](https://huggingface.co/XopMC513/DeepSeek-V4.1-Flash-1017-Heretic)**
@@ -144,7 +211,10 @@ These are filled-context measurements of the original native implementation. The
 
 | GPUs | Context choices | Current qualification |
 | ---: | --- | --- |
+| 1 | Separate original runtime | Single-GPU work retained locally; not imported into the current public selector |
 | 2 | 256K / 512K | Source checks passed; clean build and common serving-factory qualification pending |
+| 3 | — | No completed profile in the published evidence set |
+| 4 | — | No completed profile in the published evidence set |
 
 The imported provider retains matching numerical headers, original per-source arithmetic flags and explicit current-device locality checks. Its unqualified common serving factory remains disabled.
 
