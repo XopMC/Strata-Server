@@ -1,12 +1,12 @@
 # Swift classic source reconstruction
 
-This source-only snapshot reconstructs the selected Swift TwoGPU V454 native closure with the V458 KV-prefetch policy. It is staging material for the unified Strata fork, not a new performance-qualified release.
+This source-only snapshot reconstructs the selected Swift TwoGPU V454 native closure with the V458 KV-prefetch policy. It is included in the unified source selector. The rebuilt two-GPU provider has filled-512K parity evidence; other contexts and imported providers retain their own qualification status.
 
 ## Build
 
 ```sh
-cmake -S . -B build -G Ninja -DCMAKE_C_COMPILER=clang-18 -DCMAKE_CXX_COMPILER=clang++-18 -DCMAKE_CUDA_HOST_COMPILER=clang++-18 -DCMAKE_CUDA_COMPILER=/usr/local/cuda/bin/nvcc
-cmake --build build --target strata_swift_classic -j 8
+cmake -S .. -B build -G Ninja -DCMAKE_C_COMPILER=clang-18 -DCMAKE_CXX_COMPILER=clang++-18 -DCMAKE_CUDA_HOST_COMPILER=clang++-18 -DCMAKE_CUDA_COMPILER=/usr/local/cuda-13.4/bin/nvcc -DCMAKE_CUDA_ARCHITECTURES=89 -DSTRATA_OWNED_FAMILY=swift -DSTRATA_OWNED_GPU_COUNT=2
+cmake --build build --target strata_owned_swift -j 8
 ```
 
 Clang, mold and a compatible NVIDIA CUDA toolkit are required. The historical target is SM89/CUDA13.4; exact per-translation-unit flags and archive order are preserved in generated CMake. All linked implementation objects are rebuilt from source; no precompiled local binaries or model weights are included. Header changes invalidate object rebuilds.
