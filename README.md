@@ -45,51 +45,136 @@ All-expert, full-attention comparison profiles are retained. The selected source
 
 ## Models
 
-Our checkpoints are published under **[XopMC513 on Hugging Face](https://huggingface.co/XopMC513)**. Weights are separate downloads; this Git repository contains source, profiles and documentation.
+Our checkpoints are published under **[XopMC513 on Hugging Face](https://huggingface.co/XopMC513)**. Open a model below for its formats, backend, measurements and build commands. Weights are separate downloads; this repository contains source, profiles and documentation.
 
-| Model | Published versions | Native work in this fork |
-| --- | --- | --- |
-| **[Swift 1.5 Qwen3.8 Flash Next Heretic](https://huggingface.co/XopMC513/Swift-1.5-Qwen3.8-Flash-Next-Heretic)** | Own gentle-Heretic original-precision weights, **Q4_K_M**, and a **custom mixed NVFP4** package | CPU expert execution, shared RAM, GPU expert residency, prefill, MTP and 1–4 GPU source profiles |
-| **[DeepSeek V4.1 Flash 1017 Heretic](https://huggingface.co/XopMC513/DeepSeek-V4.1-Flash-1017-Heretic)** | Own gentle-Heretic original-precision checkpoint and **mixed NVFP4-based quantization** | Separate native DeepSeek implementation, compressed attention, CPU/GPU experts and two-GPU source profiles |
+<details>
+<summary><img src="docs/media/models/qwen.svg" width="22" alt="" align="middle"> &nbsp;<b>Swift 1.5 Qwen3.8 Flash Next Heretic</b></summary>
 
-DeepSeek's original-precision checkpoint preserves its original tensor formats, including FP8/MXFP4 where present; it is not described as an all-BF16 model. Custom native packages need their matching loader. An `.safetensors` or `.gguf` extension alone does not establish compatible arithmetic.
+**[Download on Hugging Face →](https://huggingface.co/XopMC513/Swift-1.5-Qwen3.8-Flash-Next-Heretic)**
 
-[Formats, assets and compatibility →](docs/XOPMC_MODELS.md)
+Our gentle-Heretic Swift is available as original-precision weights, **Q4_K_M**, and a **custom mixed NVFP4** package. The native work covers CPU experts, one shared RAM bank, GPU expert residency, prefill, attention and target-verified MTP.
+
+### Swift performance
+
+These are our local, single-request measurements. New-prompt speed counts newly encoded input. Long rows use genuinely filled contexts; output is 1,024 real generated tokens.
+
+| Backend | GPUs | New input / allocated context | Generation | New prompt |
+| --- | ---: | ---: | ---: | ---: |
+| Mixed NVFP4, **unified source rebuild** | 2 | 520,000 / 524,288 | **192.34 tok/s** | **9,265 tok/s** |
+| Mixed NVFP4, original qualified implementation | 2 | 1,040,000 / 1,048,576 | **187.64 tok/s** | **7,753 tok/s** |
+| Mixed NVFP4, original prefill-oriented profile | 3 | 260,000 / 262,144 | **177.89 tok/s** | **11,457 tok/s** |
+| Mixed NVFP4, original prefill-oriented profile | 3 | 520,000 / 524,288 | **185.38 tok/s** | **12,321 tok/s** |
+
+The three-GPU prefill and two-GPU generation results belong to different profiles. Their best numbers are not combined into an imaginary configuration. More cards did not automatically improve generation; four-GPU work remains experimental.
+
+**Small fill in a long allocation:** the unified two-GPU build measured **225.05 generation tok/s** and **3,298 new-prompt tok/s** at **16,384 / 524,288** tokens. This was a fresh short request in the same process, not a filled 512K result.
+
+Historical single-GPU medians were **173.26 / 181.79 / 175.29 generation tok/s** and **5,297 / 4,752 / 3,833 new-prompt tok/s** at 256K / 512K / 1M. Those used a different adaptive profile and are not a controlled scaling comparison.
+
+### Swift source profiles
+
+| GPUs | Context choices | Current qualification |
+| ---: | --- | --- |
+| 1 | 256K / 512K / 1M | Context-specific source imported; rebuilt-model qualification pending |
+| 2 | 512K / 1M | Source build and filled-512K parity checked; rebuilt 1M qualification separate |
+| 3 | 256K / 512K | Prefill-oriented source imported; rebuilt-model qualification pending |
+| 4 | Experimental | Requires `STRATA_OWNED_EXPERIMENTAL=ON`; not a production winner |
+
+The final two-GPU source build matched the original control's **initial logits, prefill geometry and all 1,024 output token IDs**, on both 520,000-token and 16,384-token inputs. Expert cache maps stayed the same; the shared bank was reused with **zero expert payload bytes reloaded**. Shutdown drained captured resource pools.
+
+The long-fill control measured 192.22 generation / 9,244 new-prompt tok/s; the rebuild measured 192.34 / 9,265. This establishes reconstruction parity on these tests; the small timing difference is not promoted as an optimization gain.
+
+### Build Swift
+
+After cloning the repository, build the selected two-GPU provider with the qualified toolchain:
+
+```sh
+cmake -S owned -B build-owned -G Ninja \
+  -DCMAKE_C_COMPILER=clang-18 \
+  -DCMAKE_CXX_COMPILER=clang++-18 \
+  -DCMAKE_CUDA_HOST_COMPILER=clang++-18 \
+  -DCMAKE_CUDA_COMPILER=/usr/local/cuda-13.4/bin/nvcc \
+  -DCMAKE_CUDA_ARCHITECTURES=89 \
+  -DSTRATA_OWNED_FAMILY=swift \
+  -DSTRATA_OWNED_GPU_COUNT=2 \
+  -DSTRATA_OWNED_CONTEXT=524288
+
+cmake --build build-owned --target strata_owned_swift -j8
+```
+
+Provide compatible existing model assets, then inspect the native launch plan:
+
+```sh
+python3 owned/launch.py \
+  --profile swift-nvfp4-two --gpus 0,1 --context 512k \
+  --pack /models/swift/native-pack-experts-v1 \
+  --common /models/swift/common.gguf \
+  --mtp /models/swift/mtp-production-q4 \
+  --expert-profile /models/swift/expert-profile.bin \
+  --plan
+```
+
+`--gpus` selects current NVIDIA system indices. `--plan` loads no CUDA or weights. `--native-server` selects the native stdin protocol; it is not an HTTP listener. A valid `--shared-expert-arena` reuses a sealed expert bank, not request KV or a pre-reboot bank.
+
+[Swift formats and assets](docs/XOPMC_MODELS.md) · [Full measurements](docs/XOPMC_RESULTS.md) · [Source qualification](owned/swift/QUALIFICATION.json) · [Profile registry](owned/profiles/README.md)
+
+</details>
+
+<details>
+<summary><img src="docs/media/models/deepseek.svg" width="22" alt="" align="middle"> &nbsp;<b>DeepSeek V4.1 Flash 1017 Heretic</b></summary>
+
+**[Download on Hugging Face →](https://huggingface.co/XopMC513/DeepSeek-V4.1-Flash-1017-Heretic)**
+
+Our gentle-Heretic DeepSeek is available as an **original-precision checkpoint** and **mixed NVFP4-based quantization**. The separate native backend covers compressed attention, CPU/GPU experts and target-verified speculative decoding.
+
+Original precision preserves the checkpoint's tensor formats, including FP8/MXFP4 where present. It is not an all-BF16 model. The custom mixed package requires its matching loader; a file extension alone does not establish compatible arithmetic.
+
+### DeepSeek performance
+
+Our original two-GPU native API profile, one request with 512 real output tokens:
+
+| Backend | GPUs | New input / allocated context | Generation | New prompt |
+| --- | ---: | ---: | ---: | ---: |
+| DeepSeek 1017 mixed, original native API | 2 | 261,568 / 262,144 | **54.69 tok/s** | **4,936 tok/s** |
+| DeepSeek 1017 mixed, original native API | 2 | 523,712 / 524,288 | **56.64 tok/s** | **5,590 tok/s** |
+
+These are filled-context measurements of the original native implementation. They are not new measurements of the reconstructed source provider.
+
+### DeepSeek source profile
+
+| GPUs | Context choices | Current qualification |
+| ---: | --- | --- |
+| 2 | 256K / 512K | Source checks passed; clean build and common serving-factory qualification pending |
+
+The imported provider retains matching numerical headers, original per-source arithmetic flags and explicit current-device locality checks. Its unqualified common serving factory remains disabled.
+
+### Build DeepSeek
+
+After cloning the repository, choose the DeepSeek family and one context:
+
+```sh
+cmake -S owned -B build-deepseek -G Ninja \
+  -DCMAKE_C_COMPILER=clang-18 \
+  -DCMAKE_CXX_COMPILER=clang++-18 \
+  -DCUDAToolkit_ROOT=/usr/local/cuda-13.4 \
+  -DSTRATA_OWNED_FAMILY=deepseek \
+  -DSTRATA_OWNED_GPU_COUNT=2 \
+  -DSTRATA_OWNED_CONTEXT=262144
+
+cmake --build build-deepseek --target strata_deepseek_classic -j8
+```
+
+Use `524288` for the 512K source variant. This builds native source; it does not enable the unqualified serving factory or claim parity of a newly built binary.
+
+[DeepSeek formats and assets](docs/XOPMC_MODELS.md) · [Full measurements](docs/XOPMC_RESULTS.md) · [Native source status](owned/deepseek/STATUS.md) · [Native C ABI](owned/deepseek/C_ABI.md)
+
+</details>
 
 ## Benchmarks
 
-**These are our local measurements**, on the dual-EPYC / RTX 4090 server below. Prompt speed counts **new input tokens**. Long-context rows use genuinely filled contexts, not just a large context allocation. Speeds are for one request, not the sum of several requests.
+All model-specific tables are inside the model blocks above. Measurements use the dual-EPYC / RTX 4090 server below, **new input tokens**, one request and the stated actual fill. Individual long-context runs and historical single-GPU medians are identified separately. Component bandwidth is not model throughput, and these results are not guarantees for another machine.
 
-### Filled contexts
-
-| Model and backend | GPUs | New input / allocated context | Generation | New prompt |
-| --- | ---: | ---: | ---: | ---: |
-| Swift mixed NVFP4, **unified source rebuild** | 2 | 520,000 / 524,288 | **192.34 tok/s** | **9,265 tok/s** |
-| Swift mixed NVFP4, original qualified implementation | 2 | 1,040,000 / 1,048,576 | **187.64 tok/s** | **7,753 tok/s** |
-| Swift mixed NVFP4, original prefill-oriented profile | 3 | 260,000 / 262,144 | **177.89 tok/s** | **11,457 tok/s** |
-| Swift mixed NVFP4, original prefill-oriented profile | 3 | 520,000 / 524,288 | **185.38 tok/s** | **12,321 tok/s** |
-| DeepSeek 1017 mixed, original native API profile | 2 | 261,568 / 262,144 | **54.69 tok/s** | **4,936 tok/s** |
-| DeepSeek 1017 mixed, original native API profile | 2 | 523,712 / 524,288 | **56.64 tok/s** | **5,590 tok/s** |
-
-The Swift rows generated 1,024 real output tokens; DeepSeek rows generated 512. The listed long-context configurations are individual runs. The three-GPU prefill result and the two-GPU generation result are different profiles: their best numbers are not combined into an imaginary configuration. More cards did not automatically improve generation. Four-GPU work is retained as experimental source, not advertised as a faster default.
-
-### Small fill inside a long allocation
-
-| Model and backend | New input / allocated context | Generation | New prompt |
-| --- | ---: | ---: | ---: |
-| Swift mixed NVFP4, unified two-GPU source rebuild | 16,384 / 524,288 | **225.05 tok/s** | **3,298 tok/s** |
-
-This is a fresh short request in the same process, not a filled 512K result. It is shown separately because prompt length changes the workload.
-
-### What was checked in the unified rebuild?
-
-The final two-GPU source build matched the original control's **initial logits, prefill geometry and all 1,024 output token IDs**, for both 520,000-token and 16,384-token inputs. Expert cache maps stayed the same. The existing shared bank was reused with **zero expert payload bytes reloaded**. Native shutdown drained the captured resource pools.
-
-The original control measured 192.22 generation / 9,244 new-prompt tok/s on the long fill. The rebuilt provider measured 192.34 / 9,265. This establishes reconstruction parity on these tests; the small timing difference is not promoted as a new optimization gain.
-
-Historical single-GPU Swift medians were **173.26 / 181.79 / 175.29 generation tok/s** and **5,297 / 4,752 / 3,833 new-prompt tok/s** at 256K / 512K / 1M. They used a different adaptive profile and are not a controlled one-to-three-card scaling comparison.
-
-[Full results, settings and limits →](docs/XOPMC_RESULTS.md) · [Machine-readable source qualification →](owned/swift/QUALIFICATION.json)
+[Full results, settings and limits →](docs/XOPMC_RESULTS.md)
 
 ## Test hardware
 
@@ -125,52 +210,18 @@ RAM tests searched thread counts, L3-domain placement and NUMA policy; the large
 
 ## Build and run
 
-The owned providers are opt-in. Building the upstream project alone does not select one of these native closures.
+The owned providers are opt-in. Start with the shared checkout:
 
 ```sh
 git clone https://github.com/XopMC/Strata-Server.git
 cd Strata-Server
-
-cmake -S owned -B build-owned -G Ninja \
-  -DCMAKE_C_COMPILER=clang-18 \
-  -DCMAKE_CXX_COMPILER=clang++-18 \
-  -DCMAKE_CUDA_HOST_COMPILER=clang++-18 \
-  -DCMAKE_CUDA_COMPILER=/usr/local/cuda-13.4/bin/nvcc \
-  -DCMAKE_CUDA_ARCHITECTURES=89 \
-  -DSTRATA_OWNED_FAMILY=swift \
-  -DSTRATA_OWNED_GPU_COUNT=2 \
-  -DSTRATA_OWNED_CONTEXT=524288
-
-cmake --build build-owned --target strata_owned_swift -j8
 ```
 
-### Model and GPU selection
+Open the matching model block above for its build commands, GPU/context choices and qualification. Native source profiles use **Clang 18 + mold**, CUDA 13.4 and SM89. Model assets remain separate. Building the upstream project alone does not select an owned native provider.
 
-| CMake choice | Source profile | Current qualification |
-| --- | --- | --- |
-| `swift`, 1 GPU, 256K / 512K / 1M | Context-specific single-GPU providers | Source imported; rebuilt-model qualification pending |
-| `swift`, 2 GPUs, 512K / 1M | Selected two-GPU provider | Source build and filled-512K parity checked; rebuilt 1M qualification separate |
-| `swift`, 3 GPUs, 256K / 512K | Selected prefill-oriented provider | Source imported; rebuilt-model qualification pending |
-| `swift`, 4 GPUs | Preserved experimental provider | Requires `STRATA_OWNED_EXPERIMENTAL=ON`; not a production winner |
-| `deepseek`, 2 GPUs, 256K / 512K | Context-specific DeepSeek provider | Source checks passed; clean build and common serving-factory qualification pending |
+The shared peer-policy API handles up to seven selected compatible devices. This does not mean seven-GPU model execution has been implemented or measured. Unqualified launch profiles are disabled; unsupported choices fail explicitly. Integration of every owned provider with a common HTTP factory remains separate from the retained upstream app and APIs.
 
-The shared peer-policy API handles up to seven selected compatible devices. This does not mean seven-GPU model execution has been implemented or measured. Unqualified launch profiles are disabled, and unsupported choices fail explicitly.
-
-Provide compatible existing model assets, then inspect the native launch plan:
-
-```sh
-python3 owned/launch.py \
-  --profile swift-nvfp4-two --gpus 0,1 --context 512k \
-  --pack /models/swift/native-pack-experts-v1 \
-  --common /models/swift/common.gguf \
-  --mtp /models/swift/mtp-production-q4 \
-  --expert-profile /models/swift/expert-profile.bin \
-  --plan
-```
-
-`--gpus` means **current NVIDIA system indices**, resolved afresh. `--plan` loads no CUDA or model weights. `--native-server` selects the native stdin protocol; it is not an HTTP listener. The original Strata app and compatible APIs remain in the repository, while integration of every owned provider with a common HTTP factory is separate work.
-
-A valid `--shared-expert-arena` can reuse an existing sealed bank. It does not share request KV or recover a pre-reboot bank. After a BIOS NPS change, CPU placement and memory-node admission must be checked again; the selector discovers current allowed memory nodes instead of assuming `0,1` is the entire server.
+After a BIOS NPS change, CPU placement and memory admission must be checked again. The selector discovers current allowed memory nodes instead of assuming `0,1` is the whole machine. Shared RAM seals and request state do not survive reboot.
 
 [Complete source build and runtime contract →](owned/README.md) · [Profile registry →](owned/profiles/README.md) · [P2P admission →](docs/XOPMC_P2P.md)
 
